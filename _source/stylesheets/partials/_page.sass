@@ -1,3 +1,5 @@
+@import modules/border_radius.sass
+
 #page
   .header a
     +link-color-style(#444)
@@ -5,6 +7,15 @@
     +link-color-style
 #sidebar .section p a, #sidebar .section .header a, #sidebar .section ul a
   +link-color-style
+
+#header #page-top
+  :background-color white
+  +border-top-radius(10px)
+  :height 40px
+  :position absolute
+  :left 0px
+  :bottom 0px
+  +span(18)
 
 #page
   .contents
