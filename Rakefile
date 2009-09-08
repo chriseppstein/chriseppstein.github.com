@@ -32,6 +32,7 @@ task :generate => :clean do
   system "mv _site/blog/atom.html _site/blog/atom.xml"
 end
 
+desc "build and commit the website in the master branch"
 task :build => :generate do
   require 'git'
   repo = Git.open('.')
@@ -46,14 +47,9 @@ task :build => :generate do
   repo.branch("source").checkout
 end
 
+desc "generate and deploy website"
 task :deploy => :build do
   system "git push origin master source"
-end
-
-desc "generate and deploy website"
-task :deploy => :generate do
-  print "Deploying website..."
-  ok_failed system("rsync -avz --delete #{site}/ mathisweb@imathis.com:~/brandonmathis.com/")
 end
 
 desc "start up an instance of serve on the output files"
