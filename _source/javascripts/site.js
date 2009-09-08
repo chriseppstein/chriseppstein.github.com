@@ -1,21 +1,14 @@
-window.addEvent('domready', function(){
-  //We can use one Request object many times.
-  var req = new Request({
-
-    url: '/php/twitter/status.php',
-
-    onSuccess: function(txt){
-      $('twitter_status').set('html', txt);
-    },
-
-    // Our request will most likely succeed, but just in case, we'll add an
-    // onFailure method which will let the user know what happened.
-    onFailure: function(){
-      $('twitter_status').set('html', 'FAIL: The tweets are sleeping :(');
-    }
-
+jQuery(document).ready(function($) {
+  $(".tweet").tweet({
+    join_text: "auto",
+    username: "chriseppstein",
+    avatar_size: 48,
+    count: 1,
+    auto_join_text_default: "I said,", 
+    auto_join_text_ed: "I",
+    auto_join_text_ing: "I was",
+    auto_join_text_reply: "I replied",
+    auto_join_text_url: "I was checking out",
+    loading_text: "loading tweets..."
   });
-
-  req.send();
-
-});
+})      

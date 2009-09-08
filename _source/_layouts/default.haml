@@ -12,6 +12,7 @@
     %script{:type=>"text/javascript", :src=>"http://www.google.com/jsapi"}
     :javascript
       google.load("jquery", "1.3.2");
+    %script{:type=>"text/javascript", :src=>"/javascripts/jquery.tweet.js"}
     %script{:type=>"text/javascript", :src=>"/javascripts/site.js"}
   %body{:id => page.attempt(:body_id)}
     #header_wrapper
@@ -67,8 +68,6 @@
                   follow
                   %a(href="http://twitter.com/chriseppstein") chriseppstein
               .tweet
-                %p#twitter_status
-                  Status updating...
               %p.follow
                 %img(src="/images/twitter_bird.png")
             #delicious.section
