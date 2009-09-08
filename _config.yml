@@ -1,5 +1,5 @@
 source: _source
-destination: _site
+destination: .
 markdown: rdiscount
 pygments: true
 permalink: /blog/:year/:month/:day/:title

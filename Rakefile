@@ -64,16 +64,7 @@ end
 
 def rebuild_site(relative)
   puts ">>> Change Detected to: #{relative} <<<"
-  IO.popen('rake generate') do |io|
-    if io
-      begin
-        print io.read(512)
-        sleep 0.25
-      end until io.eof?
-    else
-      puts "no io"
-    end
-  end
+  IO.popen('rake generate'){|io| print(io.readpartial(512)) until io.eof?}
   puts '>>> Update Complete <<<'
 end
 

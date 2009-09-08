@@ -1,8 +1,27 @@
 // based on: http://github.com/mojombo/tpw/raw/master/css/syntax.css
+pre.console
+  background-color: black
+  color= lighten(#008000, 25)
+  padding: 0.5em
+  letter-spacing: 1px
+  border: #aaa ridge 6px
+  .prompt
+    color= lighten(#000080, 50)
+    &:before
+      :color white
+      content: "["
+    &:after
+      :color white
+      content: "]"
+  .stdin
+    font-weight: bold
+    color= lighten(#008000, 75)
 
 div.highlight
-  background: #ffffff
-  line-height: 1
+  background: rgb(0,22,41)
+  line-height: 1.25
+  padding: 0.5em
+  border: #aaa ridge 6px
   // Comment
   .c
     color: #999988
@@ -11,12 +30,18 @@ div.highlight
   .err
     color: #a61717
     background-color: #e3d2d2
+  // Name
+  .n
+    color: white
   // Keyword
   .k
-    color: #000
+    color: rgb(255, 157, 0)
+  // Paren
+  .p
+    color= darken(#FF9D00, 33)
   // Operator
   .o
-    color: #000
+    color: rgb(255, 157, 0)
   // Comment.Multiline
   .cm
     color: #999988
@@ -65,7 +90,7 @@ div.highlight
     color: #555555
   // Generic.Strong
   .gs
-    color: #000
+    color: white
   // Generic.Subheading
   .gu
     color: #aaaaaa
@@ -74,22 +99,22 @@ div.highlight
     color: #aa0000
   // Keyword.Constant
   .kc
-    color: #000
+    color: white
   // Keyword.Declaration
   .kd
-    color: #000
+    color: white
   // Keyword.Pseudo
   .kp
-    color: #000
+    color: white
   // Keyword.Reserved
   .kr
-    color: #000
+    color: white
   // Keyword.Type
   .kt
     color: #445588
   // Literal.Number
   .m
-    color: #009999
+    color: rgb(255, 98, 140)
   // Literal.String
   .s
     color: #d14
@@ -98,22 +123,22 @@ div.highlight
     color: #008080
   // Name.Builtin
   .nb
-    color: #0086B3
+    color= darken(rgb(128, 255, 187), 20)
   // Name.Class
   .nc
-    color: #445588
+    color= darken(rgb(128, 255, 187), 20)
   // Name.Constant
   .no
-    color: #008080
+    color: rgb(128, 255, 187)
   // Name.Entity
   .ni
     color: #800080
   // Name.Exception
   .ne
-    color: #990000
+    color: rgb(255,221, 0)
   // Name.Function
   .nf
-    color: #990000
+    color: rgb(255,221, 0)
   // Name.Namespace
   .nn
     color: #555555
@@ -125,55 +150,55 @@ div.highlight
     color: #008080
   // Operator.Word
   .ow
-    color: #000
+    color: white
   // Text.Whitespace
   .w
     color: #bbbbbb
   // Literal.Number.Float
   .mf
-    color: #009999
+    color: rgb(255, 98, 140)
   // Literal.Number.Hex
   .mh
-    color: #009999
+    color: rgb(255, 98, 140)
   // Literal.Number.Integer
   .mi
-    color: #009999
+    color: rgb(255, 98, 140)
   // Literal.Number.Oct
   .mo
-    color: #009999
+    color: rgb(255, 98, 140)
   // Literal.String.Backtick
   .sb
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Char
   .sc
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Doc
   .sd
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Double
   .s2
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Escape
   .se
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Heredoc
   .sh
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Interpol
   .si
-    color: #d14
+    color: rgb(158,255,128)
   // Literal.String.Other
   .sx
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Regex
   .sr
     color: #009926
   // Literal.String.Single
   .s1
-    color: #d14
+    color: rgb(58,217,0)
   // Literal.String.Symbol
   .ss
-    color: #990073
+    color: rgb(255, 98, 140)
   // Name.Builtin.Pseudo
   .bp
     color: #999999
@@ -188,4 +213,4 @@ div.highlight
     color: #008080
   // Literal.Number.Integer.Long
   .il
-    color: #009999
+    color: rgb(255, 98, 140)
