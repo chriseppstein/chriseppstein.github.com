@@ -15,7 +15,8 @@ bottom_nav: <a href="/blog/archives.html">&larr; Read more at the archives</a>
       - else
         %h3.header
           = link_to(rp(post.title), post.url, {:class=>"title"})
-      .article= rp(post.content)
+      .article
+        %p= rp(post.data["description"])
       .footer
         - if post.data["comments_off"]
           %em.comments_off Comments disabled

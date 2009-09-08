@@ -47,8 +47,19 @@
           - if !page.respond_to?(:empty_sidebar)
             .section
               %h3 About Me
-              %p.clear
-                I&rsquo;m a design enthusiast who&rsquo;s passionate about my craft. I mainly design web applications, but I also love photography and print design.
+              %img.left(src="http://www.gravatar.com/avatar/b0ceed615487ddf041bb0d1cf24a98b0.png")
+              :markdown
+                I'm the Software Architect of [Caring.com](http://www.caring.com/),
+                a website devoted to caregivers of the sick and elderly.
+                I live in San Jose, California with my wife and our 4 year old daughter.
+            .section
+              %h3 Open Source
+              :markdown
+                I'm the creator of [Compass](http://compass-style.org/), the stylesheet authoring framework
+                for professional front-end engineers and designers. I'm a member of the
+                [Sass](http://sass-lang.com/) core team. I maintain about a dozen less well known
+                ruby libraries and rails plugins on [github](http://github.com/chriseppstein),
+                and am an active contributor of patches to the many open source projects that I use.
             #twitter.section
               .header
                 %h3(style="display: inline-block") Twitter

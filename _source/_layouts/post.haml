@@ -34,6 +34,13 @@
         #page_wrapper
           #page.blog
             .contents.section.alpha
+              .metadata
+                Published:
+                %span.pubdate=page.date.strftime("%d %b, %Y")
+                - if page.respond_to?(:link)
+                  %span.vr &nbsp;
+                  Linking to:
+                  = link_to(shorten(page.link), page.link)
               %h2.header
                 - if page.respond_to?(:link)
                   = link_to(rp(page.title), page.link, {:class=>"title"})
@@ -41,13 +48,6 @@
                   = rp(page.title)
               .article= preserve(rp(content))
               .footer{:class=>(page.respond_to?(:comments_off) ? "alt" : nil)}
-                .metadata
-                  Published:
-                  %span.pubdate=page.date.strftime("%d %b, %Y")
-                  - if page.respond_to?(:link)
-                    %span.vr &nbsp;
-                    Linking to:
-                    = link_to(shorten(page.link), page.link)
                 - if page.respond_to?(:comments_off)
                   .vr &nbsp;
                   %em.comments_off Comments have been disabled for this post.

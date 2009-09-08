@@ -1,5 +1,6 @@
 ---
 title: Building a Jekyll Watcher with FSSM
+description: "Stop compiling and start watching your jekyll project with FSSM."
 category: blogging
 ---
 Travis Tilley's [File System State Monitor][fssm] provides a fantastic API for monitoring a filesystem and
@@ -14,31 +15,23 @@ steps required to build your own watcher here.
 
 ### Install FSSM
 
-<pre>
-[~] sudo gem install ttilley-fssm
-Password:
+<pre class="console"><span class="prompt">~</span> <span class="stdin">sudo gem install ttilley-fssm</span>
+<span class="stdout">Password:
 Successfully installed ttilley-fssm-0.0.6
 1 gem installed
 Installing ri documentation for ttilley-fssm-0.0.6...
-Installing RDoc documentation for ttilley-fssm-0.0.6...
+Installing RDoc documentation for ttilley-fssm-0.0.6...</span>
 </pre>
 
 ### Define An Update Function
 
-This update function is slightly complicated because I wanted to see the output as it was emitted.
+This update function uses pipes because I wanted to see the output as it was emitted.
 
 {% highlight ruby %}
 def rebuild_site(relative)
   puts ">>> Change Detected to: #{relative} <<<"
   IO.popen('rake generate') do |io|
-    if io
-      begin
-        print io.read(512)
-        sleep 0.25
-      end until io.eof?
-    else
-      puts "no io"
-    end
+    print(io.readpartial(512)) until io.eof?
   end
   puts '>>> Update Complete <<<'
 end
@@ -62,10 +55,9 @@ end
 
 ### Invoke It
 
-<pre>
-$ rake watch
-(in /Users/chris/Projects/chriseppstein.github.com)
->>> Watching for Changes &lt;&lt;&lt;
+<pre class="console"><span class="prompt">~/Projects/chriseppstein.github.com</span> <span class="stdin">rake watch</span>
+<span class="stdout">(in /Users/chris/Projects/chriseppstein.github.com)
+>>> Watching for Changes &lt;&lt;&lt;</span>
 </pre>
 
 [fssm]: http://github.com/ttilley/fssm/tree/master
