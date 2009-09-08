@@ -32,6 +32,24 @@ task :generate => :clean do
   system "mv _site/blog/atom.html _site/blog/atom.xml"
 end
 
+task :build => :generate do
+  require 'git'
+  repo = Git.open('.')
+  repo.branch("master").checkout
+  (Dir["*"] - [site]).each { |f| rm_rf(f) }
+  Dir["#{site}/*"].each {|f| mv(f, ".")}
+  rm_rf(site)
+  Dir["**/*"].each {|f| repo.add(f) }
+  repo.status.deleted.each {|f, s| repo.remove(f)}
+  message = ENV["MESSAGE"] || "Site updated at #{Time.now.utc}"
+  repo.commit(message)
+  repo.branch("source").checkout
+end
+
+task :deploy => :build do
+  system "git push origin master source"
+end
+
 desc "generate and deploy website"
 task :deploy => :generate do
   print "Deploying website..."
