@@ -61,3 +61,29 @@ desc "preview the site in a web browser"
 multitask :preview => [:generate, :start_serve] do
   system "open http://localhost:#{port}"
 end
+
+def rebuild_site(relative)
+  puts ">>> Change Detected to: #{relative} <<<"
+  IO.popen('rake generate') do |io|
+    if io
+      begin
+        print io.read(512)
+        sleep 0.25
+      end until io.eof?
+    else
+      puts "no io"
+    end
+  end
+  puts '>>> Update Complete <<<'
+end
+
+desc "Watch the site and regenerate when it changes"
+task :watch do
+  require 'fssm'
+  puts ">>> Watching for Changes <<<"
+  FSSM.monitor("#{File.dirname(__FILE__)}/_source", '**/*') do
+    update {|base, relative| rebuild_site(relative)}
+    delete {|base, relative| rebuild_site(relative)}
+    create {|base, relative| rebuild_site(relative)}
+  end
+end

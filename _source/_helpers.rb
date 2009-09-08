@@ -2,6 +2,14 @@ gem 'activesupport', ">= 2.3.2"
 require 'active_support'
 require 'rubypants'
 
+class Object
+  def attempt(*args, &block)
+    try(*args, &block)
+  rescue NoMethodError
+    nil
+  end
+end
+
 module Helpers
   module EscapeHelper
     HTML_ESCAPE = { '&' => '&amp; ',  '>' => '&gt;',   '<' => '&lt;', '"' => '&quot;' }
@@ -156,7 +164,7 @@ module Helpers
   
   # My added helpers
   
-  def shorten_words (string, word_limit = 25)
+  def shorten_words(string, word_limit = 25)
     words = string.split(/\s/)
     if words.size >= word_limit
       words[0,(word_limit-1)].join(" ") + '&hellip;'
@@ -165,7 +173,7 @@ module Helpers
     end
   end
   
-  def shorten (string, char_limit = 55)
+  def shorten(string, char_limit = 55)
     chars = string.scan(/.{1,1}/)
     if chars.size >= char_limit
       chars[0,(char_limit-1)].join + '&hellip;'
@@ -175,11 +183,11 @@ module Helpers
   end
   
   def absolute_url(input)
-    input.gsub(/(href|src)(\s*=\s*)(["'])(\/.*?)\3/) { $1 + $2 + $3 + "http://brandonmathis.com" + $4 + $3 }
+    input.gsub(/(href|src)(\s*=\s*)(["'])(\/.*?)\3/) { $1 + $2 + $3 + "http://chriseppstein.github.com" + $4 + $3 }
   end
   
   def full_url(input)
-    'http://brandonmathis.com'+input
+    'http://chriseppstein.github.com'+input
   end
   def rp(input)
     RubyPants.new(input).to_html

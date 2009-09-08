@@ -3,14 +3,14 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 %feed(xmlns="http://www.w3.org/2005/Atom")
-  %title Brandon Mathis - Design Enthusiast
-  %link(href="http://brandonmathis.com/atom.xml" rel="self")
-  %link(href="http://brandonmathis.com/")
+  %title Chris Eppstein - Ruby + Web + Architect
+  %link(href="http://chriseppstein.github.com/atom.xml" rel="self")
+  %link(href="http://chriseppstein.github.com/")
   %updated= Time.now.xmlschema
-  %id http://brandonmathis.com/
+  %id http://chriseppstein.github.com/
   %author
-    %name Brandon Mathis
-    %email imathis[at]me.com
+    %name Chris Eppstein
+    %email chris[at]eppsteins[dawt]net
   - site.posts.sort_by(&:date).reverse[0..14].each do |post|
     %entry
       %title= rp(post.title)
