@@ -13,71 +13,99 @@
       google.load("jquery", "1.3.2");
     %script{:type=>"text/javascript", :src=>"/javascripts/site.js"}
   %body{:id=>"post"}
-    #header_wrapper
+    #header-wrapper
       #header
-        %h1 Chris Eppstein
+        .title.highlight
+          %h1.nl #chris-eppstein
+          %h2 &nbsp;&nbsp;<span class="k">position</span><span class="o">:</span>&nbsp;<span class="m">unique</span>
         .nav
           %ul
-            %li
+            %li.home
               %a(href="/" title="Home") Home
-            %li
-              %a(href="/work/" title="Work") Work
-            %li{:class => "here"}
+            %li.blog
               %a(href="/blog/" title="Blog") Blog
-        #blog_links
-          %a#rss(href="/blog/atom.xml" title="subscribe")
-            %img(src="/images/rss.png")
-            %span Subscribe
-          %a#archive(href="/blog/archives.html" title="blog archive") Blog Archive
-    #content_wrapper
+            %li.projects
+              %a(href="/projects/" title="Projects") Projects
+            %li.work
+              %a(href="/work/" title="Work") Work
+        .aside
+          #search
+            %form(action="http://www.google.com/cse" id="cse-search-box")
+              %input(type="hidden" name="cx" value="010456759155788273473:m_ld19wftd4")
+              %input(type="hidden" name="ie" value="UTF-8")
+              %input#q(type="text" name="q")
+              /%input(type="submit" name="sa" value="Search")
+        
+          #blog-links
+            %a#rss(href="/blog/atom.xml" title="subscribe")
+              %img(src="/images/rss.png")
+              %span Subscribe
+            %a#archive(href="/blog/archives.html" title="blog archive") Blog Archive
+    #content-wrapper
       #content
-        #page_wrapper
-          #page.blog
-            .contents.section.alpha
-              .metadata
-                Published:
-                %span.pubdate=page.date.strftime("%d %b, %Y")
-                - if page.respond_to?(:link)
-                  %span.vr &nbsp;
-                  Linking to:
-                  = link_to(shorten(page.link), page.link)
-              %h2.header
-                - if page.respond_to?(:link)
-                  = link_to(rp(page.title), page.link, {:class=>"title"})
-                - else
-                  = rp(page.title)
-              .article= preserve(rp(content))
-              .footer{:class=>(page.respond_to?(:comments_off) ? "alt" : nil)}
-                - if page.respond_to?(:comments_off)
-                  .vr &nbsp;
-                  %em.comments_off Comments have been disabled for this post.
-                - else
-                  #disqus_thread
-                  :javascript
-                    var disqus_url = "#{full_url(page.url)}";
-                    var disqus_developer = 1;
-                  %noscript
-                    <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
-                  %script{:type=>"text/javascript", :src=>"http://disqus.com/forums/chriseppstein/embed.js"}
+        #page.blog
+          .contents.section.alpha
+            .metadata
+              Published:
+              %span.pubdate=page.date.strftime("%d %b, %Y")
+              - if page.respond_to?(:link)
+                %span.vr &nbsp;
+                Linking to:
+                = link_to(shorten(page.link), page.link)
+            %h2.header
+              - if page.respond_to?(:link)
+                = link_to(rp(page.title), page.link, {:class=>"title"})
+              - else
+                = rp(page.title)
+            .article= preserve(rp(content))
+            .footer{:class=>(page.respond_to?(:comments_off) ? "alt" : nil)}
+              - if page.respond_to?(:comments_off)
+                .vr &nbsp;
+                %em.comments_off Comments have been disabled for this post.
+              - else
+                #disqus_thread
+                :javascript
+                  var disqus_url = "#{full_url(page.url)}";
+                  var disqus_developer = 1;
+                %noscript
+                  <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
+                %script{:type=>"text/javascript", :src=>"http://disqus.com/forums/chriseppstein/embed.js"}
         #sidebar.aside
-          /
-            %h3.heading Blog Archives
-            - posts = site.posts.group_by { |p| p.date.strftime("%Y") }
-            - posts.keys.sort.reverse.each do |year|
-              %h5= year
-              %ul.section
-                - posts[year].sort_by(&:date).reverse.each do |post|
-                  %li{:style=>"font-size: 60%"}= link_to(post.title, post.url)
-    #footer_wrapper
+          %h3.heading Blog Archives
+          - posts = site.posts.group_by { |p| p.date.strftime("%Y") }
+          - posts.keys.sort.reverse.each do |year|
+            %h5= year
+            %ul.section
+              - posts[year].sort_by(&:date).reverse.each do |post|
+                %li{:style=>"font-size: 60%"}= link_to(post.title, post.url)
+    #footer-wrapper
       #footer
         #page_bottom
+          - if page.respond_to?(:bottom_nav)
+            %p= page.bottom_nav
         .bottom_nav
           .contents
             %a.ucase(href="#") &uarr; back to top
         #foot_bottom.alone
-          <a href="http://compass-style.org" title="Styled with Compass" class="affiliate compass">Styled with Compass</a>
-          .text_links
-            Site powered by
+          %a.affiliate.compass(href="http://compass-style.org" title="Styled with Compass")
+            Styled with Compass
+          %h6
+            Powered by
             %a(href="http://jekyllrb.com/") Jekyll
-            &ndash;
-          %h6 design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
+            and
+            %a(href="http://www.oddbird.net/susy/") Susy
+          .legalese
+            &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
+            &ndash; with help and inspiration from from christopher eppstein
+    - if page.attempt(:body_id) == "blog"
+      :javascript
+        (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/chriseppstein/get_num_replies.js' + query + '"></' + 'script>');
+                        })();

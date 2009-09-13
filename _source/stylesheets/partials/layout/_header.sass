@@ -1,0 +1,53 @@
+#header
+  min-width: 950px
+  .title
+    +columns(8)
+    +alpha
+  .nav
+    +columns(10)
+  .aside
+    +columns(6)
+    +omega
+
+#header
+  h1
+    margin-top: 0.25em
+
+#header .nav
+  :min-width 375px
+  ul
+    +horizontal-list
+    li
+      height: 110px
+      padding: 0 25px 10px
+      a
+        display: inline-block
+        padding: 3.3em 1px 10px
+
+#header
+  position: relative
+  .aside
+    height: 110px
+  #search
+    +columns(6,6)
+  #blog-links
+    position: absolute
+    bottom: 10px
+    left 0px
+    
+  #archive
+    display: inline-block
+    border-left: 1px solid #444
+    padding-left: 12px
+    margin-left: 8px
+
+#header
+  #search
+    form
+      padding: 2px 0 0
+      height: 28px
+      width: 218px
+    #q
+      width: 160px
+      margin-left: 30px
+

@@ -1,41 +1,27 @@
 ---
 layout: default
-body_id: home_page_layout
-nav: home
-title: Chris Eppstein - Ruby + Web + Architect
+body_id: home
+title: "#chris-eppstein {position: unique;}"
 description: "A web architect on a mission to bring software development practices to web design."
-keywords: "Chris Eppstein, chriseppstein, sass, compass, css, ruby on rails, ruby, rails, designer, developer, web applications, javascript, UX, UI, design, programming, javascript, xhtml, semantic markup"
+keywords: "Chris Eppstein, chriseppstein, sass, compass, css, ruby on rails, ruby, rails, designer, developer, web applications, javascript, UX, UI, design, programming, javascript, xhtml, semantic markup, position, unique"
 bottom_nav: <a href="/blog/">More from the blog &rarr;</a>
 ---
 
-#head_quote.section
-  %h2 Web technologies are easy &mdash; it's bringing them all together that's hard.
-  %span.cite &mdash; Chris Eppstein
-#featured_work.section
-  .art.right
-    %img.shadow.medium(src="/content/work/terralien/main_page_thumb.png")
-  %h3 Compass
-  %p
-    Compass is a CSS Authoring Framework built on top of Sass and it's going to change the way we approach website design. Sass changes the primary design abstraction from the HTML class to the Stylesheet mixin and in doing so, frees our markup from design constraints and enables the sharing of design implementation.
-  %p
-    <a href="/projects/">See more projects &rarr;</a>
-.blog.mini
-  - site.posts.sort_by(&:date).reverse[0..0].each do |post,index|
-    .section{:class=>"#{(index==0 ? 'alpha' : (index==3 ? "omega" : nil))}"}
-      - if post.data["link"]
-        %h3.header.link
-          = link_to(rp(style_amp(post.title)), post.data["link"], {:class=>"title"})
-          %a.permalink(href="#{post.url}") &infin;
+#most-recent-post.mini
+  - post = site.posts.sort_by(&:date).reverse.first
+  .section.alpha
+    - if post.data["link"]
+      %h3.header.link
+        = link_to(rp(style_amp(post.title)), post.data["link"], {:class=>"title"})
+        %a.permalink(href="#{post.url}") &infin;
+    - else
+      %h3.header
+        = link_to(rp(style_amp(post.title)), post.url, {:class=>"title"})
+    .article
+      - if post.data["exerpt"]
+        = rp(site.markdown("#{post.data['exerpt']} &hellip; #{link_to('more &raquo;', post.url, {:class=>'more'})}"))
       - else
-        %h3.header
-          = link_to(rp(style_amp(post.title)), post.url, {:class=>"title"})
-      .article
-        - if post.data["exerpt"]
-          = rp(site.markdown("#{post.data['exerpt']} &hellip; #{link_to('more &raquo;', post.url, {:class=>'more'})}"))
-        - else
-          = preserve rp(post.content)
-      .footer
-        - if post.data["comments_off"]
-          %em.comments_off Comments disabled
-        - else
-          %a(href="#{post.url}/#disqus_thread")Comments
+        = preserve rp(post.content)
+    .footer
+      - unless post.data["comments_off"]
+        %a(href="#{post.url}/#disqus_thread") Comments

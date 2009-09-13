@@ -1,0 +1,101 @@
+
+#footer-wrapper
+  background: #1c1c1c url(/images/footer_bg.png) repeat-x top
+  padding-bottom: 45px
+
+#page_bottom
+  +columns(18)
+  background-color: #fff
+  +border-bottom-radius(10px)
+  height: 50px
+  p
+    padding: 5px 30px 0
+  a
+    +link-color-style(#666)
+    font-size: 80%
+#footer
+  color: #d8d8d8
+  .nav ul
+    +horizontal-list
+    li
+      padding: 0 10px
+  .bottom_nav
+    font-size: 70%
+    a
+      +link-color-style(#aaa,#000)
+      display: inline-block
+      margin: 20px 0 0 10px
+  .section
+    margin-top: 25px
+    h5
+      color: inherit
+    p
+      font-size: 80%
+#about
+  +columns(10)
+  .avatar
+    +columns(2)
+#footer #twitter
+  +columns(8)
+  .tweet
+    margin-bottom: 0
+    width: 308px
+    background: url(/images/tweet_bg.png) repeat-y center center
+    p
+      padding: 15px 15px 5px
+      display: inline-block
+      min-height: 25px
+      width: 278px
+      background: url(/images/tweet_bg.png) no-repeat top left
+      position: relative
+      top: -5px
+  .follow
+    width: 308px
+    background: url(/images/tweet_bg.png) no-repeat top right
+    padding: 0
+    +clearfix
+    span
+      color: #8B8B8B
+      position: relative
+      top: -15px
+      right: -20px
+        
+#foot_bottom
+  +columns(24)
+  padding-top: 10px
+  border-top: 1px solid #4D4D4D
+  margin-top: 15px
+  a
+    +link-color-style(#999,#000)
+  &.alone
+    border-top: 0
+    +columns(18)
+  h6
+    color: #767676
+    +reset-box-model
+    padding: 10px 5px 0
+    font-size: 75%
+    text-transform: uppercase
+    float: left
+    display: inline-block
+  a.affiliate
+    +reset-box-model
+    +sprite-background("/images/association_logos.png",34px,38px)
+    float: left
+    display: inline-block
+    margin: 0 5px 0 0
+    +opacity(.7)
+    &:hover
+      +opacity(1)
+    text-indent: -9999em
+    &:hover
+      background-color: none
+    &.compass
+      +sprite-position(1,1,34px,38px)
+      &:hover
+        +sprite-position(1,2,34px,38px)
+  .text-links
+    font-size: 80%
+    padding: 10px 0 0 10px
+    color: #767676
+    float: left

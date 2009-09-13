@@ -1,0 +1,57 @@
+#header-wrapper
+  background: #1c1c1c
+
+#header
+  color: #fff
+  background: url(/images/page_top.png) no-repeat bottom left
+  .nav a
+    +link-colors(#ccc, #fff)
+    +hover-link
+  .title
+    background: inherit
+    line-height: 1
+    padding: 0
+    border: none
+
+#header
+  #blog-links
+    a
+      color: #999
+      &:hover
+        color: #fff
+    #rss
+      &:hover img
+        +opacity(1)
+      img
+        vertical-align: -30%
+        margin-right: 2px
+        +opacity(.7)
+
+#search
+  form
+    background: url(/images/search_bg.png) no-repeat
+  #q
+    background: none
+    border: none
+    color: #aaa
+    &:focus
+      outline: none
+
+
+body#home     .nav li.home,
+body#blog     .nav li.blog,
+body#post     .nav li.blog,
+body#projects .nav li.projects,
+body#work     .nav li.work
+  border:
+    right: 1px solid #aaa
+    left: 1px solid #aaa
+    background: #333
+  background: #222 url(/images/line_tile.png)
+  a
+    color: #fff
+    text-decoration: none
+    padding:
+      left: 0
+      right: 0
+

@@ -1,0 +1,112 @@
+
+
+body#post .blog 
+  .metadata
+    color: #666
+    font-size: 80%
+    display: block
+    padding-bottom: 20px
+    margin-bottom: 20px
+    border-bottom: 1px solid #ededed
+  h2
+    margin-bottom: .4em
+  .footer
+    font-size: inherit
+    margin-bottom: 0
+    padding-bottom: 0
+    border-bottom: 0
+    &.alt
+      margin-top: 10px
+      padding-top: 20px
+      border-top: 1px solid #ededed
+
+.blog
+  .section
+    position: relative
+    margin: 25px -30px 0
+    padding: 0 30px
+    border-bottom: 1px solid #ededed
+
+.blog
+  .section
+    .header
+      padding: 5px 0 0
+      margin-bottom: 18px
+      &.link
+        font-size: 135%
+        letter-spacing: 0
+        a.title
+          text-decoration: underline
+        a.permalink
+          font-size: 95%
+          line-height: 120%
+          font-weight: bold
+          vertical-align: top
+          margin-top: 1px
+          color: #ccc !important
+          text-decoration: none
+          padding-left: 4px
+          &:hover
+            background: #aaa !important
+            color: #fff !important
+      a
+        text-decoration: none
+      a.title
+        padding: 0 4px 0 2px
+
+.blog
+  .section
+    .article
+      clear: left
+      p
+        font-size: 85%
+        line-height: 150%
+        color: #333
+        padding-bottom: 15px
+      img
+        border: none
+        &.left
+          +float("left")
+          margin-right: 15px
+          margin-bottom: 15px
+        &.right
+          +float("right")
+          margin-right: 15px
+          margin-bottom: 15px
+.blog
+  .section
+    .vr
+      display: inline-block
+      border-left: 1px solid #999
+      width: 0
+      margin: 0 4px
+      line-height: 120%
+
+.blog
+  .section
+    .footer
+      padding-top: 10px
+      padding-bottom: 35px
+      font-size: 80%
+      .comments_off
+        color: #666
+        font-size: 95%
+
+.blog.mini
+  background: url(/images/section_shadow_bg.png) repeat-x left 1px
+  padding: 1px 28px 0
+  margin: 0 -30px
+  .header
+    margin-top: 5px
+    margin-bottom: 20px
+
+#blog #page .section
+  &.alpha
+    padding-top: 0
+    margin-top: 0
+    .header
+      margin-top: 2px
+      padding-top: 0
+
+#post .blog .section
+  border-bottom: none
