@@ -61,7 +61,7 @@
         <div id="page">
           <div class="contents">
             <div class="blog">
-              <div class="alpha section">
+              <div class="section">
                 <h3 class="header">
                   <a class="title" href="/blog/2009/09/07/building-a-jekyll-watcher-with-fssm">Building a Jekyll Watcher with FSSM</a>
                 </h3>
@@ -73,6 +73,20 @@
                 </div>
               </div>
             </div>
+            <script type="text/javascript">
+              //<![CDATA[
+                (function() {
+                    var links = document.getElementsByTagName('a');
+                    var query = '?';
+                    for(var i = 0; i < links.length; i++) {
+                      if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+                      }
+                    }
+                    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/chriseppstein/get_num_replies.js' + query + '"></' + 'script>');
+                                })();
+              //]]>
+            </script>
           </div>
         </div>
         <div class="aside" id="sidebar">
@@ -139,8 +153,11 @@
     <div id="footer-wrapper">
       <div id="footer">
         <div class="bottom_nav">
-          <div class="contents">
+          <div class="back-to-top">
             <a class="ucase" href="#">&uarr; back to top</a>
+          </div>
+          <div class="view-site-style">
+            <a class="ucase" href="/highlighted/stylesheets/screen.sass.html">browse stylesheets</a>
           </div>
         </div>
         <div class="alone" id="foot_bottom">
@@ -163,19 +180,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      //<![CDATA[
-        (function() {
-            var links = document.getElementsByTagName('a');
-            var query = '?';
-            for(var i = 0; i < links.length; i++) {
-              if(links[i].href.indexOf('#disqus_thread') >= 0) {
-                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-              }
-            }
-            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/chriseppstein/get_num_replies.js' + query + '"></' + 'script>');
-          })();
-      //]]>
-    </script>
   </body>
 </html>

@@ -73,8 +73,6 @@ img a {
     padding: 5px 30px 0; }
   #page_bottom a {
     color: #666666;
-    padding: 2px;
-    margin: 0 -2px;
     /* Mozilla (FireFox, Camino) */
     -moz-border-radius: 3px;
     /* Webkit (Safari, Chrome) */
@@ -116,8 +114,6 @@ img a {
     font-size: 70%; }
     #footer .bottom_nav a {
       color: #aaaaaa;
-      padding: 2px;
-      margin: 0 -2px;
       /* Mozilla (FireFox, Camino) */
       -moz-border-radius: 3px;
       /* Webkit (Safari, Chrome) */
@@ -191,8 +187,6 @@ img a {
   margin-top: 15px; }
   #foot_bottom a {
     color: #999999;
-    padding: 2px;
-    margin: 0 -2px;
     /* Mozilla (FireFox, Camino) */
     -moz-border-radius: 3px;
     /* Webkit (Safari, Chrome) */
@@ -400,8 +394,6 @@ body#archives #page ul {
   padding-bottom: 15px; }
 body#archives #page a {
   color: #b3272d;
-  padding: 2px;
-  margin: 0 -2px;
   /* Mozilla (FireFox, Camino) */
   -moz-border-radius: 3px;
   /* Webkit (Safari, Chrome) */
@@ -532,8 +524,6 @@ body#post .blog .footer {
   border-bottom: 0 !important;
   text-decoration: underline !important;
   color: #5a9a41;
-  padding: 2px;
-  margin: 0 -2px;
   /* Mozilla (FireFox, Camino) */
   -moz-border-radius: 3px;
   /* Webkit (Safari, Chrome) */
@@ -615,8 +605,6 @@ body#work     .nav li.work {
 
 #page .header a {
   color: #444444;
-  padding: 2px;
-  margin: 0 -2px;
   /* Mozilla (FireFox, Camino) */
   -moz-border-radius: 3px;
   /* Webkit (Safari, Chrome) */
@@ -629,8 +617,6 @@ body#work     .nav li.work {
     text-decoration: none; }
 #page .article a, #page .footer a {
   color: #b3272d;
-  padding: 2px;
-  margin: 0 -2px;
   /* Mozilla (FireFox, Camino) */
   -moz-border-radius: 3px;
   /* Webkit (Safari, Chrome) */
@@ -676,8 +662,6 @@ body#projects #featured-project {
     line-height: 1.6em; }
   body#projects #featured-project a {
     color: #91d5f1;
-    padding: 2px;
-    margin: 0 -2px;
     /* Mozilla (FireFox, Camino) */
     -moz-border-radius: 3px;
     /* Webkit (Safari, Chrome) */
@@ -800,8 +784,6 @@ body#project #page .section {
 #sidebar .section .header a,
 #sidebar .section ul a {
   color: #b3272d;
-  padding: 2px;
-  margin: 0 -2px;
   /* Mozilla (FireFox, Camino) */
   -moz-border-radius: 3px;
   /* Webkit (Safari, Chrome) */
