@@ -6,7 +6,9 @@ bottom_nav: <a href="/blog/archives.html">&larr; Read more at the archives</a>
 ---
 .blog
   - site.posts.sort_by(&:date).reverse[0..9].each_with_index do |post,index|
-    .section{:class=>"#{(index==0 ? 'alpha' : (index==9 ? "omega" : nil))}"}
+    - if index > 0
+      %hr
+    .section
       - if post.data["link"]
         %h3.header.link
           = link_to(rp(post.title), post.data["link"], {:class=>"title"})
