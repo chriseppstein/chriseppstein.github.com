@@ -21,6 +21,6 @@ layout: nil
       %updated=post.date.xmlschema
       %id= full_url(post.id)
       %content(type="html")
-        = h(absolute_url(rp(post.content)))
+        =preserve h(absolute_url(rp(post.content)))
         - if post.data['link']
           = h("<p><a href='#{full_url(post.url)} title='permanent link to #{rp(post.title)}'> &infin; </a><p>")
