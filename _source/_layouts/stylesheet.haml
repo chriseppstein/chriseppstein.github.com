@@ -2,7 +2,7 @@
 %html{:xmlns=>"http://www.w3.org/1999/xhtml", "xml:lang"=>"en", :lang=>"en"}
   %head
     %meta{:content=>"text/html; charset=utf-8", "http-equiv"=>"Content-Type"}
-    %title= page.title
+    %title= "#{page.title} | Sass Stylesheet"
     - if page.respond_to? :description
       %meta{:name=>"description", :content=>page.description}/
     - if page.respond_to? :keywords
@@ -47,7 +47,8 @@
       #content
         #page
           .contents
-            = content
+            %h1= page.title
+            .editor.window=preserve content
         #sidebar.aside
           - if !page.respond_to?(:empty_sidebar)
             #about-me.section
@@ -94,8 +95,10 @@
     #footer-wrapper
       #footer
         .bottom_nav
-          .contents
+          .back-to-top
             %a.ucase(href="#") &uarr; back to top
+          .view-site-style
+            %a.ucase(href="/highlighted/stylesheets/screen.sass.html") browse stylesheets
         #foot_bottom.alone
           %a.affiliate.compass(href="http://compass-style.org" title="Styled with Compass")
             Styled with Compass

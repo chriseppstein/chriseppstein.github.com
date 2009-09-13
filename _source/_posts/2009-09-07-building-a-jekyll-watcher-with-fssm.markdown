@@ -15,7 +15,7 @@ steps required to build your own watcher here.
 
 ### Install FSSM
 
-<pre class="console"><span class="prompt">~</span> <span class="stdin">sudo gem install ttilley-fssm</span>
+<pre class="console window"><span class="prompt">~</span> <span class="stdin">sudo gem install ttilley-fssm</span>
 <span class="stdout">Password:
 Successfully installed ttilley-fssm-0.0.6
 1 gem installed
@@ -27,6 +27,7 @@ Installing RDoc documentation for ttilley-fssm-0.0.6...</span>
 
 This update function uses pipes because I wanted to see the output as it was emitted.
 
+<div class="editor window">
 {% highlight ruby %}
 def rebuild_site(relative)
   puts ">>> Change Detected to: #{relative} <<<"
@@ -36,9 +37,11 @@ def rebuild_site(relative)
   puts '>>> Update Complete <<<'
 end
 {% endhighlight %}
+</div>
 
 ### Create a Watch Task
 
+<div class="editor window">
 {% highlight ruby %}
 desc "Watch the site and regenerate when it changes"
 task :watch do
@@ -51,11 +54,12 @@ task :watch do
   end
 end
 {% endhighlight %}
+</div>
 
 
 ### Invoke It
 
-<pre class="console"><span class="prompt">~/Projects/chriseppstein.github.com</span> <span class="stdin">rake watch</span>
+<pre class="console window"><span class="prompt">~/Projects/chriseppstein.github.com</span> <span class="stdin">rake watch</span>
 <span class="stdout">(in /Users/chris/Projects/chriseppstein.github.com)
 >>> Watching for Changes &lt;&lt;&lt;</span>
 </pre>

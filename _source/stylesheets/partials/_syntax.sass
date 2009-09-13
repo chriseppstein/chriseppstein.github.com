@@ -1,10 +1,20 @@
 // based on: http://github.com/mojombo/tpw/raw/master/css/syntax.css
+.editor
+  background: rgb(0,22,41)
+  line-height: 1.25
+.window
+  border: #aaa ridge 6px
+  overflow-x: auto
+  td.linenos
+    color: #777
+    background-color: #ccc
+    padding: 0 0.5em
+
 pre.console
   background-color: black
   color= lighten(#008000, 25)
-  padding: 0.5em
   letter-spacing: 1px
-  border: #aaa ridge 6px
+  padding: 0.5em
   .prompt
     color= lighten(#000080, 50)
     &:before
@@ -18,10 +28,8 @@ pre.console
     color= lighten(#008000, 75)
 
 .highlight
-  background: rgb(0,22,41)
-  line-height: 1.25
   padding: 0.5em
-  border: #aaa ridge 6px
+  color: white
   // Comment
   .c
     color: #999988
@@ -144,7 +152,7 @@ pre.console
     color: #555555
   // Name.Tag
   .nt
-    color: #000080
+    color: white
   // Name.Variable
   .nv
     color: #008080
@@ -154,6 +162,9 @@ pre.console
   // Text.Whitespace
   .w
     color: #bbbbbb
+  // Literal.Number
+  .nl
+    color: rgb(255, 98, 140)
   // Literal.Number.Float
   .mf
     color: rgb(255, 98, 140)

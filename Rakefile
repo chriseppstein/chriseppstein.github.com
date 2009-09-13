@@ -33,7 +33,7 @@ task :generate => :clean do
 end
 
 desc "build and commit the website in the master branch"
-task :build => :generate do
+task :build => [:generate, :"sass:highlight"] do
   require 'git'
   repo = Git.open('.')
   repo.branch("master").checkout
@@ -91,4 +91,60 @@ task :watch do
     delete {|base, relative| rebuild_site(relative)}
     create {|base, relative| rebuild_site(relative)}
   end
+end
+
+def departialize(target)
+  if (bn = File.basename(target))[0..0] == "_"
+    target = File.join(File.dirname(target), bn[1..-1])
+  end
+  target
+end
+
+namespace :sass do
+  desc "Generate syntax highlight files for sass files in this project."
+  task :pygmentize do
+    sass_files = FileList.new('_source/stylesheets/**/*.sass')
+    sass_files.each do |file|
+      target = departialize(file.gsub("_source/stylesheets", "_source/highlighted/stylesheets")+".html")
+      FileUtils.mkdir_p(File.dirname(target))
+      puts "Writing #{target}"
+      open(target, "w") do |f|
+        f.puts %Q{---
+layout: stylesheet
+body_id: stylesheet
+title: "#{file[7..-1]}"
+---}
+      end
+      sh "pygmentize -O linenos=table -f html #{file} >> #{target}"
+    end
+  end
+
+  desc "Make import directives link to the corresponding syntax hightlighted sass file."
+  task :link_imports => :pygmentize do
+    require 'hpricot'
+    require 'sass'
+    hightlight_files = FileList.new('_source/highlighted/stylesheets/**/*.sass.html')
+    hightlight_files.each do |file|
+      puts "Adding links to #{file}"
+      doc = open(file) {|f| Hpricot(f.read) }
+      doc.search("span.nn") do |span|
+        puts "Checking if #{span.inner_text} exists."
+        local_dir = "_source/stylesheets/#{File.dirname(file)[32..-1]}"
+        puts "local_dir is #{local_dir}"
+        begin
+          full_path = Sass::Files.find_file_to_import(span.inner_text, ["_source/stylesheets", local_dir])
+          puts "Found #{span.inner_text} at #{full_path}"
+          wrapped = span.make(%Q{<a class="import" href="/highlighted/#{departialize(full_path[8..-1])}.html">#{span}</a>})
+          span.parent.replace_child(span, wrapped)
+        rescue Sass::SyntaxError
+          #pass
+        end
+      end
+      open(file, 'w') do |file|
+        file.write doc.to_s
+      end
+    end
+  end
+
+  task :highlight => :link_imports
 end
