@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>/stylesheets/partials/design/_header.sass | Sass Stylesheet</title>
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/blog/atom.xml" rel="alternate" title="#chris-eppstein {position: unique;}" type="application/atom+xml" />
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+        google.load("jquery", "1.3.2");
+      //]]>
+    </script>
+    <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
+    <script src="/javascripts/site.js" type="text/javascript"></script>
+  </head>
+  <body id="stylesheet">
+    <div id="header-wrapper">
+      <div id="header">
+        <div class="title highlight">
+          <h1 class="n">#chris-eppstein</h1>
+          <h2>&nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span></h2>
+        </div>
+        <div class="nav">
+          <ul>
+            <li class="home">
+              <a href="/" title="Home">Home</a>
+            </li>
+            <li class="blog">
+              <a href="/blog/" title="Blog">Blog</a>
+            </li>
+            <li class="projects">
+              <a href="/projects/" title="Projects">Projects</a>
+            </li>
+            <li class="work">
+              <a href="/work/" title="Work">Work</a>
+            </li>
+          </ul>
+        </div>
+        <div class="aside">
+          <div id="search">
+            <form action="http://www.google.com/cse" id="cse-search-box">
+              <input name="cx" type="hidden" value="010456759155788273473:m_ld19wftd4" />
+              <input name="ie" type="hidden" value="UTF-8" />
+              <input id="q" name="q" type="text" />
+              <!-- %input(type="submit" name="sa" value="Search") -->
+            </form>
+          </div>
+          <div id="blog-links">
+            <a href="/blog/atom.xml" id="rss" title="subscribe">
+              <img src="/images/rss.png" />
+              <span>Subscribe</span>
+            </a>
+            <a href="/blog/archives.html" id="archive" title="blog archive">Blog Archive</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content-wrapper">
+      <div id="content">
+        <div id="page">
+          <div class="contents">
+            <h1>/stylesheets/partials/design/_header.sass</h1>
+            <div class="editor window"><table class="highlighttable"><tr><td class="linenos"><pre> 1&#x000A; 2&#x000A; 3&#x000A; 4&#x000A; 5&#x000A; 6&#x000A; 7&#x000A; 8&#x000A; 9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40&#x000A;41&#x000A;42&#x000A;43&#x000A;44&#x000A;45&#x000A;46&#x000A;47&#x000A;48&#x000A;49&#x000A;50&#x000A;51&#x000A;52&#x000A;53&#x000A;54&#x000A;55&#x000A;56</pre></td><td class="code"><div class="highlight"><pre><span class="nl">#header-wrapper</span>&#x000A;  <span class="nt">background</span><span class="o">:</span> <span class="nl">#1c1c1c</span>&#x000A;&#x000A;<span class="nl">#header</span>&#x000A;  <span class="nt">color</span><span class="o">:</span> <span class="nl">#fff</span>&#x000A;  <span class="nt">background</span><span class="o">:</span> <span class="nt">url</span><span class="p">(</span><span class="o">/</span><span class="nt">images</span><span class="o">/</span><span class="nt">page_top</span><span class="nc">.png</span><span class="o">)</span> <span class="nt">no-repeat</span> <span class="nt">bottom</span> <span class="nt">left</span>&#x000A;  <span class="nc">.nav</span> <span class="nt">a</span>&#x000A;    <span class="nf">+link-colors</span><span class="p">(</span><span class="nl">#ccc</span><span class="o">,</span> <span class="nl">#fff</span><span class="p">)</span>&#x000A;    <span class="nf">+hover-link</span>&#x000A;  <span class="nc">.title</span>&#x000A;    <span class="nt">background</span><span class="o">:</span> <span class="nt">inherit</span>&#x000A;    <span class="nt">line-height</span><span class="o">:</span> <span class="nt">1</span>&#x000A;    <span class="nt">padding</span><span class="o">:</span> <span class="nt">0</span>&#x000A;    <span class="nt">border</span><span class="o">:</span> <span class="nt">none</span>&#x000A;&#x000A;<span class="nl">#header</span>&#x000A;  <span class="nl">#blog-links</span>&#x000A;    <span class="nt">a</span>&#x000A;      <span class="nt">color</span><span class="o">:</span> <span class="nl">#999</span>&#x000A;      <span class="nd">&amp;:hover</span>&#x000A;        <span class="nt">color</span><span class="o">:</span> <span class="nl">#fff</span>&#x000A;    <span class="nl">#rss</span>&#x000A;      <span class="nd">&amp;:hover</span> <span class="nt">img</span>&#x000A;        <span class="nf">+opacity</span><span class="p">(</span><span class="nt">1</span><span class="p">)</span>&#x000A;      <span class="nt">img</span>&#x000A;        <span class="nt">vertical-align</span><span class="o">:</span> <span class="nt">-30</span><span class="o">%</span>&#x000A;        <span class="nt">margin-right</span><span class="o">:</span> <span class="nt">2px</span>&#x000A;        <span class="nf">+opacity</span><span class="p">(</span><span class="nc">.7</span><span class="p">)</span>&#x000A;&#x000A;<span class="nl">#search</span>&#x000A;  <span class="nt">form</span>&#x000A;    <span class="nt">background</span><span class="o">:</span> <span class="nt">url</span><span class="p">(</span><span class="o">/</span><span class="nt">images</span><span class="o">/</span><span class="nt">search_bg</span><span class="nc">.png</span><span class="o">)</span> <span class="nt">no-repeat</span>&#x000A;  <span class="nl">#q</span>&#x000A;    <span class="nt">background</span><span class="o">:</span> <span class="nt">none</span>&#x000A;    <span class="nt">border</span><span class="o">:</span> <span class="nt">none</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#aaa</span>&#x000A;    <span class="nd">&amp;:focus</span>&#x000A;      <span class="nt">outline</span><span class="o">:</span> <span class="nt">none</span>&#x000A;&#x000A;&#x000A;<span class="nt">body</span><span class="nl">#home</span>     <span class="nc">.nav</span> <span class="nt">li</span><span class="nc">.home</span><span class="o">,</span>&#x000A;<span class="nt">body</span><span class="nl">#blog</span>     <span class="nc">.nav</span> <span class="nt">li</span><span class="nc">.blog</span><span class="o">,</span>&#x000A;<span class="nt">body</span><span class="nl">#post</span>     <span class="nc">.nav</span> <span class="nt">li</span><span class="nc">.blog</span><span class="o">,</span>&#x000A;<span class="nt">body</span><span class="nl">#projects</span> <span class="nc">.nav</span> <span class="nt">li</span><span class="nc">.projects</span><span class="o">,</span>&#x000A;<span class="nt">body</span><span class="nl">#work</span>     <span class="nc">.nav</span> <span class="nt">li</span><span class="nc">.work</span>&#x000A;  <span class="nt">border</span><span class="o">:</span>&#x000A;    <span class="nt">right</span><span class="o">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nl">#aaa</span>&#x000A;    <span class="nt">left</span><span class="o">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nl">#aaa</span>&#x000A;    <span class="nt">background</span><span class="o">:</span> <span class="nl">#333</span>&#x000A;  <span class="nt">background</span><span class="o">:</span> <span class="nl">#222</span> <span class="nt">url</span><span class="p">(</span><span class="o">/</span><span class="nt">images</span><span class="o">/</span><span class="nt">line_tile</span><span class="nc">.png</span><span class="p">)</span>&#x000A;  <span class="nt">a</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#fff</span>&#x000A;    <span class="nt">text-decoration</span><span class="o">:</span> <span class="nt">none</span>&#x000A;    <span class="nt">padding</span><span class="o">:</span>&#x000A;      <span class="nt">left</span><span class="o">:</span> <span class="nt">0</span>&#x000A;      <span class="nt">right</span><span class="o">:</span> <span class="nt">0</span>&#x000A;</pre></div>&#x000A;</td></tr></table></div>
+          </div>
+        </div>
+        <div class="aside" id="sidebar">
+          <div class="section" id="about-me">
+            <h3>About Me</h3>
+            <img class="avatar" src="http://www.gravatar.com/avatar/b0ceed615487ddf041bb0d1cf24a98b0.png" />
+            <p>I'm the Software Architect at <a href="http://www.caring.com/">Caring.com</a>,
+            a website devoted to caregivers of the sick and elderly.
+            I live in San Jose, California with my wife and our 4 year old daughter.</p>
+          </div>
+          <div class="section">
+            <h3>Open Source</h3>
+            <p>I'm the creator of <a href="http://compass-style.org/">Compass</a>, a stylesheet authoring framework
+            and I'm on the core team of
+            <a href="http://sass-lang.com/">Sass</a> &mdash; the stylesheet syntax upon which Compass is built.
+            I maintain about a dozen less well known ruby libraries and rails plugins on
+            <a href="http://github.com/chriseppstein">github</a>,
+            and am an active contributor of patches to the many open source projects that I use.</p>
+          </div>
+          <div class="section" id="twitter">
+            <div class="header">
+              <h3 style="display: inline-block">Twitter</h3>
+              <span>
+                <a href="http://twitter.com/chriseppstein">@chriseppstein</a>
+              </span>
+            </div>
+            <div class="tweet"></div>
+            <p class="follow">
+              <img src="/images/twitter_bird.png" />
+            </p>
+          </div>
+          <div class="section omega">
+            <ol id="social">
+              <li>
+                <a class="twitter" href="http://twitter.com/chriseppstein" title="Follow me on Twitter">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a class="github" href="http://github.com/chriseppstein" title="My Github profile">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a class="facebook" href="http://facebook.com/chriseppstein" title="My Facebook profile">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a class="linkedin" href="http://www.linkedin.com/in/chriseppstein" title="My Linked-in profile">
+                  Linked-in
+                </a>
+              </li>
+              <li>
+                <a class="delicious" href="http://delicious.com/chriseppstein/" title="My Delicious links">
+                  Delicious
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-wrapper">
+      <div id="footer">
+        <div class="bottom_nav">
+          <div class="back-to-top">
+            <a class="ucase" href="#">&uarr; back to top</a>
+          </div>
+          <div class="view-site-style">
+            <a class="ucase" href="/highlighted/stylesheets/screen.sass.html">browse stylesheets</a>
+          </div>
+        </div>
+        <div class="alone" id="foot_bottom">
+          <a class="affiliate compass" href="http://compass-style.org" title="Styled with Compass">
+            Styled with Compass
+          </a>
+          <h6>
+            Powered by
+            <a href="http://jekyllrb.com/">Jekyll</a>
+            and
+            <a href="http://www.oddbird.net/susy/">Susy</a>
+          </h6>
+          <div class="legalese">
+            &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
+          </div>
+          <div class="credits">
+            &ndash; with help and inspiration from
+            <a href="http://github.com/imathis">Brandon Mathis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

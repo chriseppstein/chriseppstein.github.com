@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>/stylesheets/partials/_syntax.sass | Sass Stylesheet</title>
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/blog/atom.xml" rel="alternate" title="#chris-eppstein {position: unique;}" type="application/atom+xml" />
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+        google.load("jquery", "1.3.2");
+      //]]>
+    </script>
+    <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
+    <script src="/javascripts/site.js" type="text/javascript"></script>
+  </head>
+  <body id="stylesheet">
+    <div id="header-wrapper">
+      <div id="header">
+        <div class="title highlight">
+          <h1 class="n">#chris-eppstein</h1>
+          <h2>&nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span></h2>
+        </div>
+        <div class="nav">
+          <ul>
+            <li class="home">
+              <a href="/" title="Home">Home</a>
+            </li>
+            <li class="blog">
+              <a href="/blog/" title="Blog">Blog</a>
+            </li>
+            <li class="projects">
+              <a href="/projects/" title="Projects">Projects</a>
+            </li>
+            <li class="work">
+              <a href="/work/" title="Work">Work</a>
+            </li>
+          </ul>
+        </div>
+        <div class="aside">
+          <div id="search">
+            <form action="http://www.google.com/cse" id="cse-search-box">
+              <input name="cx" type="hidden" value="010456759155788273473:m_ld19wftd4" />
+              <input name="ie" type="hidden" value="UTF-8" />
+              <input id="q" name="q" type="text" />
+              <!-- %input(type="submit" name="sa" value="Search") -->
+            </form>
+          </div>
+          <div id="blog-links">
+            <a href="/blog/atom.xml" id="rss" title="subscribe">
+              <img src="/images/rss.png" />
+              <span>Subscribe</span>
+            </a>
+            <a href="/blog/archives.html" id="archive" title="blog archive">Blog Archive</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content-wrapper">
+      <div id="content">
+        <div id="page">
+          <div class="contents">
+            <h1>/stylesheets/partials/_syntax.sass</h1>
+            <div class="editor window"><table class="highlighttable"><tr><td class="linenos"><pre>  1&#x000A;  2&#x000A;  3&#x000A;  4&#x000A;  5&#x000A;  6&#x000A;  7&#x000A;  8&#x000A;  9&#x000A; 10&#x000A; 11&#x000A; 12&#x000A; 13&#x000A; 14&#x000A; 15&#x000A; 16&#x000A; 17&#x000A; 18&#x000A; 19&#x000A; 20&#x000A; 21&#x000A; 22&#x000A; 23&#x000A; 24&#x000A; 25&#x000A; 26&#x000A; 27&#x000A; 28&#x000A; 29&#x000A; 30&#x000A; 31&#x000A; 32&#x000A; 33&#x000A; 34&#x000A; 35&#x000A; 36&#x000A; 37&#x000A; 38&#x000A; 39&#x000A; 40&#x000A; 41&#x000A; 42&#x000A; 43&#x000A; 44&#x000A; 45&#x000A; 46&#x000A; 47&#x000A; 48&#x000A; 49&#x000A; 50&#x000A; 51&#x000A; 52&#x000A; 53&#x000A; 54&#x000A; 55&#x000A; 56&#x000A; 57&#x000A; 58&#x000A; 59&#x000A; 60&#x000A; 61&#x000A; 62&#x000A; 63&#x000A; 64&#x000A; 65&#x000A; 66&#x000A; 67&#x000A; 68&#x000A; 69&#x000A; 70&#x000A; 71&#x000A; 72&#x000A; 73&#x000A; 74&#x000A; 75&#x000A; 76&#x000A; 77&#x000A; 78&#x000A; 79&#x000A; 80&#x000A; 81&#x000A; 82&#x000A; 83&#x000A; 84&#x000A; 85&#x000A; 86&#x000A; 87&#x000A; 88&#x000A; 89&#x000A; 90&#x000A; 91&#x000A; 92&#x000A; 93&#x000A; 94&#x000A; 95&#x000A; 96&#x000A; 97&#x000A; 98&#x000A; 99&#x000A;100&#x000A;101&#x000A;102&#x000A;103&#x000A;104&#x000A;105&#x000A;106&#x000A;107&#x000A;108&#x000A;109&#x000A;110&#x000A;111&#x000A;112&#x000A;113&#x000A;114&#x000A;115&#x000A;116&#x000A;117&#x000A;118&#x000A;119&#x000A;120&#x000A;121&#x000A;122&#x000A;123&#x000A;124&#x000A;125&#x000A;126&#x000A;127&#x000A;128&#x000A;129&#x000A;130&#x000A;131&#x000A;132&#x000A;133&#x000A;134&#x000A;135&#x000A;136&#x000A;137&#x000A;138&#x000A;139&#x000A;140&#x000A;141&#x000A;142&#x000A;143&#x000A;144&#x000A;145&#x000A;146&#x000A;147&#x000A;148&#x000A;149&#x000A;150&#x000A;151&#x000A;152&#x000A;153&#x000A;154&#x000A;155&#x000A;156&#x000A;157&#x000A;158&#x000A;159&#x000A;160&#x000A;161&#x000A;162&#x000A;163&#x000A;164&#x000A;165&#x000A;166&#x000A;167&#x000A;168&#x000A;169&#x000A;170&#x000A;171&#x000A;172&#x000A;173&#x000A;174&#x000A;175&#x000A;176&#x000A;177&#x000A;178&#x000A;179&#x000A;180&#x000A;181&#x000A;182&#x000A;183&#x000A;184&#x000A;185&#x000A;186&#x000A;187&#x000A;188&#x000A;189&#x000A;190&#x000A;191&#x000A;192&#x000A;193&#x000A;194&#x000A;195&#x000A;196&#x000A;197&#x000A;198&#x000A;199&#x000A;200&#x000A;201&#x000A;202&#x000A;203&#x000A;204&#x000A;205&#x000A;206&#x000A;207&#x000A;208&#x000A;209&#x000A;210&#x000A;211&#x000A;212&#x000A;213&#x000A;214&#x000A;215&#x000A;216&#x000A;217&#x000A;218&#x000A;219&#x000A;220&#x000A;221&#x000A;222&#x000A;223&#x000A;224&#x000A;225&#x000A;226&#x000A;227</pre></td><td class="code"><div class="highlight"><pre><span class="c">// based on: http://github.com/mojombo/tpw/raw/master/css/syntax.css</span>&#x000A;<span class="nc">.editor</span>&#x000A;  <span class="nt">background</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">22</span><span class="o">,</span><span class="nt">41</span><span class="p">)</span>&#x000A;  <span class="nt">line-height</span><span class="o">:</span> <span class="nt">1</span><span class="nc">.25</span>&#x000A;<span class="nc">.window</span>&#x000A;  <span class="nt">border</span><span class="o">:</span> <span class="nl">#aaa</span> <span class="nt">ridge</span> <span class="nt">6px</span>&#x000A;  <span class="nt">overflow-x</span><span class="o">:</span> <span class="nt">auto</span>&#x000A;  <span class="nt">td</span><span class="nc">.linenos</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#777</span>&#x000A;    <span class="nt">background-color</span><span class="o">:</span> <span class="nl">#ccc</span>&#x000A;    <span class="nt">padding</span><span class="o">:</span> <span class="nt">0</span> <span class="nt">0</span><span class="nc">.5em</span>&#x000A;&#x000A;<span class="nt">pre</span><span class="nc">.console</span>&#x000A;  <span class="nt">background-color</span><span class="o">:</span> <span class="nt">black</span>&#x000A;  <span class="nt">color</span><span class="o">=</span> <span class="nt">lighten</span><span class="p">(</span><span class="nl">#008000</span><span class="o">,</span> <span class="nt">25</span><span class="p">)</span>&#x000A;  <span class="nt">letter-spacing</span><span class="o">:</span> <span class="nt">1px</span>&#x000A;  <span class="nt">padding</span><span class="o">:</span> <span class="nt">0</span><span class="nc">.5em</span>&#x000A;  <span class="nc">.prompt</span>&#x000A;    <span class="nt">color</span><span class="o">=</span> <span class="nt">lighten</span><span class="p">(</span><span class="nl">#000080</span><span class="o">,</span> <span class="nt">50</span><span class="p">)</span>&#x000A;    <span class="nd">&amp;:before</span>&#x000A;      <span class="o">:</span><span class="k">color</span> <span class="nb">white</span>&#x000A;      <span class="nt">content</span><span class="o">:</span> <span class="s2">&quot;[&quot;</span>&#x000A;    <span class="nd">&amp;:after</span>&#x000A;      <span class="o">:</span><span class="k">color</span> <span class="nb">white</span>&#x000A;      <span class="nt">content</span><span class="o">:</span> <span class="s2">&quot;]&quot;</span>&#x000A;  <span class="nc">.stdin</span>&#x000A;    <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">bold</span>&#x000A;    <span class="nt">color</span><span class="o">=</span> <span class="nt">lighten</span><span class="p">(</span><span class="nl">#008000</span><span class="o">,</span> <span class="nt">75</span><span class="p">)</span>&#x000A;&#x000A;<span class="nc">.highlight</span>&#x000A;  <span class="nt">padding</span><span class="o">:</span> <span class="nt">0</span><span class="nc">.5em</span>&#x000A;  <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Comment</span>&#x000A;  <span class="nc">.c</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#999988</span>&#x000A;    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span>&#x000A;  <span class="c">// Error</span>&#x000A;  <span class="nc">.err</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#a61717</span>&#x000A;    <span class="nt">background-color</span><span class="o">:</span> <span class="nl">#e3d2d2</span>&#x000A;  <span class="c">// Name</span>&#x000A;  <span class="nc">.n</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Keyword</span>&#x000A;  <span class="nc">.k</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">157</span><span class="o">,</span> <span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Paren</span>&#x000A;  <span class="nc">.p</span>&#x000A;    <span class="nt">color</span><span class="o">=</span> <span class="nt">darken</span><span class="p">(</span><span class="nl">#FF9D00</span><span class="o">,</span> <span class="nt">33</span><span class="p">)</span>&#x000A;  <span class="c">// Operator</span>&#x000A;  <span class="nc">.o</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">157</span><span class="o">,</span> <span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Comment.Multiline</span>&#x000A;  <span class="nc">.cm</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#999988</span>&#x000A;    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span>&#x000A;  <span class="c">// Comment.Preproc</span>&#x000A;  <span class="nc">.cp</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#999999</span>&#x000A;  <span class="c">// Comment.Single</span>&#x000A;  <span class="nc">.c1</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#999988</span>&#x000A;    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span>&#x000A;  <span class="c">// Comment.Special</span>&#x000A;  <span class="nc">.cs</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#999999</span>&#x000A;    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span>&#x000A;  <span class="c">// Generic.Deleted</span>&#x000A;  <span class="nc">.gd</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#000000</span>&#x000A;    <span class="nt">background-color</span><span class="o">:</span> <span class="nl">#ffdddd</span>&#x000A;  <span class="c">// Generic.Deleted.Specific</span>&#x000A;  <span class="nc">.gd</span> <span class="nc">.x</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#000000</span>&#x000A;    <span class="nt">background-color</span><span class="o">:</span> <span class="nl">#ffaaaa</span>&#x000A;  <span class="c">// Generic.Emph</span>&#x000A;  <span class="nc">.ge</span>&#x000A;    <span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span>&#x000A;  <span class="c">// Generic.Error</span>&#x000A;  <span class="nc">.gr</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#aa0000</span>&#x000A;  <span class="c">// Generic.Heading</span>&#x000A;  <span class="nc">.gh</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#999999</span>&#x000A;  <span class="c">// Generic.Inserted</span>&#x000A;  <span class="nc">.gi</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#000000</span>&#x000A;    <span class="nt">background-color</span><span class="o">:</span> <span class="nl">#ddffdd</span>&#x000A;  <span class="c">// Generic.Inserted.Specific</span>&#x000A;  <span class="nc">.gi</span> <span class="nc">.x</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#000000</span>&#x000A;    <span class="nt">background-color</span><span class="o">:</span> <span class="nl">#aaffaa</span>&#x000A;  <span class="c">// Generic.Output</span>&#x000A;  <span class="nc">.go</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#888888</span>&#x000A;  <span class="c">// Generic.Prompt</span>&#x000A;  <span class="nc">.gp</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#555555</span>&#x000A;  <span class="c">// Generic.Strong</span>&#x000A;  <span class="nc">.gs</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Generic.Subheading</span>&#x000A;  <span class="nc">.gu</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#aaaaaa</span>&#x000A;  <span class="c">// Generic.Traceback</span>&#x000A;  <span class="nc">.gt</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#aa0000</span>&#x000A;  <span class="c">// Keyword.Constant</span>&#x000A;  <span class="nc">.kc</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Keyword.Declaration</span>&#x000A;  <span class="nc">.kd</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Keyword.Pseudo</span>&#x000A;  <span class="nc">.kp</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Keyword.Reserved</span>&#x000A;  <span class="nc">.kr</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Keyword.Type</span>&#x000A;  <span class="nc">.kt</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#445588</span>&#x000A;  <span class="c">// Literal.Number</span>&#x000A;  <span class="nc">.m</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String</span>&#x000A;  <span class="nc">.s</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#d14</span>&#x000A;  <span class="c">// Name.Attribute</span>&#x000A;  <span class="nc">.na</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#008080</span>&#x000A;  <span class="c">// Name.Builtin</span>&#x000A;  <span class="nc">.nb</span>&#x000A;    <span class="nt">color</span><span class="o">=</span> <span class="nt">darken</span><span class="p">(</span><span class="nt">rgb</span><span class="p">(</span><span class="nt">128</span><span class="o">,</span> <span class="nt">255</span><span class="o">,</span> <span class="nt">187</span><span class="o">),</span> <span class="nt">20</span><span class="p">)</span>&#x000A;  <span class="c">// Name.Class</span>&#x000A;  <span class="nc">.nc</span>&#x000A;    <span class="nt">color</span><span class="o">=</span> <span class="nt">darken</span><span class="p">(</span><span class="nt">rgb</span><span class="p">(</span><span class="nt">128</span><span class="o">,</span> <span class="nt">255</span><span class="o">,</span> <span class="nt">187</span><span class="o">),</span> <span class="nt">20</span><span class="p">)</span>&#x000A;  <span class="c">// Name.Constant</span>&#x000A;  <span class="nc">.no</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">128</span><span class="o">,</span> <span class="nt">255</span><span class="o">,</span> <span class="nt">187</span><span class="p">)</span>&#x000A;  <span class="c">// Name.Entity</span>&#x000A;  <span class="nc">.ni</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#800080</span>&#x000A;  <span class="c">// Name.Exception</span>&#x000A;  <span class="nc">.ne</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">221</span><span class="o">,</span> <span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Name.Function</span>&#x000A;  <span class="nc">.nf</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">221</span><span class="o">,</span> <span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Name.Namespace</span>&#x000A;  <span class="nc">.nn</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#555555</span>&#x000A;  <span class="c">// Name.Tag</span>&#x000A;  <span class="nc">.nt</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Name.Variable</span>&#x000A;  <span class="nc">.nv</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#008080</span>&#x000A;  <span class="c">// Operator.Word</span>&#x000A;  <span class="nc">.ow</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">white</span>&#x000A;  <span class="c">// Text.Whitespace</span>&#x000A;  <span class="nc">.w</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#bbbbbb</span>&#x000A;  <span class="c">// Literal.Number</span>&#x000A;  <span class="nc">.nl</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.Number.Float</span>&#x000A;  <span class="nc">.mf</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.Number.Hex</span>&#x000A;  <span class="nc">.mh</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.Number.Integer</span>&#x000A;  <span class="nc">.mi</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.Number.Oct</span>&#x000A;  <span class="nc">.mo</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Backtick</span>&#x000A;  <span class="nc">.sb</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Char</span>&#x000A;  <span class="nc">.sc</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Doc</span>&#x000A;  <span class="nc">.sd</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Double</span>&#x000A;  <span class="nc">.s2</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Escape</span>&#x000A;  <span class="nc">.se</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Heredoc</span>&#x000A;  <span class="nc">.sh</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Interpol</span>&#x000A;  <span class="nc">.si</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">158</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">128</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Other</span>&#x000A;  <span class="nc">.sx</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Regex</span>&#x000A;  <span class="nc">.sr</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#009926</span>&#x000A;  <span class="c">// Literal.String.Single</span>&#x000A;  <span class="nc">.s1</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">58</span><span class="o">,</span><span class="nt">217</span><span class="o">,</span><span class="nt">0</span><span class="p">)</span>&#x000A;  <span class="c">// Literal.String.Symbol</span>&#x000A;  <span class="nc">.ss</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;  <span class="c">// Name.Builtin.Pseudo</span>&#x000A;  <span class="nc">.bp</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#999999</span>&#x000A;  <span class="c">// Name.Variable.Class</span>&#x000A;  <span class="nc">.vc</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#008080</span>&#x000A;  <span class="c">// Name.Variable.Global</span>&#x000A;  <span class="nc">.vg</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#008080</span>&#x000A;  <span class="c">// Name.Variable.Instance</span>&#x000A;  <span class="nc">.vi</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nl">#008080</span>&#x000A;  <span class="c">// Literal.Number.Integer.Long</span>&#x000A;  <span class="nc">.il</span>&#x000A;    <span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="p">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">98</span><span class="o">,</span> <span class="nt">140</span><span class="p">)</span>&#x000A;</pre></div>&#x000A;</td></tr></table></div>
+          </div>
+        </div>
+        <div class="aside" id="sidebar">
+          <div class="section" id="about-me">
+            <h3>About Me</h3>
+            <img class="avatar" src="http://www.gravatar.com/avatar/b0ceed615487ddf041bb0d1cf24a98b0.png" />
+            <p>I'm the Software Architect at <a href="http://www.caring.com/">Caring.com</a>,
+            a website devoted to caregivers of the sick and elderly.
+            I live in San Jose, California with my wife and our 4 year old daughter.</p>
+          </div>
+          <div class="section">
+            <h3>Open Source</h3>
+            <p>I'm the creator of <a href="http://compass-style.org/">Compass</a>, a stylesheet authoring framework
+            and I'm on the core team of
+            <a href="http://sass-lang.com/">Sass</a> &mdash; the stylesheet syntax upon which Compass is built.
+            I maintain about a dozen less well known ruby libraries and rails plugins on
+            <a href="http://github.com/chriseppstein">github</a>,
+            and am an active contributor of patches to the many open source projects that I use.</p>
+          </div>
+          <div class="section" id="twitter">
+            <div class="header">
+              <h3 style="display: inline-block">Twitter</h3>
+              <span>
+                <a href="http://twitter.com/chriseppstein">@chriseppstein</a>
+              </span>
+            </div>
+            <div class="tweet"></div>
+            <p class="follow">
+              <img src="/images/twitter_bird.png" />
+            </p>
+          </div>
+          <div class="section omega">
+            <ol id="social">
+              <li>
+                <a class="twitter" href="http://twitter.com/chriseppstein" title="Follow me on Twitter">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a class="github" href="http://github.com/chriseppstein" title="My Github profile">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a class="facebook" href="http://facebook.com/chriseppstein" title="My Facebook profile">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a class="linkedin" href="http://www.linkedin.com/in/chriseppstein" title="My Linked-in profile">
+                  Linked-in
+                </a>
+              </li>
+              <li>
+                <a class="delicious" href="http://delicious.com/chriseppstein/" title="My Delicious links">
+                  Delicious
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-wrapper">
+      <div id="footer">
+        <div class="bottom_nav">
+          <div class="back-to-top">
+            <a class="ucase" href="#">&uarr; back to top</a>
+          </div>
+          <div class="view-site-style">
+            <a class="ucase" href="/highlighted/stylesheets/screen.sass.html">browse stylesheets</a>
+          </div>
+        </div>
+        <div class="alone" id="foot_bottom">
+          <a class="affiliate compass" href="http://compass-style.org" title="Styled with Compass">
+            Styled with Compass
+          </a>
+          <h6>
+            Powered by
+            <a href="http://jekyllrb.com/">Jekyll</a>
+            and
+            <a href="http://www.oddbird.net/susy/">Susy</a>
+          </h6>
+          <div class="legalese">
+            &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
+          </div>
+          <div class="credits">
+            &ndash; with help and inspiration from
+            <a href="http://github.com/imathis">Brandon Mathis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

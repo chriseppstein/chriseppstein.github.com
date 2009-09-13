@@ -136,6 +136,8 @@ img a {
       color: inherit; }
     #footer .section p {
       font-size: 80%; }
+  #footer .bottom_nav {
+    float: right; }
 
 #about {
   width: 40.206%;
@@ -839,6 +841,12 @@ span.highlight, em.highlight, strong.highlight {
 p {
   padding-bottom: 18px; }
 
+h1 {
+  font-size: 300%;
+  line-height: 110%;
+  margin-top: .5em;
+  margin-bottom: .7em; }
+
 h2 {
   font-size: 250%;
   line-height: 110%;
@@ -940,12 +948,23 @@ pre {
   font-size: 160%;
   margin: 10px 0 12px; }
 
+.editor {
+  background: rgb(0,22,41);
+  line-height: 1.25; }
+
+.window {
+  border: #aaa ridge 6px;
+  overflow-x: auto; }
+  .window td.linenos {
+    color: #777;
+    background-color: #ccc;
+    padding: 0 0.5em; }
+
 pre.console {
   background-color: black;
   color: #00e000;
-  padding: 0.5em;
   letter-spacing: 1px;
-  border: #aaa ridge 6px; }
+  padding: 0.5em; }
   pre.console .prompt {
     color: #4040ff; }
     pre.console .prompt:before {
@@ -959,10 +978,8 @@ pre.console {
     color: #a0ffa0; }
 
 .highlight {
-  background: rgb(0,22,41);
-  line-height: 1.25;
   padding: 0.5em;
-  border: #aaa ridge 6px; }
+  color: white; }
   .highlight .c {
     color: #999988;
     font-style: italic; }
@@ -1047,13 +1064,15 @@ pre.console {
   .highlight .nn {
     color: #555555; }
   .highlight .nt {
-    color: #000080; }
+    color: white; }
   .highlight .nv {
     color: #008080; }
   .highlight .ow {
     color: white; }
   .highlight .w {
     color: #bbbbbb; }
+  .highlight .nl {
+    color: rgb(255, 98, 140); }
   .highlight .mf {
     color: rgb(255, 98, 140); }
   .highlight .mh {

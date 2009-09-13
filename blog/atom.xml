@@ -3,7 +3,7 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2009-09-12T22:23:02-07:00</updated>
+  <updated>2009-09-13T00:05:03-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
@@ -27,7 +27,7 @@
       
       &lt;h3&gt;Install FSSM&lt;/h3&gt;
       
-      &lt;pre class=&quot;console&quot;&gt;&lt;span class=&quot;prompt&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;stdin&quot;&gt;sudo gem install ttilley-fssm&lt;/span&gt;
+      &lt;pre class=&quot;console window&quot;&gt;&lt;span class=&quot;prompt&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;stdin&quot;&gt;sudo gem install ttilley-fssm&lt;/span&gt;
       &lt;span class=&quot;stdout&quot;&gt;Password:
       Successfully installed ttilley-fssm-0.0.6
       1 gem installed
@@ -40,6 +40,7 @@
       
       &lt;p&gt;This update function uses pipes because I wanted to see the output as it was emitted.&lt;/p&gt;
       
+      &lt;div class=&quot;editor window&quot;&gt;
       &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rebuild_site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&gt;&gt;&gt; Change Detected to: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;&lt;&lt;&quot;&lt;/span&gt;
         &lt;span class=&quot;no&quot;&gt;IO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;popen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;rake generate&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
@@ -51,8 +52,11 @@
       &lt;/div&gt;
       
       
+      &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+      
       &lt;h3&gt;Create a Watch Task&lt;/h3&gt;
       
+      &lt;div class=&quot;editor window&quot;&gt;
       &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Watch the site and regenerate when it changes&quot;&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:watch&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
         &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;fssm&#39;&lt;/span&gt;
@@ -67,9 +71,11 @@
       &lt;/div&gt;
       
       
+      &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+      
       &lt;h3&gt;Invoke It&lt;/h3&gt;
       
-      &lt;pre class=&quot;console&quot;&gt;&lt;span class=&quot;prompt&quot;&gt;~/Projects/chriseppstein.github.com&lt;/span&gt; &lt;span class=&quot;stdin&quot;&gt;rake watch&lt;/span&gt;
+      &lt;pre class=&quot;console window&quot;&gt;&lt;span class=&quot;prompt&quot;&gt;~/Projects/chriseppstein.github.com&lt;/span&gt; &lt;span class=&quot;stdin&quot;&gt;rake watch&lt;/span&gt;
       &lt;span class=&quot;stdout&quot;&gt;(in /Users/chris/Projects/chriseppstein.github.com)
       &gt;&gt;&gt; Watching for Changes &lt;&lt;&lt;&lt;/span&gt;
       &lt;/pre&gt;
