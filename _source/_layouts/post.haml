@@ -80,12 +80,11 @@
                 %li{:style=>"font-size: 60%"}= link_to(post.title, post.url)
     #footer-wrapper
       #footer
-        #page_bottom
-          - if page.respond_to?(:bottom_nav)
-            %p= page.bottom_nav
         .bottom_nav
-          .contents
+          .back-to-top
             %a.ucase(href="#") &uarr; back to top
+          .view-site-style
+            %a.ucase(href="/highlighted/stylesheets/screen.sass.html") browse stylesheets
         #foot_bottom.alone
           %a.affiliate.compass(href="http://compass-style.org" title="Styled with Compass")
             Styled with Compass
