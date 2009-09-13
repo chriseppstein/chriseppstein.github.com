@@ -148,3 +148,40 @@ title: "#{file[7..-1]}"
 
   task :highlight => :link_imports
 end
+
+desc "Build an XML sitemap of all html files."
+task :sitemap => :generate do
+  html_files = FileList.new('_site/**/*.html').map{|f| f[("_site".size)..-1]}.map do |f|
+    if f.ends_with?("index.html")
+      f[0..(-("index.html".size + 1))]
+    else
+      f
+    end
+  end.sort_by{|f| f.size}
+  open("_site/sitemap.xml", 'w') do |sitemap|
+    sitemap.puts %Q{<?xml version="1.0" encoding="UTF-8"?>}
+    sitemap.puts %Q{<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">}
+    html_files.each do |f|
+      priority = case f
+      when %r{^/$}
+        1.0
+      when %r{^/blog}
+        0.9
+      when %r{^/highlighted/$}
+        0.7
+      else
+        0.8
+      end
+      sitemap.puts %Q{  <url>}
+      sitemap.puts %Q{    <loc>http://chriseppstein.github.com#{f}</loc>}
+      sitemap.puts %Q{    <lastmod>2005-01-01</lastmod>}
+      sitemap.puts %Q{    <changefreq>weekly</changefreq>}
+      sitemap.puts %Q{    <priority>#{priority}</priority>}
+      sitemap.puts %Q{  </url>}
+    end
+    sitemap.puts %Q{</urlset>}
+    puts "Created _site/sitemap.xml"
+  end
+end
+
+task :build => :sitemap
