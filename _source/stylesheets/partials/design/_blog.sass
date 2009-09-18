@@ -59,7 +59,7 @@ body#post .blog
     .article
       clear: left
       p
-        font-size: 85%
+        font-size: 110%
         line-height: 150%
         color: #333
         padding-bottom: 15px
@@ -73,6 +73,19 @@ body#post .blog
           +float("right")
           margin-right: 15px
           margin-bottom: 15px
+      dl
+        padding-bottom: 15px
+        dt
+          font-weight: bold
+          float: left
+          margin-right: 7px
+          &:after
+            content: " \2014"
+        dt, dd
+          margin-top: 0.5em
+        dt:first-child
+          margin-top: 0
+
 .blog
   .section
     .vr
