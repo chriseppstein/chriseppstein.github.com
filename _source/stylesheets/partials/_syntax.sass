@@ -10,6 +10,27 @@
     background-color: #ccc
     padding: 0 0.5em
 
+table.side-by-side
+  td, th
+    width: 49%
+    &.gap
+      width: 2%
+
+table.comparison
+  width: 100%
+  margin:
+    top: 0.5em
+    bottom: 2em
+  th.window-title
+    background-image= image_url("window_title.png")
+    text-align: center
+    height: 22px
+    +border-top-radius(6px)
+  td.window
+    vertical-align: top
+    border-top-width: 0
+    +border-bottom-radius(6px)
+
 pre.console
   background-color: black
   color= lighten(#008000, 25)
