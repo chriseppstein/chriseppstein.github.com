@@ -907,6 +907,9 @@ pre {
   font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace;
   line-height: 1.5; }
 
+code {
+  font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace; }
+
 #header h1, #header h2 {
   font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace;
   line-height: 1; }
@@ -953,6 +956,47 @@ pre {
     color: #777;
     background-color: #ccc;
     padding: 0 0.5em; }
+
+table.side-by-side td, table.side-by-side th {
+  width: 49%; }
+  table.side-by-side td.gap, table.side-by-side th.gap {
+    width: 2%; }
+
+table.comparison {
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 2em; }
+  table.comparison th.window-title {
+    background-image: url('/images/window_title.png');
+    text-align: center;
+    height: 22px;
+    /* Mozilla (FireFox, Camino) */
+    -moz-border-radius-topleft: 6px;
+    /* Webkit (Safari, Chrome) */
+    -webkit-border-top-left-radius: 6px;
+    /* CSS3 */
+    border-top-left-radius: 6px;
+    /* Mozilla (FireFox, Camino) */
+    -moz-border-radius-topright: 6px;
+    /* Webkit (Safari, Chrome) */
+    -webkit-border-top-right-radius: 6px;
+    /* CSS3 */
+    border-top-right-radius: 6px; }
+  table.comparison td.window {
+    vertical-align: top;
+    border-top-width: 0;
+    /* Mozilla (FireFox, Camino) */
+    -moz-border-radius-bottomright: 6px;
+    /* Webkit (Safari, Chrome) */
+    -webkit-border-bottom-right-radius: 6px;
+    /* CSS3 */
+    border-bottom-right-radius: 6px;
+    /* Mozilla (FireFox, Camino) */
+    -moz-border-radius-bottomleft: 6px;
+    /* Webkit (Safari, Chrome) */
+    -webkit-border-bottom-left-radius: 6px;
+    /* CSS3 */
+    border-bottom-left-radius: 6px; }
 
 pre.console {
   background-color: black;
