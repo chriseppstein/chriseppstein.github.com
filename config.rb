@@ -6,7 +6,8 @@ project_type = :stand_alone
 http_path = "/"
 css_dir = "_site/stylesheets"
 sass_dir = "_source/stylesheets"
-images_dir = "images"
+images_dir = "_source/images"
+http_images_path = "/images"
 output_style = :nested
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
