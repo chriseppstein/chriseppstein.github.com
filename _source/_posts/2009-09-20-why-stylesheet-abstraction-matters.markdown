@@ -6,34 +6,39 @@ category: blogging
 
 I've seen a number of comments on blogs and twitter that amount to "You don't need a new stylesheet syntax, CSS is simple and you're a moron if you can't do it." I agree, CSS is simple. You assign style primitives to elements and some of those primitives cascade down to the elements contained within. I get it. It's simple _to understand_. But CSS is not simple to use or maintain. It's time for stylesheets to evolve so that we can take web design to the next level.
 
-If your job is to build and maintain a website that looks good in every common browser, then hands down, you have one of the hardest jobs on the internet. I've done just about every aspect of the job, from database to front-end, and every layer in between. Front-end engineering is hard. It's so hard because it brings together three things for which you have no control: Browsers, Users and Opinions. Browsers are different; Users are going to find every one of your flaws; and since everyone has an opinion on the interface, you're going to be changing it -- probably just after you get it working.
+Over the past few years the development of [JavaScript frameworks](http://en.wikipedia.org/wiki/JavaScript_frameworks) have brought sanity to coding against the DOM -- optimizing common coding tasks through the creation of abstractions than insulate us from the nitty-gritty details and providing a common platform for third-party libraries to rely on. As a result, it's a very nice time to be a front-end programmer. It's been a couple of years since I've bitched about DOM incompatibilities -- long enough to almost forget how much work it used to be. It's also a very nice time to be a user of the web, freed of the need to fuss with DOM primitives and JavaScript intricacies, developers have turned their spare time into much more sophisticated user interfaces.
 
-Over the past few years the development of JavaScript frameworks have brought sanity to coding against the DOM -- optimizing common coding tasks through the creation of abstractions than insulate us from the nitty-gritty details and providing a common platform for third-party libraries to rely on. As a result, it's a very nice time to be a front-end programmer. It's been a couple of years since I've bitched about DOM incompatibilities -- long enough to almost forget how much work it used to be. It's also a very nice time to be a user of the web, freed of the need to fuss with DOM primitives and JavaScript intricacies, developers have turned their spare time into much more sophisticated user interfaces.
+Creating and maintaining the styles of a website, by comparison, is a total pain in the ass. I'm not talking about the [lack of a decent layout module for CSS](http://meyerweb.com/eric/thoughts/2009/02/17/wanted-layout-system/). I'm talking about the fact that CSS lacks the expressive nature required to create abstractions. The simplicity of the CSS syntax creates complexity for the developer. Every time you have to copy and paste something within your stylesheet instead of reference that same information, you've missed an opportunity to make your stylesheets easier to maintain through abstraction. However, if you've ever tried to build a [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself) stylesheet, you've found that the only tool at your disposal is the "class" construct. So the DRYest stylesheet will necessarily force you to put all kinds of presentation classes in your markup, thus making your website less maintainable. Case in point: Shared html partials & includes may need to be styled differently in different contexts.
 
-Creating and maintaining the styles of a website, by comparison, is a total pain in the ass. I'm not talking about the lack of a decent layout module for CSS. I'm talking about the fact that CSS lacks the expressive nature required to create abstractions. The simplicity of the CSS syntax creates complexity for the developer. Every time you have to copy and paste something within your stylesheet instead of reference that same information, you've missed an opportunity to make your stylesheets easier to maintain through abstraction. However, if you've ever tried to build a DRY *(**D**on't **R**epeat **Y**ourself)* stylesheet, you've found that the only tool at your disposal is the "class" construct. So the DRYest stylesheet will necessarily force you to put all kinds of presentation classes in your markup, thus making your website less maintainable. Case in point: shared html partials & includes may need to be styled differently in different contexts.
-
-Let's be frank, your designs are going to change. New features will be added that make you reevaluate things. You'll decide you hate some color or font treatment. Your HTML is going to change. New browsers are going to come out with new quirks. Any every time something changes, **you** have to propagate that change across your stylesheets. If you're lucky, you can search and replace for the change. But what if you want to change the color `#000` to `#333`? You can't search and replace for `#000`. First you could have used `black` or `#000000` or `rgb(0,0,0)`. Second, it's likely that black is used for other things than what is changing. But what if you had _named_ that color? Now that black is different from all the other blacks. It's now the "article font color" and changing that abstraction can be done once and propagated for you by a smarter stylesheet syntax.
+Let's be frank, your designs are going to change. New features will be added that make you reevaluate things. You'll decide you hate some color or font treatment. Your HTML is going to change. New browsers are going to come out with new quirks. Any every time something changes, **you** have to propagate that change across your stylesheets. If you're lucky, you can search and replace for the change. But what if you want to change the color `#000` to `#333`? You can't search and replace for `#000`. First, you could have used `black` or `#000000` or `rgb(0,0,0)`. Second, it's likely that black is used for other things than what is changing. But what if you had _named_ that color? Now that black is different from all the other blacks. It's now the "article font color" and changing that abstraction can be done once and propagated for you by a smarter stylesheet syntax.
 
 > CSS is the weakest link in the web developers toolbox. The problem goes deeper than CSS's lack of variables. Unlike the "function" in programming, CSS has no fundamental building block.
 
-What is Abstraction?
+What Is Abstraction?
 --------------------
 
-Abstraction is the ability to define a new concept in terms of other, more simple concepts. When you define a CSS class, you are creating an abstraction. It's nothing to be scared of. The problem with CSS is that this is the _only_ mechanism of abstraction.
+Abstraction is the ability to define a new concept in terms of other, more simple concepts. It's nothing to be scared of. When you define a CSS class, you are creating an abstraction. Despite what the name implies, abstractions don't make things harder to understand -- quite the opposite in fact.
 
-Why you should <strike>care about</strike> demand Abstraction
---------------------------------------------------
+Why You Should <strike>Care About</strike> Demand Abstraction
+-------------------------------------------------------------
 
-Coding *(and don't let anyone tell you that creating stylesheets isn't coding)* is an exercise in managing complexity. Programmers realized this quite some time ago and created "Object Oriented Programming" as a way of simplifying programs so that any portion of it could be understood in terms of interacting abstractions. We create objects like a "JobDispatchManager" that have no meaning in the the real world, their function is purely virtual.
+Just because a website is digital, doesn't mean it is intangible. It is a real thing that users can see and interact with. And although there's a lot of code sitting behind a web page to make it work, it is the act of designing that makes a website concrete. It is the designer's job to build real objects that users intuitively understand. Search boxes, articles, advertisements, navigation, and so on. But the browser doesn't know what these things are. The browser only understands primitives like font-size, border, padding, images, tags, etc.
 
-When we start teaching OOP to students, we don't start there. We start by modeling things that they can touch and feel -- Real world objects like tables and chairs, cars, and a restaurant with queue of customers. We also teach them GUI programming because in a graphical UI, OOP is totally natural. We're building virtual objects that we can touch and interact with via our input devices. We build dialogs, drop downs, file browsers, etc. But the computer doesn't know what any of these things are. They are just as abstract as a "JobDispatchManager". They are built from primitives like lines, characters, boxes, etc. which are themselves just abstractions of lower level concepts like pixels, memory registers, and bits.
+So it is the designer's job to transform the primitive design concepts that a browser understands into **real things**. This is done by defining new abstractions that never existed before. They are not abstract to us, rather they are abstract to the browser. So when a language gives you the power of abstraction, it gives you the power to build **real things**. And that is your job. And that is why you should care about, nay, demand a stylesheet syntax that gives you the power of abstraction.
 
-It is the designer's job to transform primitives like font-size, border, padding, images, etc. into real-world objects that users intuitively understand as concrete objects. Search boxes, articles, advertisements, navigation, and so on. In other words, it is the designer's job to build abstractions. They are not abstract to us, rather they are abstract to the browser. So when a language gives you the power of abstraction, it gives you the power to build **real things**. And that is your job. And that is why you should care about, nay, demand a stylesheet syntax that gives you the power to do your job.
+Parts is Parts
+--------------
+
+No finished product of sufficient complexity is built without first creating intermediate parts. Let's consider an automobile for example. There are belts, wires, alternators, gears, etc. When a car maker wants to build a car, they don't build belts and gears. They specify what kind of belts and gears they need and they get them from a third party. No one would think less of BMW for doing so.
+
+We have the same in web design. Grids, buttons, tabs, menus, font rhythm, etc are all considered standard elements for a website. But for the most part, we don't get their implementation from a third party. When we do, it's generally [viewed with disdain](http://twitter.com/zeldman/status/1470855033). I think this is unacceptable. Once certain design elements become commodity, there is no reason for you to waste your time building them anymore. You should focus your time on the unique aspects of your design.
+
+Unfortunately, with CSS it's hard to compose a design from third-party parts. They are hard to customize and once customized, hard to upgrade if there are bugs that need to be fixed. Clearly there must be a better way.
 
 New Mechanisms of Stylesheet Abstraction
 ----------------------------------------
 
-Sass (Syntactically Awesome StyleSheets) is a stylesheet syntax that has been gaining adoption first in the Ruby on Rails Community and is now growing in the wider web development community thanks to Compass. Sass is the first and only stylesheet syntax to offer all of the following types of abstractions:
+[Sass](http://sass-lang.com/) is a stylesheet syntax that has been gaining adoption first in the Ruby on Rails Community and is now growing in the wider web development community thanks to [Compass](http://compass-style.org/). Sass is the first and only stylesheet syntax to offer all of the following types of mechanisms for creating abstractions:
 
 <dl>
   <dt>Variables</dt>
@@ -163,7 +168,7 @@ p.bigger {
 </table>
 </dd>
   <dt>Mixins</dt>
-  <dd>A mixin is the contents of a selector without the selector. You can think of it as a class whose name is only visible to the stylesheet for use within that stylesheet for defining other selectors. Mixins can accept arguments to control their behavior. Mixins can contain other mixins and they can nest selectors too. Mixins are the fundamental unit of abstraction in Sass. They are the building blocks of maintainable stylesheets.
+  <dd>A mixin is the contents of a selector without the selector. You can think of it as a class whose name is only visible to the stylesheet for use within that stylesheet for defining other selectors. Mixins can accept arguments to control their behavior. Mixins can contain other mixins and they can nest selectors too. <strong>Mixins are the fundamental unit of abstraction in Sass.</strong> They are the building blocks of <em>maintainable stylesheets</em>.
 <table class="comparison">
   <tr>
     <th class="window-title">Sass</th>
@@ -269,32 +274,30 @@ Benefits of Abstraction
 
 Whether or not you decide to use a framework like Compass, you will benefit from the capability to express abstraction. I'm going to summarize them here now and I will follow up with individual blog posts demonstrating these benefits.
 
-XXX These need fleshing out.
-
 <dl>
   <dt>Browser Compatibility</dt>
-  <dd>compatibility issues are encapsulated by the abstraction</dd>
+  <dd>Cross browser compatibility issues can be encapsulated by a mixin that keeps browser compatibility details hidden and centralized for fixing.</dd>
 
   <dt>Clarity of Intent</dt>
-  <dd>Optimize for reading -- code is read many, many more times than it is changed.</dd>
+  <dd>By reading code it should be clear to see where all the values came from. Since code is read many, many more times than it is changed, we can use the power of abstraction to add clarity to the casual reader.</dd>
 
   <dt>Change management</dt>
-  <dd>Bug fixes, design changes</dd>
+  <dd>Bug fixes and design changes can be made confidently once and propagated automatically.</dd>
 
   <dt>Domain specific style vocabulary</dt>
-  <dd>AKA Work how you think. design with the mindset of your site, not style primitives.</dd>
+  <dd>AKA Work how you think. Abstractions all you to design within the mindset of your site, not style primitives. Naming your colors things like "engaging_orage" and "calming_blue" help others know when it is appropriate to use those colors without any additional documentation.</dd>
 
   <dt>Organization</dt>
-  <dd>Easier to keep similar concepts close to each other in code to optimize coordinated changes</dd>
+  <dd>Easier to keep similar concepts close to each other in code to optimize coordinated changes.</dd>
 
   <dt>Work Faster</dt>
   <dd>No need to revisit solved issues time and time again.</dd>
 
   <dt>Semantic HTML</dt>
-  <dd>This is about avoiding dependency inversion and maintaining a separation of concerns. </dd>
+  <dd>Writing semantic HTML is about avoiding dependency inversion and maintaining a separation of concerns. Lofty concepts that reap huge rewards when you get requirements to do something completely unexpected.</dd>
 
   <dt>Ability to Refactor</dt>
-  <dd>Refactoring (changing the implementation without changing the behavior) is easier. Nay a necessity.</dd>
+  <dd>Refactoring, a programming concept that means to change the implementation without changing the behavior, is a whole lot easier now because there is no need to touch html to add new css classes for the purposes of reuse.</dd>
 
   <dt>Reuse</dt>
   <dd>Both internal and across projects.</dd>
@@ -303,14 +306,12 @@ XXX These need fleshing out.
 Downsides to Abstraction
 ------------------------
 
-XXX These need fleshing out.
-
 <dl>
   <dt>Learning curves</dt>
-  <dd>new concepts are new things to learn. Of course, a site full of legacy styles might be easier to comprehend once those concepts are well understood.</dd>
+  <dd>New concepts are new things to learn. Of course, I think a compelling argument can be made that a site full of legacy styles might be easier to comprehend once those explicit concepts are well understood.</dd>
 
   <dt>Bug fixing</dt>
-  <dd>often requires understanding the abstraction (encapsulation failure)</dd>
+  <dd>Fixing a bug often requires understanding the abstraction at a deeper level than you thought you had to. This tends to cause a lot of frustration for people, but it's important to remember that this is still less time than you would have spent building it from scratch.</dd>
 
   <dt>Documentation</dt>
   <dd>Ok this is probably a benefit, since you likely needed it anyway, but I hate writing documentation. Once you define a new concept, you have a great place to document that concept now.</dd>
@@ -320,3 +321,7 @@ XXX These need fleshing out.
 
 </dl>
 
+Get Real Now, Go Abstract
+-------------------------
+
+CSS has proven to be an effective way to tell a web browser how to style a web page. But it has failed us as a technology for direct use by professionals who engineer websites. It should now be viewed more as an assembly language that higher-level languages emit, but that we shouldn't be bothered with. The really great news about this approach is that we don't have to introduce any new technologies for browsers to build or standards to be adhered to. You can start using Sass and Compass today. What are you waiting for? Oh instructions; here's [a great tutorial on Sass and Compass](http://net.tutsplus.com/tutorials/html-css-techniques/using-compass-and-sass-for-css-in-your-next-project/) to get you up and running.
