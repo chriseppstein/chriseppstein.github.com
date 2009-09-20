@@ -251,78 +251,65 @@ img a {
     float: left; }
 
 #header {
-  min-width: 950px; }
+  position: relative;
+  height: 120px; }
   #header .title {
-    width: 31.959%;
-    display: inline;
-    float: left;
-    margin-right: 1.031%;
-    margin-left: 1.031%; }
-  #header .nav {
-    width: 40.206%;
-    display: inline;
-    float: left;
-    margin-right: 1.031%; }
-  #header .aside {
-    width: 23.711%;
-    display: inline;
-    float: left;
-    margin-right: 1.031%;
-    margin-right: 1.031%;
-    /* ugly hacks for IE6-7 */
-    #margin-right: 0.031%;
-    /* end ugly hacks */ }
-
-#header h1 {
-  margin-top: 0.25em; }
-
-#header .nav {
-  min-width: 375px; }
-  #header .nav ul {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    overflow: hidden;
-    display: inline-block; }
-    #header .nav ul {
-      display: block; }
-    #header .nav ul li {
-      list-style-type: none;
-      margin-left: 0px;
-      white-space: nowrap;
-      display: inline;
-      float: left;
-      padding-left: 4px;
-      padding-right: 4px; }
-      #header .nav ul li.first {
-        padding-left: 0px; }
-      #header .nav ul li.last {
-        padding-right: 0px; }
-    #header .nav ul li {
-      height: 110px;
-      padding: 0 25px 10px; }
-      #header .nav ul li a {
-        display: inline-block;
-        padding: 3.3em 1px 10px; }
-
-#header {
-  position: relative; }
-  #header .aside {
-    height: 110px; }
-  #header #search {
-    width: 100%;
-    display: inline;
-    float: left;
-    margin-right: 4.348%; }
-  #header #blog-links {
+    width: 380px;
+    height: 96px;
     position: absolute;
-    bottom: 10px; }
-  #header #archive {
-    display: inline-block;
-    border-left: 1px solid #444;
-    padding-left: 12px;
-    margin-left: 8px; }
+    bottom: 0;
+    left: 0;
+    padding: 0; }
+    #header .title h1, #header .title h2 {
+      position: absolute;
+      font-size: 18px;
+      left: 62px; }
+    #header .title h1 {
+      top: 13px; }
+    #header .title h2 {
+      top: 48px; }
+  #header .nav {
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+    min-width: 410px; }
+    #header .nav ul {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      overflow: hidden;
+      display: inline-block; }
+      #header .nav ul {
+        display: block; }
+      #header .nav ul li {
+        list-style-type: none;
+        margin-left: 0px;
+        white-space: nowrap;
+        display: inline;
+        float: left;
+        padding-left: 4px;
+        padding-right: 4px; }
+        #header .nav ul li.first {
+          padding-left: 0px; }
+        #header .nav ul li.last {
+          padding-right: 0px; }
+      #header .nav ul li {
+        padding: 0 25px 20px; }
+
+#header .aside {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  height: 110px; }
+#header #blog-links {
+  position: absolute;
+  bottom: 10px; }
+#header #archive {
+  display: inline-block;
+  border-left: 1px solid #444;
+  padding-left: 12px;
+  margin-left: 8px; }
 
 #header #search form {
   padding: 2px 0 0;
@@ -436,8 +423,7 @@ body#post .blog .footer {
 
 .blog .section {
   position: relative;
-  margin: 25px -30px 0;
-  padding: 0 30px;
+  margin: 25px 0 0;
   border-bottom: 1px solid #ededed; }
 
 .blog .section .header {
@@ -514,8 +500,7 @@ body#post .blog .footer {
 
 .blog.mini {
   background: url(/images/section_shadow_bg.png) repeat-x left 1px;
-  padding: 1px 28px 0;
-  margin: 0 -30px; }
+  padding: 1px 0; }
   .blog.mini .header {
     margin-top: 5px;
     margin-bottom: 20px; }
@@ -553,8 +538,7 @@ body#post .blog .footer {
   background: #1c1c1c; }
 
 #header {
-  color: #fff;
-  background: url(/images/page_top.png) no-repeat bottom left; }
+  color: #fff; }
   #header .nav a {
     color: #cccccc;
     text-decoration: none; }
@@ -563,10 +547,7 @@ body#post .blog .footer {
     #header .nav a:hover {
       text-decoration: underline; }
   #header .title {
-    background: inherit;
-    line-height: 1;
-    padding: 0;
-    border: none; }
+    background-image: url('/images/textmate.png?1253419777'); }
 
 #header #blog-links a {
   color: #999; }
@@ -596,24 +577,12 @@ body#post .blog .footer {
   #search #q:focus {
     outline: none; }
 
-body#home     .nav li.home,
-body#blog     .nav li.blog,
-body#post     .nav li.blog,
-body#projects .nav li.projects,
-body#work     .nav li.work {
-  border-right: 1px solid #aaa;
-  border-left: 1px solid #aaa;
-  border-background: #333;
-  background: #222 url(/images/line_tile.png); }
-  body#home     .nav li.home a,
-  body#blog     .nav li.blog a,
-  body#post     .nav li.blog a,
-  body#projects .nav li.projects a,
-  body#work     .nav li.work a {
-    color: #fff;
-    text-decoration: none;
-    padding-left: 0;
-    padding-right: 0; }
+body#home     .nav li.home a,
+body#blog     .nav li.blog a,
+body#post     .nav li.blog a,
+body#projects .nav li.projects a,
+body#work     .nav li.work a {
+  color: #fff; }
 
 #page .header a {
   color: #444444;
@@ -919,8 +888,9 @@ code {
 #header h2 {
   font-size: 2em; }
 #header .nav a {
-  font-size: 90%;
-  text-transform: uppercase; }
+  font-size: 1.25em;
+  text-transform: lowercase;
+  font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace; }
 
 #header #blog-links {
   font-size: 13px; }
@@ -936,8 +906,6 @@ code {
   font-size: 90%; }
   #sidebar h3, #sidebar h4, #sidebar h5 {
     color: #333; }
-  #sidebar p {
-    font-size: 90%; }
 
 #sidebar .section .header span {
   font-size: 90%; }
@@ -967,7 +935,7 @@ table.comparison {
   margin-top: 0.5em;
   margin-bottom: 2em; }
   table.comparison th.window-title {
-    background-image: url('/images/window_title.png');
+    background-image: url('/images/window_title.png?1253409920');
     text-align: center;
     height: 22px;
     /* Mozilla (FireFox, Camino) */
