@@ -97,8 +97,6 @@
         .bottom_nav
           .back-to-top
             %a.ucase(href="#") &uarr; back to top
-          .view-site-style
-            %a.ucase(href="/highlighted/stylesheets/screen.sass.html") browse stylesheets
         #foot_bottom.alone
           %a.affiliate.compass(href="http://compass-style.org" title="Styled with Compass")
             Styled with Compass
@@ -107,11 +105,14 @@
             %a(href="http://jekyllrb.com/") Jekyll
             and
             %a(href="http://www.oddbird.net/susy/") Susy
-          .legalese
+          %h6
             &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
-          .credits
-            &ndash; with help and inspiration from
+          %h6
+            &ndash; with design help and inspiration from
             %a(href="http://github.com/imathis") Brandon Mathis
+          %h6
+            &ndash;
+            %a(href="/highlighted/stylesheets/screen.sass.html") browse stylesheets
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

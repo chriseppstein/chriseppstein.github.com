@@ -3,16 +3,12 @@
 
 #header
   color: #fff
-  background: url(/images/page_top.png) no-repeat bottom left
   .nav a
     +link-colors(#ccc, #fff)
     +hover-link
   .title
-    background: inherit
-    line-height: 1
-    padding: 0
-    border: none
-
+    background:
+      image= image_url("textmate.png")
 #header
   #blog-links
     a
@@ -43,15 +39,5 @@ body#blog     .nav li.blog,
 body#post     .nav li.blog,
 body#projects .nav li.projects,
 body#work     .nav li.work
-  border:
-    right: 1px solid #aaa
-    left: 1px solid #aaa
-    background: #333
-  background: #222 url(/images/line_tile.png)
   a
     color: #fff
-    text-decoration: none
-    padding:
-      left: 0
-      right: 0
-
