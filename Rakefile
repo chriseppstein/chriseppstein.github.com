@@ -33,7 +33,7 @@ task :generate => :clean do
 end
 
 desc "build and commit the website in the master branch"
-task :build => [:generate, :"sass:highlight"] do
+task :build => :generate_all do
   require 'git'
   repo = Git.open('.')
   repo.branch("master").checkout
@@ -184,4 +184,7 @@ task :sitemap => :generate do
   end
 end
 
-task :build => :sitemap
+
+task :generate_all => [:"sass:highlight", :generate, :sitemap]
+
+task :build => :generate_all
