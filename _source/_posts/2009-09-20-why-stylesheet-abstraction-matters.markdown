@@ -43,6 +43,7 @@ New Mechanisms of Stylesheet Abstraction
 <dl>
   <dt>Variables</dt>
   <dd>A variable is a simple but important abstraction, by creating a variable with a name that didn't exist before, you create a new concept. That concept is defined in terms of a simpler concept: a value.
+<div class="code-wrapper">
 <table class="comparison side-by-side">
   <tr>
     <th class="window-title">Sass</th>
@@ -70,9 +71,11 @@ New Mechanisms of Stylesheet Abstraction
     </td>
   </tr>
 </table>
+</div>
 </dd>
   <dt>Functions</dt>
   <dd>CSS provides some functions for you to use. For example: rgb(), hsl(), url(). However, there is no mechanism for defining new CSS functions, but this doesn't mean there couldn't be. For example, in Sass, with a little ruby programming, you can define your own functions for use within your stylesheets. For example, the <a href="http://github.com/chriseppstein/compass-colors">compass-colors extension</a> provides a handful of very useful functions for manipulating colors.
+<div class="code-wrapper">
 <table class="comparison side-by-side">
   <tr>
     <th class="window-title">Sass</th>
@@ -126,9 +129,11 @@ end
     <td class="gap">&nbsp;</td>
   </tr>
 </table>
+</div>
 </dd>
   <dt>Expressions</dt>
   <dd>An expression creates a new value by combining other values with operators and functions. This is itself an abstraction because it expresses the concept of how to arrive at a new value from other values. While expressions are more typing and reading than just specifying a value, they capture the process of creating the values you used so that later change is simple and others can understand why the value is what it is.
+<div class="code-wrapper">
 <table class="comparison side-by-side">
   <tr>
     <th class="window-title">Sass</th>
@@ -166,9 +171,11 @@ p.bigger {
     </td>
   </tr>
 </table>
+</div>
 </dd>
   <dt>Mixins</dt>
   <dd>A mixin is the contents of a selector without the selector. You can think of it as a class whose name is only visible to the stylesheet for use within that stylesheet for defining other selectors. Mixins can accept arguments to control their behavior. Mixins can contain other mixins and they can nest selectors too. <strong>Mixins are the fundamental unit of abstraction in Sass.</strong> They are the building blocks of <em>maintainable stylesheets</em>.
+<div class="code-wrapper">
 <table class="comparison">
   <tr>
     <th class="window-title">Sass</th>
@@ -216,9 +223,11 @@ ul.nav li {
     </td>
   </tr>
 </table>
+</div>
 </dd>
   <dt>Macro Expansion</dt>
   <dd>Macro expansion is the generation of selectors and styles using variables, conditionals, looping, and the like. Macro expansion allows for very high level concepts to be created. For example, a single mixin can <a href="http://github.com/chriseppstein/compass-960-plugin/blob/master/sass/960/_grid.sass#L59">generate a whole grid system</a>.
+<div class="code-wrapper">
 <table class="comparison side-by-side">
   <tr>
     <th class="window-title">Sass</th>
@@ -257,6 +266,7 @@ h6 {
     </td>
   </tr>
 </table>
+</div>
 </dd>
 </dl>
 
