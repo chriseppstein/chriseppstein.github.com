@@ -45,3 +45,18 @@ q, blockquote {
 
 img a {
   border: none; }
+
+#header .nav,
+#header .aside {
+  display: none; }
+
+#content .aside {
+  display: none; }
+
+#footer .bottom_nav {
+  display: none; }
+#footer #foot_bottom .affiliate,
+#footer #foot_bottom h6 {
+  display: none; }
+#footer #foot_bottom h6.copyright {
+  display: block; }

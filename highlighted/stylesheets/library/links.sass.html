@@ -2,8 +2,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>#chris-eppstein {position: unique;} - My Projects</title>
-    <meta content="A summary of the companies, websites, and projects I've been a part of" name="description" />
+    <title>/stylesheets/library/_links.sass | Sass Stylesheet</title>
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <link href="/blog/atom.xml" rel="alternate" title="#chris-eppstein {position: unique;}" type="application/atom+xml" />
@@ -16,7 +15,7 @@
     <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
     <script src="/javascripts/site.js" type="text/javascript"></script>
   </head>
-  <body id="work">
+  <body id="stylesheet">
     <div id="header-wrapper">
       <div id="header">
         <div class="aside">
@@ -62,39 +61,11 @@
       <div id="content">
         <div id="page">
           <div class="contents">
-            <h2>My Work</h2>
-            <p>
-              <em class="sub_heading">Places I've worked</em>
+            <h1>/stylesheets/library/_links.sass</h1>
+            <div class="editor window"><table class="highlighttable"><tr><td class="linenos"><pre> 1&#x000A; 2&#x000A; 3&#x000A; 4&#x000A; 5&#x000A; 6&#x000A; 7&#x000A; 8&#x000A; 9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22</pre></td><td class="code"><div class="highlight"><pre><span class="nv">!default_link_color</span>           <span class="o">||=</span> <span class="nl">#B3272D</span>&#x000A;<span class="nv">!default_link_color_hover</span>     <span class="o">||=</span> <span class="nl">#fff</span>&#x000A;<span class="nv">!default_link_color_alt</span>       <span class="o">||=</span> <span class="nl">#91D5F1</span>&#x000A;<span class="nv">!default_link_color_hover_alt</span> <span class="o">||=</span> <span class="nl">#000</span>&#x000A;&#x000A;<span class="nf">=link-color</span><span class="p">(</span><span class="nv">!hover</span> <span class="o">=</span> <span class="nt">true</span><span class="p">)</span>&#x000A;  <span class="nf">+link-color-style</span><span class="p">(</span><span class="nv">!default_link_color</span><span class="o">,</span> <span class="nv">!default_link_color_hover</span><span class="o">,</span> <span class="nv">!default_link_color</span><span class="o">,</span> <span class="nv">!hover</span><span class="p">)</span>&#x000A;&#x000A;<span class="nf">=link-color-alt</span><span class="p">(</span><span class="nv">!hover</span> <span class="o">=</span> <span class="nt">true</span><span class="p">)</span>&#x000A;  <span class="nf">+link-color-style</span><span class="p">(</span><span class="nv">!default_link_color_alt</span><span class="o">,</span> <span class="nv">!default_link_color_hover_alt</span><span class="o">,</span> <span class="nv">!default_link_color_alt</span><span class="o">,</span> <span class="nv">!hover</span><span class="p">)</span>&#x000A;  &#x000A;<span class="nf">=link-color-heading</span><span class="p">(</span><span class="nv">!link_color</span> <span class="o">=</span> <span class="s2">&quot;inherit&quot;</span><span class="o">,</span> <span class="nv">!hover_bg_color</span> <span class="o">=</span> <span class="nl">#ccc</span><span class="p">)</span>&#x000A;  <span class="nf">+link-color-style</span><span class="p">(</span><span class="nv">!link_color</span><span class="o">,</span><span class="p">)</span>&#x000A;&#x000A;<span class="nf">=link-color-style</span><span class="p">(</span><span class="nv">!color</span> <span class="o">=</span> <span class="nv">!default_link_color</span><span class="o">,</span> <span class="nv">!color_hover</span> <span class="o">=</span> <span class="nv">!default_link_color_hover</span><span class="o">,</span> <span class="nv">!link_hover_bg</span> <span class="o">=</span> <span class="nv">!color</span><span class="o">,</span> <span class="nv">!hover</span> <span class="o">=</span> <span class="nt">true</span><span class="p">)</span>&#x000A;  <span class="nt">color</span><span class="o">=</span> <span class="nv">!color</span>&#x000A;  <span class="nf">+border-radius</span><span class="p">(</span><span class="nt">3px</span><span class="p">)</span>&#x000A;  <span class="kn">@if</span> <span class="nv">!hover</span>&#x000A;    <span class="nd">&amp;:hover</span>&#x000A;      <span class="nt">background-color</span><span class="o">=</span> <span class="nv">!link_hover_bg</span>&#x000A;      <span class="nt">color</span><span class="o">=</span> <span class="nv">!color_hover</span>&#x000A;      <span class="nt">text-decoration</span><span class="o">:</span> <span class="nt">none</span>&#x000A;</pre></div>&#x000A;</td></tr></table></div>
+            <p class="note">
+              Note: You can click on underlined @import directives to view that stylesheet.
             </p>
-            <div class="section">
-              <h3 class="header">Caring.com</h3>
-              <div class="article">
-                <small class="soft block">Software Architect</small>
-                <p>I was the first employee of Caring.com and I helped them design and build it from concept to market leader in less than two years. I still work here and I love it.</p>
-              </div>
-            </div>
-            <div class="section">
-              <h3 class="header">Teneros</h3>
-              <div class="article">
-                <small class="soft block">UI Architect</small>
-                <p>I built the entire Web Management UI for Teneros's flagship product. In python. I also built the web framework that it ran on because Django didn't exist yet.</p>
-              </div>
-            </div>
-            <div class="section">
-              <h3 class="header">ITM Software</h3>
-              <div class="article">
-                <small class="soft block">UI Architect</small>
-                <p>ITM Software built a suite of web-based IT Business Management Applications. I architected and led development on 3 of the 6 apps that they built. In Java.</p>
-              </div>
-            </div>
-            <div class="section">
-              <img class="right" src="/images/logo_terraspring.png" />
-              <h3 class="header">Terraspring</h3>
-              <div class="article">
-                <small class="soft block">Lead UI Engineer</small>
-                <p>Terraspring was about 10 years ahead of its time. We invented utility computing (as in we coined the phrase), but didn't get anyone rich. Especially me. But I learned to be an engineer while working there with some of the most amazing engineers I've ever met. I implemented a Visio-like graphical network editor with a drag and drop UI for creating and managing virtual networks -- in IE5. I got very good at javascript there.</p>
-              </div>
-            </div>
           </div>
         </div>
         <div class="aside" id="sidebar">

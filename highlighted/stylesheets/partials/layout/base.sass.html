@@ -2,8 +2,7 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>#chris-eppstein {position: unique;} - My Projects</title>
-    <meta content="A summary of the companies, websites, and projects I've been a part of" name="description" />
+    <title>/stylesheets/partials/layout/_base.sass | Sass Stylesheet</title>
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <link href="/blog/atom.xml" rel="alternate" title="#chris-eppstein {position: unique;}" type="application/atom+xml" />
@@ -16,7 +15,7 @@
     <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
     <script src="/javascripts/site.js" type="text/javascript"></script>
   </head>
-  <body id="work">
+  <body id="stylesheet">
     <div id="header-wrapper">
       <div id="header">
         <div class="aside">
@@ -62,39 +61,11 @@
       <div id="content">
         <div id="page">
           <div class="contents">
-            <h2>My Work</h2>
-            <p>
-              <em class="sub_heading">Places I've worked</em>
+            <h1>/stylesheets/partials/layout/_base.sass</h1>
+            <div class="editor window"><table class="highlighttable"><tr><td class="linenos"><pre> 1&#x000A; 2&#x000A; 3&#x000A; 4&#x000A; 5&#x000A; 6&#x000A; 7&#x000A; 8&#x000A; 9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37</pre></td><td class="code"><div class="highlight"><pre><span class="c">//**</span>&#x000A;<span class="c">//  Susy: Elastic-Fluid grids without all the math</span>&#x000A;<span class="c">//  by Eric Meyer and OddBird Collective</span>&#x000A;<span class="c">//  Site: www.oddbird.net/susy/</span>&#x000A;<span class="c">//**</span>&#x000A;&#x000A;<span class="c">//** </span>&#x000A;  <span class="nt">GRID</span>&#x000A;  <span class="nt">un-comment</span> <span class="nt">and</span> <span class="nt">override</span> <span class="nt">these</span> <span class="nt">values</span> <span class="nt">as</span> <span class="nt">needed</span> <span class="nt">for</span> <span class="nt">your</span> <span class="nt">grid</span> <span class="nt">layout</span> &#x000A;  <span class="p">(</span><span class="nt">defaults</span> <span class="nt">are</span> <span class="nt">shown</span><span class="p">)</span>&#x000A;<span class="nv">!grid_unit</span> <span class="o">=</span> <span class="s2">&quot;em&quot;</span>&#x000A;<span class="nv">!total_cols</span> <span class="o">=</span> <span class="nt">24</span>&#x000A;<span class="nv">!col_width</span> <span class="o">=</span> <span class="nt">3</span>&#x000A;<span class="nv">!gutter_width</span> <span class="o">=</span> <span class="nt">1</span>&#x000A;<span class="nv">!side_gutter_width</span> <span class="o">=</span> <span class="nv">!gutter_width</span>&#x000A;&#x000A;<span class="c">//**</span>&#x000A;  <span class="nt">HACKS</span>&#x000A;  <span class="nt">Are</span> <span class="nt">you</span> <span class="nt">using</span> <span class="nt">hacks</span> <span class="nt">or</span> <span class="nt">conditional</span> <span class="nt">comments</span><span class="o">?</span> <span class="nt">Susy</span> <span class="nt">makes</span> <span class="nt">both</span> <span class="nt">possible</span><span class="o">.</span>&#x000A;  <span class="nt">Leave</span> <span class="nt">this</span> <span class="nt">as</span> <span class="s1">&#39;true&#39;</span> <span class="nt">to</span> <span class="nt">use</span> <span class="nt">hacks</span><span class="o">,</span> <span class="nt">set</span> <span class="nt">it</span> <span class="nt">as</span> <span class="nt">false</span> <span class="nt">for</span> <span class="nt">conditional</span> <span class="nt">comments</span><span class="o">.</span>&#x000A;  <span class="nt">Conditional</span> <span class="nt">comments</span> <span class="nt">will</span> <span class="nt">require</span> <span class="nt">overrides</span> <span class="nt">for</span> <span class="nf">+omega</span><span class="o">,</span> <span class="nf">+inline-block</span> <span class="nt">and</span>&#x000A;  <span class="nt">several</span> <span class="nt">other</span> <span class="nt">mixins</span><span class="o">.</span>&#x000A;  <span class="nv">!hacks</span> <span class="o">=</span> <span class="nt">true</span>&#x000A;&#x000A;<span class="c">//** </span>&#x000A;  <span class="nt">FONT-SIZE</span>&#x000A;  <span class="nt">un-comment</span> <span class="nt">and</span> <span class="nt">override</span> <span class="nt">these</span> <span class="nt">values</span> <span class="nt">as</span> <span class="nt">needed</span> <span class="p">(</span><span class="nt">defaults</span> <span class="nt">are</span> <span class="nt">shown</span><span class="p">)</span>&#x000A;  <span class="nt">-</span> <span class="nt">you</span> <span class="nt">set</span> <span class="nt">the</span> <span class="nt">font</span> <span class="nt">and</span> <span class="nt">line</span> <span class="nt">heights</span> <span class="nt">in</span> <span class="nt">pixels</span><span class="o">.</span>&#x000A;  <span class="nt">-</span> <span class="nt">Susy</span> <span class="nt">will</span> <span class="nt">do</span> <span class="nt">the</span> <span class="nt">math</span> <span class="nt">and</span> <span class="nt">give</span> <span class="nt">you</span> <span class="nv">!base_font_size</span> <span class="nt">and</span> <span class="nv">!base_line_height</span> &#x000A;    <span class="nt">variables</span><span class="o">,</span> <span class="nt">set</span> <span class="nt">flexibly</span> <span class="nt">against</span> <span class="nt">the</span> <span class="nt">common</span> <span class="nt">browser</span> <span class="nt">default</span> <span class="nt">of</span> <span class="nt">16px</span>&#x000A;<span class="nv">!base_font_size_px</span> <span class="o">=</span> <span class="nt">14</span>&#x000A;<span class="nv">!base_line_height_px</span> <span class="o">=</span> <span class="nt">20</span>&#x000A;&#x000A;<span class="c">// SUSY</span>&#x000A;<span class="c">//  (don&#39;t move this @import above the GRID and FONT-SIZE overrides)</span>&#x000A;<span class="k">@import</span> <span class="nn">susy/susy.sass</span>&#x000A;<span class="k">@import</span> <a href="/highlighted/stylesheets/library/lists.sass.html" class="import"><span class="nn">library/lists.sass</span></a>&#x000A;</pre></div>&#x000A;</td></tr></table></div>
+            <p class="note">
+              Note: You can click on underlined @import directives to view that stylesheet.
             </p>
-            <div class="section">
-              <h3 class="header">Caring.com</h3>
-              <div class="article">
-                <small class="soft block">Software Architect</small>
-                <p>I was the first employee of Caring.com and I helped them design and build it from concept to market leader in less than two years. I still work here and I love it.</p>
-              </div>
-            </div>
-            <div class="section">
-              <h3 class="header">Teneros</h3>
-              <div class="article">
-                <small class="soft block">UI Architect</small>
-                <p>I built the entire Web Management UI for Teneros's flagship product. In python. I also built the web framework that it ran on because Django didn't exist yet.</p>
-              </div>
-            </div>
-            <div class="section">
-              <h3 class="header">ITM Software</h3>
-              <div class="article">
-                <small class="soft block">UI Architect</small>
-                <p>ITM Software built a suite of web-based IT Business Management Applications. I architected and led development on 3 of the 6 apps that they built. In Java.</p>
-              </div>
-            </div>
-            <div class="section">
-              <img class="right" src="/images/logo_terraspring.png" />
-              <h3 class="header">Terraspring</h3>
-              <div class="article">
-                <small class="soft block">Lead UI Engineer</small>
-                <p>Terraspring was about 10 years ahead of its time. We invented utility computing (as in we coined the phrase), but didn't get anyone rich. Especially me. But I learned to be an engineer while working there with some of the most amazing engineers I've ever met. I implemented a Visio-like graphical network editor with a drag and drop UI for creating and managing virtual networks -- in IE5. I got very good at javascript there.</p>
-              </div>
-            </div>
           </div>
         </div>
         <div class="aside" id="sidebar">
