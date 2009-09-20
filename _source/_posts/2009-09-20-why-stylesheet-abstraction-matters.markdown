@@ -38,7 +38,7 @@ Unfortunately, with CSS it's hard to compose a design from third-party parts. Th
 New Mechanisms of Stylesheet Abstraction
 ----------------------------------------
 
-[Sass](http://sass-lang.com/) is a stylesheet syntax that has been gaining adoption first in the Ruby on Rails Community and is now growing in the wider web development community thanks to [Compass](http://compass-style.org/). Sass is the first and only stylesheet syntax to offer all of the following types of mechanisms for creating abstractions:
+[Sass](http://sass-lang.com/) is a stylesheet syntax that has been gaining adoption first in the Ruby on Rails Community and is now growing in the wider web development community thanks to [Compass](http://compass-style.org/). Sass is the first and only stylesheet syntax to offer all of the following  mechanisms for creating abstractions. Each of these abstractions alone is very nice, but when you combine them, as we have done in Sass, something almost magical happens.
 
 <dl>
   <dt>Variables</dt>
@@ -260,14 +260,12 @@ h6 {
 </dd>
 </dl>
 
-Each of these abstractions alone is very nice, but when you combine them, as we have done in Sass, something almost magical happens.
-
 Abstraction in Action
 ---------------------
 
-Compass is a stylesheet authoring framework and I'll let you in on a little secret: Compass is written in 100% Sass. There's nothing that compass does that you couldn't do yourself if you were willing to write the 175 mixins that compass currently provides yourself. But the magical part is that you don't have to. You can start working with the abstractions that have been discussed, tested, and iterated on by a community of designers and front-end engineers for over a year now. It's a huge time saver.
+Compass is a stylesheet authoring framework and I'll let you in on a little secret: Compass is written in 100% Sass. There's nothing that Compass does that you couldn't do yourself if you were willing to write the 175 mixins that Compass currently provides yourself. But the magical part is that you don't have to. You can start working with the abstractions that have been discussed, tested, and iterated on by a community of designers and front-end engineers for over a year now. It's a huge time saver.
 
-Now, if you have some styles and designs that you've made and spent a bunch of time perfecting, you can use the power of Sass to share that code with others. The members of the compass community are creating plugins and sharing them with each other. The open source ethos is finally alive and functioning in the design community. And that, my friends, is abstraction in action.
+Now, if you have some styles and designs that you've made and spent a bunch of time perfecting, you can use the power of Sass to share that code with others. The members of the Compass community are creating plugins and sharing them with each other. The open source ethos is finally alive and functioning in the design community. And that, my friends, is abstraction in action.
 
 Benefits of Abstraction
 -----------------------
