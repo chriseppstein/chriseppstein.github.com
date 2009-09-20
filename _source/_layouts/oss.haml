@@ -14,19 +14,6 @@
   %body{:id => page.attempt(:body_id)}
     #header-wrapper
       #header
-        .title.highlight
-          %h1.n #chris-eppstein
-          %h2 &nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span>
-        .nav
-          %ul
-            %li.home
-              %a(href="/" title="Home") Home
-            %li.blog
-              %a(href="/blog/" title="Blog") Blog
-            %li.projects
-              %a(href="/projects/" title="Projects") Projects
-            %li.work
-              %a(href="/work/" title="Work") Work
         .aside
           #search
             %form(action="http://www.google.com/cse" id="cse-search-box")
@@ -40,6 +27,19 @@
               %img(src="/images/rss.png")
               %span Subscribe
             %a#archive(href="/blog/archives.html" title="blog archive") Blog Archive
+        .nav
+          %ul
+            %li.home
+              %a(href="/" title="Home") Home
+            %li.blog
+              %a(href="/blog/" title="Blog") Blog
+            %li.projects
+              %a(href="/projects/" title="Projects") Projects
+            %li.work
+              %a(href="/work/" title="Work") Work
+        .title.highlight
+          %h1.n #chris-eppstein
+          %h2 &nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span>
     #content-wrapper
       #content
         #page
