@@ -49,6 +49,8 @@
           .contents
             %h1= page.title
             .editor.window=preserve content
+            %p.note
+              Note: You can click on underlined @import directives to view that stylesheet.
         #sidebar.aside
           - if !page.respond_to?(:empty_sidebar)
             #about-me.section
