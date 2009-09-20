@@ -50,66 +50,8 @@ img a {
   background: #1c1c1c url(/images/footer_bg.png) repeat-x top;
   padding-bottom: 45px; }
 
-#page_bottom {
-  width: 73.196%;
-  display: inline;
-  float: left;
-  margin-right: 1.031%;
-  background-color: #fff;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius-bottomright: 10px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-bottom-right-radius: 10px;
-  /* CSS3 */
-  border-bottom-right-radius: 10px;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius-bottomleft: 10px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-bottom-left-radius: 10px;
-  /* CSS3 */
-  border-bottom-left-radius: 10px;
-  height: 50px; }
-  #page_bottom p {
-    padding: 5px 30px 0; }
-  #page_bottom a {
-    color: #666666;
-    /* Mozilla (FireFox, Camino) */
-    -moz-border-radius: 3px;
-    /* Webkit (Safari, Chrome) */
-    -webkit-border-radius: 3px;
-    /* CSS3 */
-    border-radius: 3px;
-    font-size: 80%; }
-    #page_bottom a:hover {
-      background-color: #666666;
-      color: white;
-      text-decoration: none; }
-
 #footer {
   color: #d8d8d8; }
-  #footer .nav ul {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    overflow: hidden;
-    display: inline-block; }
-    #footer .nav ul {
-      display: block; }
-    #footer .nav ul li {
-      list-style-type: none;
-      margin-left: 0px;
-      white-space: nowrap;
-      display: inline;
-      float: left;
-      padding-left: 4px;
-      padding-right: 4px; }
-      #footer .nav ul li.first {
-        padding-left: 0px; }
-      #footer .nav ul li.last {
-        padding-right: 0px; }
-    #footer .nav ul li {
-      padding: 0 10px; }
   #footer .bottom_nav {
     font-size: 70%; }
     #footer .bottom_nav a {
@@ -126,56 +68,8 @@ img a {
         background-color: #aaaaaa;
         color: black;
         text-decoration: none; }
-  #footer .section {
-    margin-top: 25px; }
-    #footer .section h5 {
-      color: inherit; }
-    #footer .section p {
-      font-size: 80%; }
   #footer .bottom_nav {
     float: right; }
-
-#about {
-  width: 40.206%;
-  display: inline;
-  float: left;
-  margin-right: 1.031%; }
-  #about .avatar {
-    width: 7.216%;
-    display: inline;
-    float: left;
-    margin-right: 1.031%; }
-
-#footer #twitter {
-  width: 31.959%;
-  display: inline;
-  float: left;
-  margin-right: 1.031%; }
-  #footer #twitter .tweet {
-    margin-bottom: 0;
-    width: 308px;
-    background: url(/images/tweet_bg.png) repeat-y center center; }
-    #footer #twitter .tweet p {
-      padding: 15px 15px 5px;
-      display: inline-block;
-      min-height: 25px;
-      width: 278px;
-      background: url(/images/tweet_bg.png) no-repeat top left;
-      position: relative;
-      top: -5px; }
-  #footer #twitter .follow {
-    width: 308px;
-    background: url(/images/tweet_bg.png) no-repeat top right;
-    padding: 0;
-    overflow: hidden;
-    display: inline-block; }
-    #footer #twitter .follow {
-      display: block; }
-    #footer #twitter .follow span {
-      color: #8B8B8B;
-      position: relative;
-      top: -15px;
-      right: -20px; }
 
 #foot_bottom {
   width: 97.938%;
@@ -245,11 +139,6 @@ img a {
       background-position: 0px 0px; }
       #foot_bottom a.affiliate.compass:hover {
         background-position: 0px -38px; }
-  #foot_bottom .text-links {
-    font-size: 80%;
-    padding: 10px 0 0 10px;
-    color: #767676;
-    float: left; }
 
 #header .title {
   width: 31.959%;
@@ -372,10 +261,6 @@ body {
     #page .contents {
       display: block; }
 
-#sidebar .section .clear {
-  clear: both;
-  display: block; }
-
 #sidebar #about-me img.avatar {
   float: left;
   margin-right: 10px;
@@ -420,10 +305,6 @@ body#post .blog .footer {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 0; }
-  body#post .blog .footer.alt {
-    margin-top: 10px;
-    padding-top: 20px;
-    border-top: 1px solid #ededed; }
 
 .blog .section {
   position: relative;
@@ -509,13 +390,6 @@ body#post .blog .footer {
     margin-top: 5px;
     margin-bottom: 20px; }
 
-#blog #page .section.alpha {
-  padding-top: 0;
-  margin-top: 0; }
-  #blog #page .section.alpha .header {
-    margin-top: 2px;
-    padding-top: 0; }
-
 #post .blog .section {
   border-bottom: none; }
 
@@ -551,7 +425,7 @@ body#post .blog .footer {
     #header .nav a:hover {
       text-decoration: underline; }
   #header .title {
-    background-image: url('/images/textmate.png?1253430544');
+    background-image: url('/images/textmate.png?1253471711');
     background-repeat: no-repeat;
     background-position: bottom left;
     min-width: 380px; }
@@ -615,51 +489,6 @@ body#work     .nav li.work a {
     background-color: #b3272d;
     color: white;
     text-decoration: none; }
-
-body#projects #featured-project {
-  margin: 0 -30px;
-  padding: 30px 30px 10px;
-  background: #333 url(/images/line_tile.png);
-  overflow: hidden;
-  display: inline-block;
-  color: #ddd;
-  border: 1px solid #555;
-  border-top-width: 0px;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius-bottomright: 5px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-bottom-right-radius: 5px;
-  /* CSS3 */
-  border-bottom-right-radius: 5px;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius-bottomleft: 5px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-bottom-left-radius: 5px;
-  /* CSS3 */
-  border-bottom-left-radius: 5px; }
-  body#projects #featured-project {
-    display: block; }
-  body#projects #featured-project h3 {
-    margin-top: 0;
-    color: #eee;
-    text-shadow: #1a1a1a 1px 1px 3px; }
-  body#projects #featured-project .art {
-    text-align: center; }
-  body#projects #featured-project p {
-    font-size: 85%;
-    line-height: 1.6em; }
-  body#projects #featured-project a {
-    color: #91d5f1;
-    /* Mozilla (FireFox, Camino) */
-    -moz-border-radius: 3px;
-    /* Webkit (Safari, Chrome) */
-    -webkit-border-radius: 3px;
-    /* CSS3 */
-    border-radius: 3px; }
-    body#projects #featured-project a:hover {
-      background-color: #91d5f1;
-      color: black;
-      text-decoration: none; }
 
 body#project #page h2 {
   margin-top: 0;
@@ -740,8 +569,6 @@ body#project #page .section {
       background-position: 0px -72px; }
     #sidebar #social li a.delicious {
       background-position: 0px -96px; }
-    #sidebar #social li a.flickr {
-      background-position: 0px -120px; }
 
 #sidebar #twitter .tweet {
   margin-top: 8px;
@@ -964,7 +791,7 @@ table td.window {
 
 body#stylesheet #page h1,
 table th.window-title {
-  background-image: url('/images/window_title.png?1253430544');
+  background-image: url('/images/window_title.png?1253471711');
   text-align: center;
   height: 22px;
   line-height: 22px;
