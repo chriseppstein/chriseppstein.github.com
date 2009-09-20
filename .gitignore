@@ -1,6 +1,5 @@
 .DS_Store
 .sass-cache
 _site/
-_drafts/
 credentials.php
 _source/highlighted/
