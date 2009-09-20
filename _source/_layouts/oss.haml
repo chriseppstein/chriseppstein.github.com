@@ -10,6 +10,7 @@
     - if verify = page.attempt(:verify)
       = verify
     %link{:href=>"/stylesheets/screen.css", :rel=>"stylesheet", :media=>"screen, projection", :type=>"text/css"}
+    %link{:href=>"/stylesheets/print.css", :rel=>"stylesheet", :media=>"print", :type=>"text/css"}
     %link{:href=>"/blog/atom.xml", :rel=>"alternate", :title=>"#chris-eppstein {position: unique;}", :type=>"application/atom+xml"}
   %body{:id => page.attempt(:body_id)}
     #header-wrapper
@@ -94,7 +95,7 @@
             %a(href="http://jekyllrb.com/") Jekyll
             and
             %a(href="http://www.oddbird.net/susy/") Susy
-          %h6
+          %h6.copyright
             &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
           %h6
             &ndash; with design help and inspiration from
