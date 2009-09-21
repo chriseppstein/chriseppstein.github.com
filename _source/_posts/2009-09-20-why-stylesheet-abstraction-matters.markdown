@@ -2,6 +2,7 @@
 title: Why Stylesheet Abstraction Matters
 description: "Whether you are a CSS expert or newbie, a programmer or a designer, you need abstractions to quickly and effectively build and maintain the design of your website."
 category: blogging
+featured: true
 ---
 
 I've seen a number of comments on blogs and twitter that amount to "You don't need a new stylesheet syntax, CSS is simple and you're a moron if you can't do it." I agree, CSS is simple. You assign style primitives to elements and some of those primitives cascade down to the elements contained within. I get it. It's simple _to understand_. But CSS is not simple to use or maintain. It's time for stylesheets to evolve so that we can take web design to the next level.

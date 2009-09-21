@@ -9,7 +9,7 @@ verify: <meta name="verify-v1" content="dod3zRBNeuf2lgDlHn+ZAYK+fUFRuxryWjLWqbzm
 ---
 
 #most-recent-post.mini.blog
-  - post = site.posts.sort_by(&:date).reverse.first
+  - post = site.posts.sort_by(&:date).reverse.detect{|p| p.data['featured']}
   .section.alpha
     - if post.data["link"]
       %h3.header.link
