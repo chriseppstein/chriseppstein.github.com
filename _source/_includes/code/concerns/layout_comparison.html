@@ -1,0 +1,96 @@
+{% protect %}
+<div class="code-wrapper">
+  <table class="comparison side-by-side">
+    <caption>A Three Column Layout Free of any design or typography</caption>
+    <tr>
+      <th class="window-title">Sass</th>
+      <th class="gap">&nbsp;</th>
+      <th class="window-title">Handcrafted CSS</th>
+    </tr>
+    <tr>
+      <td valign="top" class="window editor">
+<div>
+{% highlight sass %}
+body.three-column
+  #header-wrapper, #footer-wrapper, #page-wrapper
+    +container
+  #header, #footer, #page
+    +column(24)
+  #page
+    #left-sidebar
+      +column(4)
+    #content
+      +column(12)
+    #right-sidebar
+      +column(8)
+      +last
+{% endhighlight %}
+</div>
+      </td>
+      <td class="gap">&nbsp;</td>
+      <td valign="top" class="window editor">
+<div>
+{% highlight css %}
+/* Containers */
+body.three-column #header-wrapper,
+body.three-column #footer-wrapper,
+body.three-column #page-wrapper {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/* Columns */
+body.three-column #header,
+body.three-column #footer,
+body.three-column #page,
+body.three-column #page #left-sidebar,
+body.three-column #page #content,
+body.three-column #page #right-sidebar {
+  display: inline;
+  float: left;
+  margin-right: 10px; }
+
+/* Column Widths */
+body.three-column #header,
+body.three-column #footer,
+body.three-column #page {
+  width: 950px; }
+
+body.three-column #page #left-sidebar {
+  width: 150px; }
+
+body.three-column #page #content {
+  width: 470px; }
+
+body.three-column #page #right-sidebar {
+  width: 310px;
+  margin-right: 0; }
+
+/* Fixes for IE */
+* html body.three-column #header,
+* html body.three-column #footer,
+* html body.three-column #page,
+* html body.three-column #page #left-sidebar,
+* html body.three-column #page #content,
+* html body.three-column #page #right-sidebar {
+  overflow-x: hidden; }
+
+body.three-column #header-wrapper,
+body.three-column #footer-wrapper,
+body.three-column #page-wrapper {
+  /* We need the containers to have "layout" */
+  display: inline-block; }
+
+body.three-column #header-wrapper,
+body.three-column #footer-wrapper,
+body.three-column #page-wrapper {
+  /* but we didn't really want inline-block */
+  display: block; }
+
+{% endhighlight %}
+</div>
+    </td>
+  </tr>
+</table>
+</div>
+{% endprotect %}
