@@ -78,6 +78,18 @@ body#post .blog
           margin-top: 0.5em
         dt:first-child
           margin-top: 0
+      ul
+        list-style-type: disc
+        margin-left: 1em
+      ol
+        list-style-type: decimal
+        margin-left: 1.5em
+      ol, ul
+        & + p
+          margin-top: 1em
+      .window > div
+        max-height: 25em
+        overflow-y: auto
 
 .blog
   .section

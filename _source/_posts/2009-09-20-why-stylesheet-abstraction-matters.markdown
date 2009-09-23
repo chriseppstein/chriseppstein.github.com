@@ -294,7 +294,7 @@ Whether or not you decide to use a framework like Compass, you will benefit from
   <dd>Bug fixes and design changes can be made confidently once and propagated automatically.</dd>
 
   <dt>Domain specific style vocabulary</dt>
-  <dd>AKA Work how you think. Abstractions all you to design within the mindset of your site, not style primitives. Naming your colors things like "engaging_orage" and "calming_blue" help others know when it is appropriate to use those colors without any additional documentation.</dd>
+  <dd>AKA Work how you think. Abstractions all you to design within the mindset of your site, not style primitives. Naming your colors things like "engaging_orange" and "calming_blue" help others know when it is appropriate to use those colors without any additional documentation.</dd>
 
   <dt>Organization</dt>
   <dd>Easier to keep similar concepts close to each other in code to optimize coordinated changes.</dd>
@@ -333,4 +333,4 @@ Downsides to Abstraction
 Get Real Now, Go Abstract
 -------------------------
 
-CSS has proven to be an effective way to tell a web browser how to style a web page. But it has failed us as a technology for direct use by professionals who engineer websites. It should now be viewed more as an assembly language that higher-level languages emit, but that we shouldn't be bothered with. The really great news about this approach is that we don't have to introduce any new technologies for browsers to build or standards to be adhered to. You can start using Sass and Compass today. What are you waiting for? Oh instructions; here's [a great tutorial on Sass and Compass](http://net.tutsplus.com/tutorials/html-css-techniques/using-compass-and-sass-for-css-in-your-next-project/) to get you up and running.
+CSS has proven to be an effective way to tell a web browser how to style a web page. But it has failed us as a technology for direct use by professionals who engineer websites. It should now be viewed more as an assembly language that higher-level languages emit, but that we shouldn't be bothered with. The really great news about this approach is that we don't have to introduce any new technologies for browsers to build or standards to be adhered to. You can start using Sass and Compass today. What are you waiting for? Oh, instructions; here's [a great tutorial on Sass and Compass](http://net.tutsplus.com/tutorials/html-css-techniques/using-compass-and-sass-for-css-in-your-next-project/) to get you up and running.
