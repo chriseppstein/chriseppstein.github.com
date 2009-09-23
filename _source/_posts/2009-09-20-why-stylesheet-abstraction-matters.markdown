@@ -154,7 +154,7 @@ p.bigger
   /* Maintain the same line height. */
   !bigger_size = 16px
   font-size= 1em * !bigger_size / !base_font_size
-  line-height= !base_line_height / !bigger_font_size
+  line-height= !base_line_height / !bigger_size
 {% endhighlight %}
     </td>
     <td class="gap">&nbsp;</td>
