@@ -367,6 +367,17 @@ body#post .blog .footer {
       margin-top: 0.5em; }
     .blog .section .article dl dt:first-child {
       margin-top: 0; }
+  .blog .section .article ul {
+    list-style-type: disc;
+    margin-left: 1em; }
+  .blog .section .article ol {
+    list-style-type: decimal;
+    margin-left: 1.5em; }
+  .blog .section .article ol + p, .blog .section .article ul + p {
+    margin-top: 1em; }
+  .blog .section .article .window > div {
+    max-height: 25em;
+    overflow-y: auto; }
 
 .blog .section .vr {
   display: inline-block;
@@ -425,7 +436,7 @@ body#post .blog .footer {
     #header .nav a:hover {
       text-decoration: underline; }
   #header .title {
-    background-image: url('/images/textmate.png?1253471711');
+    background-image: url('/images/textmate.png?1253506185');
     background-repeat: no-repeat;
     background-position: bottom left;
     min-width: 380px; }
@@ -791,7 +802,7 @@ table td.window {
 
 body#stylesheet #page h1,
 table th.window-title {
-  background-image: url('/images/window_title.png?1253471711');
+  background-image: url('/images/window_title.png?1253506185');
   text-align: center;
   height: 22px;
   line-height: 22px;
