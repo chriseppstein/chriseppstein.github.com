@@ -266,6 +266,10 @@ body {
   margin-right: 10px;
   margin-bottom: 10px; }
 
+.blog .section .article .window > div {
+  max-height: 25em;
+  overflow-y: auto; }
+
 body#archives #page ul {
   padding-bottom: 15px; }
 body#archives #page a {
@@ -336,49 +340,6 @@ body#post .blog .footer {
   .blog .section .header a.title {
     padding: 0 4px 0 2px; }
 
-.blog .section .article {
-  clear: left; }
-  .blog .section .article p {
-    font-size: 110%;
-    line-height: 150%;
-    color: #333;
-    padding-bottom: 15px; }
-  .blog .section .article img {
-    border: none; }
-    .blog .section .article img.left {
-      display: inline;
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 15px; }
-    .blog .section .article img.right {
-      display: inline;
-      float: right;
-      margin-right: 15px;
-      margin-bottom: 15px; }
-  .blog .section .article dl {
-    padding-bottom: 15px; }
-    .blog .section .article dl dt {
-      font-weight: bold;
-      float: left;
-      margin-right: 7px; }
-      .blog .section .article dl dt:after {
-        content: " \2014"; }
-    .blog .section .article dl dt, .blog .section .article dl dd {
-      margin-top: 0.5em; }
-    .blog .section .article dl dt:first-child {
-      margin-top: 0; }
-  .blog .section .article ul {
-    list-style-type: disc;
-    margin-left: 1em; }
-  .blog .section .article ol {
-    list-style-type: decimal;
-    margin-left: 1.5em; }
-  .blog .section .article ol + p, .blog .section .article ul + p {
-    margin-top: 1em; }
-  .blog .section .article .window > div {
-    max-height: 25em;
-    overflow-y: auto; }
-
 .blog .section .vr {
   display: inline-block;
   border-left: 1px solid #999;
@@ -436,7 +397,7 @@ body#post .blog .footer {
     #header .nav a:hover {
       text-decoration: underline; }
   #header .title {
-    background-image: url('/images/textmate.png?1253678296');
+    background-image: url('/images/textmate.png?1253915684');
     background-repeat: no-repeat;
     background-position: bottom left;
     min-width: 380px; }
@@ -758,6 +719,48 @@ code {
   font-size: 160%;
   margin: 10px 0 12px; }
 
+.blog .section .article {
+  clear: left; }
+  .blog .section .article p {
+    font-size: 110%;
+    line-height: 150%;
+    color: #333;
+    padding-bottom: 15px; }
+  .blog .section .article img {
+    border: none; }
+    .blog .section .article img.left {
+      display: inline;
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px; }
+    .blog .section .article img.right {
+      display: inline;
+      float: right;
+      margin-right: 15px;
+      margin-bottom: 15px; }
+  .blog .section .article dl {
+    padding-bottom: 15px; }
+    .blog .section .article dl dt {
+      font-weight: bold;
+      float: left;
+      margin-right: 7px; }
+      .blog .section .article dl dt:after {
+        content: " \2014"; }
+    .blog .section .article dl dt, .blog .section .article dl dd {
+      margin-top: 0.5em; }
+    .blog .section .article dl dt:first-child {
+      margin-top: 0; }
+    .blog .section .article dl dt, .blog .section .article dl dd {
+      line-height: 150%; }
+  .blog .section .article ul {
+    list-style-type: disc;
+    margin-left: 1em; }
+  .blog .section .article ol {
+    list-style-type: decimal;
+    margin-left: 1.5em; }
+  .blog .section .article ol + p, .blog .section .article ul + p {
+    margin-top: 1em; }
+
 .editor {
   background: rgb(0,22,41);
   line-height: 1.25; }
@@ -802,7 +805,7 @@ table td.window {
 
 body#stylesheet #page h1,
 table th.window-title {
-  background-image: url('/images/window_title.png?1253678296');
+  background-image: url('/images/window_title.png?1253915684');
   text-align: center;
   height: 22px;
   line-height: 22px;
