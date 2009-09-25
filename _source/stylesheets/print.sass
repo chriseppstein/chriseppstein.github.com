@@ -1,4 +1,11 @@
+// Library modules
+@import library.sass
+
+// Reset
 @import compass/reset.sass
+
+// Includes
+@import partials/typography.sass
 
 #header
   .nav,
@@ -19,4 +26,40 @@
     h6.copyright
       display: block
 
+table.side-by-side
+  td, th
+    width: 49%
+    &.gap
+      width: 2%
 
+table.comparison
+  width: 100%
+  margin:
+    top: 0.5em
+    bottom: 2em
+
+.window
+  border: 2px solid #aaa
+
+body#stylesheet #page div.window,
+table td.window
+  +border-bottom-radius(6px)
+  vertical-align: top
+  border-top-width: 0
+  padding: 0.5em
+
+body#stylesheet #page h1,
+table th.window-title
+  border: 2px solid #aaa
+  text-align: center
+  +border-top-radius(6px)
+  font-size: 14px
+  border-bottom: 1px solid #aaa
+
+a
+  text-decoration: none
+  color: inherit
+  font-weight: 500
+  &:after
+    content: " (" attr(href) ")"
+    color: #777
