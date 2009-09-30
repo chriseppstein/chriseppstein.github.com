@@ -322,6 +322,12 @@ Downsides to Abstraction
   <dt>Bug fixing</dt>
   <dd>Fixing a bug often requires understanding the abstraction at a deeper level than you thought you had to. This tends to cause a lot of frustration for people, but it's important to remember that this is still less time than you would have spent building it from scratch.</dd>
 
+  <dt>Finding the Source</dt>
+  <dd>When generating CSS, it's harder to find where that generated CSS came from. Tools like Firebug will show you your CSS. To help, Sass will emit filenames and line numbers of the original sass code as comments, but firebug doesn't display those yet.</dd>
+
+  <dt>Toolchain Complexity</dt>
+  <dd>Adding a compilation phase makes your project build more complex and places new requirements on those environments where stylesheets are compiled.</dd>
+
   <dt>Documentation</dt>
   <dd>Ok this is probably a benefit, since you likely needed it anyway, but I hate writing documentation. Once you define a new concept, you have a great place to document that concept now.</dd>
 
