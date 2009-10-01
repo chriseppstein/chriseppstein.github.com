@@ -10,14 +10,10 @@ verify: <meta name="verify-v1" content="dod3zRBNeuf2lgDlHn+ZAYK+fUFRuxryWjLWqbzm
 
 #most-recent-post.mini.blog
   - post = site.posts.sort_by(&:date).reverse.detect{|p| p.data['featured']}
+  %h2.description Featured Post
   .section.alpha
-    - if post.data["link"]
-      %h3.header.link
-        = link_to(rp(style_amp(post.title)), post.data["link"], {:class=>"title"})
-        %a.permalink(href="#{post.url}") &infin;
-    - else
-      %h3.header
-        = link_to(rp(style_amp(post.title)), post.url, {:class=>"title"})
+    %h1.header
+      = link_to(rp(style_amp(post.title)), post.url, {:class=>"title"})
     .article
       - if post.data["exerpt"]
         = rp(site.markdown("#{post.data['exerpt']} &hellip; #{link_to('more &raquo;', post.url, {:class=>'more'})}"))
