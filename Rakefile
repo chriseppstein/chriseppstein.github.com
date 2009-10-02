@@ -49,7 +49,7 @@ end
 
 desc "generate and deploy website"
 task :deploy => :build do
-  system "git push origin master source"
+  system "git push origin master"
 end
 
 desc "start up an instance of serve on the output files"
