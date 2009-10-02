@@ -177,6 +177,8 @@ code {
 #sidebar .section h3 {
   font-size: 160%;
   margin: 10px 0 12px; }
+#sidebar .section ul {
+  list-style: disc; }
 
 .blog .section .article {
   clear: left; }

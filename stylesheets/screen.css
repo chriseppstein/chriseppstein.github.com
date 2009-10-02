@@ -397,7 +397,7 @@ body#post .blog .footer {
     #header .nav a:hover {
       text-decoration: underline; }
   #header .title {
-    background-image: url('/images/textmate.png?1254335274');
+    background-image: url('/images/textmate.png?1254454891');
     background-repeat: no-repeat;
     background-position: -5px bottom;
     min-width: 380px; }
@@ -723,6 +723,8 @@ code {
 #sidebar .section h3 {
   font-size: 160%;
   margin: 10px 0 12px; }
+#sidebar .section ul {
+  list-style: disc; }
 
 .blog .section .article {
   clear: left; }
@@ -810,7 +812,7 @@ table td.window {
 
 body#stylesheet #page h1,
 table th.window-title {
-  background-image: url('/images/window_title.png?1254335274');
+  background-image: url('/images/window_title.png?1254454891');
   text-align: center;
   height: 22px;
   line-height: 22px;
