@@ -11,7 +11,7 @@ layout: nil
   %author
     %name Chris Eppstein
     %email chris[at]eppsteins[dawt]net
-  - site.posts.sort_by(&:date).reverse[0..14].each do |post|
+  - site.posts.reject{|p| p.data['draft']}.sort_by(&:date).reverse[0..14].each do |post|
     %entry
       %title= rp(post.title)
       - if post.data['link']
