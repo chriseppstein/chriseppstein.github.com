@@ -1,0 +1,95 @@
+{% protect %}
+<div class="code-wrapper">
+  <table id="three-column-layouts" class="comparison side-by-side">
+    <tr>
+      <th class="window-title">Extended CSS</th>
+      <th class="gap">&nbsp;</th>
+      <th class="window-title">Compiled CSS</th>
+    </tr>
+    <tr>
+      <td valign="top" class="window editor">
+<div>
+{% highlight css %}
+.box {
+  border: 2px solid black;
+  margin: 1em;
+}
+.important-box {
+  @extends .box;
+  background-color: #CCC;
+}
+.error-box {
+  @extends .important-box;
+  background-color: #FCC;
+  color: red;
+  border-color: red;
+}
+.grid {
+  display: table;
+  margin: 1em;
+  border-spacing: 5px;
+}
+.row {
+  display: table-row;
+}
+.box {
+  display: table-cell;
+}
+#top .box {
+  font-size: larger;
+}
+#bottom .box {
+  font-size: smaller;
+}
+{% endhighlight %}
+</div>
+      </td>
+      <td class="gap">&nbsp;</td>
+      <td valign="top" class="window editor">
+<div>
+{% highlight css %}
+.box {
+  border: 2px solid black;
+  margin: 1em;
+}
+.important-box {
+  border: 2px solid black;
+  margin: 1em;
+  background-color: #CCC;
+}
+.error-box {
+  border: 2px solid black;
+  margin: 1em;
+  background-color: #CCC;
+  background-color: #FCC;
+  color: red;
+  border-color: red;
+}
+.grid {
+  display: table;
+  margin: 1em;
+  border-spacing: 5px;
+}
+.row {
+  display: table-row;
+}
+.box, .important-box, .error-box {
+  display: table-cell;
+}
+#top .box,
+#top .important-box,
+#top .error-box {
+  font-size: larger;
+}
+#bottom .box,
+#bottom .important-box,
+#bottom .error-box {
+  font-size: smaller;
+}
+{% endhighlight %}
+</div>
+    </td>
+  </tr>
+</table>
+</div>
+{% endprotect %}

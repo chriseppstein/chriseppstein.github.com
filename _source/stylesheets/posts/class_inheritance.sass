@@ -1,0 +1,52 @@
+#simple-display,
+#positional-styling .browser
+  .box
+    border: 2px solid black
+    margin: 1em
+    padding: 1em
+
+  .important-box
+    border: 2px solid black
+    margin: 1em
+    padding: 1em
+    background-color: #CCC
+
+  .error-box
+    border: 2px solid black
+    margin: 1em
+    padding: 1em
+    background-color: #FCC
+    color: red
+    border-color: red
+
+#positional-styling .browser
+  .grid
+    display: table
+    margin: 1em
+    border-spacing: 5px
+  .row
+    display: table-row
+  .box, .error-box, .important-box
+    display: table-cell
+    width: 50%
+  #top
+    .box, .error-box, .important-box
+      font-size: larger
+      margin-bottom: 1em
+  #bottom
+    .box, .error-box, .important-box
+      font-size: smaller
+
+#compilation-expected-display
+  .primary
+    .base, .extended
+      background-color: #c77
+  .alternate
+    .base, .extended
+      background-color: #7c7
+
+#compilation-actual-display
+  .primary .base
+    background-color: #c77
+  .alternate .base
+    background-color: #7c7

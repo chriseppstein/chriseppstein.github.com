@@ -1,0 +1,102 @@
+{% protect %}
+<div class="code-wrapper">
+  <table id="simple-class-inheritance" class="comparison side-by-side">
+    <tr>
+      <th class="window-title">CSS</th>
+      <th class="gap">&nbsp;</th>
+      <th class="window-title">Expected Display</th>
+    </tr>
+    <tr>
+      <td valign="top" class="window editor">
+<div>
+{% highlight css %}
+#top .base {
+  background-color: #c77;
+}
+#bottom .base {
+  background-color: #7c7;
+}
+.primary .extended,
+.alternate .extended {
+  @extends .base;
+}
+
+{% endhighlight %}
+</div>
+      </td>
+      <td class="gap">&nbsp;</td>
+      <td valign="top" class="window browser">
+<div id="compilation-expected-display">
+  <div id="top" class="primary">
+    <div class="base">
+      This should have a red background.
+    </div>
+    <div class="extended">
+      This should also have a red background.
+    </div>
+  </div>
+  <div id="bottom" class="alternate">
+    <div class="base">
+      This should have a green background.
+    </div>
+    <div class="extended">
+      This should also have a green background.
+    </div>
+  </div>
+</div>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="gap">&nbsp;</td>
+  </tr>
+  <tr>
+    <th class="window-title">HTML</th>
+    <th class="gap">&nbsp;</td>
+    <th class="window-title">Actual Display</th>
+  </tr>
+  <tr><td valign="top" class="window editor">
+{% highlight html %}
+<div id="top" class="primary">
+  <div class="base">
+    This should have a red background.
+  </div>
+  <div class="extended">
+    This should also have a red background.
+  </div>
+</div>
+<div id="bottom" class="alternate">
+  <div class="base">
+    This should have a green background.
+  </div>
+  <div class="extended">
+    This should also have a green background.
+  </div>
+</div>
+{% endhighlight %}
+  </td>
+  <td class="gap">&nbsp;</td>
+      <td valign="top" class="window browser">
+<div id="compilation-actual-display">
+  <div id="top" class="primary">
+    <div class="base">
+      This should have a red background.
+    </div>
+    <div class="extended">
+      This should also have a red background.
+    </div>
+  </div>
+  <div id="bottom" class="alternate">
+    <div class="base">
+      This should have a green background.
+    </div>
+    <div class="extended">
+      This should also have a green background.
+    </div>
+  </div>
+</div>
+    </td>
+</tr>
+</table>
+</div>
+{% endprotect %}

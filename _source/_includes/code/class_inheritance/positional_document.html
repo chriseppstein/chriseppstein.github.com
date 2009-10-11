@@ -1,0 +1,31 @@
+{% protect %}
+<div class="code-wrapper">
+  <table id="positional-document" class="comparison side-by-side">
+    <tr>
+      <th class="window-title">HTML</th>
+    </tr>
+    <tr>
+      <td valign="top" class="window editor">
+<div>
+{% highlight html %}
+<div class="grid">
+  <div id="top" class="row">
+    <div class="box"> This is a top box </div>
+    <div class="error-box"> This is also a top box </div>
+  </div>
+  <div id="middle" class="row">
+    <div class="important-box"> This is a middle box </div>
+    <div class="box"> This is also a middle box </div>
+  </div>
+  <div id="bottom" class="row">
+    <div class="box"> This is a bottom box </div>
+    <div class="important-box"> This is also a bottom box </div>
+  </div>
+</div>
+{% endhighlight %}
+</div>
+      </td>
+  </tr>
+</table>
+</div>
+{% endprotect %}

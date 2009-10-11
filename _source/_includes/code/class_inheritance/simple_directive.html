@@ -1,0 +1,66 @@
+{% protect %}
+<div class="code-wrapper">
+  <table id="simple-class-inheritance" class="comparison side-by-side">
+    <tr>
+      <th class="window-title">CSS</th>
+      <th class="gap">&nbsp;</th>
+      <th class="window-title">Display</th>
+    </tr>
+    <tr>
+      <td valign="top" class="window editor">
+<div>
+{% highlight css %}
+.box {
+  border: 2px solid black;
+  margin: 1em;
+}
+
+.important-box {
+  @extends .box;
+  background-color: #CCC;
+}
+
+.error-box {
+  @extends .important-box;
+  background-color: #FCC;
+  color: red;
+  border-color: red;
+}
+{% endhighlight %}
+</div>
+      </td>
+      <td rowspan="4" class="gap">&nbsp;</td>
+      <td rowspan="4" valign="top" class="window browser">
+<div id="simple-display">
+<div class="box">
+  This is a normal box.
+</div>
+<div class="important-box">
+  This is an important box.
+</div>
+<div class="error-box">
+  This is an error box.
+</div>
+</div>
+    </td>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <th class="window-title">HTML</th>
+  </tr>
+  <tr><td valign="top" class="window editor">
+{% highlight html %}
+<div class="box">
+  This is a normal box.
+</div>
+<div class="important-box">
+  This is an important box.
+</div>
+<div class="error-box">
+  This is an error box.
+</div>
+{% endhighlight %}
+  </td></tr>
+</table>
+</div>
+{% endprotect %}

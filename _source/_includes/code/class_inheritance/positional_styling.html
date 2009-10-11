@@ -1,0 +1,66 @@
+{% protect %}
+<div id="positional-styling" class="code-wrapper">
+  <table id="three-column-layouts" class="comparison side-by-side">
+    <tr>
+      <th class="window-title">CSS</th>
+      <th class="gap">&nbsp;</th>
+      <th class="window-title">Browser</th>
+    </tr>
+    <tr>
+      <td valign="top" class="window editor">
+<div>
+{% highlight css %}
+/* Box Styling */
+.box           { border: 2px solid black; margin: 1em; }
+.important-box { @extends .box; border-width: 10px; }
+.error-box     { @extends .important-box; border-color: red; }
+
+/* Style a Grid Layout */
+/* Note: it doesn't matter what kind of box we have,
+         the .box selector matches all of them because
+         they all extend from the box class. */
+.grid { display: table; margin: 1em; border-spacing: 5px; }
+.row  { display: table-row; }
+.box  { display: table-cell; }
+
+/* We can also style with descendant selectors: */
+#top .box    { font-size: larger; }
+#bottom .box { font-size: smaller; }
+{% endhighlight %}
+</div>
+      </td>
+      <td class="gap">&nbsp;</td>
+      <td valign="top" class="window browser">
+<div>
+<div class="grid">
+  <div id="top" class="row">
+    <div class="box">
+      This is a top box
+    </div>
+    <div class="error-box">
+      This is also a top box
+    </div>
+  </div>
+  <div id="middle" class="row">
+    <div class="important-box">
+      This is a middle box
+    </div>
+    <div class="box">
+      This is also a middle box
+    </div>
+  </div>
+  <div id="bottom" class="row">
+    <div class="box">
+      This is a bottom box
+    </div>
+    <div class="important-box">
+      This is also a bottom box
+    </div>
+  </div>
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</div>
+{% endprotect %}
