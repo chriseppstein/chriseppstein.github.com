@@ -1,0 +1,44 @@
+#simple-display .box,
+#positional-styling .browser .box {
+  border: 2px solid black;
+  margin: 1em;
+  padding: 1em; }
+#simple-display .important-box,
+#positional-styling .browser .important-box {
+  border: 2px solid black;
+  margin: 1em;
+  padding: 1em;
+  background-color: #CCC; }
+#simple-display .error-box,
+#positional-styling .browser .error-box {
+  border: 2px solid black;
+  margin: 1em;
+  padding: 1em;
+  background-color: #FCC;
+  color: red;
+  border-color: red; }
+
+#positional-styling .browser .grid {
+  display: table;
+  margin: 1em;
+  border-spacing: 5px; }
+#positional-styling .browser .row {
+  display: table-row; }
+#positional-styling .browser .box, #positional-styling .browser .error-box, #positional-styling .browser .important-box {
+  display: table-cell;
+  width: 50%; }
+#positional-styling .browser #top .box, #positional-styling .browser #top .error-box, #positional-styling .browser #top .important-box {
+  font-size: larger;
+  margin-bottom: 1em; }
+#positional-styling .browser #bottom .box, #positional-styling .browser #bottom .error-box, #positional-styling .browser #bottom .important-box {
+  font-size: smaller; }
+
+#compilation-expected-display .primary .base, #compilation-expected-display .primary .extended {
+  background-color: #c77; }
+#compilation-expected-display .alternate .base, #compilation-expected-display .alternate .extended {
+  background-color: #7c7; }
+
+#compilation-actual-display .primary .base {
+  background-color: #c77; }
+#compilation-actual-display .alternate .base {
+  background-color: #7c7; }
