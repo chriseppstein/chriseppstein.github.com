@@ -48,19 +48,14 @@
       <td valign="top" class="window editor">
 <div>
 {% highlight css %}
-.box {
+.box, .important-box, .error-box {
   border: 2px solid black;
   margin: 1em;
 }
-.important-box {
-  border: 2px solid black;
-  margin: 1em;
+.important-box, .error-box {
   background-color: #CCC;
 }
 .error-box {
-  border: 2px solid black;
-  margin: 1em;
-  background-color: #CCC;
   background-color: #FCC;
   color: red;
   border-color: red;

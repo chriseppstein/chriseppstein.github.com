@@ -11,17 +11,31 @@
 <div>
 {% highlight css %}
 /* Box Styling */
-.box           { border: 2px solid black; margin: 1em; }
-.important-box { @extends .box; border-width: 10px; }
-.error-box     { @extends .important-box; border-color: red; }
+.box {
+  border: 2px solid black; margin: 1em;
+}
+.important-box {
+  @extends .box;
+  background-color: #CCC;
+}
+.error-box {
+  @extends .important-box;
+  background-color: #FCC; color: red; border-color: red;
+}
 
 /* Style a Grid Layout */
 /* Note: it doesn't matter what kind of box we have,
          the .box selector matches all of them because
          they all extend from the box class. */
-.grid { display: table; margin: 1em; border-spacing: 5px; }
-.row  { display: table-row; }
-.box  { display: table-cell; }
+.grid {
+  display: table; margin: 1em; border-spacing: 5px;
+}
+.row  {
+  display: table-row;
+}
+.box {
+  display: table-cell;
+}
 
 /* We can also style with descendant selectors: */
 #top .box    { font-size: larger; }
