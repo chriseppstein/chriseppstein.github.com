@@ -1,6 +1,6 @@
 ---
 title: "Setting a Tone with Model Naming"
-description: My response to a post to Smashing Magazine from way back in 2007
+description: Names affect how we think and communicate. Can they impact a company's culture?
 category: blogging
 ---
 Early in the days of [Caring.com][1] we planned to build a personal homepage for our users that would delight them with a customized selection of content that was appropriate for the issues they were dealing with. Many of our early architectural decisions centered around this premise. Unfortunately, the breadth and depth of our content was not sufficient to support that feature and it was shelved rather than disappoint our users. Almost two years later, we have an [amazing selection of content for the most common care giving issues][2], a [small army of experts waiting to answer care giving questions][3] from our users, a small but [active community of caregivers][4] that are helping each other get through some of the most difficult times of their lives, and a [comprehensive guide to care giving resources in your area][5]. We are finally ready to personalize our site and deliver what we hope will be delightful experience for those people who choose to fill out a short questionnaire (not yet launched at the time of this writing).
