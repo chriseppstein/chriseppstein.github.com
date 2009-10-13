@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2009-10-11T11:25:09-07:00</updated>
+  <updated>2009-10-13T07:49:51-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>CSS Class Inheritance: Abstracting Selectors</title>
+    <link href="http://chriseppstein.github.com/blog/2009/10/12/css-class-inheritance" />
+    <updated>2009-10-12T00:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2009/10/12/css-class-inheritance</id>
+    <content type="html">
+      CSS class inheritance is a powerful concept. It allows selectors to inherit implementation. Read on for information on what it is, how it would work, what the present state is, and what future might hold.
+    </content>
+  </entry>
   <entry>
     <title>What is Compass</title>
     <link href="http://chriseppstein.github.com/blog/2009/09/30/what-is-compass" />

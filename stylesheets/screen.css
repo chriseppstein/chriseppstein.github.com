@@ -397,7 +397,7 @@ body#post .blog .footer {
     #header .nav a:hover {
       text-decoration: underline; }
   #header .title {
-    background-image: url('/images/textmate.png?1255245335');
+    background-image: url('/images/textmate.png?1255285512');
     background-repeat: no-repeat;
     background-position: -5px bottom;
     min-width: 380px; }
@@ -812,7 +812,7 @@ table td.window {
 
 body#stylesheet #page h1,
 table th.window-title {
-  background-image: url('/images/window_title.png?1255245335');
+  background-image: url('/images/window_title.png?1255285512');
   text-align: center;
   height: 22px;
   line-height: 22px;
