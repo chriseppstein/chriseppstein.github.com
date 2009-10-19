@@ -204,6 +204,7 @@ code {
     .blog .section .article dl dt {
       font-weight: bold;
       float: left;
+      clear: left;
       margin-right: 7px; }
       .blog .section .article dl dt:after {
         content: " \2014"; }
