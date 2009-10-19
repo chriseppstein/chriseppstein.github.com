@@ -31,6 +31,9 @@ Both of these approaches are interesting, but I find them both lacking:
 * The behavior of the `extends` property would be counter-intuitive. The natural behavior of "extend" or "inherit" is to accumulate, but there is no other style property that has that behavior. This would pose challenges for implementors and users alike who may assume that specifying `extends` overrides previous values. On the flip side, if the decision was made to have the `extends` property override previous values in the selector heirarchy, then we lose the concept of "encapsulation" which is core to the maintainability of stylesheets built using this technique. This is because a change to an `extends` property would have to be propagated manually to the inheriting selectors.
 * Unfortunately, the LessCSS approach introduces a new syntax for CSS parsers to understand but the use of a selector paves the way for allowing inheriting other types of selectors. I'm not sure that is a desirable thing yet because I've not fully thought through the ramifications, but I like that it keeps the option open.
 
+The `@extends` Directive
+------------------------
+
 I propose a hybrid syntax that I will use for the remainder of this post: The `@extends` directive:
 
 {% include code/class_inheritance/simple_directive.html %}
@@ -51,7 +54,7 @@ We should now be able style this quite simply:
 Why Is it Useful?
 -----------------
 
-At this point probably are thinking to yourself "Why not just put multiple classes on the html elements?" That's a good question and there are a couple of reasons this is not preferable:
+At this point you are probably thinking to yourself "Why not just put multiple classes on the html elements?" That's a good question and there are a couple of reasons this is not preferable:
 
 1. First and foremost, the answer is that this is more maintainable. The box [abstraction](/blog/2009/09/20/why-stylesheet-abstraction-matters/) should not be leaky and in practice it might be extending many classes that are purely presentational building blocks dealing with cross-browser concerns, clear-fixing, etc. that you needn't concern yourself with every time you want to use that abstraction. This concept is called "encapsulation" and is fundamental to object oriented programming and to keeping code maintainable.
 
