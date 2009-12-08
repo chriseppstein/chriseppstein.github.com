@@ -25,12 +25,10 @@ That said, the cost of upgrading a traditional CSS framework is high. The instal
 
 Compass was designed to be upgraded trivially and addresses this problem by making it easy to upgrade the compass codebase and then apply that upgrade to your stylesheets:
 
-{% protect %}
 <pre class="console window"><span class="prompt">$</span> <span class="stdin">sudo gem update chriseppstein-compass</span>
 <span class="prompt">$</span> <span class="stdin">cd myproject</span>
 <span class="prompt">$</span> <span class="stdin">compass --force --update</span>
 </pre>
-{% endprotect %}
 
 <h2 id="you_develop_sites_upon_a_framework_not_upon_the_solid_knowledge_of_css">You develop sites upon a framework, not upon the solid knowledge of CSS.</h2>
 
@@ -44,7 +42,6 @@ This argument has been made every time a technology evolves a new layer of abstr
 
 This is true. You _can_ degrade the performance of a browser. But did you? It's quite unlikely that the styles of your website will be so complex that they have a noticible performance import. If you're worried about it, you should read this writeup on [CSS performance characteristics](http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/). But let’s make an aesthetic argument instead: **Having a bunch of CSS that is superfluous to your project is ugly**. I agree. Compass currently has a lot of styles that you can use. But this ridiculous "bloat" just doesn’t matter because *you* control what ends up in your stylesheets. You can select the non-semantic versions of these frameworks with simple commands like:
 
-{% protect %}
 <div class="code-wrapper">
   <table class="comparison side-by-side">
     <tr>
@@ -64,11 +61,9 @@ This is true. You _can_ degrade the performance of a browser. But did you? It's 
   </tr>
 </table>
 </div>
-{% endprotect %}
 
 Or you can be more selective. For example, if you just want blueprint’s grid system:
 
-{% protect %}
 <div class="code-wrapper">
   <table class="comparison side-by-side">
     <tr>
@@ -88,7 +83,6 @@ Or you can be more selective. For example, if you just want blueprint’s grid s
   </tr>
 </table>
 </div>
-{% endprotect %}
 <h2 id="css_can_not_be_framed_semantically">CSS can not be framed semantically.</h2>
 
 > “CSS and (X)HTML go hand in hand. (X)HTML is a language semantic in nature, which is impossible to wrap up in the style of a framework. Each and every project is unique in and of itself, right down to the document structure, classes, and ids. A CSS framework passively removes a great majority of semantic value from the markup of a document and, in my opinion, should be avoided.” [[Please Do Not Use CSS Frameworks][4], by Jonathan Christopher]

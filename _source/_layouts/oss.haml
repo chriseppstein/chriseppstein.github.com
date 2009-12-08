@@ -45,7 +45,8 @@
       #content
         #page
           .contents
-            = content
+            :preserve
+              #{content}
         #sidebar.aside
           - if !page.respond_to?(:empty_sidebar)
             #about-me.section

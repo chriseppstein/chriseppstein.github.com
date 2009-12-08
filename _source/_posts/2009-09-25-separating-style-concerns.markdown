@@ -121,7 +121,6 @@ Structuring Mixins
 
 If you're building a mixin of any complexity, it's good to think about breaking it up into composable parts along these same lines. This allows a consumer of a mixin to peel back one layer of abstraction at a time and pick up the aspects of the mixin they want to use. It's much easier to never have applied some set of styles than it is to override them. Of course, this only applies to mixins that provide a finished design.
 
-{% protect %}
 <div class="code-wrapper">
 <table class="comparison side-by-side">
   <tr>
@@ -143,7 +142,6 @@ If you're building a mixin of any complexity, it's good to think about breaking 
   </tr>
 </table>
 </div>
-{% endprotect %}
 
 Conclusion
 ----------
