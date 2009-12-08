@@ -7,6 +7,8 @@ featured: false
 intro: "A short post looking back at the past year in my life."
 ---
 
+
+<img class="photo" src="http://img.skitch.com/20091208-dxy1fpud7ja6q3816yah7te1k8.png" />
 Two thousand nine was a pretty good year. I thought I'd stop for a moment to reflect on some of the major events of the year. So here they are in no particular order:
 
 * My startup, [Caring.com](http://www.caring.com/), received it's [Series B funding](http://www.caring.com/about/news-room/caring-com-closes-10-million-in-series-b-financing.html). I'm really proud of my entire company, we're an awesome team on an awesome mission.
