@@ -1,3 +1,4 @@
+/* line 6, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,48 +17,60 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: inherit;
   vertical-align: baseline; }
 
+/* line 17, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 *:focus {
   outline: 0; }
 
+/* line 20, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 body {
-  line-height: 1em;
-  color: black;
+  line-height: 1;
+  color: #000;
   background: #fff; }
 
+/* line 23, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 ol, ul {
   list-style: none; }
 
 /* tables still need 'cellspacing="0"' in the markup */
+/* line 27, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle; }
 
+/* line 30, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
+/* line 33, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 q, blockquote {
   quotes: "" ""; }
+  /* line 101, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
   q:before, q:after, blockquote:before, blockquote:after {
     content: ""; }
 
-img a {
+/* line 36, ../../../../.rvm/gems/ree/1.8.7/gems/compass-0.10.0.pre2/lib/compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+a img {
   border: none; }
 
+/* line 1, ../../_source/stylesheets/partials/typography/_base.sass */
 body {
   font-family: "Lucida Grande", Lucida, Helvetica, Arial, sans-serif; }
 
+/* line 5, ../../_source/stylesheets/partials/typography/_base.sass */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
   font-family: "Helvetica Neue", Helvetica, Lucida, Verdana, sans-serif;
   color: #444;
   font-weight: bold; }
 
+/* line 9, ../../_source/stylesheets/partials/typography/_base.sass */
 em {
   font-family: Times, "Times New Roman", Georgia, serif;
   font-size: 110%; }
 
+/* line 13, ../../_source/stylesheets/partials/typography/_base.sass */
 span.highlight, em.highlight, strong.highlight {
   background-color: #ff6;
   padding: 2px;
@@ -66,42 +79,50 @@ span.highlight, em.highlight, strong.highlight {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px; }
 
+/* line 18, ../../_source/stylesheets/partials/typography/_base.sass */
 p {
   padding-bottom: 18px; }
 
+/* line 21, ../../_source/stylesheets/partials/typography/_base.sass */
 h1 {
   font-size: 300%;
   line-height: 110%;
   margin-top: .5em;
   margin-bottom: .7em; }
 
+/* line 26, ../../_source/stylesheets/partials/typography/_base.sass */
 h2 {
   font-size: 250%;
   line-height: 110%;
   margin-top: .5em;
   margin-bottom: .7em; }
 
+/* line 31, ../../_source/stylesheets/partials/typography/_base.sass */
 h3 {
   font-size: 200%;
   margin-top: 1em;
   line-height: 110%;
   margin-bottom: .5em; }
 
+/* line 36, ../../_source/stylesheets/partials/typography/_base.sass */
 h4 {
   font-size: 140%;
   margin-top: 1.5em;
   margin-bottom: .5em; }
 
+/* line 40, ../../_source/stylesheets/partials/typography/_base.sass */
 h5 {
   font-size: 120%;
   margin-top: 1em;
   margin-bottom: .5em; }
 
+/* line 44, ../../_source/stylesheets/partials/typography/_base.sass */
 h6 {
   font-size: 100%;
   margin-top: 1em;
   margin-bottom: .5em; }
 
+/* line 49, ../../_source/stylesheets/partials/typography/_base.sass */
 blockquote {
   border-left: 2px solid #343434;
   padding: 0px 2em 0px 1em;
@@ -109,10 +130,12 @@ blockquote {
   font-family: Times, "Times New Roman", Georgia, serif;
   font-style: italic;
   font-size: 1.3em; }
+  /* line 56, ../../_source/stylesheets/partials/typography/_base.sass */
   blockquote p {
     color: #646464 !important;
     padding-bottom: 0 !important; }
 
+/* line 60, ../../_source/stylesheets/partials/typography/_base.sass */
 .source {
   text-align: right;
   font-family: Times, "Times New Roman", Georgia, serif;
@@ -121,136 +144,180 @@ blockquote {
   color: #888;
   padding-bottom: 1em; }
 
+/* line 68, ../../_source/stylesheets/partials/typography/_base.sass */
 strong {
   font-weight: bold; }
 
+/* line 70, ../../_source/stylesheets/partials/typography/_base.sass */
 em {
   font-style: italic; }
 
+/* line 73, ../../_source/stylesheets/partials/typography/_base.sass */
 small {
   font-size: 80%; }
 
+/* line 75, ../../_source/stylesheets/partials/typography/_base.sass */
 .ucase {
   text-transform: uppercase; }
 
+/* line 78, ../../_source/stylesheets/partials/typography/_base.sass */
 .amp {
   font-family: Baskerville, Palatino, Times, "Times New Roman", serif;
   font-style: italic; }
 
+/* line 82, ../../_source/stylesheets/partials/typography/_base.sass */
 pre {
   font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace;
   line-height: 1.5; }
 
+/* line 86, ../../_source/stylesheets/partials/typography/_base.sass */
 code {
   font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace; }
 
+/* line 2, ../../_source/stylesheets/partials/typography/_header.sass */
 #header h1, #header h2 {
   font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace;
   line-height: 1; }
+/* line 5, ../../_source/stylesheets/partials/typography/_header.sass */
 #header h1 {
   font-size: 2em;
   margin-top: 20px; }
+/* line 8, ../../_source/stylesheets/partials/typography/_header.sass */
 #header h2 {
   font-size: 2em; }
+/* line 11, ../../_source/stylesheets/partials/typography/_header.sass */
 #header .nav a {
   font-size: 1.25em;
   text-transform: lowercase;
   font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace; }
 
+/* line 17, ../../_source/stylesheets/partials/typography/_header.sass */
 #header #blog-links {
   font-size: 13px; }
+  /* line 19, ../../_source/stylesheets/partials/typography/_header.sass */
   #header #blog-links #rss {
     text-decoration: none; }
+    /* line 21, ../../_source/stylesheets/partials/typography/_header.sass */
     #header #blog-links #rss span {
       text-decoration: underline; }
 
+/* line 25, ../../_source/stylesheets/partials/typography/_header.sass */
 #search #q {
   font-size: 15px; }
 
+/* line 1, ../../_source/stylesheets/partials/typography/_sidebar.sass */
 #sidebar {
   font-size: 90%; }
+  /* line 3, ../../_source/stylesheets/partials/typography/_sidebar.sass */
   #sidebar h3, #sidebar h4, #sidebar h5 {
     color: #333; }
 
+/* line 2, ../../_source/stylesheets/partials/typography/sidebar/_section.sass */
 #sidebar .section .header span {
   font-size: 90%; }
+/* line 4, ../../_source/stylesheets/partials/typography/sidebar/_section.sass */
 #sidebar .section h3 {
   font-size: 160%;
   margin: 10px 0 12px; }
+/* line 7, ../../_source/stylesheets/partials/typography/sidebar/_section.sass */
 #sidebar .section ul {
   list-style: disc; }
 
+/* line 4, ../../_source/stylesheets/partials/typography/_blog.sass */
 .blog .section .article {
   clear: left; }
+  /* line 6, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article p {
     font-size: 110%;
     line-height: 150%;
     color: #333;
     padding-bottom: 15px; }
+  /* line 11, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article img {
     border: none; }
+    /* line 13, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article img.left {
       display: inline;
       float: left;
       margin-right: 15px;
       margin-bottom: 15px; }
+    /* line 17, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article img.right {
       display: inline;
       float: right;
       margin-right: 15px;
       margin-bottom: 15px; }
+  /* line 21, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article dl {
     padding-bottom: 15px; }
+    /* line 23, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt {
       font-weight: bold;
       float: left;
       clear: left;
       margin-right: 7px; }
+      /* line 28, ../../_source/stylesheets/partials/typography/_blog.sass */
       .blog .section .article dl dt:after {
         content: " \2014"; }
+    /* line 30, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt, .blog .section .article dl dd {
       margin-top: 0.5em; }
+    /* line 32, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt:first-child {
       margin-top: 0; }
+    /* line 34, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt, .blog .section .article dl dd {
       line-height: 150%; }
+  /* line 36, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article ul {
     list-style-type: disc;
     margin-left: 1em; }
+  /* line 39, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article ol {
     list-style-type: decimal;
     margin-left: 1.5em; }
+  /* line 43, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article ol + p, .blog .section .article ul + p {
     margin-top: 1em; }
 
+/* line 11, ../../_source/stylesheets/print.sass */
 #header .nav,
 #header .aside {
   display: none; }
 
+/* line 16, ../../_source/stylesheets/print.sass */
 #content .aside {
   display: none; }
 
+/* line 20, ../../_source/stylesheets/print.sass */
 #footer .bottom_nav {
   display: none; }
+/* line 23, ../../_source/stylesheets/print.sass */
 #footer #foot_bottom .affiliate,
 #footer #foot_bottom h6 {
   display: none; }
+/* line 26, ../../_source/stylesheets/print.sass */
 #footer #foot_bottom h6.copyright {
   display: block; }
 
+/* line 30, ../../_source/stylesheets/print.sass */
 table.side-by-side td, table.side-by-side th {
   width: 49%; }
+  /* line 32, ../../_source/stylesheets/print.sass */
   table.side-by-side td.gap, table.side-by-side th.gap {
     width: 2%; }
 
+/* line 35, ../../_source/stylesheets/print.sass */
 table.comparison {
   width: 100%;
   margin-top: 0.5em;
   margin-bottom: 2em; }
 
+/* line 41, ../../_source/stylesheets/print.sass */
 .window {
   border: 2px solid #aaa; }
 
+/* line 44, ../../_source/stylesheets/print.sass */
 body#stylesheet #page div.window,
 table td.window {
   border-bottom-left-radius: 6px;
@@ -263,6 +330,7 @@ table td.window {
   border-top-width: 0;
   padding: 0.5em; }
 
+/* line 51, ../../_source/stylesheets/print.sass */
 body#stylesheet #page h1,
 table th.window-title {
   border: 2px solid #aaa;
@@ -276,10 +344,12 @@ table th.window-title {
   font-size: 14px;
   border-bottom: 1px solid #aaa; }
 
+/* line 59, ../../_source/stylesheets/print.sass */
 a {
   text-decoration: none;
   color: inherit;
   font-weight: 500; }
+  /* line 63, ../../_source/stylesheets/print.sass */
   a:after {
     content: " (" attr(href) ")";
     color: #777; }
