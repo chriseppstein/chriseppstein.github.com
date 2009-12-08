@@ -69,12 +69,9 @@ a img {
     /* line 10, ../../_source/stylesheets/partials/layout/_footer.sass */
     #footer .bottom_nav a {
       color: #aaaaaa;
-      /* Mozilla (FireFox, Camino) */
-      -moz-border-radius: 3px;
-      /* Webkit (Safari, Chrome) */
-      -webkit-border-radius: 3px;
-      /* CSS3 */
       border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
       display: inline-block;
       margin: 20px 0 0 10px; }
       /* line 19, ../../_source/stylesheets/library/_links.sass */
@@ -88,9 +85,9 @@ a img {
 
 /* line 16, ../../_source/stylesheets/partials/layout/_footer.sass */
 #foot_bottom {
-  width: 95.918%;
   display: inline;
   float: left;
+  width: 95.918%;
   margin-right: 2.041%;
   padding: 10px 0;
   margin-top: 15px;
@@ -99,12 +96,9 @@ a img {
   /* line 23, ../../_source/stylesheets/partials/layout/_footer.sass */
   #foot_bottom a {
     color: #999999;
-    /* Mozilla (FireFox, Camino) */
+    border-radius: 3px;
     -moz-border-radius: 3px;
-    /* Webkit (Safari, Chrome) */
-    -webkit-border-radius: 3px;
-    /* CSS3 */
-    border-radius: 3px; }
+    -webkit-border-radius: 3px; }
     /* line 19, ../../_source/stylesheets/library/_links.sass */
     #foot_bottom a:hover {
       background-color: #999999;
@@ -113,9 +107,9 @@ a img {
   /* line 25, ../../_source/stylesheets/partials/layout/_footer.sass */
   #foot_bottom.alone {
     border-top: 0;
-    width: 71.429%;
     display: inline;
     float: left;
+    width: 71.429%;
     margin-right: 2.041%; }
   /* line 28, ../../_source/stylesheets/partials/layout/_footer.sass */
   #foot_bottom h6 {
@@ -167,15 +161,15 @@ a img {
 
 /* line 2, ../../_source/stylesheets/partials/layout/_header.sass */
 #header .title {
-  width: 30.612%;
   display: inline;
   float: left;
+  width: 30.612%;
   margin-right: 2.041%; }
 /* line 4, ../../_source/stylesheets/partials/layout/_header.sass */
 #header .nav {
-  width: 38.776%;
   display: inline;
   float: left;
+  width: 38.776%;
   margin-right: 2.041%;
   min-width: 420px; }
 /* line 7, ../../_source/stylesheets/partials/layout/_header.sass */
@@ -284,15 +278,15 @@ body {
 
 /* line 12, ../../_source/stylesheets/partials/layout/_page.sass */
 .aside {
-  width: 22.449%;
   display: inline;
   float: left;
+  width: 22.449%;
   margin-right: 2.041%;
   display: inline;
   float: right;
   margin-right: 2.041%;
   /* ugly hacks for IE6-7 */
-  #margin-right: 1.041%;
+  #margin-left: -1%;
   /* end ugly hacks */ }
   /* line 15, ../../_source/stylesheets/partials/layout/_page.sass */
   .aside .section {
@@ -301,9 +295,9 @@ body {
 
 /* line 19, ../../_source/stylesheets/partials/layout/_page.sass */
 #page {
-  width: 71.429%;
   display: inline;
   float: left;
+  width: 71.429%;
   margin-right: 2.041%;
   min-width: 45em;
   min-height: 100%;
@@ -334,12 +328,9 @@ body#archives #page ul {
 /* line 4, ../../_source/stylesheets/partials/design/_archives.sass */
 body#archives #page a {
   color: #b3272d;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius: 3px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-radius: 3px;
-  /* CSS3 */
   border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   font-family: "Helvetica Neue", Helvetica, Lucida, Verdana, sans-serif;
   font-size: 110%;
   font-weight: bold; }
@@ -445,6 +436,17 @@ body#post .blog .footer {
 #post .blog .section {
   border-bottom: none; }
 
+/* line 80, ../../_source/stylesheets/partials/design/_blog.sass */
+.article img.photo {
+  /* Webkit (Safari, Chrome) */
+  -webkit-box-shadow: #333333 1px 1px 5px;
+  /* Gecko (Firefox, Camino) */
+  -moz-box-shadow: #333333 1px 1px 5px;
+  /* CSS3 */
+  box-shadow: #333333 1px 1px 5px;
+  float: right;
+  margin: 0 5px; }
+
 /* line 3, ../../_source/stylesheets/partials/design/_comments.sass */
 #disqus_thread #dsq-login-toggle:hover, #disqus_thread .dsq-by a:hover {
   background: none; }
@@ -453,12 +455,9 @@ body#post .blog .footer {
   border-bottom: 0 !important;
   text-decoration: underline !important;
   color: #5a9a41;
-  /* Mozilla (FireFox, Camino) */
+  border-radius: 3px;
   -moz-border-radius: 3px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-radius: 3px;
-  /* CSS3 */
-  border-radius: 3px; }
+  -webkit-border-radius: 3px; }
   /* line 8, ../../_source/stylesheets/partials/design/_comments.sass */
   #disqus_thread a.dsq-help:hover {
     text-decoration: none !important; }
@@ -487,7 +486,7 @@ body#post .blog .footer {
       text-decoration: underline; }
   /* line 9, ../../_source/stylesheets/partials/design/_header.sass */
   #header .title {
-    background-image: url('/images/textmate.png?1255931021');
+    background-image: url('/images/textmate.png?1260257878');
     background-repeat: no-repeat;
     background-position: -5px bottom;
     min-width: 380px; }
@@ -544,12 +543,9 @@ body#home h2.description {
 /* line 2, ../../_source/stylesheets/partials/design/_page.sass */
 #page .header a {
   color: #444444;
-  /* Mozilla (FireFox, Camino) */
+  border-radius: 3px;
   -moz-border-radius: 3px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-radius: 3px;
-  /* CSS3 */
-  border-radius: 3px; }
+  -webkit-border-radius: 3px; }
   /* line 19, ../../_source/stylesheets/library/_links.sass */
   #page .header a:hover {
     background-color: #444444;
@@ -558,12 +554,9 @@ body#home h2.description {
 /* line 4, ../../_source/stylesheets/partials/design/_page.sass */
 #page .article a, #page .footer a {
   color: #b3272d;
-  /* Mozilla (FireFox, Camino) */
+  border-radius: 3px;
   -moz-border-radius: 3px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-radius: 3px;
-  /* CSS3 */
-  border-radius: 3px; }
+  -webkit-border-radius: 3px; }
   /* line 19, ../../_source/stylesheets/library/_links.sass */
   #page .article a:hover, #page .footer a:hover {
     background-color: #b3272d;
@@ -599,12 +592,9 @@ body#project #page .section {
   body#project #page .section img {
     border: 1px solid #ccc;
     background: #fff;
-    /* Mozilla (FireFox, Camino) */
-    -moz-border-radius: 3px;
-    /* Webkit (Safari, Chrome) */
-    -webkit-border-radius: 3px;
-    /* CSS3 */
     border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     padding: 3px; }
   /* line 23, ../../_source/stylesheets/partials/design/_projects.sass */
   body#project #page .section .header {
@@ -705,12 +695,9 @@ body#project #page .section {
 #sidebar .section .header a,
 #sidebar .section ul a {
   color: #b3272d;
-  /* Mozilla (FireFox, Camino) */
+  border-radius: 3px;
   -moz-border-radius: 3px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-radius: 3px;
-  /* CSS3 */
-  border-radius: 3px; }
+  -webkit-border-radius: 3px; }
   /* line 19, ../../_source/stylesheets/library/_links.sass */
   #sidebar .section p a:hover,
   #sidebar .section .header a:hover,
@@ -739,12 +726,9 @@ span.highlight, em.highlight, strong.highlight {
   background-color: #ff6;
   padding: 2px;
   margin: 0 -2px;
-  /* Mozilla (FireFox, Camino) */
+  border-radius: 3px;
   -moz-border-radius: 3px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-radius: 3px;
-  /* CSS3 */
-  border-radius: 3px; }
+  -webkit-border-radius: 3px; }
 
 /* line 18, ../../_source/stylesheets/partials/typography/_base.sass */
 p {
@@ -984,38 +968,26 @@ body#stylesheet #page div.window,
 table td.window {
   vertical-align: top;
   border-top-width: 0;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius-bottomright: 6px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-bottom-right-radius: 6px;
-  /* CSS3 */
-  border-bottom-right-radius: 6px;
-  /* Mozilla (FireFox, Camino) */
+  border-bottom-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
-  /* Webkit (Safari, Chrome) */
   -webkit-border-bottom-left-radius: 6px;
-  /* CSS3 */
-  border-bottom-left-radius: 6px; }
+  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px; }
 
 /* line 33, ../../_source/stylesheets/partials/_syntax.sass */
 body#stylesheet #page h1,
 table th.window-title {
-  background-image: url('/images/window_title.png?1255931021');
+  background-image: url('/images/window_title.png?1260257878');
   text-align: center;
   height: 22px;
   line-height: 22px;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius-topleft: 6px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-top-left-radius: 6px;
-  /* CSS3 */
   border-top-left-radius: 6px;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius-topright: 6px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-top-right-radius: 6px;
-  /* CSS3 */
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
   text-shadow: 1px 1px 1px white;
   font-size: 14px;
   margin-bottom: 0;
@@ -1248,9 +1220,3 @@ pre.console {
   background-image: url('/images/grid.png');
   background-repeat: repeat;
   background-position: 2.041% 0; }
-  /* line 11, ../../../../.rvm/gems/ree/1.8.7/gems/compass-susy-plugin-0.6.3/sass/susy/_utils.sass */
-  .showgrid * {
-    background: transparent; }
-  /* line 13, ../../../../.rvm/gems/ree/1.8.7/gems/compass-susy-plugin-0.6.3/sass/susy/_utils.sass */
-  .showgrid div {
-    background: rgba(0,0,0,.125); }
