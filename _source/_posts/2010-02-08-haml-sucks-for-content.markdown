@@ -1,6 +1,6 @@
 ---
-title: Haml Sucks at Content
-browser_title: Haml Sucks at Content
+title: Haml Sucks for Content
+browser_title: Haml Sucks for Content
 description: "Haml is awesome, but if you're using it for inline markup, you're doing it wrong."
 category: blogging
 draft: true
@@ -112,7 +112,7 @@ If you decide that you're going to write some inline markup with Haml anyway (he
 Conclusion
 ----------
 
-Despite its flaws, Haml is a very nice template language that optimizes the workmy team and I do on a daily basis. We recommend it often. But the goal is that coding will be faster, easier and more enjoyable. If you have a different technology that fits better with how you think, then you should use that. But if you find Haml documents to be easier to read, but that you find yourself fighting it to make the output you need, then I hope this post has helped you understand how to play to Haml's strengths and avoid its weaknesses.
+Despite its flaws, Haml is a very nice template language that optimizes the work my team and I do on a daily basis. We recommend it often. But the goal is that coding will be faster, easier and more enjoyable. If you have a different technology that fits better with how you think, then you should use that. But if you find Haml documents to be easier to read, but that you find yourself fighting it to make the output you need, then I hope this post has helped you understand how to play to Haml's strengths and avoid its weaknesses.
 
 What I hope is clear is that if your job is to produce content, then Haml is probably not the template language for you.
 
