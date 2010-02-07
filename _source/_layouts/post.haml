@@ -77,7 +77,7 @@
         #sidebar.aside
           #archives.section
             %h3.heading Blog Archives
-            - posts = site.posts.group_by { |p| p.date.strftime("%Y") }
+            - posts = site.posts.reject{|p| p.data['draft']}.group_by { |p| p.date.strftime("%Y") }
             - posts.keys.sort.reverse.each do |year|
               %h5= year
               %ul.section
