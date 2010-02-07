@@ -127,12 +127,13 @@ title: "#{file[7..-1]}"
     hightlight_files.each do |file|
       puts "Adding links to #{file}"
       doc = open(file) {|f| Hpricot(f.read) }
-      doc.search("span.nn") do |span|
+      doc.search("span.s") do |span|
         puts "Checking if #{span.inner_text} exists."
         local_dir = "_source/stylesheets/#{File.dirname(file)[32..-1]}"
         puts "local_dir is #{local_dir}"
         begin
           full_path = Sass::Files.find_file_to_import(span.inner_text, ["_source/stylesheets", local_dir])
+          next if full_path =~ /\.css$/
           puts "Found #{span.inner_text} at #{full_path}"
           wrapped = span.make(%Q{<a class="import" href="/highlighted/#{departialize(full_path[8..-1])}.html">#{span}</a>})
           span.parent.replace_child(span, wrapped)
