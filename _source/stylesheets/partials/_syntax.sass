@@ -4,7 +4,11 @@
   line-height: 1.25
 .window
   border: #aaa ridge 6px
-  overflow-x: auto
+  td
+    max-height: 25em
+    max-width: 300px
+    overflow-y: auto
+    overflow-x: auto
   td.linenos
     color: #777
     background-color: #ccc
@@ -15,6 +19,7 @@
 table.side-by-side
   td, th
     width: 49%
+    overflow-x: auto
     &.gap
       width: 2%
 
