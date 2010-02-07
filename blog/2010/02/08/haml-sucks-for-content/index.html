@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Haml Sucks at Content</title>
+    <meta content="Haml is awesome, but if you're using it for inline markup, you're doing it wrong." name="description" />
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+        google.load("jquery", "1.3.2");
+      //]]>
+    </script>
+    <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
+    <script src="/javascripts/site.js" type="text/javascript"></script>
+  </head>
+  <body id="post">
+    <div id="header-wrapper">
+      <div id="header">
+        <div class="aside">
+          <div id="search">
+            <form action="http://www.google.com/cse" id="cse-search-box">
+              <input name="cx" type="hidden" value="010456759155788273473:m_ld19wftd4" />
+              <input name="ie" type="hidden" value="UTF-8" />
+              <input id="q" name="q" type="text" />
+              <!-- %input(type="submit" name="sa" value="Search") -->
+            </form>
+          </div>
+          <div id="blog-links">
+            <a href="/blog/atom.xml" id="rss" title="subscribe">
+              <img src="/images/rss.png" />
+              <span>Subscribe</span>
+            </a>
+            <a href="/blog/archives.html" id="archive" title="blog archive">Blog Archive</a>
+          </div>
+        </div>
+        <div class="nav">
+          <ul>
+            <li class="home">
+              <a href="/" title="Home">Home</a>
+            </li>
+            <li class="blog">
+              <a href="/blog/" title="Blog">Blog</a>
+            </li>
+            <li class="projects">
+              <a href="/projects/" title="Projects">Projects</a>
+            </li>
+            <li class="work">
+              <a href="/work/" title="Work">Work</a>
+            </li>
+          </ul>
+        </div>
+        <div class="title highlight">
+          <h1 class="n">#chris-eppstein</h1>
+          <h2>&nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span></h2>
+        </div>
+      </div>
+    </div>
+    <div id="content-wrapper">
+      <div id="content">
+        <div class="blog" id="page">
+          <div class="contents section alpha">
+            <div class="metadata">
+              Published:
+              <span class="pubdate">08 Feb, 2010</span>
+            </div>
+            <h2 class="header">
+              Haml Sucks at Content
+            </h2>
+            <div class="article"><p>I am not writing this blog post in HTML, and I&#8217;m certainly not writing it in <a href="http://haml-lang.com">Haml</a>. I&#8217;m using <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. Markdown is a great syntax for content. It&#8217;s so good at it, that all of the content for the Haml website is <a href="http://github.com/nex3/haml/blob/haml-pages/src/pages/about.haml">written</a> <a href="http://github.com/nex3/haml/blob/haml-pages/src/pages/help.haml">in</a> <a href="http://github.com/nex3/haml/blob/haml-pages/src/pages/release-notes.haml">markdown</a>. </p>&#x000A;&#x000A;<p>When I say content, I mean the meat of a web page. The stuff that is left after you take away the header, footer, sidebar, ads, etc. The stuff the user is there to read. Don&#8217;t use Haml for adding markup to your inline content.</p>&#x000A;&#x000A;<div class="code-wrapper">&#x000A;<table id="haml-sucks-example-1" class="comparison">&#x000A;<tr>&#x000A;<th class="window-title">Paragraph of Content in Haml</th>&#x000A;</tr>&#x000A;<tr>&#x000A;<td valign="top" class="window editor">&#x000A;<div><div class="highlight"><pre><span class="nt">%p</span>&#x000A;  Please,&#x000A;  <span class="nt">%strong</span>&#x000A;    For the love of&#x000A;    <span class="p">=</span> <span class="n">succeed</span> <span class="s2">&quot;,&quot;</span> <span class="k">do</span>&#x000A;      <span class="nt">%a</span>(<span class="na">href=</span><span class="s">&quot;http://www.god.com/&quot;</span>) God&#x000A;  don&#39;t use&#x000A;  <span class="nt">%a</span>(<span class="na">href=</span><span class="s">&quot;http://haml-lang.com&quot;</span>) Haml&#x000A;  for marking-up your content!&#x000A;</pre>&#x000A;</div></div>&#x000A;&#x000A;&#x000A;<p></td>&#x000A;</tr>&#x000A;<tr>&#x000A;  <td>&nbsp;</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<th class="window-title">Paragraph of Content in Markdown</th>&#x000A;</tr>&#x000A;<tr>&#x000A;<td valign="top" class="window editor">&#x000A;<div class="highlight"><pre><code>Please, **For the love of [God](http://www.god.com/),**&#x000A;don't use [Haml](http://haml-lang.com) for marking-up your content!&#x000A;</code></pre></div>&#x000A;</td>&#x000A;</tr>&#x000A;</table>&#x000A;</div></p>&#x000A;&#x000A;<h2>Haml is for Layout &amp; Design</h2>&#x000A;&#x000A;<p>Haml&#8217;s use of CSS syntax for IDs and class names should make it very clear: The markup you write in Haml is intended to be styled by your stylesheets. Conversely, content does not usually have specific styling - it is styled by tags.</p>&#x000A;&#x000A;<p>Haml documents do two things to make you faster:</p>&#x000A;&#x000A;<ol>&#x000A;<li>Make the structure of the document obvious by forcing indentation.</li>&#x000A;<li>Make it easier to switch between styles and markup.</li>&#x000A;</ol>&#x000A;&#x000A;&#x000A;<h2>Work-Arounds</h2>&#x000A;&#x000A;<p>When I asked <a href="http://nex-3.com/">Nathan</a>, the man behind both <a href="http://haml-lang.com">Haml</a> &amp; <a href="http://sass-lang.com">Sass</a>, if he would mind it if I wrote this post he responded:</p>&#x000A;&#x000A;<blockquote><p>No, it&#8217;s true.</p></blockquote>&#x000A;&#x000A;<p>Nathan&#8217;s acknowledgment of Haml&#8217;s weaknesses is one of its strengths. He has done a lot to sand down Haml&#8217;s rough edges over the two years I&#8217;ve been following Haml&#8217;s development. But first and foremost, <strong>I think there is a misconception that Haml&#8217;s indentation-based tags are the only way to create markup in a Haml document. This is not true.</strong> Here are several ways you can embed inline content within a Haml document:</p>&#x000A;&#x000A;<h3>&bull; Inline your HTML</h3>&#x000A;&#x000A;<p>That&#8217;s right. Just put some HTML into your Haml document. Don&#8217;t be afraid, it&#8217;ll be just fine.</p>&#x000A;&#x000A;<div class="code-wrapper">&#x000A;<table id="haml-sucks-example-1" class="comparison">&#x000A;<tr>&#x000A;<th class="window-title">Inline HTML</th>&#x000A;</tr>&#x000A;<tr>&#x000A;<td valign="top" class="window editor">&#x000A;<div><div class="highlight"><pre><span class="nt">%p</span>&#x000A;  Please, &lt;strong&gt;For the love of &lt;a href=&quot;http://www.god.com/&quot;&gt;God&lt;/a&gt;,&lt;/strong&gt;&#x000A;  don&#39;t use &lt;a href=&quot;http://haml-lang.com&quot;&gt;Haml&lt;/a&gt; for marking-up your content!&#x000A;</pre>&#x000A;</div></div>&#x000A;&#x000A;&#x000A;<p></td>&#x000A;</tr>&#x000A;</table>&#x000A;</div></p>&#x000A;&#x000A;<h3>&bull; Use Filters</h3>&#x000A;&#x000A;<p>Haml lets you pass any block of content through a filter. If you find yourself thinking that Haml is getting in the way, that&#8217;s probably because you aren&#8217;t using a filter. In any filter, you can use <code>#{}</code> to insert output from code. The following filters are available for processing your content:</p>&#x000A;&#x000A;<ul>&#x000A;<li><code>:plain</code> &#8211; Simply passes the filtered text through to the generated HTML.</li>&#x000A;<li><code>:cdata</code> &#8211; Surrounds the filtered text with a CDATA escape.</li>&#x000A;<li><code>:escaped</code> &#8211; Works the same as <code>:plain</code>, but HTML-escapes the text before placing it in the document.</li>&#x000A;<li><code>:erb</code> &#8211; Parses the filtered text with ERB &#8211; the Rails default template engine.</li>&#x000A;<li><code>:textile</code> &#8211; Parses the filtered text with <a href="http://www.textism.com/tools/textile">Textile</a>. Only works if <a href="http://redcloth.org/">RedCloth</a> is installed.</li>&#x000A;<li><code>:markdown</code> &#8211; Parses the filtered text with Markdown. Only works if <a href="http://github.com/rtomayko/rdiscount">RDiscount</a>, <a href="http://github.com/rtomayko/rpeg-markdown">RPeg-Markdown</a>, <a href="http://maruku.rubyforge.org/">Maruku</a>, or <a href="http://haml-lang.com/docs/yardoc/www.deveiate.org/projects/BlueCloth">BlueCloth</a> are installed</li>&#x000A;<li><code>:maruku</code> &#8211; Parses the filtered text with <a href="http://maruku.rubyforge.org/">Maruku</a>, which has some non-standard extensions to Markdown.</li>&#x000A;</ul>&#x000A;&#x000A;&#x000A;<div class="code-wrapper">&#x000A;<table id="haml-sucks-example-1" class="comparison">&#x000A;<tr>&#x000A;<th class="window-title">Inline Markdown</th>&#x000A;</tr>&#x000A;<tr>&#x000A;<td valign="top" class="window editor">&#x000A;<div><div class="highlight"><pre><span class="nc">.content</span>&#x000A;  <span class="nd">:markdown</span>&#x000A;    <span class="nd">Please, **For the love of [God](http://www.god.com/),**</span>&#x000A;    <span class="nd">don&#39;t use [Haml](http://haml-lang.com) for marking-up your content!</span>&#x000A;</pre>&#x000A;</div></div>&#x000A;&#x000A;&#x000A;<p></td>&#x000A;</tr>&#x000A;</table>&#x000A;</div></p>&#x000A;&#x000A;<h3>&bull; Partials</h3>&#x000A;&#x000A;<p>Haml is framework agnostic, but at least within rails, the framework will compile partials and insert the compiled content into your page. At <a href="http://www.caring.com">Caring.com</a> we use the <a href="http://github.com/caring/amor">Amor rails plugin</a> for markdown content. This makes it easy for us to compose templates, partials, and layouts of different formats into a single page.</p>&#x000A;&#x000A;<div class="code-wrapper">&#x000A;<table id="haml-sucks-example-1" class="comparison">&#x000A;<tr>&#x000A;<th class="window-title">Haml with Rails Partials</th>&#x000A;</tr>&#x000A;<tr>&#x000A;<td valign="top" class="window editor">&#x000A;<div><div class="highlight"><pre><span class="nc">.content</span><span class="p">=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s2">&quot;some_content&quot;</span>&#x000A;</pre>&#x000A;</div></div>&#x000A;&#x000A;&#x000A;<p></td>&#x000A;</tr>&#x000A;<tr>&#x000A;  <td>&nbsp;</td>&#x000A;</tr>&#x000A;<tr>&#x000A;<th class="window-title">_some_content.html.md</th>&#x000A;</tr>&#x000A;<tr>&#x000A;<td valign="top" class="window editor">&#x000A;<div class="highlight"><pre><code>Please, **For the love of [God](http://www.god.com/),**&#x000A;don't use [Haml](http://haml-lang.com) for marking-up your content!&#x000A;</code></pre></div>&#x000A;</td>&#x000A;</tr>&#x000A;</table>&#x000A;</div></p>&#x000A;&#x000A;<h2>Some Other Haml &#8220;Gotchas&#8221;</h2>&#x000A;&#x000A;<p>So let&#8217;s just get it all out on the table. Haml is really good at what it is good at, but it is really bad at some other things. Here they are in no particular order:</p>&#x000A;&#x000A;<h3>&bull; Preformatted Content</h3>&#x000A;&#x000A;<p>Haml&#8217;s default mode is to pretty-print your output. This wreaks havoc with preformatted text in &lt;pre> and &lt;textarea> tags. Haml provides a <code>:preserve</code> filter that inserts the filtered text into the output with whitespace preserved. For some reason, it still never quite works right for me. So I&#8217;ve found that the simplest way is to just turn the pretty-printer off by adding this to my <code>environment.rb</code>:</p>&#x000A;&#x000A;<pre><code>Haml::Template.options[:ugly] = true&#x000A;</code></pre>&#x000A;&#x000A;<p>More on <a href="http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#whitespace_preservation">Whitespace Preservation</a>.</p>&#x000A;&#x000A;<h3>&bull; Performance</h3>&#x000A;&#x000A;<p>The <code>:ugly</code> option was actually added to make haml faster. With it on, Haml is <em>approximately</em> the same speed as ERB. With it off, <a href="http://nex-3.com/posts/87-haml-benchmark-numbers-for-2-2">Haml is 2.8 times slower than ERB</a>. <strong>NOTE: the production environment default is to turn :ugly on.</strong></p>&#x000A;&#x000A;<p>But with tools like firebug, I just don&#8217;t see the point in having pretty-printed html even in development. So again, I recommend you just turn <code>:ugly</code> on and treat it is a debugging tool.</p>&#x000A;&#x000A;<h3>&bull; Stand-Alone</h3>&#x000A;&#x000A;<p>Haml comes with a command line tool that lets you process Haml files into HTML. This is useful for small, quick documents, but it&#8217;s not the basis for a website. Haml is a templating engine and it doesn&#8217;t provide many of the facilities you need for building a maintainable website. If you want to build a static site with Haml, please consider using one the following:</p>&#x000A;&#x000A;<ul>&#x000A;<li><a href="http://github.com/staticmatic/staticmatic">StaticMatic</a></li>&#x000A;<li><a href="http://nanoc.stoneship.org/">Nanoc</a></li>&#x000A;<li><a href="http://github.com/tdreyno/middleman/">Middleman</a></li>&#x000A;<li><a href="http://github.com/TwP/webby/">Webby</a></li>&#x000A;<li><a href="http://github.com/jlong/serve/">Serve</a></li>&#x000A;</ul>&#x000A;&#x000A;&#x000A;<h3>&bull; Out of Order Processing</h3>&#x000A;&#x000A;<p>You cannot use haml to emit malformed HTML. This is a feature, but it is sometimes in the way. For instance a nice trick in ERB is to join an array like so:</p>&#x000A;&#x000A;<pre><code>&lt;ul&gt;&lt;li&gt;&lt;%= @items.map{|item| item.name}.join("&lt;/li&gt;&lt;li&gt;") %&gt;&lt;/li&gt;&lt;ul&gt;&#x000A;</code></pre>&#x000A;&#x000A;<p>Haml&#8217;s answer to this is the <a href="http://haml-lang.com/docs/yardoc/Haml/Helpers.html#list_of-instance_method"><code>list_of</code> helper</a>. Which is pretty nice for blocks of formatted code.</p>&#x000A;&#x000A;<pre><code>%ul= list_of(@items) do |item|&#x000A;  = item.name&#x000A;</code></pre>&#x000A;&#x000A;<p>Unfortunately, this helper assumes you&#8217;re generating a list and requires that you pass a block even when the array consists of simple strings.</p>&#x000A;&#x000A;<h3>&bull; Multiline Code</h3>&#x000A;&#x000A;<p>Haml is meant to be a designer-friendly template format, and as such it encourages code that is readable by folks with a minimal understanding of code APIs. One of the ways Haml encourages this is by making it hard to write code that continues on the next line. Multiline code ends with a <code>|</code> at the end of the line. <a href="multiline">Example</a>.</p>&#x000A;&#x000A;<h2>If You Must</h2>&#x000A;&#x000A;<p>If you decide that you&#8217;re going to write some inline markup with Haml anyway (hey, some folks are masochists), then you should read up on Haml&#8217;s <code>precede</code> and <code>succeed</code> <a href="http://haml-lang.com/docs/yardoc/Haml/Helpers.html">helpers</a> as well as the <a href="http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#whitespace_removal__and_">alligator operators</a>: <code>&lt;</code> and <code>&gt;</code>. May God have mercy on your soul.</p>&#x000A;&#x000A;<h2>Conclusion</h2>&#x000A;&#x000A;<p>Despite its flaws, Haml is a very nice template language that optimizes the workmy team and I do on a daily basis. We recommend it often. But the goal is that coding will be faster, easier and more enjoyable. If you have a different technology that fits better with how you think, then you should use that. But if you find Haml documents to be easier to read, but that you find yourself fighting it to make the output you need, then I hope this post has helped you understand how to play to Haml&#8217;s strengths and avoid its weaknesses.</p>&#x000A;&#x000A;<p>What I hope is clear is that if your job is to produce content, then Haml is probably not the template language for you.</p>&#x000A;&#x000A;<h3>Postscript</h3>&#x000A;&#x000A;<p>Some might think because of my involvement in Sass that I&#8217;m equally involved in Haml. This is not the case. Most, if not all, of my Haml patches have been to help it support Sass better. I&#8217;m just an experienced Haml user who wants to be honest about Haml&#8217;s Pros and Cons.</p></div>
+            <div class="footer">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                //<![CDATA[
+                  var disqus_url = "http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content";
+                  var disqus_developer = 1;
+                //]]>
+              </script>
+              <noscript>
+                <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
+              </noscript>
+              <script src="http://disqus.com/forums/chriseppstein/embed.js" type="text/javascript"></script>
+            </div>
+          </div>
+        </div>
+        <div class="aside" id="sidebar">
+          <div class="section" id="archives">
+            <h3 class="heading">Blog Archives</h3>
+            <h5>2009</h5>
+            <ul class="section">
+              <li><a href="/blog/2009/12/08/the-year-in-review">2009 - In Review</a></li>
+              <li><a href="/blog/2009/10/19/css-unsupported-directive">We Can Have Hack Free CSS With the @unsupported Directive</a></li>
+              <li><a href="/blog/2009/10/12/css-class-inheritance">CSS Class Inheritance: Abstracting Selectors</a></li>
+              <li><a href="/blog/2009/09/30/what-is-compass">What is Compass</a></li>
+              <li><a href="/blog/2009/09/25/separating-style-concerns">Separating Style Concerns</a></li>
+              <li><a href="/blog/2009/09/20/why-stylesheet-abstraction-matters">Why Stylesheet Abstraction Matters</a></li>
+              <li><a href="/blog/2009/09/07/building-a-jekyll-watcher-with-fssm">Building a Jekyll Watcher with FSSM</a></li>
+              <li><a href="/blog/2009/04/26/compass-screencast">Compass Screencast</a></li>
+              <li><a href="/blog/2009/04/14/cultural-impacts-of-data-model-naming">Setting a Tone with Model Naming</a></li>
+              <li><a href="/blog/2009/02/15/a-sassy-response-to-css-framework-disadvantages">Disadvantages of CSS Frameworks: A Sass-y Response</a></li>
+            </ul>
+          </div>
+          <div class="section" id="about-me">
+            <h3>About Me</h3>
+            <img class="avatar" src="http://www.gravatar.com/avatar/b0ceed615487ddf041bb0d1cf24a98b0.png" />
+            <p>I'm the Software Architect at <a href="http://www.caring.com/">Caring.com</a>,
+            a website devoted to caregivers of the sick and elderly.
+            I live in San Jose, California with my wife and our 4 year old daughter.</p>
+          </div>
+          <div class="section">
+            <h3>Open Source</h3>
+            <p>I'm the creator of <a href="http://compass-style.org/">Compass</a>, a stylesheet authoring framework
+            and I'm on the core team of
+            <a href="http://sass-lang.com/">Sass</a> &mdash; the stylesheet syntax upon which Compass is built.
+            I maintain about a dozen less well known ruby libraries and rails plugins on
+            <a href="http://github.com/chriseppstein">github</a>,
+            and am an active contributor of patches to the many open source projects that I use.</p>
+          </div>
+          <div class="section" id="twitter">
+            <div class="header">
+              <h3 style="display: inline-block">Twitter</h3>
+              <span>
+                <a href="http://twitter.com/chriseppstein">@chriseppstein</a>
+              </span>
+            </div>
+            <div class="tweet"></div>
+            <p class="follow">
+              <img src="/images/twitter_bird.png" />
+            </p>
+          </div>
+          <div class="section omega">
+            <ol id="social">
+              <li>
+                <a class="twitter" href="http://twitter.com/chriseppstein" title="Follow me on Twitter">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a class="github" href="http://github.com/chriseppstein" title="My Github profile">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a class="facebook" href="http://facebook.com/chriseppstein" title="My Facebook profile">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a class="linkedin" href="http://www.linkedin.com/in/chriseppstein" title="My Linked-in profile">
+                  Linked-in
+                </a>
+              </li>
+              <li>
+                <a class="delicious" href="http://delicious.com/chriseppstein/" title="My Delicious links">
+                  Delicious
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-wrapper">
+      <div id="footer">
+        <div class="bottom_nav">
+          <div class="back-to-top">
+            <a class="ucase" href="#">&uarr; back to top</a>
+          </div>
+        </div>
+        <div class="alone" id="foot_bottom">
+          <a class="affiliate compass" href="http://compass-style.org" title="Styled with Compass">
+            Styled with Compass
+          </a>
+          <h6>
+            Powered by
+            <a href="http://jekyllrb.com/">Jekyll</a>
+            and
+            <a href="http://www.oddbird.net/susy/">Susy</a>
+          </h6>
+          <h6 class="copyright">
+            &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
+          </h6>
+          <h6>
+            &ndash; with design help and inspiration from
+            <a href="http://github.com/imathis">Brandon Mathis</a>
+          </h6>
+          <h6>
+            &ndash;
+            <a href="/highlighted/stylesheets/screen.sass.html">browse stylesheets</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type="text/javascript">
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-10648948-1");
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>
