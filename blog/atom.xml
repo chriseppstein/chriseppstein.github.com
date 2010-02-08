@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-02-07T00:16:32-08:00</updated>
+  <updated>2010-02-08T08:49:58-08:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Haml Sucks for Content</title>
+    <link href="http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content" />
+    <updated>2010-02-08T00:00:00-08:00</updated>
+    <id>http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content</id>
+    <content type="html">
+      Haml is awesome, but if you're using it for inline markup, you're doing it wrong.
+    </content>
+  </entry>
   <entry>
     <title>2009 - In Review</title>
     <link href="http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review" />
