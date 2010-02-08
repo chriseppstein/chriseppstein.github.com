@@ -3,7 +3,7 @@ title: Haml Sucks for Content
 browser_title: Haml Sucks for Content
 description: "Haml is awesome, but if you're using it for inline markup, you're doing it wrong."
 category: blogging
-draft: true
+featured: true
 intro: "Haml is awesome, but if you're using it for inline markup, you're doing it wrong."
 ---
 
