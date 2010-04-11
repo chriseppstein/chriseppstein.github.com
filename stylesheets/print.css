@@ -1,4 +1,4 @@
-/* line 6, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 6, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,41 +17,41 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: inherit;
   vertical-align: baseline; }
 
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 *:focus {
   outline: 0; }
 
-/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 body {
   line-height: 1;
-  color: #000;
-  background: #fff; }
+  color: black;
+  background: white; }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 ol, ul {
   list-style: none; }
 
 /* tables still need 'cellspacing="0"' in the markup */
-/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 q, blockquote {
   quotes: "" ""; }
-  /* line 101, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+  /* line 101, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
   q:before, q:after, blockquote:before, blockquote:after {
     content: ""; }
 
-/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.pre5/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
+/* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc1/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
 a img {
   border: none; }
 
@@ -63,67 +63,67 @@ body {
 /* line 6, ../../_source/stylesheets/partials/typography/_base.sass */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
   font-family: "Helvetica Neue", Helvetica, Lucida, Verdana, sans-serif;
-  color: #444;
+  color: #444444;
   font-weight: bold; }
 
-/* line 10, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 11, ../../_source/stylesheets/partials/typography/_base.sass */
 em {
   font-family: Times, "Times New Roman", Georgia, serif;
   font-size: 110%; }
 
-/* line 14, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 15, ../../_source/stylesheets/partials/typography/_base.sass */
 span.highlight, em.highlight, strong.highlight {
-  background-color: #ff6;
+  background-color: #ffff66;
   padding: 2px;
   margin: 0 -2px;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px; }
 
-/* line 19, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 21, ../../_source/stylesheets/partials/typography/_base.sass */
 p {
   padding-bottom: 18px; }
 
-/* line 22, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 24, ../../_source/stylesheets/partials/typography/_base.sass */
 h1 {
   font-size: 300%;
   line-height: 110%;
-  margin-top: .5em;
-  margin-bottom: .7em; }
+  margin-top: 0.5em;
+  margin-bottom: 0.7em; }
 
-/* line 27, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 30, ../../_source/stylesheets/partials/typography/_base.sass */
 h2 {
   font-size: 250%;
   line-height: 110%;
-  margin-top: .5em;
-  margin-bottom: .7em; }
+  margin-top: 0.5em;
+  margin-bottom: 0.7em; }
 
-/* line 32, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 36, ../../_source/stylesheets/partials/typography/_base.sass */
 h3 {
   font-size: 200%;
   margin-top: 1em;
   line-height: 110%;
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
 
-/* line 37, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 42, ../../_source/stylesheets/partials/typography/_base.sass */
 h4 {
   font-size: 140%;
   margin-top: 1.5em;
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
 
-/* line 41, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 47, ../../_source/stylesheets/partials/typography/_base.sass */
 h5 {
   font-size: 120%;
   margin-top: 1em;
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
 
-/* line 45, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 52, ../../_source/stylesheets/partials/typography/_base.sass */
 h6 {
   font-size: 100%;
   margin-top: 1em;
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
 
-/* line 50, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 57, ../../_source/stylesheets/partials/typography/_base.sass */
 blockquote {
   border-left: 2px solid #343434;
   padding: 0px 2em 0px 1em;
@@ -131,61 +131,61 @@ blockquote {
   font-family: Times, "Times New Roman", Georgia, serif;
   font-style: italic;
   font-size: 1.3em; }
-  /* line 57, ../../_source/stylesheets/partials/typography/_base.sass */
+  /* line 64, ../../_source/stylesheets/partials/typography/_base.sass */
   blockquote p {
     color: #646464 !important;
     padding-bottom: 0 !important; }
 
-/* line 61, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 68, ../../_source/stylesheets/partials/typography/_base.sass */
 .source {
   text-align: right;
   font-family: Times, "Times New Roman", Georgia, serif;
   font-style: italic;
   font-size: 1.1em;
-  color: #888;
+  color: #888888;
   padding-bottom: 1em; }
 
-/* line 69, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 76, ../../_source/stylesheets/partials/typography/_base.sass */
 strong {
   font-weight: bold; }
 
-/* line 71, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 79, ../../_source/stylesheets/partials/typography/_base.sass */
 em {
   font-style: italic; }
 
-/* line 74, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 82, ../../_source/stylesheets/partials/typography/_base.sass */
 small {
   font-size: 80%; }
 
-/* line 76, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 85, ../../_source/stylesheets/partials/typography/_base.sass */
 .ucase {
   text-transform: uppercase; }
 
-/* line 79, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 88, ../../_source/stylesheets/partials/typography/_base.sass */
 .amp {
   font-family: Baskerville, Palatino, Times, "Times New Roman", serif;
   font-style: italic; }
 
-/* line 83, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 92, ../../_source/stylesheets/partials/typography/_base.sass */
 pre {
-  font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace;
+  font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
   line-height: 1.5; }
 
-/* line 87, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 96, ../../_source/stylesheets/partials/typography/_base.sass */
 pre + p {
   margin-top: 1em; }
 
-/* line 90, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 99, ../../_source/stylesheets/partials/typography/_base.sass */
 code {
-  font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace; }
+  font-family: Monaco, "Andale Mono", "Lucida Console", monospace; }
 
-/* line 93, ../../_source/stylesheets/partials/typography/_base.sass */
+/* line 102, ../../_source/stylesheets/partials/typography/_base.sass */
 li {
   line-height: 1.5; }
 
 /* line 2, ../../_source/stylesheets/partials/typography/_header.sass */
 #header h1, #header h2 {
-  font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace;
+  font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
   line-height: 1; }
 /* line 5, ../../_source/stylesheets/partials/typography/_header.sass */
 #header h1 {
@@ -194,23 +194,23 @@ li {
 /* line 8, ../../_source/stylesheets/partials/typography/_header.sass */
 #header h2 {
   font-size: 2em; }
-/* line 11, ../../_source/stylesheets/partials/typography/_header.sass */
+/* line 10, ../../_source/stylesheets/partials/typography/_header.sass */
 #header .nav a {
   font-size: 1.25em;
   text-transform: lowercase;
-  font-family: Monaco, 'Andale Mono', 'Lucida Console', monospace; }
+  font-family: Monaco, "Andale Mono", "Lucida Console", monospace; }
 
-/* line 17, ../../_source/stylesheets/partials/typography/_header.sass */
+/* line 16, ../../_source/stylesheets/partials/typography/_header.sass */
 #header #blog-links {
   font-size: 13px; }
-  /* line 19, ../../_source/stylesheets/partials/typography/_header.sass */
+  /* line 18, ../../_source/stylesheets/partials/typography/_header.sass */
   #header #blog-links #rss {
     text-decoration: none; }
-    /* line 21, ../../_source/stylesheets/partials/typography/_header.sass */
+    /* line 20, ../../_source/stylesheets/partials/typography/_header.sass */
     #header #blog-links #rss span {
       text-decoration: underline; }
 
-/* line 25, ../../_source/stylesheets/partials/typography/_header.sass */
+/* line 24, ../../_source/stylesheets/partials/typography/_header.sass */
 #search #q {
   font-size: 15px; }
 
@@ -219,72 +219,72 @@ li {
   font-size: 90%; }
   /* line 3, ../../_source/stylesheets/partials/typography/_sidebar.sass */
   #sidebar h3, #sidebar h4, #sidebar h5 {
-    color: #333; }
-  /* line 7, ../../_source/stylesheets/partials/typography/_sidebar.sass */
+    color: #333333; }
+  /* line 6, ../../_source/stylesheets/partials/typography/_sidebar.sass */
   #sidebar .section .header span {
     font-size: 90%; }
-  /* line 9, ../../_source/stylesheets/partials/typography/_sidebar.sass */
+  /* line 8, ../../_source/stylesheets/partials/typography/_sidebar.sass */
   #sidebar .section h3 {
     font-size: 160%;
     margin: 10px 0 12px; }
-  /* line 12, ../../_source/stylesheets/partials/typography/_sidebar.sass */
+  /* line 11, ../../_source/stylesheets/partials/typography/_sidebar.sass */
   #sidebar .section ul {
     list-style: disc; }
 
-/* line 4, ../../_source/stylesheets/partials/typography/_blog.sass */
+/* line 3, ../../_source/stylesheets/partials/typography/_blog.sass */
 .blog .section .article {
   clear: left; }
-  /* line 6, ../../_source/stylesheets/partials/typography/_blog.sass */
+  /* line 5, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article p {
     font-size: 110%;
     line-height: 150%;
-    color: #333;
+    color: #333333;
     padding-bottom: 15px; }
-  /* line 11, ../../_source/stylesheets/partials/typography/_blog.sass */
+  /* line 10, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article img {
     border: none; }
-    /* line 13, ../../_source/stylesheets/partials/typography/_blog.sass */
+    /* line 12, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article img.left {
       display: inline;
       float: left;
       margin-right: 15px;
       margin-bottom: 15px; }
-    /* line 17, ../../_source/stylesheets/partials/typography/_blog.sass */
+    /* line 16, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article img.right {
       display: inline;
       float: right;
       margin-right: 15px;
       margin-bottom: 15px; }
-  /* line 21, ../../_source/stylesheets/partials/typography/_blog.sass */
+  /* line 20, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article dl {
     padding-bottom: 15px; }
-    /* line 23, ../../_source/stylesheets/partials/typography/_blog.sass */
+    /* line 22, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt {
       font-weight: bold;
       float: left;
       clear: left;
       margin-right: 7px; }
-      /* line 28, ../../_source/stylesheets/partials/typography/_blog.sass */
+      /* line 27, ../../_source/stylesheets/partials/typography/_blog.sass */
       .blog .section .article dl dt:after {
         content: " \2014"; }
-    /* line 30, ../../_source/stylesheets/partials/typography/_blog.sass */
+    /* line 29, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt, .blog .section .article dl dd {
       margin-top: 0.5em; }
-    /* line 32, ../../_source/stylesheets/partials/typography/_blog.sass */
+    /* line 31, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt:first-child {
       margin-top: 0; }
-    /* line 34, ../../_source/stylesheets/partials/typography/_blog.sass */
+    /* line 33, ../../_source/stylesheets/partials/typography/_blog.sass */
     .blog .section .article dl dt, .blog .section .article dl dd {
       line-height: 150%; }
-  /* line 36, ../../_source/stylesheets/partials/typography/_blog.sass */
+  /* line 35, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article ul {
     list-style-type: disc;
     margin-left: 1em; }
-  /* line 39, ../../_source/stylesheets/partials/typography/_blog.sass */
+  /* line 38, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article ol {
     list-style-type: decimal;
     margin-left: 1.5em; }
-  /* line 43, ../../_source/stylesheets/partials/typography/_blog.sass */
+  /* line 42, ../../_source/stylesheets/partials/typography/_blog.sass */
   .blog .section .article ol + p, .blog .section .article ul + p {
     margin-top: 1em; }
 
@@ -323,7 +323,7 @@ table.comparison {
 
 /* line 41, ../../_source/stylesheets/print.sass */
 .window {
-  border: 2px solid #aaa; }
+  border: 2px solid #aaaaaa; }
 
 /* line 44, ../../_source/stylesheets/print.sass */
 body#stylesheet #page div.window,
@@ -341,7 +341,7 @@ table td.window {
 /* line 51, ../../_source/stylesheets/print.sass */
 body#stylesheet #page h1,
 table th.window-title {
-  border: 2px solid #aaa;
+  border: 2px solid #aaaaaa;
   text-align: center;
   border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
@@ -350,7 +350,7 @@ table th.window-title {
   -moz-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
   font-size: 14px;
-  border-bottom: 1px solid #aaa; }
+  border-bottom: 1px solid #aaaaaa; }
 
 /* line 59, ../../_source/stylesheets/print.sass */
 a {
@@ -360,4 +360,4 @@ a {
   /* line 63, ../../_source/stylesheets/print.sass */
   a:after {
     content: " (" attr(href) ")";
-    color: #777; }
+    color: #777777; }

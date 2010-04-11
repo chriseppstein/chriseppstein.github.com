@@ -4,53 +4,53 @@
   border: 2px solid black;
   margin: 1em;
   padding: 1em; }
-/* line 8, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 7, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #simple-display .important-box,
 #positional-styling .browser .important-box {
   border: 2px solid black;
   margin: 1em;
   padding: 1em;
-  background-color: #CCC; }
-/* line 14, ../../../_source/stylesheets/posts/class_inheritance.sass */
+  background-color: #cccccc; }
+/* line 12, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #simple-display .error-box,
 #positional-styling .browser .error-box {
   border: 2px solid black;
   margin: 1em;
   padding: 1em;
-  background-color: #FCC;
+  background-color: #ffcccc;
   color: red;
   border-color: red; }
 
-/* line 23, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 21, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #positional-styling .browser .grid {
   display: table;
   margin: 1em;
   border-spacing: 5px; }
-/* line 27, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 25, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #positional-styling .browser .row {
   display: table-row; }
-/* line 29, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 27, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #positional-styling .browser .box, #positional-styling .browser .error-box, #positional-styling .browser .important-box {
   display: table-cell;
   width: 50%; }
-/* line 33, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 31, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #positional-styling .browser #top .box, #positional-styling .browser #top .error-box, #positional-styling .browser #top .important-box {
   font-size: larger;
   margin-bottom: 1em; }
-/* line 37, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 35, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #positional-styling .browser #bottom .box, #positional-styling .browser #bottom .error-box, #positional-styling .browser #bottom .important-box {
   font-size: smaller; }
 
-/* line 42, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 40, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #compilation-expected-display .primary .base, #compilation-expected-display .primary .extended {
-  background-color: #c77; }
-/* line 45, ../../../_source/stylesheets/posts/class_inheritance.sass */
+  background-color: #cc7777; }
+/* line 43, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #compilation-expected-display .alternate .base, #compilation-expected-display .alternate .extended {
-  background-color: #7c7; }
+  background-color: #77cc77; }
 
-/* line 49, ../../../_source/stylesheets/posts/class_inheritance.sass */
+/* line 47, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #compilation-actual-display .primary .base {
-  background-color: #c77; }
-/* line 51, ../../../_source/stylesheets/posts/class_inheritance.sass */
+  background-color: #cc7777; }
+/* line 49, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #compilation-actual-display .alternate .base {
-  background-color: #7c7; }
+  background-color: #77cc77; }

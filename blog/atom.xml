@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-02-08T08:49:58-08:00</updated>
+  <updated>2010-04-11T12:33:55-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Introducing the Compass Core Team</title>
+    <link href="http://chriseppstein.github.com/blog/2010/04/11/compass-core-team" />
+    <updated>2010-04-11T00:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2010/04/11/compass-core-team</id>
+    <content type="html">
+      Eric Meyer and Brandon Mathis are joining the Compass Core Team.
+    </content>
+  </entry>
   <entry>
     <title>Haml Sucks for Content</title>
     <link href="http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content" />
