@@ -1,13 +1,12 @@
-=list-default(!ol = false)
-  @if !ol
-    :list-style decimal
-    :margin 0 1.5em 1.5em 1.5em
+=list-default($ol: false)
+  @if $ol
+    list-style: decimal
+    margin: 0 1.5em 1.5em 1.5em
   @else
-    :list-style disc
-    :margin 0 1.5em 1.5em 1.5em
+    list-style: disc
+    margin: 0 1.5em 1.5em 1.5em
 
 =no-style-list
   +no-bullets
-  :margin 0
-  :padding 0
-
+  margin: 0
+  padding: 0

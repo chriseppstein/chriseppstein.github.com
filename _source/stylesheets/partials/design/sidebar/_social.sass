@@ -4,20 +4,20 @@
   li, a
     display: inline-block
   li a
-    +opacity(.85)
+    +opacity(0.85)
     &:hover
       +opacity(1)
   li a
     +reset-box-model
-    +sprite-background("/images/social.png",24px)
+    +sprite-background(unquote("/images/social.png"), 24px)
     text-indent: -9999em
     &.twitter
-      +sprite-row(1,24px)
+      +sprite-row(1, 24px)
     &.github
-      +sprite-row(2,24px)
+      +sprite-row(2, 24px)
     &.facebook
-      +sprite-row(3,24px)
+      +sprite-row(3, 24px)
     &.linkedin
-      +sprite-row(4,24px)
+      +sprite-row(4, 24px)
     &.delicious
-      +sprite-row(5,24px)
+      +sprite-row(5, 24px)

@@ -4,32 +4,37 @@
 //  Site: www.oddbird.net/susy/
 //**
 
-//** 
-  GRID
-  un-comment and override these values as needed for your grid layout 
-  (defaults are shown)
-!grid_unit = "em"
-!total_cols = 24
-!col_width = 3
-!gutter_width = 3
-!side_gutter_width = !gutter_width
+//**
+// GRID
+// un-comment and override these values as needed for your grid layout 
+// (defaults are shown)
+$grid_unit: em
+
+$total_cols: 24
+
+$col_width: 3
+
+$gutter_width: 3
+
+$side_gutter_width: $gutter_width
 
 //**
-  HACKS
-  Are you using hacks or conditional comments? Susy makes both possible.
-  Leave this as 'true' to use hacks, set it as false for conditional comments.
-  Conditional comments will require overrides for +omega, +inline-block and
-  several other mixins.
-  !hacks = true
+// HACKS
+// Are you using hacks or conditional comments? Susy makes both possible.
+// Leave this as 'true' to use hacks, set it as false for conditional comments.
+// Conditional comments will require overrides for +omega, +inline-block and
+// several other mixins.
+// !hacks = true
 
-//** 
-  FONT-SIZE
-  un-comment and override these values as needed (defaults are shown)
-  - you set the font and line heights in pixels.
-  - Susy will do the math and give you !base_font_size and !base_line_height 
-    variables, set flexibly against the common browser default of 16px
-!base_font_size_px = 14
-!base_line_height_px = 20
+//**
+// FONT-SIZE
+// un-comment and override these values as needed (defaults are shown)
+// - you set the font and line heights in pixels.
+// - Susy will do the math and give you !base_font_size and !base_line_height 
+//   variables, set flexibly against the common browser default of 16px
+$base_font_size_px: 14
+
+$base_line_height_px: 20
 
 // SUSY
 //  (don't move this @import above the GRID and FONT-SIZE overrides)

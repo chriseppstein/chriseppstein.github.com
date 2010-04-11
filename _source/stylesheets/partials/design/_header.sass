@@ -2,29 +2,30 @@
   background: #1c1c1c
 
 #header
-  color: #fff
+  color: white
   .nav a
-    +link-colors(#ccc, #fff)
+    +link-colors(#cccccc, white)
     +hover-link
   .title
     background:
-      image= image_url("textmate.png")
+      image: image_url(unquote("textmate.png"))
       repeat: no-repeat
       position: -5px bottom
     min-width: 380px
+
 #header
   #blog-links
     a
-      color: #999
+      color: #999999
       &:hover
-        color: #fff
+        color: white
     #rss
       &:hover img
         +opacity(1)
       img
         vertical-align: -30%
         margin-right: 2px
-        +opacity(.7)
+        +opacity(0.7)
 
 #search
   form
@@ -32,10 +33,9 @@
   #q
     background: none
     border: none
-    color: #aaa
+    color: #aaaaaa
     &:focus
       outline: none
-
 
 body#home     .nav li.home,
 body#blog     .nav li.blog,
@@ -43,4 +43,4 @@ body#post     .nav li.blog,
 body#projects .nav li.projects,
 body#work     .nav li.work
   a
-    color: #fff
+    color: white
