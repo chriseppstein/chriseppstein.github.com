@@ -185,7 +185,7 @@ task :sitemap => :generate do
   end
 end
 
-
+desc "Generate the whole site."
 task :generate_all => [:"sass:highlight", :generate, :sitemap]
 
 task :build => :generate_all
