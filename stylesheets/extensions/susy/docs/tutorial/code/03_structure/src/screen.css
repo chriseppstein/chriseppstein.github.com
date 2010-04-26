@@ -1,0 +1,157 @@
+/* Welcome to Susy. Use this file to define screen styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" /> */
+/* @group reset */
+/* line 13, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* line 16, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+*:focus {
+  outline: 0; }
+
+/* line 18, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+/* line 20, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 23, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+/* line 25, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 27, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+q, blockquote {
+  quotes: "" ""; }
+  /* line 89, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: ""; }
+
+/* line 29, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+a img {
+  border: none; }
+
+/* @end */
+/* @group defaults */
+/* @end */
+/* @group STRUCTURE */
+/* line 16, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+body {
+  text-align: center;
+  font-size: 87.5%;
+  line-height: 150%; }
+
+/* line 19, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+#page {
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70em;
+  max-width: 100%;
+  font-family: "Futura Medium", "Century Gothic", AppleGothic, sans-serif; }
+  /* line 5, ../../../../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+  #page {
+    display: block; }
+
+/* line 23, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+#brand {
+  clear: both;
+  margin-right: 1.429%;
+  margin-left: 1.429%;
+  padding-left: 10%;
+  padding-right: 10%; }
+  /* line 26, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+  #brand h1 a {
+    clear: both;
+    padding-left: 12.963%;
+    padding-right: 25.926%; }
+
+/* line 30, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+#nav {
+  width: 17.143%;
+  display: inline;
+  float: left;
+  margin-right: 2.857%;
+  margin-left: 1.429%; }
+
+/* line 34, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+#content {
+  width: 77.143%;
+  display: inline;
+  float: left;
+  margin-right: 2.857%;
+  margin-right: 1.429%;
+  /* ugly hacks for IE6-7 */
+  #margin-right: 0.429%;
+  /* end ugly hacks */ }
+  /* line 37, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+  #content #description {
+    width: 61.111%;
+    display: inline;
+    float: left;
+    margin-right: 3.704%; }
+  /* line 39, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+  #content #credit {
+    width: 35.185%;
+    display: inline;
+    float: left;
+    margin-right: 3.704%;
+    margin-right: 0;
+    /* ugly hacks for IE6-7 */
+    #margin-right: -1%;
+    /* end ugly hacks */ }
+
+/* line 43, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+#site-info {
+  clear: both;
+  margin-right: 1.429%;
+  margin-left: 1.429%;
+  padding-left: 20%; }
+  /* line 46, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+  #site-info p.license {
+    width: 61.111%;
+    display: inline;
+    float: left;
+    margin-right: 3.704%; }
+  /* line 48, ../../../../../../../../../_source/stylesheets/extensions/susy/docs/tutorial/code/03_structure/src/screen.sass */
+  #site-info p.styles {
+    width: 35.185%;
+    display: inline;
+    float: left;
+    margin-right: 3.704%;
+    margin-right: 0;
+    /* ugly hacks for IE6-7 */
+    #margin-right: -1%;
+    /* end ugly hacks */ }
+
+/* @end */

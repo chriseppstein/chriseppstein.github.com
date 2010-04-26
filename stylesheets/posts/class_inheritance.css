@@ -54,3 +54,22 @@
 /* line 49, ../../../_source/stylesheets/posts/class_inheritance.sass */
 #compilation-actual-display .alternate .base {
   background-color: #77cc77; }
+
+/* line 53, ../../../_source/stylesheets/posts/class_inheritance.sass */
+#compilation-win-display #top .base,
+#compilation-win-display #top .primary .extended,
+#compilation-win-display .primary#top .extended,
+#compilation-win-display .primary #top .extended,
+#compilation-win-display #top .alternate .extended,
+#compilation-win-display #top.alternate .extended,
+#compilation-win-display .alternate #top .extended {
+  background-color: #cc7777; }
+/* line 62, ../../../_source/stylesheets/posts/class_inheritance.sass */
+#compilation-win-display #bottom .base,
+#compilation-win-display #bottom .primary .extended,
+#compilation-win-display .primary#bottom .extended,
+#compilation-win-display .primary #bottom .extended,
+#compilation-win-display #bottom .alternate .extended,
+#compilation-win-display #bottom.alternate .extended,
+#compilation-win-display .alternate #bottom .extended {
+  background-color: #77cc77; }
