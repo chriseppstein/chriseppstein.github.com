@@ -82,6 +82,14 @@ Neither can a compiler correctly handle resolution of multiple inheritance given
 
 As much as I like the idea of class inheritance, because of these confusing edge cases, I'm wary about introducing such a syntax into Sass. I feel that mixins are a much more predictable, and document agnostic, approach to abstraction. That said, an automatic selector rewriting capability is a very compelling feature in the most common real-world, use cases. I'm interested to hear your feedback.
 
+UPDATE: `@extend` is in Sass 3
+------------------------------
+
+Thanks to the fact that [Nathan](http://nex-3.com/) was able find a compiler-based solution to many of the things I had thought just wouldn't be possible, we have implemented `@extend` and [it is part of the Sass 3 release][extend-blog-post]. For example, here's the same code example using Sass 3 to compile it:
+
+{% include code/class_inheritance/compilation_win.html %}
+
+
 Mixins are not Class Inheritance
 --------------------------------
 
@@ -96,3 +104,4 @@ In the meantime, I predict that CSS compilers will soon let you simulate inherit
 
 However, simply learning to *think* about CSS classes as extending other CSS classes is going to help you construct and manage your stylesheets and to keep a clean [separation of concerns](/blog/2009/09/25/separating-style-concerns/). Hopefully this post will also help you evaluate and understand the tools and frameworks that you have at your disposal, to understand their limitations, as well as their strengths.
 
+[extend-blog-post]: http://nex-3.com/posts/99-selector-inheritance-the-easy-way-introducing-extend
