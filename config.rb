@@ -1,11 +1,11 @@
 # Require any additional compass plugins here.
 require 'compass-colors'
-require 'susy'
 project_type = :stand_alone
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "_site/stylesheets"
 sass_dir = "_source/stylesheets"
+extensions_dir = "_source/stylesheets/extensions"
 images_dir = "_source/images"
 http_images_path = "/images"
 output_style = :nested
