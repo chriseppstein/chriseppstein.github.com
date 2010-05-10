@@ -4,7 +4,6 @@ browser_title: Announcing the Stable Release of Compass v0.10
 description: "Compass v0.10 is released."
 category: blogging
 featured: true
-draft: true
 intro: "Compass v0.10 is released, read on to find out what's new!"
 ---
 The compass v0.10 release is now available! You can install it using ruby gems:
