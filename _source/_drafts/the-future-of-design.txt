@@ -1,0 +1,80 @@
+# The Future of Web Design
+
+The year is 2016, and a big announcement was just made by the
+W3C; SCSS is now an official recommendation -- the first major
+advancement in stylesheet syntax in over 15 years. Most people
+think that SCSS means "Second CSS", but there are a few of us
+who know better. We were the ones who saw the benefits that a
+more expressive stylesheet syntax and embraced it way back in
+2008 when it was a strange syntax called "sass" and then in
+greater numbers in 2010 when a new version called "scss" was
+released. We saw the true pontential of SCSS when Compass 1.0
+was released creating a new ecosystem for stylesheets and
+design. Able to work together instead of re-inventing the
+wheel, a new breed of designer who mainly designs in the
+browser using SCSS and CSS3 emerges. These highly technical
+designers could make more money while simultaneaously
+delivering higher quality websites sooner and cheaper than
+their CSS-based counterparts. While only being a fraction of
+the general population, this community created a
+disproportionate number of websites built on top of this new
+technology. But their websites' CSS was often chastised for
+being bloated and slightly degrading the browsers performance.
+But the economics of SCSS made this a viable trade-off for
+many design firms and startups. This created an opening for a
+new battleground in the browser war.
+
+Meanwhile, Nathan Wiezenbaum, the lead programmer and
+co-creator of SCSS, had graduated from college where he went
+to work at Google. Not long after arriving the Google chrome
+team (who probably got the idea from this blog post) contacts
+Nathan and recruits him to join the Google Chrome team. The
+engineers at Google recognized that SCSS is the future of
+stylesheets. In their relentless persuit of ways to speed up
+the user's page load experience, google saw an opening with
+SCSS. First, SCSS offered an upgrade path -- legacy browsers
+could be supported by generating static CSS. Second, sites
+could serve SCSS directly to the browser reducing the amount
+of bytes sent over the wire because SCSS is more expressive
+than CSS. And lastly, a browser implementation of SCSS could
+be made very efficient compared to equivalent CSS.
+
+So Google tapped Nathan to oversee the creation of a new
+implementation of SCSS destined for use in the browser. This
+library exposed an API that performed on-the-fly compilation
+to CSS for easy adaptation into existing CSS Parsers. The
+second part of the library exposed a more low level API
+allowinging new, optimized renderers to more efficently apply
+the SCSS stylesheet to the document. Additionally, adapting
+the existing CSS3 Parsers to parse SCSS was done with relative
+ease. Google knew that by adopting SCSS and embracing the
+desires of designers and engineers alike, they could provide a
+significantly faster end-user experience on the other end.
+However, before the SCSS Spec could become any thing more than
+a proposal, two browsers would need to implement the spec. So
+Google open sourced the core library for SCSS. It didn't take
+Opera long to integrate the new SCSS library and webkit wasn't
+far behind them. Suprisingly, Firefox refused to implement the
+specification until it became a recommendation of the W3C. Not
+so surprisingly, Microsoft agreed with Firefox on that point.
+
+Once an SCSS-enabled chrome with integrated debugging console
+was released, uptake of SCSS increased dramatically. The
+explosion of new users resulted in an explosion of new
+creativity. New ways of styling webpages gave rise to a new
+class of design experts who found beauty as much in the
+structure of their code as in their designs. These experts
+made the elements of designs more accessible through
+abstractions. Well documented and thought out frameworks
+provided people of limited design savvy to produce attractive,
+customized design, with semantic meaning of their markup left
+intact -- which increased the signal to noise ratio of content
+for those sites.
+
+Compass is still in use, but most people think of it as the
+"prototype" of the CSS framework world. New, more elegant
+frameworks have taken root and designers seem to really prefer
+the latest one that provides an integrated HTML-based GUI
+designer. Chris Eppstein is turning 40 this year, and he's
+feeling pretty damn proud of himself for seeing all this 5
+years before it happened.

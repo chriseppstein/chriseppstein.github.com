@@ -9,7 +9,7 @@ verify: <meta name="verify-v1" content="dod3zRBNeuf2lgDlHn+ZAYK+fUFRuxryWjLWqbzm
 ---
 
 #most-recent-post.mini.blog
-  - post = site.posts.sort_by(&:date).reverse.detect{|p| p.data['featured']}
+  - post = site.posts.sort_by(&:date).reverse.detect{|p| p.data['featured'] && !p.data['draft']}
   - if post.data["stylesheet"]
     %link{:href=>"/stylesheets/#{post.data['stylesheet']}.css", :rel=>"stylesheet", :media=>"screen, projection", :type=>"text/css"}
   %h2.description Featured Post
