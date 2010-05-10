@@ -2,7 +2,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 /* @group reset */
-/* line 13, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+/* line 14, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,41 +21,36 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: inherit;
   vertical-align: baseline; }
 
-/* line 16, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
-*:focus {
-  outline: 0; }
-
-/* line 18, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+/* line 17, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white; }
 
-/* line 20, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+/* line 19, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* tables still need 'cellspacing="0"' in the markup */
-/* line 23, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle; }
 
-/* line 25, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+/* line 23, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 27, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" ""; }
-  /* line 89, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+  /* line 96, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: ""; }
 
-/* line 29, ../../../../../../../../.rvm/gems/ree-1.8.7-2010.01/gems/compass-0.10.0.rc4/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
