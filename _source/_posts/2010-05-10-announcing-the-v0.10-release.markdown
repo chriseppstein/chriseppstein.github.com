@@ -11,15 +11,17 @@ The compass v0.10 release is now available! You can install it using ruby gems:
 
     gem install compass
 
-This is a big release, over 9 months in the making. It has been in beta for 5 of those months. And while no release is ever bug free, we are confident that this is the best we can make this release without broader use. In this post, I will try to highlight all the major changes in this release. Please refer to the [CHANGELOG][CHANGELOG] for detailed upgrade instructions.
+This is a big release -- over 7 months in the making. This post summarizes the changes, but please refer to the [CHANGELOG][CHANGELOG] for detailed upgrade instructions.
 
 ## Documentation!
 
-One of the biggest efforts of this release is that compass now has [great documentation][docs]. The wiki has served us well, but we will be removing most of the documentation from there over the coming weeks, leaving only those pages that are best maintained by the community members themselves. These new docs are using a hybrid strategy. Partly generated from the compass source code and partly hand-crafted. This is made possible by the über-powerful static site compiler, [nanoc][nanoc]. This provides consistency, accuracy, and a lower cost of maintenance. Because the documents are [checked into the compass source repository][doc-src], it also allows us to make documentation part of the commit process, ensuring that new features will be documented as soon as they are added. The documentation is still not as full-featured as we would like, so expect more updates there in the coming months as we get feedback about what's working and what's not.
+One of the biggest additions in this release is the great [new documentation for Compass][docs]. The wiki has served us well, but we will be removing most of the documentation from there over the coming weeks, leaving only those pages that are best maintained by the community members themselves. These new docs are partly generated from the compass source code and partly hand-crafted. This is made possible by the über-powerful static site compiler, [nanoc][nanoc]. This provides consistency, accuracy, and a lower cost of maintenance. Because the documents are [checked into the compass source repository][doc-src], it also allows us to make documentation part of the commit process, ensuring that new features will be documented as soon as they are added. The documentation is still not as full-featured as we would like, so expect more updates there in the coming months as we get feedback about what's working and what's not.
 
 ## Sass 3 & SCSS
 
-Sass 3 is released today as well and the compass team has full support of it out the gate with this coordinated release. From this point forward Compass fully supports both SCSS as well as the indentation-based Sass syntax. However, **SCSS is now the default syntax for Compass**. If you want to keep using sass, simply set `preferred_syntax = :sass` in your compass configuration, or pass `--syntax sass` to the relevant compass command line actions. Additionally, the Compass source is now written in SCSS. This means that if you've been explicitly importing a `.sass` file from the compass library, you'll get deprecation warnings that tell you how you should be importing that file now.
+When you upgrade to or install compass v0.10, you'll be required to use Sass 3 which was also released today. From this point forward Compass fully supports both SCSS as well as the indentation-based Sass syntax. However, **SCSS is now the default syntax for Compass**. If you want to keep using sass, simply set `preferred_syntax = :sass` in your compass configuration, or pass `--syntax sass` to the relevant compass command line actions. Additionally, the Compass source is now written in SCSS. This means that if you've been explicitly importing a `.sass` file from the compass library, you'll get deprecation warnings that tell you how you should be importing that file now.
+
+Don't worry, if you've already got a bunch of legacy stylesheets, upgrading to Sass 3 is a breeze thanks to the awesome `sass-convert` utility that comes with Sass now.
 
 [More information on the changes in Sass 3][sass3].
 
@@ -29,7 +31,7 @@ CSS3 is the new hotness, but it is a maintenance nightmare. With different synta
 
 ## Extension Improvements
 
-Lot's of people find great value in the compass core library and blueprint framework. But there are now over 20 compass extensions and it's long been a vision of the compass project to enable a stylesheet ecosystem. While this vision isn't yet fully realized, a number of improvements were made in this release.
+Many people find great value in the compass core library and blueprint framework. But there are now almost [30 compass extensions](http://rubygems.org/search?query=compass) and it's long been a vision of the compass project to enable a design ecosystem. While the vision isn't yet fully realized in this release, a number of improvements were made in this vein.
 
 # Stable Extension API
 
@@ -50,7 +52,7 @@ to replace text and infer the dimensions.
 
 ## Command Line Improvements
 
-We know the CLI is not generally liked among designers, but we put lipstick on the pig anyway. The command line output is now colorized, provides more helpful descriptions and help on the frameworks themselves. And now provides a more friendly sub-command based approach that allows the options to be customized for each command instead of sharing a single set of switches and options and also makes it possible for extensions to provide their own command line tools. Try some of the following to learn more:
+We know the CLI is not generally liked among designers, and we've not yet had enough time to build a GUI, so we put some lipstick on the pig. The command line output is now colorized, provides more helpful descriptions and help on the frameworks themselves. And now provides a more friendly sub-command based approach that allows the options to be customized for each command instead of sharing a single set of switches and options and also makes it possible for extensions to provide their own command line tools. Try some of the following to learn more:
 
     compass help
     compass help install
@@ -77,7 +79,7 @@ Rails users must upgrade their initializer to:
 
 ### Ellipsis Mixin
 
-If you use the `ellipsis` mixin and want full mozilla support, you must set `$use-mozilla-ellipsis-binding : true` and install the additional files with `compass install compass/ellipsis`. If you don't then ellipsis will only work in FireFox 3.6 or greater.
+If you use the `ellipsis` mixin and want full mozilla support, you must set `$use-mozilla-ellipsis-binding : true` and install the additional files with `compass install compass/ellipsis`. If you don't then ellipsis will only work in Firefox 3.6 or greater.
 
 ### Miscellany
 
