@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-05-10T00:07:41-07:00</updated>
+  <updated>2010-05-14T09:24:10-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Compass 1.0 Roadmap</title>
+    <link href="http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap" />
+    <updated>2010-05-14T00:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap</id>
+    <content type="html">
+      How we're going to get to v1.0
+    </content>
+  </entry>
   <entry>
     <title>Compass v0.10 Released</title>
     <link href="http://chriseppstein.github.com/blog/2010/05/10/announcing-the-v0.10-release" />
