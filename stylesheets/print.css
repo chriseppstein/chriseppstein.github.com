@@ -1,4 +1,4 @@
-/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,36 +17,36 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-family: inherit;
   vertical-align: baseline; }
 
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white; }
 
-/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle; }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" ""; }
-  /* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: ""; }
 
-/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
@@ -326,18 +326,12 @@ table.comparison {
 /* line 44, ../../_source/stylesheets/print.sass */
 body#stylesheet #page div.window,
 table td.window {
-  border-bottom-left-radius: 6px;
-  -moz-border-radius-bottomleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
   -webkit-border-bottom-left-radius: 6px;
   -o-border-bottom-left-radius: 6px;
   -ms-border-bottom-left-radius: 6px;
   -khtml-border-bottom-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -webkit-border-bottom-right-radius: 6px;
   -moz-border-radius-bottomright: 6px;
   -webkit-border-bottom-right-radius: 6px;
   -o-border-bottom-right-radius: 6px;
@@ -353,18 +347,12 @@ body#stylesheet #page h1,
 table th.window-title {
   border: 2px solid #aaaaaa;
   text-align: center;
-  border-top-left-radius: 6px;
-  -moz-border-radius-topleft: 6px;
-  -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
   -o-border-top-left-radius: 6px;
   -ms-border-top-left-radius: 6px;
   -khtml-border-top-left-radius: 6px;
   border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -webkit-border-top-right-radius: 6px;
   -moz-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
   -o-border-top-right-radius: 6px;
