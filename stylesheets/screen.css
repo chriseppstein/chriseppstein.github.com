@@ -490,7 +490,7 @@ body#post .blog .footer {
       text-decoration: underline; }
   /* line 9, ../../_source/stylesheets/partials/design/_header.sass */
   #header .title {
-    background-image: url('/images/textmate.png?1274763258');
+    background-image: url('/images/textmate.png?1274764235');
     background-repeat: no-repeat;
     background-position: -5px bottom;
     min-width: 380px; }
@@ -1024,7 +1024,7 @@ table td.window {
 /* line 40, ../../_source/stylesheets/partials/_syntax.sass */
 body#stylesheet #page h1,
 table th.window-title {
-  background-image: url('/images/window_title.png?1274763258');
+  background-image: url('/images/window_title.png?1274764235');
   text-align: center;
   height: 22px;
   line-height: 22px;
@@ -1269,7 +1269,7 @@ pre.console {
 
 /* line 1, ../../_source/stylesheets/partials/_debug.sass */
 .showgrid {
-  background-image: url('/images/grid.png?1274763258');
+  background-image: url('/images/grid.png?1274764235');
   background-repeat: repeat;
   background-position: 2.041% 0; }
   /* line 11, ../../_source/stylesheets/extensions/susy/sass/susy/_utils.sass */
