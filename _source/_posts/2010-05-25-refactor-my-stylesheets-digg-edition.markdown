@@ -55,7 +55,7 @@ The last major source of duplication in this stylesheet fragment is the common s
 
 ## Results
 
-The [final form][final-css] weighs in at 85 lines of code. Down from 125 lines of code and providing the exact same output modulo formatting and the order of selectors within a single rule. This is a **32% reduction in the number of lines of source code**! Additionally we fixed **six bugs** without trying. But the biggest win is that the adding a new kind of feedback requires only 1 or 2 points of edit instead of the 5-7 that would have been required before. This is, without a doubt, more maintainable and the defect rate in this tested, in-production stylesheet around this set of styles is evidence of how hard it is for even great front-end developers to maintain semantic CSS.
+The final form weighs in at 85 lines of code ([see the final generated css][final-css]). Down from 125 lines of code and providing the exact same output modulo formatting and the order of selectors within a single rule. This is a **32% reduction in the number of lines of source code**! Additionally we fixed **six bugs** without trying. But the biggest win is that the adding a new kind of feedback requires only 1 or 2 points of edit instead of the 5-7 that would have been required before. This is, without a doubt, more maintainable and the defect rate in this tested, in-production stylesheet around this set of styles is evidence of how hard it is for even great front-end developers to maintain semantic CSS.
 
 ## Epilog
 
