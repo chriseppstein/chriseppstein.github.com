@@ -1,0 +1,70 @@
+<div class="code-wrapper">
+<table id="negative-value-mixins" class="comparison side-by-side">
+<tr>
+<th class="window-title">Original Sass</th>
+</tr>
+<tr>
+<td valign="top" class="window editor">
+<div>
+{% highlight sass %}
+@import 'blueprint/grid'
+/*
+  requires compass gem
+  usage: compass compile path/to/grid.sass -e production --output-style nested
+//
+  defines Blueprint grid variables 
+
+$blueprint_grid_columns: 24
+$blueprint_grid_width: 30px
+$blueprint_grid_margin: 10px
+$blueprint_grid_outer_width: $blueprint_grid_width + $blueprint_grid_margin
+$blueprint_container_size: $blueprint_grid_outer_width * $blueprint_grid_columns - $blueprint_grid_margin
+  
+//
+  defines column widths for #left, #right. #main is calculated off these values
+$grid_left: 5
+$grid_right: 6
+
+=body_columns( $left: 4, $right: 5, $columns: $blueprint_grid_columns )
+  @if $left > 0
+    #left
+      +span( $left )
+  @if ( ( $left + $right ) < $columns )
+    #main
+      +span( $columns - $left - $right )
+      @if ( $right <= 0 )
+        @if ( $blueprint_grid_margin > 0px )
+          +last
+  @if $right > 0
+    #right
+      +span( $right )
+      @if ( $blueprint_grid_margin > 0px  )
+        +last
+
+body
+  /*
+    These class names are used by Drupal to indicate what kind of layout we have
+    Handles visibility of #left, #right individually plus both hidden or both visible
+  &.sidebar-left
+    +body_columns( $grid_left, 0 )
+  &.sidebar-right
+    +body_columns( 0, $grid_right )
+  &.two-sidebars
+    +body_columns( $grid_left, $grid_right )
+  &.no-sidebars
+    +body_columns( 0, 0 )
+
+
+#left, #main, #right
+  +column-base
+
+#page
+  +span( 24 )
+  margin: 0 auto
+  +clearfix
+{% endhighlight %}
+</div>
+</td>
+</tr>
+</table>
+</div>

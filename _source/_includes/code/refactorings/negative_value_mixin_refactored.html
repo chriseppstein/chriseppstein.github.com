@@ -1,0 +1,70 @@
+<div class="code-wrapper">
+<table id="negative-value-mixins" class="comparison side-by-side">
+<tr>
+<th class="window-title">Refactored Sass</th>
+</tr>
+<tr>
+<td valign="top" class="window editor">
+<div>
+{% highlight sass %}
+@import 'blueprint/grid'
+//
+  requires compass gem
+  usage: compass compile path/to/grid.sass -e production --output-style nested
+//
+  defines Blueprint grid variables 
+
+$blueprint-grid-columns: 24
+$blueprint-grid-width: 30px
+$blueprint-grid-margin: 10px
+$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin
+$blueprint-container-size: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin
+  
+//
+  defines column widths for #left, #right. #main is calculated off these values
+$grid-left: 5
+$grid-right: 6
+
+body
+  //
+    These class names are used by Drupal to indicate what kind of layout we have
+    Handles visibility of #left, #right individually plus both hidden or both visible
+  &.sidebar-left
+    #left
+      +span($grid-left)
+    #main
+      +span($blueprint-grid-columns - $grid-left)
+      @extend .last
+  &.sidebar-right
+    #right
+      +span($grid-right)
+      @extend .last
+    #main
+      +span($blueprint-grid-columns - $grid-right)
+  &.two-sidebars
+    #left
+      +span($grid-left)
+    #right
+      +span($grid-right)
+      @extend .last
+    #main
+      +span($blueprint-grid-columns - $grid-left - $grid-right)
+  &.no-sidebars
+    #main
+      +span($blueprint-grid-columns)
+
+#left, #main, #right
+  +column-base
+
+#page
+  +container
+
+@if ( $blueprint-grid-margin > 0px )
+  .last
+    +last
+{% endhighlight %}
+</div>
+</td>
+</tr>
+</table>
+</div>
