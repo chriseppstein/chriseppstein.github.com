@@ -1,4 +1,6 @@
 require 'active_support'
+require 'active_support/core_ext'
+require 'active_support/core_ext/object/blank'
 
 def ok_failed(condition)
   if (condition)

@@ -76,9 +76,17 @@ module Helpers
     def javascript_tag(content = nil, html_options = {})
       content_tag(:script, javascript_cdata_section(content), html_options.merge(:type => "text/javascript"))
     end
+
+    def stringify_keys(hash)
+      new_hash = {}
+      hash.each do |k,v|
+        new_hash[k.to_s] = v
+      end
+      new_hash
+    end
     
     def link_to(name, href, html_options = {})
-      html_options = html_options.stringify_keys
+      html_options = stringify_keys(html_options)
       confirm = html_options.delete("confirm")
       onclick = "if (!confirm('#{html_escape(confirm)}')) return false;" if confirm
       content_tag(:a, name, html_options.merge(:href => href, :onclick=>onclick))
@@ -94,7 +102,7 @@ module Helpers
     end
     
     def mail_to(email_address, name = nil, html_options = {})
-      html_options = html_options.stringify_keys
+      html_options = stringify_keys(html_options)
       encode = html_options.delete("encode").to_s
       cc, bcc, subject, body = html_options.delete("cc"), html_options.delete("bcc"), html_options.delete("subject"), html_options.delete("body")
       
@@ -147,7 +155,7 @@ module Helpers
       end
       
       def html_attributes(options)
-        unless options.blank?
+        unless options.empty?
           attrs = []
           options.each_pair do |key, value|
             if value == true
