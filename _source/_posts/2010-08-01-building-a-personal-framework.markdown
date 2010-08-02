@@ -1,10 +1,10 @@
 ---
-title: "Building a Personal Framework with Compass"
-browser_title: "Building a Personal Framework with Compass"
-description: "Building a personal framework using compass is easy and provides huge productivity gains for CSS developers."
+title: "Building a Personal CSS Framework with Compass"
+browser_title: "Building a Personal CSS Framework with Compass"
+description: "Building a personal CSS framework using compass is easy and provides huge productivity gains for CSS developers."
 category: blogging
 featured: true
-intro: "Building a personal framework using Compass is super easy and provides huge productivity gains for CSS developers."
+intro: "Building a personal CSS framework using Compass is super easy and provides huge productivity gains for CSS developers."
 ---
 Compass provides two frameworks for you to use: the compass [core framework](http://compass-style.org/docs/reference/compass/) and [blueprint](http://compass-style.org/docs/reference/blueprint/). And while these frameworks take time to learn, the learning curve is certainly going to take less time than it would take to build it yourself.
 
