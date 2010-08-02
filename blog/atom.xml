@@ -3,19 +3,19 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-08-01T16:44:35-07:00</updated>
+  <updated>2010-08-01T17:24:10-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
   <entry>
-    <title>Building a Personal Framework with Compass</title>
+    <title>Building a Personal CSS Framework with Compass</title>
     <link href="http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework" />
     <updated>2010-08-01T00:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework</id>
     <content type="html">
-      Building a personal framework using Compass is super easy and provides huge productivity gains for CSS developers.
+      Building a personal CSS framework using Compass is super easy and provides huge productivity gains for CSS developers.
     </content>
   </entry>
   <entry>
