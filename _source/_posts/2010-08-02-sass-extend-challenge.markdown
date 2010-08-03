@@ -75,7 +75,7 @@ The Sass compiler only operates on one CSS file at a time. Using `@extend` in on
 
 #### Overly Generic Classnames with Multiple Meanings
 
-Even if nested selector extend a class that is similarly nested, if you that class is an overly generic class name, you might end up rewriting more selectors than you intended. Example:
+Consider a nested selector that extends a class that is similarly nested. If  that class is an overly generic class name that is reused for a different purpose, you might end up rewriting more selectors than you intended. Example:
 
     .clear { clear: both; }
     
