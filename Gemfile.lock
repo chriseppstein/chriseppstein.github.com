@@ -4,7 +4,9 @@ GEM
     compass (0.10.4)
       haml (>= 3.0.4)
     cri (1.0.1)
+    git (1.2.5)
     haml (3.0.16)
+    hpricot (0.8.1)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     mime-types (1.16)
@@ -21,6 +23,8 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  git
+  hpricot
   maruku
   mime-types
   nanoc
