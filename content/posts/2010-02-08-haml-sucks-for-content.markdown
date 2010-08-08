@@ -91,7 +91,7 @@ Haml comes with a command line tool that lets you process Haml files into HTML. 
 
 You cannot use haml to emit malformed HTML. This is a feature, but it is sometimes in the way. For instance a nice trick in ERB is to join an array like so:
 
-    <ul><li><%= @items.map{|item| item.name}.join("</li><li>") %></li><ul>
+    <ul><li><%%= @items.map{|item| item.name}.join("</li><li>") %></li><ul>
 
 Haml's answer to this is the [`list_of` helper](http://haml-lang.com/docs/yardoc/Haml/Helpers.html#list_of-instance_method). Which is pretty nice for blocks of formatted code.
 

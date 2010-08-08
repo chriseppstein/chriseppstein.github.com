@@ -1,0 +1,62 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+require 'compass'
+
+unless defined?(::SASS_OPTIONS)
+  Compass.add_project_configuration "#{File.dirname(__FILE__)}/config/compass.config"
+  Compass.discover_extensions!
+  ::SASS_OPTIONS = Compass.sass_engine_options
+end
+
+
+["/stylesheets/library",
+  "/stylesheets/partials",
+  "/stylesheets/extensions/*",
+  "/stylesheets*/_*/"].each do |partial_path|
+    compile(partial_path){nil}
+    route(partial_path){nil}
+end
+
+compile '/stylesheets/*' do
+  filter :sass, ::SASS_OPTIONS.merge(:syntax => item[:extension].to_sym)
+end
+
+route '/stylesheets/*' do
+  item.identifier.chop + '.css'
+end
+
+compile '/posts/*/' do
+  filter :erb
+  filter :maruku if item[:extension] == "markdown"
+  layout 'post'
+end
+
+compile '*' do
+  filter :erb
+  layout 'default'
+end
+
+route '/posts/*/' do
+  if item.identifier =~ %r{^/posts/(\d{4})-(\d{2})-(\d{2})-(.*)/$}
+    "/blog/#{$1}/#{$2}/#{$3}/#{$4}/index.html"
+  else
+    puts "WARNING: malformed post name: #{item.identifier}"
+    nil
+  end
+end
+
+route '*' do
+  item.identifier + 'index.html'
+end
+
+layout '*', :haml

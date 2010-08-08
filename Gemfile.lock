@@ -5,14 +5,24 @@ GEM
       haml (>= 3.0.4)
     cri (1.0.1)
     haml (3.0.16)
+    maruku (0.6.0)
+      syntax (>= 1.0.0)
+    mime-types (1.16)
     nanoc (3.1.4)
       nanoc3 (>= 3.1.4)
     nanoc3 (3.1.4)
       cri (>= 1.0.0)
+    rack (1.2.1)
+    rubypants (0.2.0)
+    syntax (1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   compass
+  maruku
+  mime-types
   nanoc
+  rack
+  rubypants

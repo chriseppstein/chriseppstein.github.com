@@ -69,7 +69,7 @@
               - else
                 #disqus_thread
                 :javascript
-                  var disqus_url = "#{full_url(page.url)}";
+                  var disqus_url = "http://chriseppstein.github.com#{@item.rep_named(:default).path}";
                   var disqus_developer = 1;
                 %noscript
                   <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
@@ -77,12 +77,12 @@
         #sidebar.aside
           #archives.section
             %h3.heading Blog Archives
-            - posts = site.posts.reject{|p| p.data['draft']}.group_by { |p| p.date.strftime("%Y") }
+            - posts = blog_posts.reject{|p| p.attempt(:draft)}.group_by { |p| p.date.year }
             - posts.keys.sort.reverse.each do |year|
               %h5= year
               %ul.section
                 - posts[year].sort_by(&:date).reverse.each do |post|
-                  %li= link_to(post.title, post.url)
+                  %li= link_to(post.title, post.rep_named(:default))
           #about-me.section
             %h3 About Me
             %img.avatar(src="http://www.gravatar.com/avatar/b0ceed615487ddf041bb0d1cf24a98b0.png")

@@ -1,5 +1,4 @@
 .DS_Store
 .sass-cache
-_site/
-credentials.php
-_source/highlighted/
+output
+tmp
