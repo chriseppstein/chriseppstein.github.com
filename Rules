@@ -41,6 +41,14 @@ compile '/posts/*/' do
   layout 'post'
 end
 
+compile '/images/*' do
+  nil
+end
+
+route '/images/*' do
+  item.identifier.chop + "." + item[:extension]
+end
+
 compile '*' do
   filter :erb
   layout 'default'
