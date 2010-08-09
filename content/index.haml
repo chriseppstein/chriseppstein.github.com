@@ -9,18 +9,15 @@ verify: <meta name="verify-v1" content="dod3zRBNeuf2lgDlHn+ZAYK+fUFRuxryWjLWqbzm
 ---
 
 #most-recent-post.mini.blog
-  - post = site.posts.sort_by(&:date).reverse.detect{|p| p.data['featured'] && !p.data['draft']}
-  - if post.data["stylesheet"]
-    %link{:href=>"/stylesheets/#{post.data['stylesheet']}.css", :rel=>"stylesheet", :media=>"screen, projection", :type=>"text/css"}
+  - post = blog_posts.sort_by(&:date).reverse.detect{|p| p.attempt(:featured) && !p.attempt(:draft)}
+  - if post.attempt(:stylesheet)
+    %link{:href=>"/stylesheets/#{post.stylesheet}.css", :rel=>"stylesheet", :media=>"screen, projection", :type=>"text/css"}
   %h2.description Featured Post
   .section.alpha
     %h1.header
-      = link_to(rp(style_amp(post.title)), post.url, {:class=>"title"})
+      = link_to(rp(style_amp(post.title)), post.rep_named(:default), {:class=>"title"})
     .article
-      - if post.data["exerpt"]
-        = rp(site.markdown("#{post.data['exerpt']} &hellip; #{link_to('more &raquo;', post.url, {:class=>'more'})}"))
-      - else
-        = preserve rp(post.content)
+      = preserve post.rep_named(:default).compiled_content
     .footer
-      - unless post.data["comments_off"]
-        %a(href="#{post.url}/#disqus_thread") Comments
+      - unless post.attempt(:comments_off)
+        %a(href="#{full_url(post)}/#disqus_thread") Comments

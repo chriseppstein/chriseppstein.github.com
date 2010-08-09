@@ -49,20 +49,6 @@ route "/blog/atom/" do
   "/blog/atom.xml"
 end
 
-compile '/blog*' do
-  if item[:extension] == "haml"
-    filter :haml
-  elsif item[:extension] == "markdown"
-    filter :erb
-    filter :markdown
-  end
-  if item[:layout]
-    layout item[:layout]
-  else
-    layout 'default'
-  end
-end
-
 route '/blog/archives/' do
   "/blog/archives.html"
 end
@@ -71,12 +57,14 @@ route '/blog/index/' do
   "/blog/index.html"
 end
 
-compile '/images/*' do
-  nil
-end
+%w(images javascripts).each do |asset_dir|
+  compile "/#{asset_dir}/*" do
+    nil
+  end
 
-route '/images/*' do
-  item.identifier.chop + "." + item[:extension]
+  route "/#{asset_dir}/*" do
+    item.identifier.chop + "." + item[:extension]
+  end
 end
 
 compile "/highlighted/stylesheets/*/" do
@@ -97,8 +85,17 @@ route '/posts/*/' do
 end
 
 compile '*' do
-  filter :erb
-  layout 'default'
+  if item[:extension] == "haml"
+    filter :haml
+  elsif item[:extension] == "markdown"
+    filter :erb
+    filter :markdown
+  end
+  if item[:layout]
+    layout item[:layout]
+  else
+    layout 'default'
+  end
 end
 
 route '*' do

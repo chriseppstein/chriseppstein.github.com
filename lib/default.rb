@@ -77,3 +77,6 @@ def absolute_url(input)
   input.gsub(/(href|src)(\s*=\s*)(["'])(\/.*?)\3/) { $1 + $2 + $3 + "http://chriseppstein.github.com" + $4 + $3 }
 end
 
+def style_amp(input)
+  input.gsub(" & "," <span class='amp'>&</span> ")
+end
