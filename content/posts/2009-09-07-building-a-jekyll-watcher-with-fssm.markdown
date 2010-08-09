@@ -28,22 +28,19 @@ Installing RDoc documentation for ttilley-fssm-0.0.6...</span>
 This update function uses pipes because I wanted to see the output as it was emitted.
 
 <div class="editor window">
-{% highlight ruby %}
-def rebuild_site(relative)
+<pre><code class="ruby">def rebuild_site(relative)
   puts ">>> Change Detected to: #{relative} <<<"
   IO.popen('rake generate') do |io|
     print(io.readpartial(512)) until io.eof?
   end
   puts '>>> Update Complete <<<'
-end
-{% endhighlight %}
+end</code></pre>
 </div>
 
 ### Create a Watch Task
 
 <div class="editor window">
-{% highlight ruby %}
-desc "Watch the site and regenerate when it changes"
+<pre><code class="ruby">desc "Watch the site and regenerate when it changes"
 task :watch do
   require 'fssm'
   puts ">>> Watching for Changes <<<"
@@ -52,8 +49,7 @@ task :watch do
     delete {|base, relative| rebuild_site(relative)}
     create {|base, relative| rebuild_site(relative)}
   end
-end
-{% endhighlight %}
+end</code></pre>
 </div>
 
 

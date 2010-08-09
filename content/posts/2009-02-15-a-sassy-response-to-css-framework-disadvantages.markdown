@@ -50,12 +50,10 @@ This is true. You _can_ degrade the performance of a browser. But did you? It's 
     <tr>
       <td valign="top" class="window editor">
 <div>
-{% highlight sass %}
-@import compass/reset.sass
+<pre><code class="sass">@import compass/reset.sass
 @import blueprint.sass
 
-+blueprint
-{% endhighlight %}
++blueprint</code></pre>
 </div>
       </td>
   </tr>
@@ -72,12 +70,10 @@ Or you can be more selective. For example, if you just want blueprint’s grid s
     <tr>
       <td valign="top" class="window editor">
 <div>
-{% highlight sass %}
-@import compass/reset.sass
+<pre><code class="sass">@import compass/reset.sass
 @import blueprint.sass
 
-+blueprint-grid
-{% endhighlight %}
++blueprint-grid</code></pre>
 </div>
       </td>
   </tr>

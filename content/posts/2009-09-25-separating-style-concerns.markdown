@@ -128,8 +128,7 @@ If you're building a mixin of any complexity, it's good to think about breaking 
   </tr>
   <tr>
     <td valign="top" class="window editor">
-{% highlight sass %}
-=user-badge
+<pre><code class="sass">=user-badge
   +user-badge-layout
   +user-badge-typography
   +user-badge-design
@@ -137,7 +136,7 @@ If you're building a mixin of any complexity, it's good to think about breaking 
 =moderator-badge
   +user-badge-layout
   +user-badge-typography
-  +moderator-badge-design{% endhighlight %}
+  +moderator-badge-design</code></pre>
     </td>
   </tr>
 </table>

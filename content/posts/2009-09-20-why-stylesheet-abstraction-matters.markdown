@@ -54,22 +54,21 @@ New Mechanisms of Stylesheet Abstraction
   </tr>
   <tr>
     <td valign="top" class="window editor">
-{% highlight sass %}
-!article_font_color = #333
+<pre><code class="sass">!article_font_color = #333
 .article p
   color= !article_font_color
 .widget .article-snippet
   color= !article_font_color
-{% endhighlight %}
+</code></pre>
     </td>
     <td class="gap">&nbsp;</td>
     <td valign="top" class="window editor">
-{% highlight css %}
+<pre><code class="css">
 .article p {
   color: #333;}
 .widget .article-snippet {
   color: #333;}
-{% endhighlight %}
+</code></pre>
     </td>
   </tr>
 </table>
@@ -86,8 +85,7 @@ New Mechanisms of Stylesheet Abstraction
   </tr>
   <tr>
     <td valign="top" class="window editor">
-{% highlight sass %}
-!base = #60A
+<pre><code class="sass">!base = #60A
 !highlight = lighten(!base, 33%)
 !shadow = darken(!base, 33%)
 div.box
@@ -96,17 +94,14 @@ div.box
     width: 2px
     style: solid
     colors= !highlight !highlight !shadow !shadow
-{% endhighlight %}
-    </td>
+</code></pre></td>
     <td class="gap">&nbsp;</td>
     <td rowspan="4" valign="top" class="window editor">
-{% highlight css %}
-div.box {
+<pre><code class="css">div.box {
   background-color: #6600aa;
   border-width: 2px;
   border-style: solid;
-  border-color: #a41bff #a41bff #440072 #440072; }
-{% endhighlight %}
+  border-color: #a41bff #a41bff #440072 #440072; }</code></pre>
     </td>
   </tr>
   <tr class="gap">
@@ -119,14 +114,12 @@ div.box {
   </tr>
   <tr>
     <td valign="top" class="window editor">
-{% highlight ruby %}
-# Darken a color by 0-100%
+<pre><code class="ruby"># Darken a color by 0-100%
 def darken(color, amount)
   hsl = Compass::Colors::HSL.from_color(color)
   hsl.l *= 1.0 - (amount.value / 100.0)
   hsl.to_color
-end
-{% endhighlight %}
+end</code></pre>
     </td>
     <td class="gap">&nbsp;</td>
   </tr>
@@ -144,8 +137,7 @@ end
   </tr>
   <tr>
     <td valign="top" class="window editor">
-{% highlight sass %}
-!browser_default_size = 16px
+<pre><code class="sass">!browser_default_size = 16px
 !base_font_size = 12px
 !base_line_height = 18px
 body
@@ -155,21 +147,20 @@ p.bigger
   /* Maintain the same line height. */
   !bigger_size = 16px
   font-size= 1em * !bigger_size / !base_font_size
-  line-height= !base_line_height / !bigger_size
-{% endhighlight %}
+  line-height= !base_line_height / !bigger_size</code></pre>
     </td>
     <td class="gap">&nbsp;</td>
     <td valign="top" class="window editor">
-{% highlight css %}
-body {
+
+<pre><code class="css">body {
   font-size: 75%;
   line-height: 1.5; }
 
 p.bigger {
   /* Maintain the same line height. */
   font-size: 1.333em;
-  line-height: 1.125; }
-{% endhighlight %}
+  line-height: 1.125; }</code></pre>
+
     </td>
   </tr>
 </table>
@@ -184,8 +175,7 @@ p.bigger {
   </tr>
   <tr>
     <td valign="top" class="window editor">
-{% highlight sass %}
-// Cross Browser Transparency (Yuck!)
+<pre><code class="sass">// Cross Browser Transparency (Yuck!)
 =opacity(!opacity)
   :opacity= !opacity
   :-moz-opacity= !opacity
@@ -197,8 +187,7 @@ ul.nav
   li
     +opacity(0.75)
     &:hover
-      +opacity(1)
-{% endhighlight %}
+      +opacity(1)</code></pre>
     </td>
   </tr>
   <tr class="gap">
@@ -208,8 +197,7 @@ ul.nav
     <th class="window-title">CSS</th>
   </tr>
     <td valign="top" class="window editor">
-{% highlight css %}
-ul.nav li {
+<pre><code class="css">ul.nav li {
   opacity: 0.75;
   -moz-opacity: 0.75;
   -khtml-opacity: 0.75;
@@ -220,8 +208,7 @@ ul.nav li {
     -moz-opacity: 1;
     -khtml-opacity: 1;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    filter: alpha(opacity=100); }
-{% endhighlight %}
+    filter: alpha(opacity=100); }</code></pre>
     </td>
   </tr>
 </table>
@@ -238,16 +225,13 @@ ul.nav li {
   </tr>
   <tr>
     <td valign="top" class="window editor">
-{% highlight sass %}
-@for !level from 1 through 6
+<pre><code class="sass">@for !level from 1 through 6
   h#{!level}
-    font-size= 100% + (6 - !level) * 150% / 5
-{% endhighlight %}
+    font-size= 100% + (6 - !level) * 150% / 5</code></pre>
     </td>
     <td class="gap">&nbsp;</td>
     <td valign="top" class="window editor">
-{% highlight css %}
-h1 {
+<pre><code class="css">h1 {
   font-size: 250%; }
 
 h2 {
@@ -263,8 +247,7 @@ h5 {
   font-size: 130%; }
 
 h6 {
-  font-size: 100%; }
-{% endhighlight %}
+  font-size: 100%; }</code></pre>
     </td>
   </tr>
 </table>
