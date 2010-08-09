@@ -41,6 +41,36 @@ compile '/posts/*/' do
   layout 'post'
 end
 
+compile "/blog/atom/" do
+  filter :haml, :attr_wrapper => '"'
+end
+
+route "/blog/atom/" do
+  "/blog/atom.xml"
+end
+
+compile '/blog*' do
+  if item[:extension] == "haml"
+    filter :haml
+  elsif item[:extension] == "markdown"
+    filter :erb
+    filter :markdown
+  end
+  if item[:layout]
+    layout item[:layout]
+  else
+    layout 'default'
+  end
+end
+
+route '/blog/archives/' do
+  "/blog/archives.html"
+end
+
+route '/blog/index/' do
+  "/blog/index.html"
+end
+
 compile '/images/*' do
   nil
 end
@@ -49,15 +79,13 @@ route '/images/*' do
   item.identifier.chop + "." + item[:extension]
 end
 
-compile "highlighted/stylesheets/*/" do
+compile "/highlighted/stylesheets/*/" do
   layout "stylesheet"
 end
 
-route "highlighted/stylesheets/*/" do
+route "/highlighted/stylesheets/*/" do
   item.identifier.chop + "." + item[:extension]
 end
-
-
 
 route '/posts/*/' do
   if item.identifier =~ %r{^/posts/(\d{4})-(\d{2})-(\d{2})-(.*)/$}

@@ -5,24 +5,25 @@ title: "#chris-eppstein {position: unique;} - Blog"
 bottom_nav: <a href="/blog/archives.html">&larr; Read more at the archives</a>
 ---
 .blog
-  - site.posts.reject{|p| p.data['draft']}.sort_by(&:date).reverse.each_with_index do |post,index|
+  - blog_posts.reject{|p| p.attempt(:draft)}.sort_by(&:date).reverse.each_with_index do |post,index|
     - if index > 0
       %hr
     .section
-      - if post.data["link"]
+      - if post.attempt(:link)
         %h3.header.link
-          = link_to(rp(post.title), post.data["link"], {:class=>"title"})
-          %a.permalink(href="#{post.url}") &infin;
+          %a{:href=>post.link, :class => "title"}= rp(post.title)
+          %a.permalink{:href=>full_url(post)} &infin;
       - else
         %h3.header
-          = link_to(rp(post.title), post.url, {:class=>"title"})
-      .article
-        %p= rp(post.data["description"])
+          %a{:class=>"title", :href=>full_url(post)}= rp(post.title)
+      - if post.respond_to?(:description)
+        .article
+          %p= rp post.description
       .footer
-        - if post.data["comments_off"]
+        - if post.attempt(:comments_off)
           %em.comments_off Comments disabled
         - else
-          %a(href="#{post.url}/#disqus_thread")Leave a Comment &raquo;
+          %a{:href=>"#{full_url(post)}/#disqus_thread"} Leave a Comment &raquo;
 :javascript
   (function() {
       var links = document.getElementsByTagName('a');

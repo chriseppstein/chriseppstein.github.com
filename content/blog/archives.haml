@@ -7,11 +7,14 @@ bottom_nav: <a href="/blog/">View the blog &rarr;</a>
 ---
 %h2(style="margin-top:0") Post Archives
 
-- posts = site.posts.reject{|p| p.data['draft']}.group_by { |p| p.date.strftime("%Y") }
+- posts = blog_posts.reject{|p| p.attempt(:draft)}.group_by { |p| p.date.strftime("%Y") }
 - posts.keys.sort.reverse.each do |year|
   %h3= year
   %ul
     - posts[year].sort_by(&:date).reverse.each do |post|
-      %li(class="#{(post.data['link'] ? "link" : nil )}")
-        = link_to(post.title, post.url)
+      %li(class="#{post.attempt(:link) ? "link" : nil }")
+        - if post.respond_to?(:title)
+          %a{:href=>full_url(post)}= post.title
+        - else
+          %a{:href=>full_url(post)} No Title
         %span.pubdate= post.date.strftime("%d %b, %Y")
