@@ -1,22 +1,22 @@
-$default_link_color: #b3272d !default
+$default-link-color: #b3272d !default
 
-$default_link_color_hover: white !default
+$default-link-color-hover: white !default
 
-$default_link_color_alt: #91d5f1 !default
+$default-link-color-alt: #91d5f1 !default
 
-$default_link_color_hover_alt: black !default
+$default-link-color-hover-alt: black !default
 
 =link-color($hover: true)
-  +link-color-style($default_link_color, $default_link_color_hover, $default_link_color, $hover)
+  +link-color-style($default-link-color, $default-link-color-hover, $default-link-color, $hover)
 
 =link-color-alt($hover: true)
-  +link-color-style($default_link_color_alt, $default_link_color_hover_alt, $default_link_color_alt, $hover)
+  +link-color-style($default-link-color-alt, $default-link-color-hover-alt, $default-link-color-alt, $hover)
 
-=link-color-style($color: $default_link_color, $color_hover: $default_link_color_hover, $link_hover_bg: $color, $hover: true)
+=link-color-style($color: $default-link-color, $color-hover: $default-link-color-hover, $link-hover-bg: $color, $hover: true)
   color: $color
   +border-radius(3px)
   @if $hover
     &:hover
-      background-color: $link_hover_bg
-      color: $color_hover
+      background-color: $link-hover-bg
+      color: $color-hover
       text-decoration: none

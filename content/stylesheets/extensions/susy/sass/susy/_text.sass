@@ -1,21 +1,19 @@
-//** Text Settings **//
+//* Text Settings **//
 
-//** 
-  You set the font and line heights in pixels
-!base_font_size_px ||= 12
-!base_line_height_px ||= 18
+//*
+// You set the font and line heights in pixels
+$base-font-size-px: 12 !default
+$base-line-height-px: 18 !default
 
+//*
+// Susy can do the math to make that relative
+// we call base_font_size function (even though we could do the math here)
+// because Susy needs to "remember" our base_font_size_px for px2em()
+$base-font-size: base-font-size($base-font-size-px) + unquote("%")
+$base-line-height: $base-line-height-px / $base-font-size-px * 100 + unquote("%")
 
-//** 
-  Susy can do the math to make that relative
-  we call base_font_size function (even though we could do the math here)
-  because Susy needs to "remember" our base_font_size_px for px2em()
-!base_font_size = base_font_size(!base_font_size_px) + "%"
-!base_line_height = (!base_line_height_px / !base_font_size_px) * 100 + "%"
-
-//** 
-  Because some serif fonts add line-height when switching to italics inline:
+//*
+// Because some serif fonts add line-height when switching to italics inline:
 =inline-italic
-  :font-style italic
-  :line-height .5
-
+  font-style: italic
+  line-height: 0.5

@@ -1,33 +1,33 @@
-//**
+//*
 //  Susy: Elastic-Fluid grids without all the math
 //  by Eric Meyer and OddBird Collective
 //  Site: www.oddbird.net/susy/
-//**
+//*
 
-//** 
-  GRID
-  un-comment and override these values as needed for your grid layout 
-  (defaults are shown)
+//*
+// GRID
+// un-comment and override these values as needed for your grid layout 
+// (defaults are shown)
 // !grid_unit = "em"
 // !total_cols = 16
 // !col_width = 4
 // !gutter_width = 1
 // !side_gutter_width = !gutter_width
 
-//**
-  HACKS
-  Are you using hacks or conditional comments? Susy makes both possible.
-  Leave this as 'true' to use hacks, set it as false for conditional comments.
-  Conditional comments will require overrides for +omega, +inline-block and
-  several other mixins.
-  !hacks = true
+//*
+// HACKS
+// Are you using hacks or conditional comments? Susy makes both possible.
+// Leave this as 'true' to use hacks, set it as false for conditional comments.
+// Conditional comments will require overrides for +omega, +inline-block and
+// several other mixins.
+// !hacks = true
 
-//** 
-  FONT-SIZE
-  un-comment and override these values as needed (defaults are shown)
-  - you set the font and line heights in pixels.
-  - Susy will do the math and give you !base_font_size and !base_line_height 
-    variables, set flexibly against the common browser default of 16px
+//*
+// FONT-SIZE
+// un-comment and override these values as needed (defaults are shown)
+// - you set the font and line heights in pixels.
+// - Susy will do the math and give you !base_font_size and !base_line_height 
+//   variables, set flexibly against the common browser default of 16px
 // !base_font_size_px = 12
 // !base_line_height_px = 18
 
@@ -37,36 +37,34 @@
 
 // COLORS
 // set any colors you will need later
-!dark = #000
-!light = #fff
+$dark: black
+$light: white
 
 // FONTS
 // Give yourself some font stacks to work with
 =sans-family
-  :font-family Futura, sans-serif
+  font-family: Futura, sans-serif
 
 =serif-family
-  :font-family Baskerville, serif 
+  font-family: Baskerville, serif
 
 // Remember to add default styles to everything!
 
-/* @group links */
+/* @group links
 
 \:focus
 
 a
 
-/* @end */
+/* @end
 
-
-/* @group headers */
+/* @group headers
 
 h1, h2, h3, h4, h5, h6
 
-/* @end */
+/* @end
 
-
-/* @group forms */
+/* @group forms
 
 form
 
@@ -82,12 +80,11 @@ input
 
 button
 
-/* @end */
+/* @end
 
+/* @group tables
 
-/* @group tables */
-
-/* tables still need 'cellspacing="0"' in the markup */
+/* tables still need 'cellspacing="0"' in the markup
 
 table
 
@@ -103,60 +100,57 @@ th
 
 td
 
-/* @end */
+/* @end
 
-
-/* @group block tags */
+/* @group block tags
 
 p
 
-=list-default(!ol = false)
-  @if !ol
-    :list-style decimal
-    :margin 0 1.5em 1.5em 1.5em
+=list-default($ol: false)
+  @if $ol
+    list-style: decimal
+    margin: 0 1.5em 1.5em 1.5em
   @else
-    :list-style disc
-    :margin 0 1.5em 1.5em 1.5em
+    list-style: disc
+    margin: 0 1.5em 1.5em 1.5em
 
 =no-style-list
   +no-bullets
-  :margin 0
-  :padding 0
+  margin: 0
+  padding: 0
 
 ol
-  +list-default("ol")
+  +list-default(ol)
 
 ul
   +list-default
 
 blockquote
 
-/* @end */
+/* @end
 
-
-/* @group inline tags */
+/* @group inline tags
 
 cite
 
 em
-  :font-style italic
+  font-style: italic
 
 strong
-  :font-weight bold
+  font-weight: bold
 
 ins
-  :text-decoration underline
+  text-decoration: underline
 
 del
-  :text-decoration line-through
+  text-decoration: line-through
 
 q
 
-/* @end */
+/* @end
 
-
-/* @group replaced tags */
+/* @group replaced tags
 
 img
 
-/* @end */
+/* @end
