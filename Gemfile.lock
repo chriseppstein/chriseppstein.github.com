@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    coderay (0.9.3)
     compass (0.10.4)
       haml (>= 3.0.4)
     cri (1.0.1)
@@ -13,6 +14,7 @@ GEM
       nanoc3 (>= 3.1.4)
     nanoc3 (3.1.4)
       cri (>= 1.0.0)
+    nokogiri (1.4.3.1)
     rack (1.2.1)
     rdiscount (1.6.5)
     rubypants (0.2.0)
@@ -21,12 +23,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coderay
   compass
   fssm
   git
   hpricot
   mime-types
   nanoc
+  nokogiri
   rack
   rdiscount
   rubypants
