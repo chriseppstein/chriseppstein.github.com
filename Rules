@@ -87,7 +87,7 @@ end
 
 compile '*' do
   if item[:extension] == "haml"
-    filter :haml
+    filter :haml, :attr_wrapper => '"'
   elsif item[:extension] == "markdown"
     filter :erb
     filter :rdiscount
@@ -105,4 +105,4 @@ end
 
 layout 'code/*', :erb
 
-layout '*', :haml
+layout '*', :haml, :attr_wrapper => '"'
