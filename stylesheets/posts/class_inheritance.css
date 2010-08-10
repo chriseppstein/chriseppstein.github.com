@@ -1,75 +1,18 @@
-/* line 3, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#simple-display .box,
-#positional-styling .browser .box {
-  border: 2px solid black;
-  margin: 1em;
-  padding: 1em; }
-/* line 7, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#simple-display .important-box,
-#positional-styling .browser .important-box {
-  border: 2px solid black;
-  margin: 1em;
-  padding: 1em;
-  background-color: #cccccc; }
-/* line 12, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#simple-display .error-box,
-#positional-styling .browser .error-box {
-  border: 2px solid black;
-  margin: 1em;
-  padding: 1em;
-  background-color: #ffcccc;
-  color: red;
-  border-color: red; }
+#simple-display .box, #positional-styling .browser .box { border: 2px solid black; margin: 1em; padding: 1em; }
+#simple-display .important-box, #positional-styling .browser .important-box { border: 2px solid black; margin: 1em; padding: 1em; background-color: #cccccc; }
+#simple-display .error-box, #positional-styling .browser .error-box { border: 2px solid black; margin: 1em; padding: 1em; background-color: #ffcccc; color: red; border-color: red; }
 
-/* line 21, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#positional-styling .browser .grid {
-  display: table;
-  margin: 1em;
-  border-spacing: 5px; }
-/* line 25, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#positional-styling .browser .row {
-  display: table-row; }
-/* line 27, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#positional-styling .browser .box, #positional-styling .browser .error-box, #positional-styling .browser .important-box {
-  display: table-cell;
-  width: 50%; }
-/* line 31, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#positional-styling .browser #top .box, #positional-styling .browser #top .error-box, #positional-styling .browser #top .important-box {
-  font-size: larger;
-  margin-bottom: 1em; }
-/* line 35, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#positional-styling .browser #bottom .box, #positional-styling .browser #bottom .error-box, #positional-styling .browser #bottom .important-box {
-  font-size: smaller; }
+#positional-styling .browser .grid { display: table; margin: 1em; border-spacing: 5px; }
+#positional-styling .browser .row { display: table-row; }
+#positional-styling .browser .box, #positional-styling .browser .error-box, #positional-styling .browser .important-box { display: table-cell; width: 50%; }
+#positional-styling .browser #top .box, #positional-styling .browser #top .error-box, #positional-styling .browser #top .important-box { font-size: larger; margin-bottom: 1em; }
+#positional-styling .browser #bottom .box, #positional-styling .browser #bottom .error-box, #positional-styling .browser #bottom .important-box { font-size: smaller; }
 
-/* line 40, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#compilation-expected-display .primary .base, #compilation-expected-display .primary .extended {
-  background-color: #cc7777; }
-/* line 43, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#compilation-expected-display .alternate .base, #compilation-expected-display .alternate .extended {
-  background-color: #77cc77; }
+#compilation-expected-display .primary .base, #compilation-expected-display .primary .extended { background-color: #cc7777; }
+#compilation-expected-display .alternate .base, #compilation-expected-display .alternate .extended { background-color: #77cc77; }
 
-/* line 47, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#compilation-actual-display .primary .base {
-  background-color: #cc7777; }
-/* line 49, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#compilation-actual-display .alternate .base {
-  background-color: #77cc77; }
+#compilation-actual-display .primary .base { background-color: #cc7777; }
+#compilation-actual-display .alternate .base { background-color: #77cc77; }
 
-/* line 53, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#compilation-win-display #top .base,
-#compilation-win-display #top .primary .extended,
-#compilation-win-display .primary#top .extended,
-#compilation-win-display .primary #top .extended,
-#compilation-win-display #top .alternate .extended,
-#compilation-win-display #top.alternate .extended,
-#compilation-win-display .alternate #top .extended {
-  background-color: #cc7777; }
-/* line 62, ../../../_source/stylesheets/posts/class_inheritance.sass */
-#compilation-win-display #bottom .base,
-#compilation-win-display #bottom .primary .extended,
-#compilation-win-display .primary#bottom .extended,
-#compilation-win-display .primary #bottom .extended,
-#compilation-win-display #bottom .alternate .extended,
-#compilation-win-display #bottom.alternate .extended,
-#compilation-win-display .alternate #bottom .extended {
-  background-color: #77cc77; }
+#compilation-win-display #top .base, #compilation-win-display #top .primary .extended, #compilation-win-display .primary#top .extended, #compilation-win-display .primary #top .extended, #compilation-win-display #top .alternate .extended, #compilation-win-display #top.alternate .extended, #compilation-win-display .alternate #top .extended { background-color: #cc7777; }
+#compilation-win-display #bottom .base, #compilation-win-display #bottom .primary .extended, #compilation-win-display .primary#bottom .extended, #compilation-win-display .primary #bottom .extended, #compilation-win-display #bottom .alternate .extended, #compilation-win-display #bottom.alternate .extended, #compilation-win-display .alternate #bottom .extended { background-color: #77cc77; }

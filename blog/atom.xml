@@ -3,7 +3,7 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-08-03T08:58:19-07:00</updated>
+  <updated>2010-08-10T00:51:55-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
@@ -11,8 +11,8 @@
   </author>
   <entry>
     <title>Sass Challenge: Use selector inheritance this week.</title>
-    <link href="http://chriseppstein.github.com/blog/2010/08/02/sass-extend-challenge" />
-    <updated>2010-08-02T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/08/02/sass-extend-challenge/" />
+    <updated>2010-08-01T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/02/sass-extend-challenge</id>
     <content type="html">
       I challenge you to start using Sass's @extend directive. Find at least one place in your stylesheets where selector inheritance is appropriate and put it to use.
@@ -20,8 +20,8 @@
   </entry>
   <entry>
     <title>Building a Personal CSS Framework with Compass</title>
-    <link href="http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework" />
-    <updated>2010-08-01T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework/" />
+    <updated>2010-07-31T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework</id>
     <content type="html">
       Building a personal CSS framework using Compass is super easy and provides huge productivity gains for CSS developers.
@@ -29,8 +29,8 @@
   </entry>
   <entry>
     <title>Refactor My Stylesheets: The Negative Value Mixin</title>
-    <link href="http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin" />
-    <updated>2010-07-15T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin/" />
+    <updated>2010-07-14T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin</id>
     <content type="html">
       Sometimes a mixin adds negative value to your stylesheet.
@@ -38,8 +38,8 @@
   </entry>
   <entry>
     <title>SF Bay Area Sass Meetup: June 29, 2010</title>
-    <link href="http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup" />
-    <updated>2010-06-19T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup/" />
+    <updated>2010-06-18T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup</id>
     <content type="html">
       Nathan is in town so we're having a meetup on June 29, 2010 in Mountain View, CA.
@@ -47,8 +47,8 @@
   </entry>
   <entry>
     <title>Working with Nested Application Bundles</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/28/nested-bundles" />
-    <updated>2010-05-28T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/05/28/nested-bundles/" />
+    <updated>2010-05-27T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/05/28/nested-bundles</id>
     <content type="html">
       Ruby's Gem Bundler doesn't like it when you try to nest bundles. Here's a work-around.
@@ -56,8 +56,8 @@
   </entry>
   <entry>
     <title>Refactor My Stylesheets: The Digg.com Edition</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/25/refactor-my-stylesheets-digg-edition" />
-    <updated>2010-05-25T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/05/25/refactor-my-stylesheets-digg-edition/" />
+    <updated>2010-05-24T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/05/25/refactor-my-stylesheets-digg-edition</id>
     <content type="html">
       See how I clean up a portion of Digg's CSS using Sass.
@@ -65,8 +65,8 @@
   </entry>
   <entry>
     <title>Where are your Images?</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images" />
-    <updated>2010-05-17T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images/" />
+    <updated>2010-05-16T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images</id>
     <content type="html">
       If you think you know where your images are -- think again.
@@ -74,8 +74,8 @@
   </entry>
   <entry>
     <title>Compass 1.0 Roadmap</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap" />
-    <updated>2010-05-14T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap/" />
+    <updated>2010-05-13T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap</id>
     <content type="html">
       How we're going to get to v1.0
@@ -83,17 +83,17 @@
   </entry>
   <entry>
     <title>Compass v0.10 Released</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/10/announcing-the-v0.10-release" />
-    <updated>2010-05-10T00:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/05/10/announcing-the-v0.10-release</id>
+    <link href="http://chriseppstein.github.com/blog/2010/05/10/announcing-the-v0-10-release/" />
+    <updated>2010-05-09T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2010/05/10/announcing-the-v0-10-release</id>
     <content type="html">
       Compass v0.10 is released, read on to find out what's new!
     </content>
   </entry>
   <entry>
     <title>Introducing the Compass Core Team</title>
-    <link href="http://chriseppstein.github.com/blog/2010/04/11/compass-core-team" />
-    <updated>2010-04-11T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/04/11/compass-core-team/" />
+    <updated>2010-04-10T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/04/11/compass-core-team</id>
     <content type="html">
       Eric Meyer and Brandon Mathis are joining the Compass Core Team.
@@ -101,8 +101,8 @@
   </entry>
   <entry>
     <title>Haml Sucks for Content</title>
-    <link href="http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content" />
-    <updated>2010-02-08T00:00:00-08:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content/" />
+    <updated>2010-02-07T17:00:00-08:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content</id>
     <content type="html">
       Haml is awesome, but if you're using it for inline markup, you're doing it wrong.
@@ -110,8 +110,8 @@
   </entry>
   <entry>
     <title>2009 - In Review</title>
-    <link href="http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review" />
-    <updated>2009-12-08T00:00:00-08:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review/" />
+    <updated>2009-12-07T17:00:00-08:00</updated>
     <id>http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review</id>
     <content type="html">
       A short post looking back at the past year in my life.
@@ -119,8 +119,8 @@
   </entry>
   <entry>
     <title>We Can Have Hack Free CSS With the @unsupported Directive</title>
-    <link href="http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive" />
-    <updated>2009-10-19T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive/" />
+    <updated>2009-10-18T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive</id>
     <content type="html">
       Stylesheets can be hack free with a little help from the W3C. The @supported and @unsupported directives would allow conditional evaluation of CSS based on feature inspection.
@@ -128,8 +128,8 @@
   </entry>
   <entry>
     <title>CSS Class Inheritance: Abstracting Selectors</title>
-    <link href="http://chriseppstein.github.com/blog/2009/10/12/css-class-inheritance" />
-    <updated>2009-10-12T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2009/10/12/css-class-inheritance/" />
+    <updated>2009-10-11T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2009/10/12/css-class-inheritance</id>
     <content type="html">
       CSS class inheritance is a powerful concept. It allows selectors to inherit implementation. Read on for information on what it is, how it would work, what the present state is, and what future might hold.
@@ -137,8 +137,8 @@
   </entry>
   <entry>
     <title>What is Compass</title>
-    <link href="http://chriseppstein.github.com/blog/2009/09/30/what-is-compass" />
-    <updated>2009-09-30T00:00:00-07:00</updated>
+    <link href="http://chriseppstein.github.com/blog/2009/09/30/what-is-compass/" />
+    <updated>2009-09-29T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2009/09/30/what-is-compass</id>
     <content type="html">
       <p>An astute person asked me yesterday:</p>&#x000A;&#x000A;<blockquote><p>It seems the only thing compass is is a repackaging of existing CSS frameworks like Blueprint into SASS mixins.&#x000A;Is that accurate?  Just trying to understand where Sass ends and Compass begins&#8230;</p></blockquote>&#x000A;&#x000A;<p>The short answer is: Yes. That, and some original Sass mixins. Oh and all the parts needed to make that possible.</p>&#x000A;&#x000A;<h2>Sass is the Star</h2>&#x000A;&#x000A;<p>Make no mistake, Sass is Awesome. I&#8217;m a fanboy. <a href="http://nex-3.com">Nathan Weizenbaum</a> has been an awesome maintainer of Sass and doesn&#8217;t get enough recognition for his work. I started using Sass just after it hit 2.0. Compass has pushed the limits of Sass and many of the language features of 2.2 were driven by Compass &#8211; the two have co-evolved into a powerful platform.</p>&#x000A;&#x000A;<h2>Compass is a Stylesheet Distribution Framework</h2>&#x000A;&#x000A;<p>Compass was initially a port of blueprint to Sass. But as I built it, it became apparent to me that the toolset I was building to distribute the blueprint source was orthogonal to the stylesheets. So Compass was born as a Meta-Framework (A framework for building and distributing css frameworks). With the ultimate goal of enabling anyone who wanted to share Sass stylesheets with others to do so without having to build any infrastructure.</p>&#x000A;&#x000A;<h2>Compass is Project Aware</h2>&#x000A;&#x000A;<p>Sass has it&#8217;s own compiler, but it operates on a single Sass file and generates a single CSS file. Compass understands that you have a complete website and provides a compiler for a whole directory tree of Sass files.</p>&#x000A;&#x000A;<p>But distributing a design, is more than just distributing some stylesheets. There&#8217;s likely some images. But how can you build distributable, upgradable stylesheets if those stylesheets need to refer to an image? Well, you could provide a mixin that takes an argument, or you could allow a variable to be set that says where it is. Or, you can use the <code>image_url</code> function provided by Compass that knows how to write a url, relative to your images path when serving over a webserver or <strong>relative to the generated stylesheet</strong> itself.</p>&#x000A;&#x000A;<h2>Compass enables Open Source Design</h2>&#x000A;&#x000A;<p>With a compass extension you can build a completed design, widget, toolset, etc. and distribute it to projects of different types (rails, php, java, etc) and when a bug is discovered, fix it and enable your users to upgrade without hassle or worry.</p>&#x000A;&#x000A;<h2>Compass Has Core Mixins</h2>&#x000A;&#x000A;<p>A mixin qualifies for &#8220;Core&#8221; status when it is generally useful to most projects and other frameworks. The core framework eliminates duplication and inconsistency between compass extensions.</p>&#x000A;&#x000A;<h2>The Next Version</h2>&#x000A;&#x000A;<p>The next major release of compass will provide tools to make building, distributing, discovering, and installing compass extensions a breeze. I&#8217;ve been working on it for a couple months now and it is really shaping up nicely. The command line tool will integrate with a plugin registry on the compass website to make it easy to find and install compass extensions.</p>&#x000A;&#x000A;<h2>Can you help?</h2>&#x000A;&#x000A;<p>Compass is a big project and there&#8217;s plenty of room for designers and coders alike to help out with Compass development and extension creation. If you&#8217;re sitting on some design that you&#8217;re proud of, it&#8217;s time to share it. If you want to contribute in any way (even testing new versions) join the <a href="http://groups.google.com/group/compass-devs">compass-devs</a> mailing list.</p>

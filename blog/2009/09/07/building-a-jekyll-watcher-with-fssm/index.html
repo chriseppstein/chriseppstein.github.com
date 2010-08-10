@@ -51,7 +51,7 @@
             </li>
           </ul>
         </div>
-        <div class="title highlight">
+        <div class="title">
           <h1 class="n">#chris-eppstein</h1>
           <h2>&nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span></h2>
         </div>
@@ -68,12 +68,12 @@
             <h2 class="header">
               Building a Jekyll Watcher with FSSM
             </h2>
-            <div class="article"><p>Travis Tilley&#8217;s <a href="http://github.com/ttilley/fssm/tree/master">File System State Monitor</a> provides a fantastic API for monitoring a filesystem and&#x000A;performing actions when changes occur. It has multiple, platform-specific backends for dealing efficiently&#x000A;with filesystems and will resort to polling if it has to. I have already integrated it into <a href="http://github.com/chriseppstein/compass/tree/master">Compass</a>&#x000A;to implement the <code>--watch</code> functionality.</p>&#x000A;&#x000A;<p>When building this blog, I used it to trivially build a watcher for changes to the blog contents and&#x000A;regenerate the site using <a href="http://github.com/mojombo/jekyll/tree/master">jekyll</a> if anything changed. Coupled with <a href="http://github.com/jlong/serve/tree/master">serve</a>, I can&#x000A;basically forget that I&#8217;m developing a static website that has to be compiled. I&#8217;ve documented the basic&#x000A;steps required to build your own watcher here.</p>&#x000A;&#x000A;<h3>Install FSSM</h3>&#x000A;&#x000A;<pre class="console window"><span class="prompt">~</span> <span class="stdin">sudo gem install ttilley-fssm</span>&#x000A;<span class="stdout">Password:&#x000A;Successfully installed ttilley-fssm-0.0.6&#x000A;1 gem installed&#x000A;Installing ri documentation for ttilley-fssm-0.0.6...&#x000A;Installing RDoc documentation for ttilley-fssm-0.0.6...</span>&#x000A;</pre>&#x000A;&#x000A;&#x000A;<h3>Define An Update Function</h3>&#x000A;&#x000A;<p>This update function uses pipes because I wanted to see the output as it was emitted.</p>&#x000A;&#x000A;<div class="editor window">&#x000A;<div class="highlight"><pre><span class="k">def</span> <span class="nf">rebuild_site</span><span class="p">(</span><span class="n">relative</span><span class="p">)</span>&#x000A;  <span class="nb">puts</span> <span class="s2">&quot;&gt;&gt;&gt; Change Detected to: </span><span class="si">#{</span><span class="n">relative</span><span class="si">}</span><span class="s2"> &lt;&lt;&lt;&quot;</span>&#x000A;  <span class="no">IO</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;rake generate&#39;</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">io</span><span class="o">|</span>&#x000A;    <span class="nb">print</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">readpartial</span><span class="p">(</span><span class="mi">512</span><span class="p">))</span> <span class="k">until</span> <span class="n">io</span><span class="o">.</span><span class="n">eof?</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="nb">puts</span> <span class="s1">&#39;&gt;&gt;&gt; Update Complete &lt;&lt;&lt;&#39;</span>&#x000A;<span class="k">end</span>&#x000A;</pre>&#x000A;</div>&#x000A;&#x000A;&#x000A;<p></div></p>&#x000A;&#x000A;<h3>Create a Watch Task</h3>&#x000A;&#x000A;<div class="editor window">&#x000A;<div class="highlight"><pre><span class="n">desc</span> <span class="s2">&quot;Watch the site and regenerate when it changes&quot;</span>&#x000A;<span class="n">task</span> <span class="ss">:watch</span> <span class="k">do</span>&#x000A;  <span class="nb">require</span> <span class="s1">&#39;fssm&#39;</span>&#x000A;  <span class="nb">puts</span> <span class="s2">&quot;&gt;&gt;&gt; Watching for Changes &lt;&lt;&lt;&quot;</span>&#x000A;  <span class="no">FSSM</span><span class="o">.</span><span class="n">monitor</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">#{</span><span class="no">File</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="bp">__FILE__</span><span class="p">)</span><span class="si">}</span><span class="s2">/_source&quot;</span><span class="p">,</span> <span class="s1">&#39;**/*&#39;</span><span class="p">)</span> <span class="k">do</span>&#x000A;    <span class="n">update</span> <span class="p">{</span><span class="o">|</span><span class="n">base</span><span class="p">,</span> <span class="n">relative</span><span class="o">|</span> <span class="n">rebuild_site</span><span class="p">(</span><span class="n">relative</span><span class="p">)}</span>&#x000A;    <span class="n">delete</span> <span class="p">{</span><span class="o">|</span><span class="n">base</span><span class="p">,</span> <span class="n">relative</span><span class="o">|</span> <span class="n">rebuild_site</span><span class="p">(</span><span class="n">relative</span><span class="p">)}</span>&#x000A;    <span class="n">create</span> <span class="p">{</span><span class="o">|</span><span class="n">base</span><span class="p">,</span> <span class="n">relative</span><span class="o">|</span> <span class="n">rebuild_site</span><span class="p">(</span><span class="n">relative</span><span class="p">)}</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;</pre>&#x000A;</div>&#x000A;&#x000A;&#x000A;<p></div></p>&#x000A;&#x000A;<h3>Invoke It</h3>&#x000A;&#x000A;<pre class="console window"><span class="prompt">~/Projects/chriseppstein.github.com</span> <span class="stdin">rake watch</span>&#x000A;<span class="stdout">(in /Users/chris/Projects/chriseppstein.github.com)&#x000A;>>> Watching for Changes &lt;&lt;&lt;</span>&#x000A;</pre>&#x000A;</div>
+            <div class="article"><p>Travis Tilley&#8217;s <a href="http://github.com/ttilley/fssm/tree/master">File System State Monitor</a> provides a fantastic API for monitoring a filesystem and&#x000A;performing actions when changes occur. It has multiple, platform-specific backends for dealing efficiently&#x000A;with filesystems and will resort to polling if it has to. I have already integrated it into <a href="http://github.com/chriseppstein/compass/tree/master">Compass</a>&#x000A;to implement the <code>--watch</code> functionality.</p>&#x000A;&#x000A;<p>When building this blog, I used it to trivially build a watcher for changes to the blog contents and&#x000A;regenerate the site using <a href="http://github.com/mojombo/jekyll/tree/master">jekyll</a> if anything changed. Coupled with <a href="http://github.com/jlong/serve/tree/master">serve</a>, I can&#x000A;basically forget that I&#8217;m developing a static website that has to be compiled. I&#8217;ve documented the basic&#x000A;steps required to build your own watcher here.</p>&#x000A;&#x000A;<h3>Install FSSM</h3>&#x000A;&#x000A;<pre class="console window"><span class="prompt">~</span> <span class="stdin">sudo gem install ttilley-fssm</span>&#x000A;<span class="stdout">Password:&#x000A;Successfully installed ttilley-fssm-0.0.6&#x000A;1 gem installed&#x000A;Installing ri documentation for ttilley-fssm-0.0.6...&#x000A;Installing RDoc documentation for ttilley-fssm-0.0.6...</span>&#x000A;</pre>&#x000A;&#x000A;&#x000A;<h3>Define An Update Function</h3>&#x000A;&#x000A;<p>This update function uses pipes because I wanted to see the output as it was emitted.</p>&#x000A;&#x000A;<div class="editor window">&#x000A;<pre><code class="ruby">def rebuild_site(relative)&#x000A;  puts "&gt;&gt;&gt; Change Detected to: #{relative} &gt;&gt; Update Complete </code></pre>&#x000A;</div>&#x000A;&#x000A;&#x000A;<h3>Create a Watch Task</h3>&#x000A;&#x000A;<div class="editor window">&#x000A;<pre><code class="ruby">desc "Watch the site and regenerate when it changes"&#x000A;task :watch do&#x000A;  require 'fssm'&#x000A;  puts "&gt;&gt;&gt; Watching for Changes </code></pre>&#x000A;</div>&#x000A;&#x000A;&#x000A;<h3>Invoke It</h3>&#x000A;&#x000A;<pre class="console window"><span class="prompt">~/Projects/chriseppstein.github.com</span> <span class="stdin">rake watch</span>&#x000A;<span class="stdout">(in /Users/chris/Projects/chriseppstein.github.com)&#x000A;&gt;&gt;&gt; Watching for Changes &lt;&lt;&lt;</span>&#x000A;</pre></div>
             <div class="footer">
               <div id="disqus_thread"></div>
               <script type="text/javascript">
                 //<![CDATA[
-                  var disqus_url = "http://chriseppstein.github.com/blog/2009/09/07/building-a-jekyll-watcher-with-fssm";
+                  var disqus_url = "http://chriseppstein.github.com/blog/2009/09/07/building-a-jekyll-watcher-with-fssm/";
                   var disqus_developer = 1;
                 //]]>
               </script>
@@ -89,30 +89,30 @@
             <h3 class="heading">Blog Archives</h3>
             <h5>2010</h5>
             <ul class="section">
-              <li><a href="/blog/2010/08/02/sass-extend-challenge">Sass Challenge: Use selector inheritance this week.</a></li>
-              <li><a href="/blog/2010/08/01/building-a-personal-framework">Building a Personal CSS Framework with Compass</a></li>
-              <li><a href="/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin">Refactor My Stylesheets: The Negative Value Mixin</a></li>
-              <li><a href="/blog/2010/06/19/1st-compass-sass-meetup">SF Bay Area Sass Meetup: June 29, 2010</a></li>
-              <li><a href="/blog/2010/05/28/nested-bundles">Working with Nested Application Bundles</a></li>
-              <li><a href="/blog/2010/05/25/refactor-my-stylesheets-digg-edition">Refactor My Stylesheets: The Digg.com Edition</a></li>
-              <li><a href="/blog/2010/05/17/where-are-your-images">Where are your Images?</a></li>
-              <li><a href="/blog/2010/05/14/compass-roadmap">Compass 1.0 Roadmap</a></li>
-              <li><a href="/blog/2010/05/10/announcing-the-v0.10-release">Compass v0.10 Released</a></li>
-              <li><a href="/blog/2010/04/11/compass-core-team">Introducing the Compass Core Team</a></li>
-              <li><a href="/blog/2010/02/08/haml-sucks-for-content">Haml Sucks for Content</a></li>
+              <li><a href="/blog/2010/08/02/sass-extend-challenge/">Sass Challenge: Use selector inheritance this week.</a></li>
+              <li><a href="/blog/2010/08/01/building-a-personal-framework/">Building a Personal CSS Framework with Compass</a></li>
+              <li><a href="/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin/">Refactor My Stylesheets: The Negative Value Mixin</a></li>
+              <li><a href="/blog/2010/06/19/1st-compass-sass-meetup/">SF Bay Area Sass Meetup: June 29, 2010</a></li>
+              <li><a href="/blog/2010/05/28/nested-bundles/">Working with Nested Application Bundles</a></li>
+              <li><a href="/blog/2010/05/25/refactor-my-stylesheets-digg-edition/">Refactor My Stylesheets: The Digg.com Edition</a></li>
+              <li><a href="/blog/2010/05/17/where-are-your-images/">Where are your Images?</a></li>
+              <li><a href="/blog/2010/05/14/compass-roadmap/">Compass 1.0 Roadmap</a></li>
+              <li><a href="/blog/2010/05/10/announcing-the-v0-10-release/">Compass v0.10 Released</a></li>
+              <li><a href="/blog/2010/04/11/compass-core-team/">Introducing the Compass Core Team</a></li>
+              <li><a href="/blog/2010/02/08/haml-sucks-for-content/">Haml Sucks for Content</a></li>
             </ul>
             <h5>2009</h5>
             <ul class="section">
-              <li><a href="/blog/2009/12/08/the-year-in-review">2009 - In Review</a></li>
-              <li><a href="/blog/2009/10/19/css-unsupported-directive">We Can Have Hack Free CSS With the @unsupported Directive</a></li>
-              <li><a href="/blog/2009/10/12/css-class-inheritance">CSS Class Inheritance: Abstracting Selectors</a></li>
-              <li><a href="/blog/2009/09/30/what-is-compass">What is Compass</a></li>
-              <li><a href="/blog/2009/09/25/separating-style-concerns">Separating Style Concerns</a></li>
-              <li><a href="/blog/2009/09/20/why-stylesheet-abstraction-matters">Why Stylesheet Abstraction Matters</a></li>
-              <li><a href="/blog/2009/09/07/building-a-jekyll-watcher-with-fssm">Building a Jekyll Watcher with FSSM</a></li>
-              <li><a href="/blog/2009/04/26/compass-screencast">Compass Screencast</a></li>
-              <li><a href="/blog/2009/04/14/cultural-impacts-of-data-model-naming">Setting a Tone with Model Naming</a></li>
-              <li><a href="/blog/2009/02/15/a-sassy-response-to-css-framework-disadvantages">Disadvantages of CSS Frameworks: A Sass-y Response</a></li>
+              <li><a href="/blog/2009/12/08/the-year-in-review/">2009 - In Review</a></li>
+              <li><a href="/blog/2009/10/19/css-unsupported-directive/">We Can Have Hack Free CSS With the @unsupported Directive</a></li>
+              <li><a href="/blog/2009/10/12/css-class-inheritance/">CSS Class Inheritance: Abstracting Selectors</a></li>
+              <li><a href="/blog/2009/09/30/what-is-compass/">What is Compass</a></li>
+              <li><a href="/blog/2009/09/25/separating-style-concerns/">Separating Style Concerns</a></li>
+              <li><a href="/blog/2009/09/20/why-stylesheet-abstraction-matters/">Why Stylesheet Abstraction Matters</a></li>
+              <li><a href="/blog/2009/09/07/building-a-jekyll-watcher-with-fssm/">Building a Jekyll Watcher with FSSM</a></li>
+              <li><a href="/blog/2009/04/26/compass-screencast/">Compass Screencast</a></li>
+              <li><a href="/blog/2009/04/14/cultural-impacts-of-data-model-naming/">Setting a Tone with Model Naming</a></li>
+              <li><a href="/blog/2009/02/15/a-sassy-response-to-css-framework-disadvantages/">Disadvantages of CSS Frameworks: A Sass-y Response</a></li>
             </ul>
           </div>
           <div class="section" id="about-me">
