@@ -48,7 +48,7 @@ Layout properties are those which affect the location of content on the page:
 
 It's unfortunate that I have to include border width and padding in this list, because I really think that these should be aspects of design, but the reality is that unless you have the luxury of relying on CSS3's `box-sizing` property, keeping borders and paddings separated requires you to nest elements in your content. If you have done this (or plan to), then you are in good shape in this respect.
 
-{% include code/concerns/layout_comparison.html %}
+<%= render "code/concerns/layout_comparison" %>
 
 Typography Properties
 ---------------------

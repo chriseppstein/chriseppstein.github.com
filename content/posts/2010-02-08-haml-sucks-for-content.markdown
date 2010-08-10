@@ -11,7 +11,7 @@ I am not writing this blog post in HTML, and I'm certainly not writing it in [Ha
 
 When I say content, I mean the meat of a web page. The stuff that is left after you take away the header, footer, sidebar, ads, etc. The stuff the user is there to read. Don't use Haml for adding markup to your inline content.
 
-{% include code/haml_sucks/just_dont.html %}
+<%= render "code/haml_sucks/just_dont" %>
 
 Haml is for Layout & Design
 ---------------------------
@@ -36,7 +36,7 @@ Nathan's acknowledgment of Haml's weaknesses is one of its strengths. He has don
 
 That's right. Just put some HTML into your Haml document. Don't be afraid, it'll be just fine.
 
-{% include code/haml_sucks/inline_html.html %}
+<%= render "code/haml_sucks/inline_html" %>
 
 ### &bull; Use Filters
 
@@ -50,13 +50,13 @@ Haml lets you pass any block of content through a filter. If you find yourself t
 * `:markdown` -- Parses the filtered text with Markdown. Only works if [RDiscount](http://github.com/rtomayko/rdiscount), [RPeg-Markdown](http://github.com/rtomayko/rpeg-markdown), [Maruku](http://maruku.rubyforge.org/), or [BlueCloth](http://haml-lang.com/docs/yardoc/www.deveiate.org/projects/BlueCloth) are installed
 * `:maruku` -- Parses the filtered text with [Maruku](http://maruku.rubyforge.org/), which has some non-standard extensions to Markdown.
 
-{% include code/haml_sucks/inline_markdown.html %}
+<%= render "code/haml_sucks/inline_markdown" %>
 
 ### &bull; Partials
 
 Haml is framework agnostic, but at least within rails, the framework will compile partials and insert the compiled content into your page. At [Caring.com](http://www.caring.com) we use the [Amor rails plugin](http://github.com/caring/amor) for markdown content. This makes it easy for us to compose templates, partials, and layouts of different formats into a single page.
 
-{% include code/haml_sucks/partials.html %}
+<%= render "code/haml_sucks/partials" %>
 
 Some Other Haml "Gotchas"
 -------------------------

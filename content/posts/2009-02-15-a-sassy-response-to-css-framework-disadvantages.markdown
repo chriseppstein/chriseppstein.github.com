@@ -85,7 +85,7 @@ Or you can be more selective. For example, if you just want blueprint’s grid s
 
 Bingo. This is, hands down, my #1 problem with CSS Frameworks. CSS based frameworks have to work within the limitations of the technology. As such, you have to make sure your markup conforms to the framework and violate the best practice of keeping your content and presentation separate. And this is the #1 reason Compass exists. I didn’t want to choose between using a framework and following best practices. I wanted to eat my cake too! Compass, together with the awesome concept in Sass called a “Mixin”, allows you to build semantic stylesheets!
 
-{% include code/disadvantages/layout.html %}
+<%= render "code/disadvantages/layout" %>
 
 As you can see, your `#page` element is a container that has been clear-fixed and set to the appropriate width. The `#sidebar` is an 8 unit grid column and your #content is a 16 unit grid column with no right margin because the “true” means it is the last column in a row. This is a simple example, but I hope it demonstrates how you can start to think about your stylesheets in a new way and why I say Compass is a real stylesheet framework, not just a collection of classes.
 

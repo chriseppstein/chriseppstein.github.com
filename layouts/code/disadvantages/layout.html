@@ -8,8 +8,7 @@
 <tr>
 <td valign="top" class="window editor">
 <div>
-{% highlight sass %}
-body.three-column
+<pre><code class="sass">body.three-column
   #header-wrapper, #footer-wrapper, #page-wrapper
     +container
   #header, #footer, #page
@@ -21,15 +20,13 @@ body.three-column
       +column(12)
     #right-sidebar
       +column(8)
-      +last
-{% endhighlight %}
+      +last</code></pre>
 </div>
 </td>
 <td class="gap">&nbsp;</td>
 <td valign="top" class="window editor">
 <div>
-{% highlight css %}
-body.three-column #header-wrapper,
+<pre><code class="css">body.three-column #header-wrapper,
 body.three-column #footer-wrapper,
 body.three-column #page-wrapper {
   width: 950px;
@@ -82,8 +79,7 @@ body.three-column #page #right-sidebar {
 }
 * html body.three-column #page #right-sidebar {
   overflow-x: hidden;
-}
-{% endhighlight %}
+}</code></pre>
 </div>
 </td>
 </tr>

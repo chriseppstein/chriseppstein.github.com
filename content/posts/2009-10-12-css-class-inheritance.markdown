@@ -20,11 +20,11 @@ How is CSS Class Inheritance Specified?
 
 Nicole has proposed a new property for CSS called "extends". Let's look at a simple example:
 
-{% include code/class_inheritance/simple_extends.html %}
+<%= render "code/class_inheritance/simple_extends" %>
 
 In LessCSS the syntax is different, you simply place the class selector you wish to inherit within the definition of a selector. Example:
 
-{% include code/class_inheritance/simple_selector.html %}
+<%= render "code/class_inheritance/simple_selector" %>
 
 Both of these approaches are interesting, but I find them both lacking:
 
@@ -36,7 +36,7 @@ The `@extends` Directive
 
 I propose a hybrid syntax that I will use for the remainder of this post: The `@extends` directive:
 
-{% include code/class_inheritance/simple_directive.html %}
+<%= render "code/class_inheritance/simple_directive" %>
 
 CSS Inheritance and Document Structure
 --------------------------------------
@@ -45,11 +45,11 @@ Let's consider a more complex example where the css class in question has intera
 
 Consider the following document fragment:
 
-{% include code/class_inheritance/positional_document.html %}
+<%= render "code/class_inheritance/positional_document" %>
 
 We should now be able style this quite simply:
 
-{% include code/class_inheritance/positional_styling.html %}
+<%= render "code/class_inheritance/positional_styling" %>
 
 Why Is it Useful?
 -----------------
@@ -70,11 +70,11 @@ Simulating Inheritance
 
 CSS class inheritance can be approximated by a stylesheet compiler, but it cannot be truly implemented without knowledge of the DOM. In the examples above, our knowledge of the class inheritance tree allows us to rewrite selectors to reference the extended classes to match all the known subclasses. For example:
 
-{% include code/class_inheritance/compilation_example.html %}
+<%= render "code/class_inheritance/compilation_example" %>
 
 However, it's possible to construct an example where the expected behavior of true inheritance cannot be simulated. I present one such example here:
 
-{% include code/class_inheritance/compilation_fail.html %}
+<%= render "code/class_inheritance/compilation_fail" %>
 
 It should be noted at the time of this posting, that LessCSS compiler does not perform any form of selector re-writing of extended classes, instead it only augments the definitions of the classes. I assume this is a bug that no one has noticed yet and that it will be fixed eventually. However, the more fundamental flaw cannot be fixed, but I'm eager to hear from real-world users of LessCSS whether it has affected them in a meaningful way.
 
@@ -87,7 +87,7 @@ UPDATE: `@extend` is in Sass 3
 
 Thanks to the fact that [Nathan](http://nex-3.com/) was able find a compiler-based solution to many of the things I had thought just wouldn't be possible, we have implemented `@extend` and [it is part of the Sass 3 release][extend-blog-post]. For example, here's the same code example using Sass 3 to compile it:
 
-{% include code/class_inheritance/compilation_win.html %}
+<%= render "code/class_inheritance/compilation_win" %>
 
 
 Mixins are not Class Inheritance

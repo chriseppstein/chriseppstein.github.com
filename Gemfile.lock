@@ -4,29 +4,29 @@ GEM
     compass (0.10.4)
       haml (>= 3.0.4)
     cri (1.0.1)
+    fssm (0.1.4)
     git (1.2.5)
     haml (3.0.16)
     hpricot (0.8.1)
-    maruku (0.6.0)
-      syntax (>= 1.0.0)
     mime-types (1.16)
     nanoc (3.1.4)
       nanoc3 (>= 3.1.4)
     nanoc3 (3.1.4)
       cri (>= 1.0.0)
     rack (1.2.1)
+    rdiscount (1.6.5)
     rubypants (0.2.0)
-    syntax (1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   compass
+  fssm
   git
   hpricot
-  maruku
   mime-types
   nanoc
   rack
+  rdiscount
   rubypants

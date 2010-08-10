@@ -15,7 +15,7 @@ My One Request for CSS3: The `@unsupported` Directive
 
 The `@unsupported` directive processes the corresponding CSS if the CSS feature is not supported. Similarly, the `@supported` directive has the same syntax but only processes the embedded CSS if the style property is supported.
 
-{% include code/unsupported_directive/simple_example.html %}
+<%= render "code/unsupported_directive/simple_example" %>
 
 Feature Queries
 ---------------
@@ -46,7 +46,7 @@ Working with Legacy Browsers
 
 The parsing rules of CSS dictate that unsupported features should be ignored, which is exactly the opposite behavior we'd like to have for the `@unsupported` directive. To work around this, I also propose a live-comment syntax to allow the `@unsupported` directive to be used to target legacy browsers that do not support the @unsupported directive (not unlike the conditional comments of IE). Browsers that understand the `@unsupported` directive would also need to parse these live comments and ignore the content between them if they support the feature. Legacy browsers would not see the `@unsupported` contents because they are within a comment, but they would see the directive's contents. Example:
 
-{% include code/unsupported_directive/legacy_support.html %}
+<%= render "code/unsupported_directive/legacy_support" %>
 
 What Do You Think?
 ------------------

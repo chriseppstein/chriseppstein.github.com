@@ -3,6 +3,7 @@
 require 'rubypants'
 
 include Nanoc3::Helpers::LinkTo
+include Nanoc3::Helpers::Rendering
 
 class Date
   def to_gm_time
@@ -71,6 +72,10 @@ end
 def full_url(path)
   path = path.rep_named(:default).path if path.is_a?(PageAdapter)
   "http://chriseppstein.github.com#{path}"
+end
+
+def path_to(path)
+  path.rep_named(:default).path
 end
 
 def absolute_url(input)

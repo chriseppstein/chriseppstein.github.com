@@ -14,7 +14,7 @@ bottom_nav: <a href="/blog/">View the blog &rarr;</a>
     - posts[year].sort_by(&:date).reverse.each do |post|
       %li(class="#{post.attempt(:link) ? "link" : nil }")
         - if post.respond_to?(:title)
-          %a{:href=>full_url(post)}= post.title
+          %a{:href=>path_to(post)}= post.title
         - else
-          %a{:href=>full_url(post)} No Title
+          %a{:href=>path_to(post)} No Title
         %span.pubdate= post.date.strftime("%d %b, %Y")

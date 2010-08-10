@@ -37,7 +37,7 @@ end
 
 compile '/posts/*/' do
   filter :erb
-  filter :maruku if item[:extension] == "markdown"
+  filter :rdiscount if item[:extension] == "markdown"
   layout 'post'
 end
 
@@ -89,7 +89,7 @@ compile '*' do
     filter :haml
   elsif item[:extension] == "markdown"
     filter :erb
-    filter :markdown
+    filter :rdiscount
   end
   if item[:layout]
     layout item[:layout]
@@ -101,5 +101,7 @@ end
 route '*' do
   item.identifier + 'index.html'
 end
+
+layout 'code/*', :erb
 
 layout '*', :haml

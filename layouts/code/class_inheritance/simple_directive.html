@@ -8,24 +8,22 @@
 <tr>
 <td valign="top" class="window editor">
 <div>
-{% highlight css %}
-.box {
+<pre><code class="scss">.box {
   border: 2px solid black;
   margin: 1em;
 }
 
 .important-box {
-  .box;
+  @extends .box;
   background-color: #CCC;
 }
 
 .error-box {
-  .important-box;
+  @extends .important-box;
   background-color: #FCC;
   color: red;
   border-color: red;
-}
-{% endhighlight %}
+}</code></pre>
 </div>
 </td>
 <td rowspan="4" class="gap">&nbsp;</td>
@@ -48,8 +46,7 @@
 <th class="window-title">HTML</th>
 </tr>
 <tr><td valign="top" class="window editor">
-{% highlight html %}
-<div class="box">
+<pre><code class="html"><div class="box">
   This is a normal box.
 </div>
 <div class="important-box">
@@ -57,8 +54,7 @@
 </div>
 <div class="error-box">
   This is an error box.
-</div>
-{% endhighlight %}
+</div></code></pre>
 </td></tr>
 </table>
 </div>

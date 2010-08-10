@@ -5,14 +5,13 @@
 </tr>
 <tr>
 <td valign="top" class="window editor">
-{% highlight css %}
-.rounded-box {
+<div>
+<pre><code class="css">.rounded-box {
   border-radius: 5px;
 }
 
-/*@unsupported border-radius {*/
-  /* This is seen by browsers that don't support @unsupported.
-     This is ignored by browsers that support the feature query.  */
+@unsupported border-radius {
+  /* NOTE: This is not a proper sliding doors implementation. */
   .rounded-box {
     background: #fff url(rounded.png) top left;
     padding-left: 5px;
@@ -21,9 +20,8 @@
     background: #fff url(rounded.png) top right;
     padding-right: 5px;
   }
-/*}*/
-
-{% endhighlight %}
+}</code></pre>
+</div>
 </td>
 </tr>
 </table>

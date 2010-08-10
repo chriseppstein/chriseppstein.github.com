@@ -8,24 +8,22 @@
 <tr>
 <td valign="top" class="window editor">
 <div>
-{% highlight css %}
-.box {
+<pre><code class="css">.box {
   border: 2px solid black;
   margin: 1em;
 }
 
 .important-box {
-  extends: box;
+  .box;
   background-color: #CCC;
 }
 
 .error-box {
-  extends: important-box;
+  .important-box;
   background-color: #FCC;
   color: red;
   border-color: red;
-}
-{% endhighlight %}
+}</code></pre>
 </div>
 </td>
 <td rowspan="4" class="gap">&nbsp;</td>

@@ -12,10 +12,10 @@ bottom_nav: <a href="/blog/archives.html">&larr; Read more at the archives</a>
       - if post.attempt(:link)
         %h3.header.link
           %a{:href=>post.link, :class => "title"}= rp(post.title)
-          %a.permalink{:href=>full_url(post)} &infin;
+          %a.permalink{:href=>path_to(post)} &infin;
       - else
         %h3.header
-          %a{:class=>"title", :href=>full_url(post)}= rp(post.title)
+          %a{:class=>"title", :href=>path_to(post)}= rp(post.title)
       - if post.respond_to?(:description)
         .article
           %p= rp post.description

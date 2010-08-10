@@ -8,7 +8,7 @@ intro: "Sometimes a mixin adds negative value to your stylesheet."
 ---
 I stumbled across [this tweet](http://twitter.com/bbttxu/statuses/18280591576) linking to a sass file that provides "semantic 3-column layouts for drupal and a configurable grid with #right, #left columns." Always pleased to see what people have made with Sass, I [took a look](http://gist.github.com/471642).
 
-{% include code/refactorings/negative_value_mixin.html %}
+<%= render "code/refactorings/negative_value_mixin" %>
 
 What I found was a Sass file that I could have written myself a year ago. Enamored with mixins, I sometimes used them where they weren't necessary. Now, with [@extend](http://nex-3.com/posts/99-selector-inheritance-the-easy-way-introducing-extend) in my arsenal, I find myself viewing sass files with new eyes. So as a fresh reader to this Sass file, I found it hard to understand what was going on. But [abstraction should add clarity](http://chriseppstein.github.com/blog/2009/09/20/why-stylesheet-abstraction-matters/), not remove it. So I put on my refactoring hat and got to work.
 
@@ -16,4 +16,4 @@ First, I [converted the file to use dashes](https://gist.github.com/472433/2aed4
 
 When I was done, the [refactored version](http://gist.github.com/472433) had exactly the same number of lines but I find this version of the stylesheet to be much easier to understand. I hope you do as well. I know that [bbttxu did](https://twitter.com/bbttxu/status/18352062441) and I would like to thank him for [letting me](https://twitter.com/bbttxu/status/18447325658) pick on his stylesheet.
 
-{% include code/refactorings/negative_value_mixin_refactored.html %}
+<%= render "code/refactorings/negative_value_mixin_refactored" %>
