@@ -17,34 +17,7 @@
     %script{:type=>"text/javascript", :src=>"/javascripts/jquery.tweet.js"}
     %script{:type=>"text/javascript", :src=>"/javascripts/site.js"}
   %body{:id=>"post"}
-    #header-wrapper
-      #header
-        .aside
-          #search
-            %form(action="http://www.google.com/cse" id="cse-search-box")
-              %input(type="hidden" name="cx" value="010456759155788273473:m_ld19wftd4")
-              %input(type="hidden" name="ie" value="UTF-8")
-              %input#q(type="text" name="q")
-              /%input(type="submit" name="sa" value="Search")
-          
-          #blog-links
-            %a#rss(href="/blog/atom.xml" title="subscribe")
-              %img(src="/images/rss.png")
-              %span Subscribe
-            %a#archive(href="/blog/archives.html" title="blog archive") Blog Archive
-        .nav
-          %ul
-            %li.home
-              %a(href="/" title="Home") Home
-            %li.blog
-              %a(href="/blog/" title="Blog") Blog
-            %li.projects
-              %a(href="/projects/" title="Projects") Projects
-            %li.work
-              %a(href="/work/" title="Work") Work
-        .title
-          %h1.n #chris-eppstein
-          %h2 &nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span>
+    = render "shared/header"
     #content-wrapper
       #content
         #page.blog
@@ -74,82 +47,5 @@
                 %noscript
                   <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
                 %script{:type=>"text/javascript", :src=>"http://disqus.com/forums/chriseppstein/embed.js"}
-        #sidebar.aside
-          #archives.section
-            %h3.heading Blog Archives
-            - posts = blog_posts.reject{|p| p.attempt(:draft)}.group_by { |p| p.date.year }
-            - posts.keys.sort.reverse.each do |year|
-              %h5= year
-              %ul.section
-                - posts[year].sort_by(&:date).reverse.each do |post|
-                  %li= link_to(post.title, post.rep_named(:default))
-          #about-me.section
-            %h3 About Me
-            %img.avatar(src="http://www.gravatar.com/avatar/b0ceed615487ddf041bb0d1cf24a98b0.png")
-            :markdown
-              I'm the Software Architect at [Caring.com](http://www.caring.com/),
-              a website devoted to caregivers of the sick and elderly.
-              I live in San Jose, California with my wife and our 4 year old daughter.
-          .section
-            %h3 Open Source
-            :markdown
-              I'm the creator of [Compass](http://compass-style.org/), a stylesheet authoring framework
-              and I'm on the core team of
-              [Sass](http://sass-lang.com/) &mdash; the stylesheet syntax upon which Compass is built.
-              I maintain about a dozen less well known ruby libraries and rails plugins on
-              [github](http://github.com/chriseppstein),
-              and am an active contributor of patches to the many open source projects that I use.
-          #twitter.section
-            .header
-              %h3(style="display: inline-block") Twitter
-              %span
-                %a(href="http://twitter.com/chriseppstein") @chriseppstein
-            .tweet
-            %p.follow
-              %img(src="/images/twitter_bird.png")
-          .section.omega
-            %ol#social
-              %li
-                %a.twitter(href="http://twitter.com/chriseppstein" title="Follow me on Twitter")
-                  Twitter
-              %li
-                %a.github(href="http://github.com/chriseppstein" title="My Github profile")
-                  Github
-              %li
-                %a.facebook(href="http://facebook.com/chriseppstein"title="My Facebook profile")
-                  Facebook
-              %li
-                %a.linkedin(href="http://www.linkedin.com/in/chriseppstein" title="My Linked-in profile")
-                  Linked-in
-              %li
-                %a.delicious(href="http://delicious.com/chriseppstein/" title="My Delicious links")
-                  Delicious
-    #footer-wrapper
-      #footer
-        .bottom_nav
-          .back-to-top
-            %a.ucase(href="#") &uarr; back to top
-        #foot_bottom.alone
-          %a.affiliate.compass(href="http://compass-style.org" title="Styled with Compass")
-            Styled with Compass
-          %h6
-            Powered by
-            %a(href="http://jekyllrb.com/") Jekyll
-            and
-            %a(href="http://www.oddbird.net/susy/") Susy
-          %h6.copyright
-            &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
-          %h6
-            &ndash; with design help and inspiration from
-            %a(href="http://github.com/imathis") Brandon Mathis
-          %h6
-            &ndash;
-            %a(href="/highlighted/stylesheets/screen.sass.html") browse stylesheets
-    :javascript
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    :javascript
-      try {
-        var pageTracker = _gat._getTracker("UA-10648948-1");
-        pageTracker._trackPageview();
-      } catch(err) {}
+        = render "shared/sidebar"
+    = render "shared/footer"

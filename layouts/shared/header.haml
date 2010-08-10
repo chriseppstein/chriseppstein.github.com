@@ -1,0 +1,28 @@
+#header-wrapper
+  #header
+    .aside
+      #search
+        %form(action="http://www.google.com/cse" id="cse-search-box")
+          %input(type="hidden" name="cx" value="010456759155788273473:m_ld19wftd4")
+          %input(type="hidden" name="ie" value="UTF-8")
+          %input#q(type="text" name="q")
+          /%input(type="submit" name="sa" value="Search")
+      
+      #blog-links
+        %a#rss(href="/blog/atom.xml" title="subscribe")
+          %img(src="/images/rss.png")
+          %span Subscribe
+        %a#archive(href="/blog/archives.html" title="blog archive") Blog Archive
+    .nav
+      %ul
+        %li.home
+          %a(href="/" title="Home") Home
+        %li.blog
+          %a(href="/blog/" title="Blog") Blog
+        %li.projects
+          %a(href="/projects/" title="Projects") Projects
+        %li.work
+          %a(href="/work/" title="Work") Work
+    .title.highlight
+      %h1.n #chris-eppstein
+      %h2 &nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span>
