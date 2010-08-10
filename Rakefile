@@ -154,7 +154,7 @@ end
 desc "Build an XML sitemap of all html files."
 task :sitemap => :generate do
   html_files = FileList.new("#{site}/**/*.html").map{|f| f[(site.size)..-1]}.map do |f|
-    if f.ends_with?("index.html")
+    if f =~ /index.html$/
       f[0..(-("index.html".size + 1))]
     else
       f
