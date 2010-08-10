@@ -1,18 +1,26 @@
 //*
 //  Susy: Elastic-Fluid grids without all the math
 //  by Eric Meyer and OddBird Collective
-//  oddbird.
+//  Site: www.oddbird.net/susy/
 //*
 
 //*
 // GRID
 // un-comment and override these values as needed for your grid layout 
 // (defaults are shown)
-$grid-unit: em
-$total-cols: 10
-$col-width: 5
-$gutter-width: 2
-$side-gutter-width: 1
+// !grid_unit = "em"
+// !total_cols = 16
+// !col_width = 4
+// !gutter_width = 1
+// !side_gutter_width = !gutter_width
+
+//*
+// HACKS
+// Are you using hacks or conditional comments? Susy makes both possible.
+// Leave this as 'true' to use hacks, set it as false for conditional comments.
+// Conditional comments will require overrides for +omega, +inline-block and
+// several other mixins.
+// !hacks = true
 
 //*
 // FONT-SIZE
@@ -20,70 +28,83 @@ $side-gutter-width: 1
 // - you set the font and line heights in pixels.
 // - Susy will do the math and give you !base_font_size and !base_line_height 
 //   variables, set flexibly against the common browser default of 16px
-$base-font-size-px: 14
-$base-line-height-px: 21
+// !base_font_size_px = 12
+// !base_line_height_px = 18
 
 // SUSY
 //  (don't move this @import above the GRID and FONT-SIZE overrides)
-@import susy/susy.sass
+@import susy/susy
 
 // COLORS
 // set any colors you will need later
-$text: #332016
-$light: #cc8866
-$links: #4caac0
+$dark: black
+$light: white
 
 // FONTS
 // Give yourself some font stacks to work with
 =sans-family
-  font-family: "Futura Medium", "Century Gothic", AppleGothic, sans-serif
+  font-family: Futura, sans-serif
 
 =serif-family
-  font-family: "Adobe Caslon Pro", "Big Caslon", Garamond, "Hoefler Text", "Times New Roman", Times, serif
+  font-family: Baskerville, serif
 
 // Remember to add default styles to everything!
 
 /* @group links
 
 \:focus
-  outline: 1px dotted
 
 a
-  &:link, &:visited
-    color: $links
-    text-decoration: none
-  &:focus, &:hover, &:active
-    color: $light
-    border-bottom:
-      width: px2em(2) + em
-      style: dashed
 
 /* @end
 
 /* @group headers
 
-h1
-  +serif-family
-  text-transform: lowercase
-  font-size: 3em
-  line-height: 1
-  font-weight: bold
-  color: $links
+h1, h2, h3, h4, h5, h6
 
-h2
-  font-weight: bold
-  text-transform: uppercase
+/* @end
+
+/* @group forms
+
+form
+
+fieldset
+
+legend
+
+label
+
+textarea
+
+input
+
+button
+
+/* @end
+
+/* @group tables
+
+/* tables still need 'cellspacing="0"' in the markup
+
+table
+
+thead
+
+tbody
+
+tfoot
+
+tr
+
+th
+
+td
 
 /* @end
 
 /* @group block tags
-p
-  margin: 0 0 1.5em 0
 
-pre
-  border-left: unquote(".5em solid") $light
-  margin: 0 0 1.5em 0
-  padding: 1.5em
+p
 
 =list-default($ol: false)
   @if $ol
@@ -93,18 +114,27 @@ pre
     list-style: disc
     margin: 0 1.5em 1.5em 1.5em
 
+=no-style-list
+  +no-bullets
+  margin: 0
+  padding: 0
+
 ol
   +list-default(ol)
 
 ul
   +list-default
 
+blockquote
+
 /* @end
 
 /* @group inline tags
 
+cite
+
 em
-  +inline-italic
+  font-style: italic
 
 strong
   font-weight: bold
@@ -114,5 +144,13 @@ ins
 
 del
   text-decoration: line-through
+
+q
+
+/* @end
+
+/* @group replaced tags
+
+img
 
 /* @end

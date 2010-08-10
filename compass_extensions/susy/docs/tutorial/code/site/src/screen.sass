@@ -3,12 +3,12 @@
  * <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
 
 /* @group reset
-@import compass/reset.sass
+@import compass/reset
 
 /* @end
 
 /* @group defaults
-@import base.sass
+@import base
 
 /* @end
 
@@ -73,7 +73,6 @@ body
     margin: 0
     &.license
       +columns(5, 8)
-      +alpha(8)
     &.styles
       +columns(3, 8)
       +omega(8)
@@ -91,14 +90,7 @@ body
       font-size: 1.25em
       font-family: monospace
       color: $light
-
-/* @end
-
-/* @group DEBUG
-
-/*   uncomment, adjust and use for debugging
-
-#page
-  +show-grid(unquote("grid.png"))
+    img
+      width: 100%
 
 /* @end
