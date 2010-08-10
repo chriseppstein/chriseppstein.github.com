@@ -69,7 +69,7 @@
               - else
                 #disqus_thread
                 :javascript
-                  var disqus_url = "full_path(page)}";
+                  var disqus_url = "#{full_url(page)[0..-2]}";
                   var disqus_developer = 1;
                 %noscript
                   <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
