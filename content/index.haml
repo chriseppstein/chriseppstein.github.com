@@ -12,6 +12,8 @@ verify: <meta name="verify-v1" content="dod3zRBNeuf2lgDlHn+ZAYK+fUFRuxryWjLWqbzm
   - post = blog_posts.sort_by(&:date).reverse.detect{|p| p.attempt(:featured) && !p.attempt(:draft)}
   - if post.attempt(:stylesheet)
     %link{:href=>"/stylesheets/#{post.stylesheet}.css", :rel=>"stylesheet", :media=>"screen, projection", :type=>"text/css"}
+  #tweet-this
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="#{full_url(post)}" data-count="horizontal" data-via="chriseppstein" data-text="#{post.title}">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   %h2.description Featured Post
   .section.alpha
     %h1.header

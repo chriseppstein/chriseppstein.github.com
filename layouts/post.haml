@@ -22,6 +22,8 @@
       #content
         #page.blog
           .contents.section.alpha
+            #tweet-this
+              <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="chriseppstein" data-url="#{full_url(page)}" data-text="#{page.title}">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
             .metadata
               Published:
               %span.pubdate=page.date.strftime("%d %b, %Y")
