@@ -18,6 +18,8 @@ verify: <meta name="verify-v1" content="dod3zRBNeuf2lgDlHn+ZAYK+fUFRuxryWjLWqbzm
   .section.alpha
     %h1.header
       = link_to(rp(style_amp(post.title)), post.rep_named(:default), {:class=>"title"})
+    - if post.attempt(:byline)
+      .byline= post.byline
     .article
       = preserve post.rep_named(:default).compiled_content
     .footer

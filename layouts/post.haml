@@ -36,6 +36,8 @@
                 = link_to(rp(page.title), page.link, {:class=>"title"})
               - else
                 = rp(page.title)
+            - if page.attempt(:byline)
+              .byline= page.byline
             .article= preserve(rp(content))
             .footer{:class=>(page.respond_to?(:comments_off) ? "alt" : nil)}
               - if page.respond_to?(:comments_off)
