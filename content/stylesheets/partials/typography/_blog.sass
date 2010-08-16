@@ -28,7 +28,7 @@
             content: " \2014"
         dt, dd
           margin-top: 0.5em
-        dt:first-child
+        dg:first-child > dt
           margin-top: 0
         dt, dd
           line-height: 150%
@@ -41,3 +41,9 @@
       ol, ul
         & + p
           margin-top: 1em
+      p, li
+        code
+          font-size: 0.8em
+          padding: 0.1em
+          border: 1px solid #777
+          background-color: #eee
