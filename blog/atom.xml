@@ -3,14 +3,14 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-08-16T08:21:44-07:00</updated>
+  <updated>2010-08-16T10:17:57-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
   <entry>
-    <title>Sass Language Design: Philosophy & Approach</title>
+    <title>Sass Language Design: Philosophy &amp; Approach</title>
     <link href="http://chriseppstein.github.com/blog/2010/08/16/sass-language-design/" />
     <updated>2010-08-15T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/16/sass-language-design</id>
