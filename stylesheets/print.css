@@ -84,11 +84,12 @@ li { line-height: 1.5; }
 .blog .section .article dl dt { font-weight: bold; float: left; clear: left; margin-right: 7px; }
 .blog .section .article dl dt:after { content: " \2014"; }
 .blog .section .article dl dt, .blog .section .article dl dd { margin-top: 0.5em; }
-.blog .section .article dl dt:first-child { margin-top: 0; }
+.blog .section .article dl dg:first-child > dt { margin-top: 0; }
 .blog .section .article dl dt, .blog .section .article dl dd { line-height: 150%; }
 .blog .section .article ul { list-style-type: disc; margin-left: 1em; }
 .blog .section .article ol { list-style-type: decimal; margin-left: 1.5em; }
 .blog .section .article ol + p, .blog .section .article ul + p { margin-top: 1em; }
+.blog .section .article p code, .blog .section .article li code { font-size: 0.8em; padding: 0.1em; border: 1px solid #777777; background-color: #eeeeee; }
 
 #header .nav, #header .aside { display: none; }
 
