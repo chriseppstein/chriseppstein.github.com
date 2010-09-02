@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-08-16T10:17:57-07:00</updated>
+  <updated>2010-09-01T23:46:56-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Data Attributes: Blurring the Line Between Content and Presentation?</title>
+    <link href="http://chriseppstein.github.com/blog/2010/09/01/blurring-the-line-between-content-and-presentation-with-data-attributes/" />
+    <updated>2010-08-31T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2010/09/01/blurring-the-line-between-content-and-presentation-with-data-attributes</id>
+    <content type="html">
+      HTML5 data attributes have the potential to blur the line between content and presentation. I describe why I think this might not be the end of the world.
+    </content>
+  </entry>
   <entry>
     <title>Sass Language Design: Philosophy &amp; Approach</title>
     <link href="http://chriseppstein.github.com/blog/2010/08/16/sass-language-design/" />
@@ -133,15 +142,6 @@
     <id>http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review</id>
     <content type="html">
       A short post looking back at the past year in my life.
-    </content>
-  </entry>
-  <entry>
-    <title>We Can Have Hack Free CSS With the @unsupported Directive</title>
-    <link href="http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive/" />
-    <updated>2009-10-18T17:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive</id>
-    <content type="html">
-      Stylesheets can be hack free with a little help from the W3C. The @supported and @unsupported directives would allow conditional evaluation of CSS based on feature inspection.
     </content>
   </entry>
 </feed>

@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Data Attributes: Blurring the Line Between Content and Presentation?</title>
+    <meta content="Are HTML5 data attributes going to be misused?" name="description" />
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+        google.load("jquery", "1.3.2");
+      //]]>
+    </script>
+    <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
+    <script src="/javascripts/site.js" type="text/javascript"></script>
+  </head>
+  <body id="post">
+    <div id="header-wrapper">
+      <div id="header">
+        <div class="aside">
+          <div id="search">
+            <form action="http://www.google.com/cse" id="cse-search-box">
+              <input name="cx" type="hidden" value="010456759155788273473:m_ld19wftd4" />
+              <input name="ie" type="hidden" value="UTF-8" />
+              <input id="q" name="q" type="text" />
+              <!-- %input(type="submit" name="sa" value="Search") -->
+            </form>
+          </div>
+          <div id="blog-links">
+            <a href="/blog/atom.xml" id="rss" title="subscribe">
+              <img src="/images/rss.png" />
+              <span>Subscribe</span>
+            </a>
+            <a href="/blog/archives.html" id="archive" title="blog archive">Blog Archive</a>
+          </div>
+        </div>
+        <div class="nav">
+          <ul>
+            <li class="home">
+              <a href="/" title="Home">Home</a>
+            </li>
+            <li class="blog">
+              <a href="/blog/" title="Blog">Blog</a>
+            </li>
+            <li class="projects">
+              <a href="/projects/" title="Projects">Projects</a>
+            </li>
+            <li class="work">
+              <a href="/work/" title="Work">Work</a>
+            </li>
+          </ul>
+        </div>
+        <div class="title highlight">
+          <h1 class="n">#chris-eppstein</h1>
+          <h2>&nbsp;&nbsp;<span class="k">position</span><span class="o">:</span> <span class="m">unique</span></h2>
+        </div>
+      </div>
+    </div>
+    <div id="content-wrapper">
+      <div id="content">
+        <div class="blog" id="page">
+          <div class="contents section alpha">
+            <div id="tweet-this">
+              <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="chriseppstein" data-url="http://chriseppstein.github.com/blog/2010/09/01/blurring-the-line-between-content-and-presentation-with-data-attributes/" data-text="Data Attributes: Blurring the Line Between Content and Presentation?">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="metadata">
+              Published:
+              <span class="pubdate">01 Sep, 2010</span>
+            </div>
+            <h2 class="header">
+              Data Attributes: Blurring the Line Between Content and Presentation?
+            </h2>
+            <div class="article"><p>While I was drooling over these <a href="http://lab.simurai.com/css/buttons/">delicious buttons</a> I saw <a href="http://twitter.com/simurai">the author</a> do&#x000A;something quite clever, so I tweeted:</p>&#x000A;&#x000A;<blockquote><p>This is smart: <code>.button:before { content: attr(data-icon); }</code></p></blockquote>&#x000A;&#x000A;<p>Basically, the author is using text in conjunction with <a href="http://pictos.drewwilson.com/">this wing-ding-like font</a> to&#x000A;create iconography.</p>&#x000A;&#x000A;<p>To which <a href="http://twitter.com/screwlewse">@screwlewse</a>, who always keeps me on my toes, replied:</p>&#x000A;&#x000A;<blockquote><p>There are some that would say <code>data-icon="s"</code> is presentation in markup. Thoughts?</p></blockquote>&#x000A;&#x000A;<p>As a vocal proponent of a clean separation of presentation and content, I was forced to examine my&#x000A;reaction against my rhetoric. Why is this any better or worse than <code>class="icon-s"</code>?</p>&#x000A;&#x000A;<p>The answer is: it&#8217;s not. @screwlewse is right. They are roughly equivalent, though for a number&#x000A;of reasons which I will outline, I think the use of a data attribute in this case is a cleaner&#x000A;solution.</p>&#x000A;&#x000A;<h2>Where is the Line between Content and Presentation?</h2>&#x000A;&#x000A;<p>As always, the world is full of shades of gray. What is content and what is presentation is as much&#x000A;about content semantics as it is about separation of concerns and division of labor. My ultimate&#x000A;goal is the reduction of the total cost to produce and maintain a content artifact across redesigns.&#x000A;As such I see this type of use of data attributes as a superior approach for a content producer to&#x000A;inform the design about what kind of icon they feel is appropriate for the content at hand.</p>&#x000A;&#x000A;<p>So, should a designer ever use a data attribute like this when she is creating content? <em>No.</em>&#x000A;Why not? Because she has better tools at her disposal and keeping the presentation in the markup&#x000A;makes it harder to evolve a website&#8217;s design.</p>&#x000A;&#x000A;<p>But often she&#8217;s not the one creating the content. So let&#8217;s assume that for some business/workflow&#x000A;reason, it is desired that the content production team has jurisdiction over iconography.</p>&#x000A;&#x000A;<p>While I&#8217;m harping on it, I should point out that like any pre-canned CSS solution, using these&#x000A;beautiful buttons commit you to classitis. However, this can be avoided by using a CSS compiler&#x000A;like <a href="http://sass-lang.com/">Sass</a>.</p>&#x000A;&#x000A;<h2>Alternate Approaches</h2>&#x000A;&#x000A;<h3>The <code>&lt;img&gt;</code> Tag</h3>&#x000A;&#x000A;<p>This is the worst possible approach. Iconography enhances content &#8211; it is not&#x000A;itself content. The image tag should be reserved for those rare instances where imagery is content&#x000A;like a photo album. This approach takes all the power out of the hands of the designer. They can&#x000A;disable it if they want, but that&#8217;s about it &#8211; they can&#8217;t sprite it or apply interaction states.</p>&#x000A;&#x000A;<h3>The <code>class</code> Attribute</h3>&#x000A;&#x000A;<p>The class attribute comes with this warning from the w3c:</p>&#x000A;&#x000A;<blockquote><p>Note: Because CSS gives considerable power to the &#8220;class&#8221; attribute, authors could conceivably&#x000A;design their own &#8220;document language&#8221; based on elements with almost no associated presentation&#x000A;(such as DIV and SPAN in HTML) and <em>assigning style information through the &#8220;class&#8221; attribute</em>.&#x000A;Authors should avoid this practice since the structural elements of a document language often&#x000A;have recognized and accepted meanings and author-defined classes may not.</p></blockquote>&#x000A;&#x000A;<p>Put another way: the class attribute should describe what the content is, not what it looks like. But let&#8217;s&#x000A;ignore the W3C for a moment&#8230; so many people do anyway. If we use the class attribute we&#8217;d need&#x000A;an explosion of styles just for iconography, however they could be made more readable:</p>&#x000A;&#x000A;<pre><code>.icon-anchor:before { content: 'a' }&#x000A;.icon-box:before    { content: 'b' }&#x000A;.icon-cloud:before  { content: 'c' }&#x000A;</code></pre>&#x000A;&#x000A;<h3>Semantic Styles</h3>&#x000A;&#x000A;<pre><code>a.subscribe:before { content: 'M' } /* a mail icon */&#x000A;</code></pre>&#x000A;&#x000A;<p>This is my preferred approach. A subscribe link will always be a&#x000A;subscribe link even if you decide to change the icon, the approach to iconography,&#x000A;or do away with icons altogether.</p>&#x000A;&#x000A;<p>Of course, you may have several legitimate uses for the &#8220;mail&#8221; icon in your application.&#x000A;This is where <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend">selector inheritance</a> becomes quite handy:</p>&#x000A;&#x000A;<pre><code>.picto-icon:before    { font-family: pictos; }&#x000A;.mail-icon            { @extend .picto-icon; }&#x000A;.mail-icon:before     { content: 'M'; }&#x000A;a.subscribe           { @extend .mail-icon; }&#x000A;a.unsubscribe         { @extend .mail-icon; color: red; }&#x000A;.toolbar .email-prefs { @extend .mail-icon; }&#x000A;</code></pre>&#x000A;&#x000A;<h2>Presentation in Data Attributes: The lesser of several evils</h2>&#x000A;&#x000A;<p>But as noted earlier, we have accepted that we must allow the content producers to indicate&#x000A;the <em>desired</em> iconography. There are a few reasons why I prefer data-attributes to classes&#x000A;in cases like this:</p>&#x000A;&#x000A;<ol>&#x000A;<li>Classes are like tags. They are on or off and they do not have a value. This is severely&#x000A;limiting and because they are opaque and so our css and our content gets bloated and fast.</li>&#x000A;<li>Mutual exclusivity. There might be 10 icon classes but only one should be applied. The&#x000A;use of a data attribute with a value enforces this constraint. Otherwise the content producer&#x000A;gets an unpredictable result from their point of view since it depends on the CSS cascade.</li>&#x000A;<li>The designer can ignore it or override it with a more specific rule. If there&#8217;s a page&#x000A;or context in the site that requires it, they can still evolve the design as long as&#x000A;the semantics remain roughly the same:&#x000A;<pre><code>.widget a[data-icon="M"]:before { content: url('/images/fancy-icons/mail.png'); }</code></pre>&#x000A;</li>&#x000A;</ol><h2>In Conclusion</h2>&#x000A;&#x000A;<p>Like all things style related, I think Sass can help us avoid the need for mixing our&#x000A;presentation and our content, but should you find yourself in a situation where it is necessary,&#x000A;I think that data attributes present us with a useful, efficient alternative to classes.</p></div>
+            <div class="footer">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                //<![CDATA[
+                  var disqus_url = "http://chriseppstein.github.com/blog/2010/09/01/blurring-the-line-between-content-and-presentation-with-data-attributes";
+                  var disqus_developer = 1;
+                //]]>
+              </script>
+              <noscript>
+                <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
+              </noscript>
+              <script src="http://disqus.com/forums/chriseppstein/embed.js" type="text/javascript"></script>
+            </div>
+          </div>
+        </div>
+        <div class="aside" id="sidebar">
+          <div class="section" id="about-me">
+            <h3>About Me</h3>
+            <img class="avatar" src="http://www.gravatar.com/avatar/b0ceed615487ddf041bb0d1cf24a98b0.png" />
+            <p>I'm the Software Architect at <a href="http://www.caring.com/">Caring.com</a>,
+            a website devoted to caregivers of the sick and elderly.
+            I live in San Jose, California with my wife and our 4 year old daughter.</p>
+          </div>
+          <div class="section">
+            <h3>Open Source</h3>
+            <p>I'm the creator of <a href="http://compass-style.org/">Compass</a>, a stylesheet authoring framework
+            and I'm on the core team of
+            <a href="http://sass-lang.com/">Sass</a> &mdash; the stylesheet syntax upon which Compass is built.
+            I maintain about a dozen less well known ruby libraries and rails plugins on
+            <a href="http://github.com/chriseppstein">github</a>,
+            and am an active contributor of patches to the many open source projects that I use.</p>
+          </div>
+          <div class="section" id="twitter">
+            <div class="header">
+              <h3 style="display: inline-block">Twitter</h3>
+              <span>
+                <a href="http://twitter.com/chriseppstein">@chriseppstein</a>
+              </span>
+            </div>
+            <div class="tweet"></div>
+            <p class="follow">
+              <img src="/images/twitter_bird.png" />
+            </p>
+          </div>
+          <div class="section omega">
+            <ol id="social">
+              <li>
+                <a class="twitter" href="http://twitter.com/chriseppstein" title="Follow me on Twitter">
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a class="github" href="http://github.com/chriseppstein" title="My Github profile">
+                  Github
+                </a>
+              </li>
+              <li>
+                <a class="facebook" href="http://facebook.com/chriseppstein" title="My Facebook profile">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a class="linkedin" href="http://www.linkedin.com/in/chriseppstein" title="My Linked-in profile">
+                  Linked-in
+                </a>
+              </li>
+              <li>
+                <a class="delicious" href="http://delicious.com/chriseppstein/" title="My Delicious links">
+                  Delicious
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-wrapper">
+      <div id="footer">
+        <div class="bottom_nav">
+          <div class="back-to-top">
+            <a class="ucase" href="#">&uarr; back to top</a>
+          </div>
+        </div>
+        <div class="alone" id="foot_bottom">
+          <a class="affiliate compass" href="http://compass-style.org" title="Styled with Compass">
+            Styled with Compass
+          </a>
+          <h6>
+            Powered by
+            <a href="http://nanoc.stoneship.org/">Nanoc</a>
+            and
+            <a href="http://www.oddbird.net/susy/">Susy</a>
+          </h6>
+          <h6 class="copyright">
+            &ndash; design <span class="amp">&amp;</span> content &copy; 2009 &ndash; christopher eppstein
+          </h6>
+          <h6>
+            &ndash; with design help and inspiration from
+            <a href="http://brandonmathis.com/">Brandon Mathis</a>
+          </h6>
+          <h6>
+            &ndash;
+            browse
+            <a href="/highlighted/stylesheets/screen.sass.html">stylesheets</a>
+            or
+            <a href="http://github.com/chriseppstein/chriseppstein.github.com/tree/source">site source code</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type="text/javascript">
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-10648948-1");
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>
