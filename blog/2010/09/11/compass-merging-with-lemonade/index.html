@@ -2,13 +2,10 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>#chris-eppstein {position: unique;}</title>
-    <meta content="A web architect on a mission to bring software development practices to web design." name="description" />
-    <meta content="Chris Eppstein, chriseppstein, sass, compass, css, ruby on rails, ruby, rails, designer, developer, web applications, javascript, UX, UI, design, programming, javascript, xhtml, semantic markup, position, unique" name="keywords" />
-    <meta name="verify-v1" content="dod3zRBNeuf2lgDlHn+ZAYK+fUFRuxryWjLWqbzmKcU=" />
+    <title>Compass & Lemonade are Merging</title>
+    <meta content="Nico Hagenburger is joining the Compass team and Lemonade is becoming part of Compass." name="description" />
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <link href="/blog/atom.xml" rel="alternate" title="#chris-eppstein {position: unique;}" type="application/atom+xml" />
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript">
       //<![CDATA[
@@ -18,7 +15,7 @@
     <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
     <script src="/javascripts/site.js" type="text/javascript"></script>
   </head>
-  <body id="home">
+  <body id="post">
     <div id="header-wrapper">
       <div id="header">
         <div class="aside">
@@ -62,9 +59,32 @@
     </div>
     <div id="content-wrapper">
       <div id="content">
-        <div id="page">
-          <div class="contents">
-            <div class="mini blog" id="most-recent-post">&#x000A;  <div id="tweet-this">&#x000A;    <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade/" data-count="horizontal" data-via="chriseppstein" data-text="Compass & Lemonade">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>&#x000A;  </div>&#x000A;  <h2 class="description">Featured Post</h2>&#x000A;  <div class="section alpha">&#x000A;    <h1 class="header">&#x000A;      <a class="title" href="/blog/2010/09/11/compass-merging-with-lemonade/">Compass <span class='amp'>&</span> Lemonade</a>&#x000A;    </h1>&#x000A;    <div class="article">&#x000A;      <p>I announced on <a href="https://twitter.com/chriseppstein/status/24215478512">twitter</a> this morning that <a href="http://www.hagenburger.net/">Nico Hagenburger</a>&#x000A;is joining the Compass team and we are merging his awesome spriting&#x000A;solution, Lemonade, into Compass. As you know, Lemonade takes a lot of the&#x000A;grunt work out of making sprites. If you don't know, please read up on it&#x000A;<a href="http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html">here</a></p>&#x000A;&#x000A;<p>However, as easy as Lemonade is to use, it can be even easier, and this is&#x000A;the point of the integration. I have been working with Nathan to enhance&#x000A;Sass to make it possible for stylesheets to import from places other than&#x000A;a file on the disk. This general facility will make it possible to store&#x000A;stylesheets in the database, import files that do not follow our normal&#x000A;naming convention, import across the network, etc. Compass will be using&#x000A;this new facility to generate dynamic stylesheets for sprites according&#x000A;to a convention. The plan for this is documented <a href="https://gist.github.com/ff0a3b80901bb0557f6e">here</a>, but it will&#x000A;be this easy:</p>&#x000A;&#x000A;<h2>Step 1: Drop files into a folder</h2>&#x000A;&#x000A;<pre><code>[images_dir]/&#x000A;  sprites/&#x000A;    toolbar/&#x000A;      new.png&#x000A;      save.png&#x000A;      open.png&#x000A;      undo.png&#x000A;</code></pre>&#x000A;&#x000A;<h2>Step 2: Import the stylesheet and apply mixins</h2>&#x000A;&#x000A;<pre><code>@import "sprites/toolbar";&#x000A;#toolbar {&#x000A;  .new  { @include toolbar-sprite("new");  }&#x000A;  .open { @include toolbar-sprite("open"); }&#x000A;  .save { @include toolbar-sprite("save"); }&#x000A;  .undo { @include toolbar-sprite("undo"); }&#x000A;}&#x000A;</code></pre>&#x000A;&#x000A;<p>And voila! You get this CSS:</p>&#x000A;&#x000A;<pre><code>.toolbar-sprite,&#x000A;#toolbar .new,&#x000A;#toolbar .open,&#x000A;#toolbar .save,&#x000A;#toolbar .undo {&#x000A;  background-image: url(/images/toolbar.png);&#x000A;  background-repeat: no-repeat;&#x000A;}&#x000A;&#x000A;#toolbar .new { background-position: 0 0; }&#x000A;#toolbar .open { background-position: 50px 0; }&#x000A;#toolbar .save { background-position: 25px 0; }&#x000A;#toolbar .undo { background-position: 75px 0; }&#x000A;</code></pre>&#x000A;&#x000A;<p>Of course, this is just the basic usage. Much more can be done! Look for this&#x000A;feature in Compass v0.11.</p>&#x000A;&#x000A;<p>Your feedback is both welcomed and encouraged in the comments below.</p>&#x000A;    </div>&#x000A;    <div class="footer">&#x000A;      <a href="http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade//#disqus_thread">Comments</a>&#x000A;    </div>&#x000A;  </div>&#x000A;</div>&#x000A;
+        <div class="blog" id="page">
+          <div class="contents section alpha">
+            <div id="tweet-this">
+              <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="chriseppstein" data-url="http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade/" data-text="Compass & Lemonade">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="metadata">
+              Published:
+              <span class="pubdate">11 Sep, 2010</span>
+            </div>
+            <h2 class="header">
+              Compass & Lemonade
+            </h2>
+            <div class="article"><p>I announced on <a href="https://twitter.com/chriseppstein/status/24215478512">twitter</a> this morning that <a href="http://www.hagenburger.net/">Nico Hagenburger</a>&#x000A;is joining the Compass team and we are merging his awesome spriting&#x000A;solution, Lemonade, into Compass. As you know, Lemonade takes a lot of the&#x000A;grunt work out of making sprites. If you don&#8217;t know, please read up on it&#x000A;<a href="http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html">here</a></p>&#x000A;&#x000A;<p>However, as easy as Lemonade is to use, it can be even easier, and this is&#x000A;the point of the integration. I have been working with Nathan to enhance&#x000A;Sass to make it possible for stylesheets to import from places other than&#x000A;a file on the disk. This general facility will make it possible to store&#x000A;stylesheets in the database, import files that do not follow our normal&#x000A;naming convention, import across the network, etc. Compass will be using&#x000A;this new facility to generate dynamic stylesheets for sprites according&#x000A;to a convention. The plan for this is documented <a href="https://gist.github.com/ff0a3b80901bb0557f6e">here</a>, but it will&#x000A;be this easy:</p>&#x000A;&#x000A;<h2>Step 1: Drop files into a folder</h2>&#x000A;&#x000A;<pre><code>[images_dir]/&#x000A;  sprites/&#x000A;    toolbar/&#x000A;      new.png&#x000A;      save.png&#x000A;      open.png&#x000A;      undo.png&#x000A;</code></pre>&#x000A;&#x000A;<h2>Step 2: Import the stylesheet and apply mixins</h2>&#x000A;&#x000A;<pre><code>@import "sprites/toolbar";&#x000A;#toolbar {&#x000A;  .new  { @include toolbar-sprite("new");  }&#x000A;  .open { @include toolbar-sprite("open"); }&#x000A;  .save { @include toolbar-sprite("save"); }&#x000A;  .undo { @include toolbar-sprite("undo"); }&#x000A;}&#x000A;</code></pre>&#x000A;&#x000A;<p>And voila! You get this CSS:</p>&#x000A;&#x000A;<pre><code>.toolbar-sprite,&#x000A;#toolbar .new,&#x000A;#toolbar .open,&#x000A;#toolbar .save,&#x000A;#toolbar .undo {&#x000A;  background-image: url(/images/toolbar.png);&#x000A;  background-repeat: no-repeat;&#x000A;}&#x000A;&#x000A;#toolbar .new { background-position: 0 0; }&#x000A;#toolbar .open { background-position: 50px 0; }&#x000A;#toolbar .save { background-position: 25px 0; }&#x000A;#toolbar .undo { background-position: 75px 0; }&#x000A;</code></pre>&#x000A;&#x000A;<p>Of course, this is just the basic usage. Much more can be done! Look for this&#x000A;feature in Compass v0.11.</p>&#x000A;&#x000A;<p>Your feedback is both welcomed and encouraged in the comments below.</p></div>
+            <div class="footer">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                //<![CDATA[
+                  var disqus_url = "http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade";
+                  var disqus_developer = 1;
+                //]]>
+              </script>
+              <noscript>
+                <a href="http://chriseppstein.disqus.com/?url=ref">View the discussion thread.</a>
+              </noscript>
+              <script src="http://disqus.com/forums/chriseppstein/embed.js" type="text/javascript"></script>
+            </div>
           </div>
         </div>
         <div class="aside" id="sidebar">

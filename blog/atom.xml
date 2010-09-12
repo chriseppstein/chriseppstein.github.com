@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-09-01T23:46:56-07:00</updated>
+  <updated>2010-09-11T18:19:41-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Compass &amp; Lemonade</title>
+    <link href="http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade/" />
+    <updated>2010-09-10T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade</id>
+    <content type="html">
+      Nico Hagenburger is joining the Compass team and Lemonade is becoming part of Compass.
+    </content>
+  </entry>
   <entry>
     <title>Data Attributes: Blurring the Line Between Content and Presentation?</title>
     <link href="http://chriseppstein.github.com/blog/2010/09/01/blurring-the-line-between-content-and-presentation-with-data-attributes/" />
@@ -133,15 +142,6 @@
     <id>http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content</id>
     <content type="html">
       Haml is awesome, but if you're using it for inline markup, you're doing it wrong.
-    </content>
-  </entry>
-  <entry>
-    <title>2009 - In Review</title>
-    <link href="http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review/" />
-    <updated>2009-12-07T17:00:00-08:00</updated>
-    <id>http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review</id>
-    <content type="html">
-      A short post looking back at the past year in my life.
     </content>
   </entry>
 </feed>
