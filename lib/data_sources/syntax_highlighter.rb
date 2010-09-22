@@ -6,7 +6,12 @@ class SyntaxHighlighterFilter < Nanoc3::Filter
   def highlight(code, type)
     hl_map = Hash.new(:coderay)
     hl_map[:sass] = :pygmentize
-    send(hl_map[type], code, type)
+    hl_map[:html] = :pygmentize
+    hl_map[:haml] = :pygmentize
+    hl_map[:markdown] = :pygmentize
+    syntax_type = type
+    syntax_type = :html if type == :markdown
+    send(hl_map[type], code, syntax_type)
   end
 
   def pygmentize(code, type)
@@ -26,7 +31,7 @@ class SyntaxHighlighterFilter < Nanoc3::Filter
 
   def run(content, params={})
     doc = Nokogiri::HTML.fragment(content)
-    [:html, :css, :sass, :scss].each do |format|
+    [:markdown, :haml, :html, :css, :sass, :scss].each do |format|
       doc.css("pre.source-code.#{format}, code.#{format}").each do |el|
         new_element = Nokogiri.make(highlight(format == :html ? el.inner_html : el.inner_text, format))
         new_element.set_attribute("class", new_element.attribute("class").value+" "+el.attribute("class").value)
