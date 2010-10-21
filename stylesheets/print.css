@@ -90,6 +90,9 @@ li { line-height: 1.5; }
 .blog .section .article ol { list-style-type: decimal; margin-left: 1.5em; }
 .blog .section .article ol + p, .blog .section .article ul + p { margin-top: 1em; }
 .blog .section .article p code, .blog .section .article li code { font-size: 0.8em; padding: 0.1em; border: 1px solid #777777; background-color: #eeeeee; }
+.blog .section .article p pre code, .blog .section .article li pre code { border: 0; }
+.blog .section .article p p + pre, .blog .section .article li p + pre { background-color: #eeeeee; margin-top: -0.5em; }
+.blog .section .article p pre, .blog .section .article li pre { margin: 0.5em 0; padding: 0.5em; }
 
 #header .nav, #header .aside { display: none; }
 

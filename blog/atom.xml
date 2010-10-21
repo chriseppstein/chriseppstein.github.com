@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-10-20T10:54:38-07:00</updated>
+  <updated>2010-10-21T00:13:38-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Compass Extensions are Easy</title>
+    <link href="http://chriseppstein.github.com/blog/2010/10/21/compass-extensions-are-easy/" />
+    <updated>2010-10-20T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2010/10/21/compass-extensions-are-easy</id>
+    <content type="html">
+      How to make and distribute a simple compass extension in 5 simple steps.
+    </content>
+  </entry>
   <entry>
     <title>Compass &amp; Lemonade</title>
     <link href="http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade/" />
@@ -133,15 +142,6 @@
     <id>http://chriseppstein.github.com/blog/2010/04/11/compass-core-team</id>
     <content type="html">
       Eric Meyer and Brandon Mathis are joining the Compass Core Team.
-    </content>
-  </entry>
-  <entry>
-    <title>Haml Sucks for Content</title>
-    <link href="http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content/" />
-    <updated>2010-02-07T17:00:00-08:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content</id>
-    <content type="html">
-      Haml is awesome, but if you're using it for inline markup, you're doing it wrong.
     </content>
   </entry>
 </feed>
