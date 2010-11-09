@@ -6,6 +6,12 @@ category: blogging
 intro: "Did you know Compass is \"Charityware\"? Please consider donating this holiday season."
 featured: true
 ---
+**TL;DR**
+I donate my time to [Compass](http://compass-style.org/).
+You [donate your money to the UMDF][donation_form] and help
+find a cure for a disease that is killing kids and my dad.
+Everybody wins.
+
 As you probably know, I work at [Caring.com](http://www.caring.com/), a website devoted to
 caregivers of the sick and elderly. Caregiving is an issue that is near to my heart because
 my father was diagnosed with an extremely rare, terminal condition in 1992, when I was a
@@ -71,7 +77,7 @@ many of you a level of personal support that most project maintainers do not pro
 free of charge. It would give me great pride if you all of you would do something that I
 cannot: Collectively give a sum of money to the [UMDF][umdf] that would far exceed my own
 ability to donate to them directly. I estimate that there are 10,000 to 20,000 users of
-compass. If each user gave $50, we could raise a $1 million. Will you do your part?
+compass. If each user gave $50, we could raise a $1 million. Will you [do your part][donation_form]?
 
 Thanks!
 
