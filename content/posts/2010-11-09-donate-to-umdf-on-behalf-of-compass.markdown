@@ -6,11 +6,13 @@ category: blogging
 intro: "Did you know Compass is \"Charityware\"? Please consider donating this holiday season."
 featured: true
 ---
-**TL;DR**
+**TL;DR:**
 I donate my time to [Compass](http://compass-style.org/).
 You [donate your money to the UMDF][donation_form] and help
 find a cure for a disease that is killing kids and my dad.
 Everybody wins.
+
+**Update:** After Reading, please help spread the word by upvoting this story on [Hacker News][hn] and [Reddit][reddit].
 
 As you probably know, I work at [Caring.com](http://www.caring.com/), a website devoted to
 caregivers of the sick and elderly. Caregiving is an issue that is near to my heart because
@@ -39,7 +41,7 @@ to a crawl. My father is disabled, but his quality of life is pretty good for so
 is supposed to have been in the grave for 16 years now. We consider ourselves very fortunate
 to still have him in our lives. I am very proud of him -- it is his pure dedication and
 relentless will to survive that keeps him with us. I don't know about you, but I don't
-if I could eat virtually the same diet for a decade and still be sane.
+think I could eat virtually the same diet for a decade and still be sane.
 
 *(At this point, you might be wondering if I am risk to get this same disease. I appreciate
 your concern, but fortunately for me, this disease can only be passed from mother to child
@@ -85,4 +87,5 @@ Thanks!
 [donation_form]: https://secure.umdf.org/AutoGen/Simple/Donor.asp?ievent=420320&en=clLNK3PLLbJWKdOOJaLSLfN5IpIVK6NPLgIRIeO6LzH
 [chartityware]: http://charityware.info/
 [umdf]: http://www.umdf.org/
-
+[hn]: http://news.ycombinator.com/item?id=1886842
+[reddit]: http://www.reddit.com/r/ruby/comments/e3imy/compass_is_charityware_free_software_with_a/
