@@ -17,9 +17,9 @@ Mitochondria are the power plants of the cell and they are pretty cool little gu
 Evolutionarily, mitochondria used to be their own organism, but a long time ago, they merged
 with one of our primordial ancestors and formed a symbiotic cellular relationship. They have
 their own DNA called mDNA and in my Dad, that DNA is broken. This breakage prevents him from
-converting ATP (cellular fuel) all they way into energy. This means that simple tasks that
+converting ATP (cellular fuel) all the way into energy. This means that simple tasks that
 you and I take for granted like walking a quarter mile are near impossible. Organs, the brain,
-and the nervous system do not generally like running out of energy. Strange symptoms like
+and the nervous system do not generally like running low on energy. Strange symptoms like
 uncontrollable movements, cramps, seizures, and vertigo can occur without warning. On top of
 all that, the disease has given him diabetes and he's 100% insulin dependent.
 
@@ -65,13 +65,13 @@ It only takes a few minutes of your time and the money you donate **will** make 
 If your business uses Compass, please see if they will donate or perhaps they might have a
 matching program during the holiday season for charitable giving.
 
-Over the next few months, I will be working hard to get compass to version 1.0 and for over
-two years now I have been working on the side to make compass as great as I can. I have
-given many of you a level of personal support that most project maintainers do not provide.
-All free of charge. It would give me great pride if you all of you would do something that
-I cannot: Collectively give a sum of money to the [UMDF][umdf] that would far exceed my own
-ability to donate to them directly. I estimate that there are 10,000 to 20,000 users
-of compass. If each user gave $50, we could raise a $1 million. Will you do your part?
+Over the next few months, I will be working hard to get compass to version 1.0 and for
+over two years now I have been tirelessly to make stylesheets suck less. I have given
+many of you a level of personal support that most project maintainers do not provide. All
+free of charge. It would give me great pride if you all of you would do something that I
+cannot: Collectively give a sum of money to the [UMDF][umdf] that would far exceed my own
+ability to donate to them directly. I estimate that there are 10,000 to 20,000 users of
+compass. If each user gave $50, we could raise a $1 million. Will you do your part?
 
 Thanks!
 
