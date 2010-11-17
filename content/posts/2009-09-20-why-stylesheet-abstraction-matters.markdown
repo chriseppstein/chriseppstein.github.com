@@ -1,6 +1,6 @@
 ---
 title: Why Stylesheet Abstraction Matters
-browser_title: Abstration | Why Stylesheet Abstraction Matters | CSS Abstractions
+browser_title: Abstraction | Why Stylesheet Abstraction Matters | CSS Abstractions
 description: "Whether you are a CSS expert or newbie, a programmer or a designer, you need abstractions to quickly and effectively build and maintain the design of your website."
 category: blogging
 featured: true
