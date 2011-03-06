@@ -12,8 +12,6 @@ You [donate your money to the UMDF][donation_form] and help
 find a cure for a disease that is killing kids and my dad.
 Everybody wins.
 
-**Update:** After Reading, please help spread the word by upvoting this story on [Hacker News][hn] and [Reddit][reddit].
-
 As you probably know, I work at [Caring.com](http://www.caring.com/), a website devoted to
 caregivers of the sick and elderly. Caregiving is an issue that is near to my heart because
 my father was diagnosed with an extremely rare, terminal condition in 1992, when I was a
