@@ -13,7 +13,7 @@ My daughter was very disappointed that she lost a game of Chutes & Ladders. She 
 <dt >Daddy</dt>
 <dd>I can see you're very disappointed. What do you think we should do about it?</dd>
 <dt>Piper</dt>
-<dd>I want it so that was the the winner of the game.</dd>
+<dd>I want it so that I was the the winner of the game.</dd>
 <dt>Daddy</dt>
 <dd>Ok.</dd>
 <dt>Piper</dt>
