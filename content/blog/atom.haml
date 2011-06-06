@@ -15,7 +15,7 @@
         %link(href="#{post.link}")
       -else
         %link(href="#{full_url(post)}")
-      %updated=post.date.to_local_time.xmlschema
+      %updated=Time.parse(post.date.to_s).xmlschema
       %id= full_url(post)[0..-2]
       %content(type="html")
         - if post.attempt(:intro)

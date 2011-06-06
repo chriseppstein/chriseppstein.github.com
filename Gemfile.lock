@@ -2,24 +2,15 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (2.3.8)
-    cgi_multipart_eof_fix (2.5.0)
     coderay (0.9.3)
     compass (0.10.4)
       haml (>= 3.0.4)
     cri (1.0.1)
-    daemons (1.1.0)
-    fastthread (1.0.1)
     fssm (0.1.4)
-    gem_plugin (0.2.3)
     git (1.2.5)
     haml (3.0.16)
     hpricot (0.8.1)
     mime-types (1.16)
-    mongrel (1.1.5)
-      cgi_multipart_eof_fix (>= 2.4)
-      daemons (>= 1.0.3)
-      fastthread (>= 1.0.1)
-      gem_plugin (>= 0.2.3)
     nanoc (3.1.4)
       nanoc3 (>= 3.1.4)
     nanoc3 (3.1.4)
@@ -42,7 +33,6 @@ DEPENDENCIES
   git
   hpricot
   mime-types
-  mongrel
   nanoc
   nokogiri
   rack
