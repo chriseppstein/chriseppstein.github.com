@@ -23,8 +23,8 @@ Out of the blue while surfing the 'net the other night my wife says to me:
 
 > Wife: Owls say "Who".
 
-> Me: I got it. Does it mean I'm weird if I don't care who said it -- I just
-> wanted to know how I could be less "owly".
+> Me: I got it. Does it mean I'm weird if I did't care who said it -- I just
+> wanted to know how I could work on becoming less "owly".
 
 Sometimes, my wife must think she is married to Sheldon Cooper from Big Bang Theory.
 
