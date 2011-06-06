@@ -3,12 +3,30 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2010-11-09T12:41:08-08:00</updated>
+  <updated>2011-06-05T22:30:00-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>My Daughter&amp;#8217;s First Pair Programming Session</title>
+    <link href="http://chriseppstein.github.com/blog/2011/06/05/my-daughters-first-pair-programming-session/" />
+    <updated>2011-06-04T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2011/06/05/my-daughters-first-pair-programming-session</id>
+    <content type="html">
+      A troll dad tries to teach his daughter a lesson about graceful losing.
+    </content>
+  </entry>
+  <entry>
+    <title>My wife told me a joke</title>
+    <link href="http://chriseppstein.github.com/blog/2011/04/02/my-wiife-told-me-a-joke/" />
+    <updated>2011-04-01T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2011/04/02/my-wiife-told-me-a-joke</id>
+    <content type="html">
+      I think my response was telling.
+    </content>
+  </entry>
   <entry>
     <title>This Giving Season:&lt;br&gt;Please Donate to the UMDF</title>
     <link href="http://chriseppstein.github.com/blog/2010/11/09/donate-to-umdf-on-behalf-of-compass/" />
@@ -21,7 +39,7 @@
   <entry>
     <title>Compass Extensions are Easy</title>
     <link href="http://chriseppstein.github.com/blog/2010/10/21/compass-extensions-are-easy/" />
-    <updated>2010-10-20T16:00:00-07:00</updated>
+    <updated>2010-10-20T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/10/21/compass-extensions-are-easy</id>
     <content type="html">
       How to make and distribute a simple compass extension in 5 simple steps.
@@ -30,7 +48,7 @@
   <entry>
     <title>Compass &amp; Lemonade</title>
     <link href="http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade/" />
-    <updated>2010-09-10T16:00:00-07:00</updated>
+    <updated>2010-09-10T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade</id>
     <content type="html">
       Nico Hagenburger is joining the Compass team and Lemonade is becoming part of Compass.
@@ -39,7 +57,7 @@
   <entry>
     <title>Data Attributes: Blurring the Line Between Content and Presentation?</title>
     <link href="http://chriseppstein.github.com/blog/2010/09/01/blurring-the-line-between-content-and-presentation-with-data-attributes/" />
-    <updated>2010-08-31T16:00:00-07:00</updated>
+    <updated>2010-08-31T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/09/01/blurring-the-line-between-content-and-presentation-with-data-attributes</id>
     <content type="html">
       HTML5 data attributes have the potential to blur the line between content and presentation. I describe why I think this might not be the end of the world.
@@ -48,7 +66,7 @@
   <entry>
     <title>Sass Language Design: Philosophy &amp; Approach</title>
     <link href="http://chriseppstein.github.com/blog/2010/08/16/sass-language-design/" />
-    <updated>2010-08-15T16:00:00-07:00</updated>
+    <updated>2010-08-15T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/16/sass-language-design</id>
     <content type="html">
       How we analyze and approve or reject new features for Sass.
@@ -57,7 +75,7 @@
   <entry>
     <title>Sass Recipes: Simple, Working Sass examples</title>
     <link href="http://chriseppstein.github.com/blog/2010/08/14/sass-recipes/" />
-    <updated>2010-08-13T16:00:00-07:00</updated>
+    <updated>2010-08-13T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/14/sass-recipes</id>
     <content type="html">
       Have you ever built some sass that made you proud and wanted to share it with the world?
@@ -66,7 +84,7 @@
   <entry>
     <title>Sass Challenge: Use selector inheritance this week.</title>
     <link href="http://chriseppstein.github.com/blog/2010/08/02/sass-extend-challenge/" />
-    <updated>2010-08-01T16:00:00-07:00</updated>
+    <updated>2010-08-01T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/02/sass-extend-challenge</id>
     <content type="html">
       I challenge you to start using Sass's @extend directive. Find at least one place in your stylesheets where selector inheritance is appropriate and put it to use.
@@ -75,7 +93,7 @@
   <entry>
     <title>Building a Personal CSS Framework with Compass</title>
     <link href="http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework/" />
-    <updated>2010-07-31T16:00:00-07:00</updated>
+    <updated>2010-07-31T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework</id>
     <content type="html">
       Building a personal CSS framework using Compass is super easy and provides huge productivity gains for CSS developers.
@@ -84,7 +102,7 @@
   <entry>
     <title>Refactor My Stylesheets: The Negative Value Mixin</title>
     <link href="http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin/" />
-    <updated>2010-07-14T16:00:00-07:00</updated>
+    <updated>2010-07-14T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin</id>
     <content type="html">
       Sometimes a mixin adds negative value to your stylesheet.
@@ -93,7 +111,7 @@
   <entry>
     <title>SF Bay Area Sass Meetup: June 29, 2010</title>
     <link href="http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup/" />
-    <updated>2010-06-18T16:00:00-07:00</updated>
+    <updated>2010-06-18T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup</id>
     <content type="html">
       Nathan is in town so we're having a meetup on June 29, 2010 in Mountain View, CA.
@@ -102,7 +120,7 @@
   <entry>
     <title>Working with Nested Application Bundles</title>
     <link href="http://chriseppstein.github.com/blog/2010/05/28/nested-bundles/" />
-    <updated>2010-05-27T16:00:00-07:00</updated>
+    <updated>2010-05-27T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/05/28/nested-bundles</id>
     <content type="html">
       Ruby's Gem Bundler doesn't like it when you try to nest bundles. Here's a work-around.
@@ -111,7 +129,7 @@
   <entry>
     <title>Refactor My Stylesheets: The Digg.com Edition</title>
     <link href="http://chriseppstein.github.com/blog/2010/05/25/refactor-my-stylesheets-digg-edition/" />
-    <updated>2010-05-24T16:00:00-07:00</updated>
+    <updated>2010-05-24T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/05/25/refactor-my-stylesheets-digg-edition</id>
     <content type="html">
       See how I clean up a portion of Digg's CSS using Sass.
@@ -120,28 +138,10 @@
   <entry>
     <title>Where are your Images?</title>
     <link href="http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images/" />
-    <updated>2010-05-16T16:00:00-07:00</updated>
+    <updated>2010-05-16T17:00:00-07:00</updated>
     <id>http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images</id>
     <content type="html">
       If you think you know where your images are -- think again.
-    </content>
-  </entry>
-  <entry>
-    <title>Compass 1.0 Roadmap</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap/" />
-    <updated>2010-05-13T16:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap</id>
-    <content type="html">
-      How we're going to get to v1.0
-    </content>
-  </entry>
-  <entry>
-    <title>Compass v0.10 Released</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/10/announcing-the-v0-10-release/" />
-    <updated>2010-05-09T16:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/05/10/announcing-the-v0-10-release</id>
-    <content type="html">
-      Compass v0.10 is released, read on to find out what's new!
     </content>
   </entry>
 </feed>
