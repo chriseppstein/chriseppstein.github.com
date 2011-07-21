@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2011-06-06T11:15:22-07:00</updated>
+  <updated>2011-07-21T12:00:29-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Help the UMDF: CSS Summit 2011 Ticket Contest</title>
+    <link href="http://chriseppstein.github.com/blog/2011/07/21/csssummit-ticket-contest/" />
+    <updated>2011-07-20T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2011/07/21/csssummit-ticket-contest</id>
+    <content type="html">
+      Win one of two free tickets to the best online CSS conference in the world.
+    </content>
+  </entry>
   <entry>
     <title>My Daughter&amp;#8217;s First Pair Programming Session</title>
     <link href="http://chriseppstein.github.com/blog/2011/06/05/my-daughters-first-pair-programming-session/" />
@@ -133,15 +142,6 @@
     <id>http://chriseppstein.github.com/blog/2010/05/25/refactor-my-stylesheets-digg-edition</id>
     <content type="html">
       See how I clean up a portion of Digg's CSS using Sass.
-    </content>
-  </entry>
-  <entry>
-    <title>Where are your Images?</title>
-    <link href="http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images/" />
-    <updated>2010-05-16T17:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images</id>
-    <content type="html">
-      If you think you know where your images are -- think again.
     </content>
   </entry>
 </feed>
