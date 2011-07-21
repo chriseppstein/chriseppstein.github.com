@@ -11,7 +11,7 @@ As you may have heard, I'm speaking at the [2011 CSS Summit][csssummit]. It's a 
 So here's how this works. We're going to have a fundraising drive that ends at 11:59 Pacific time on Saturday July 22nd. The two people whose guess is closest to the actual amount raised (over or under) will get a free ticket. Please tweet a link to this page to your followers with the following format:
 
 > http://bit.ly/n85rri I think that @chriseppstein's css summit ticket contest
-> will raise $XXX for the UMDF by Friday at Midnight! #cssumdf
+> will raise $XXX for the UMDF by Saturday at Midnight! #cssumdf
 
 I've made it easy for you. Just click:
 <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/n85rri" data-text="I think that @chriseppstein's css summit ticket contest will raise $XXX for the UMDF by Saturday at Midnight! #cssumdf" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
