@@ -8,7 +8,7 @@ intro: "Win one of two free tickets to the best online CSS conference in the wor
 
 As you may have heard, I'm speaking at the [2011 CSS Summit][csssummit]. It's a two day CSS extravaganza with talks by some of the biggest names in CSS. I'm honored to be on the roster again to speak about Sass and Compass. The [conference organizer](http://environmentsforhumans.com/) was nice enough to provide me with TWO free tickets so I've decided to give them away in an effort to raise awareness for the [UMDF][umdf], a non profit organization dedicated to finding a cure for mitochondrial disorders and supporting families of those affected by this crippling, terminal illness that [affects my father and 1 of every 4,000 children born in the United States](/blog/2010/11/09/donate-to-umdf-on-behalf-of-compass/).
 
-So here's how this works. We're going to have a fundraising drive that ends at 11:59 Pacific time on Saturday July 22nd. The two people whose guess is closest to the actual amount raised (over or under) will get a free ticket. Please tweet a link to this page to your followers with the following format:
+So here's how this works. We're going to have a fundraising drive that ends at 11:59 Pacific time on Saturday July 23nd. The two people whose guess is closest to the actual amount raised (over or under) will get a free ticket. Please tweet a link to this page to your followers with the following format:
 
 > http://bit.ly/n85rri I think that @chriseppstein's css summit ticket contest
 > will raise $XXX for the UMDF by Saturday at Midnight! #cssumdf
