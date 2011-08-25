@@ -7,10 +7,13 @@ GEM
       haml (>= 3.0.4)
     cri (1.0.1)
     fssm (0.1.4)
+    gem_plugin (0.2.3)
     git (1.2.5)
     haml (3.0.16)
     hpricot (0.8.1)
     mime-types (1.16)
+    mongrel (1.1.6)
+      gem_plugin (>= 0.2.3)
     nanoc (3.1.4)
       nanoc3 (>= 3.1.4)
     nanoc3 (3.1.4)
@@ -33,6 +36,7 @@ DEPENDENCIES
   git
   hpricot
   mime-types
+  mongrel
   nanoc
   nokogiri
   rack
