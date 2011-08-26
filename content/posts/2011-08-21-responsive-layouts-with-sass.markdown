@@ -5,7 +5,6 @@ description: "Steps to build responsive grids and layouts with Sass"
 category: styleguide
 intro: "Steps to build responsive grids and layouts with Sass"
 featured: true
-draft: true
 ---
 
 Tasked with building a responsive layout system recently I developed an approach that can be broadly applied to a number of different grid-based layout systems. I am excited to share this approach with you. In addition to making clean, maintainable and compact output, this approach demonstrates how essential the `@extend` directive is to responsive design.
