@@ -96,28 +96,28 @@ end
 
 def departialize(target)
   if (bn = File.basename(target))[0..0] == "_"
-    target = File.join(File.dirname(target), bn[1..-1])
+    target = file.join(file.dirname(target), bn[1..-1])
   end
   target
 end
 
 namespace :sass do
-  desc "Generate syntax highlight files for sass files in this project."
+  desc "generate syntax highlight files for sass files in this project."
   task :pygmentize do
-    sass_files = FileList.new('content/stylesheets/**/*.sass')
-    sass_files.each do |file|
-      target = departialize(file.gsub("content/stylesheets", "content/highlighted/stylesheets")+".html")
-      FileUtils.mkdir_p(File.dirname(target))
-      puts "Writing #{target}"
-      open(target, "w") do |f|
-        f.puts %Q{---
-layout: stylesheet
-body_id: stylesheet
-title: "#{file[7..-1]}"
----}
-      end
-      sh "pygmentize -O linenos=table -f html #{file} >> #{target}"
-    end
+#     sass_files = filelist.new('content/stylesheets/**/*.sass')
+#     sass_files.each do |file|
+#       target = departialize(file.gsub("content/stylesheets", "content/highlighted/stylesheets")+".html")
+#       fileutils.mkdir_p(file.dirname(target))
+#       puts "writing #{target}"
+#       open(target, "w") do |f|
+#         f.puts %q{---
+# layout: stylesheet
+# body_id: stylesheet
+# title: "#{file[7..-1]}"
+# ---}
+#       end
+#       sh "pygmentize -o linenos=table -f html #{file} >> #{target}"
+#     end
   end
 
   desc "Make import directives link to the corresponding syntax hightlighted sass file."
