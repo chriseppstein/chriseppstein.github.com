@@ -91,6 +91,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images/</loc>
+    <lastmod>2005-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>http://chriseppstein.github.com/blog/2009/10/12/css-class-inheritance/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -103,22 +109,10 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images/</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/print.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup/</loc>
@@ -127,13 +121,13 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/screen.sass.html</loc>
+    <loc>http://chriseppstein.github.com/blog/2011/04/02/my-wiife-told-me-a-joke/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2011/04/02/my-wiife-told-me-a-joke/</loc>
+    <loc>http://chriseppstein.github.com/blog/2011/07/21/csssummit-ticket-contest/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -145,19 +139,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2011/07/21/csssummit-ticket-contest/</loc>
+    <loc>http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>http://chriseppstein.github.com/blog/2009/09/25/separating-style-concerns/</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -181,6 +169,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>http://chriseppstein.github.com/blog/2012/02/08/standarding-incompatibilities/</loc>
+    <lastmod>2005-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -193,46 +187,10 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/library/lists.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/library/links.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/debug.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/layout.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://chriseppstein.github.com/blog/2010/10/20/sass-3-1-filesystem-independence/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/syntax.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://chriseppstein.github.com/blog/2009/09/20/why-stylesheet-abstraction-matters/</loc>
@@ -247,12 +205,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/library/typography.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://chriseppstein.github.com/blog/2010/11/09/donate-to-umdf-on-behalf-of-compass/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -265,124 +217,10 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/typography.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/home.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/page.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/blog.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/layout/blog.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/layout/page.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/layout/base.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://chriseppstein.github.com/blog/2009/04/14/cultural-impacts-of-data-model-naming/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/header.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/layout/footer.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/layout/header.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/sidebar.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/layout/sidebar.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/posts/class_inheritance.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/projects.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/typography/base.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/typography/blog.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/archives.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/comments.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/typography/header.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://chriseppstein.github.com/blog/2011/06/05/my-daughters-first-pair-programming-session/</loc>
@@ -391,34 +229,10 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/typography/sidebar.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/sidebar/social.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://chriseppstein.github.com/blog/2009/02/15/a-sassy-response-to-css-framework-disadvantages/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/sidebar/twitter.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/highlighted/stylesheets/partials/design/sidebar/section.sass.html</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin/</loc>
