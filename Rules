@@ -39,7 +39,7 @@ end
 compile '/posts/*/' do
   filter :erb
   filter :rdiscount if item[:extension] == "markdown"
-  filter :highlight #if ENV['SYNTAX']
+  filter :highlight if ENV['SYNTAX']
   layout 'post'
 end
 

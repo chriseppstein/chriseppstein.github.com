@@ -66,7 +66,7 @@ The grid system I made is a fixed-width grid that uses a float-based layout syst
   * `.g-<media>-a<#>` - Appends `#` grid units of padding to the right of the column.
   * `.g-<media>-p<#>` - Prepends `#` grid units of padding to the left of the column.
 
-I don't want to imply that this is the only approach, it's just how I did it. The important part is the media-based naming convention. The class names are terse for a reason. When I first designed the grid I used class names like `.grid-desktop-first`; changing to `.g-d-f` and similar names make the markup easier to scan and reduces the CSS file size by about 10kb for the low cost of an increased learning curve. Here's the Sass code I made to generate define the grid system -- note that while I could have, I'm not using any grid library. When you have implemented as many of them as I have, it's just as easy to build your own :)
+I don't want to imply that this is the only approach, it's just how I did it. The important part is the media-based naming convention. The class names are terse for a reason. When I first designed the grid I used class names like `.grid-desktop-first`; changing to `.g-d-f` and similar names make the markup easier to scan and reduces the CSS file size by about 10kb for the low cost of an increased learning curve. Here's the Sass code I made to define the grid system -- note that while I could have, I'm not using any grid library. When you have implemented as many of them as I have, it's just as easy to build your own :)
 
 <script src="https://gist.github.com/1163006.js?file=_grid-system.scss"></script>
 
