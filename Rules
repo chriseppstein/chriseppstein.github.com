@@ -37,10 +37,14 @@ route '/stylesheets/*' do
 end
 
 compile '/posts/*/' do
-  filter :erb
-  filter :rdiscount if item[:extension] == "markdown"
-  filter :highlight if ENV['SYNTAX']
-  layout 'post'
+  if item[:redirect_to]
+    layout 'redirect'
+  else
+    filter :erb
+    filter :rdiscount if item[:extension] == "markdown"
+    filter :highlight if ENV['SYNTAX']
+    layout 'post'
+  end
 end
 
 compile "/blog/atom/" do
