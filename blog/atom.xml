@@ -3,7 +3,7 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2012-02-08T08:50:46-08:00</updated>
+  <updated>2012-02-09T11:40:14-08:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
@@ -11,9 +11,9 @@
   </author>
   <entry>
     <title>Standardizing Incompatibilities</title>
-    <link href="http://chriseppstein.github.com/blog/2012/02/08/standarding-incompatibilities/" />
+    <link href="http://chriseppstein.github.com/blog/2012/02/08/standardizing-incompatibilities/" />
     <updated>2012-02-07T16:00:00-08:00</updated>
-    <id>http://chriseppstein.github.com/blog/2012/02/08/standarding-incompatibilities</id>
+    <id>http://chriseppstein.github.com/blog/2012/02/08/standardizing-incompatibilities</id>
     <content type="html">
       It's time for the W3C CSS Working Group to enable a CSS Ecosystem
     </content>
