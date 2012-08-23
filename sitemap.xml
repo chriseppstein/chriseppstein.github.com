@@ -7,16 +7,16 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/work/</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://chriseppstein.github.com/blog/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://chriseppstein.github.com/work/</loc>
+    <lastmod>2005-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://chriseppstein.github.com/search/</loc>
@@ -55,13 +55,13 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2009/09/30/what-is-compass/</loc>
+    <loc>http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2010/05/14/compass-roadmap/</loc>
+    <loc>http://chriseppstein.github.com/blog/2009/09/30/what-is-compass/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -73,13 +73,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>http://chriseppstein.github.com/blog/2009/04/26/compass-screencast/</loc>
+    <lastmod>2005-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>http://chriseppstein.github.com/blog/2009/12/08/the-year-in-review/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2009/04/26/compass-screencast/</loc>
+    <loc>http://chriseppstein.github.com/blog/2012/08/23/sass-3-2-is-released/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -115,13 +121,13 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup/</loc>
+    <loc>http://chriseppstein.github.com/blog/2011/04/02/my-wiife-told-me-a-joke/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2011/04/02/my-wiife-told-me-a-joke/</loc>
+    <loc>http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -133,13 +139,13 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2009/09/25/separating-style-concerns/</loc>
+    <loc>http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2009/10/19/css-unsupported-directive/</loc>
+    <loc>http://chriseppstein.github.com/blog/2009/09/25/separating-style-concerns/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -163,6 +169,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework/</loc>
+    <lastmod>2005-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>http://chriseppstein.github.com/blog/2010/09/11/compass-merging-with-lemonade/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -170,12 +182,6 @@
   </url>
   <url>
     <loc>http://chriseppstein.github.com/blog/2012/02/08/standarding-incompatibilities/</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -199,13 +205,13 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2009/09/07/building-a-jekyll-watcher-with-fssm/</loc>
+    <loc>http://chriseppstein.github.com/blog/2010/11/09/donate-to-umdf-on-behalf-of-compass/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://chriseppstein.github.com/blog/2010/11/09/donate-to-umdf-on-behalf-of-compass/</loc>
+    <loc>http://chriseppstein.github.com/blog/2009/09/07/building-a-jekyll-watcher-with-fssm/</loc>
     <lastmod>2005-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

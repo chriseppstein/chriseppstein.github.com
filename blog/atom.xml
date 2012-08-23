@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2012-03-16T08:05:49-07:00</updated>
+  <updated>2012-08-23T02:50:48-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Sass 3.2 makes authoring CSS3 as easy as it will be</title>
+    <link href="http://chriseppstein.github.com/blog/2012/08/23/sass-3-2-is-released/" />
+    <updated>2012-08-22T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2012/08/23/sass-3-2-is-released</id>
+    <content type="html">
+      After more than a year in the making, Sass 3.2 is released and makes it easier than ever to wrangle CSS.
+    </content>
+  </entry>
   <entry>
     <title>Standardizing Incompatibilities</title>
     <link href="http://chriseppstein.github.com/blog/2012/02/08/standardizing-incompatibilities/" />
@@ -133,15 +142,6 @@
     <id>http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin</id>
     <content type="html">
       Sometimes a mixin adds negative value to your stylesheet.
-    </content>
-  </entry>
-  <entry>
-    <title>SF Bay Area Sass Meetup: June 29, 2010</title>
-    <link href="http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup/" />
-    <updated>2010-06-18T17:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/06/19/1st-compass-sass-meetup</id>
-    <content type="html">
-      Nathan is in town so we're having a meetup on June 29, 2010 in Mountain View, CA.
     </content>
   </entry>
 </feed>
