@@ -31,7 +31,7 @@ maintainable. As such, these new features have benefits that go beyond
 our primary use case. We always look forward to seeing how you will use
 them creatively in ways that we could not have imagined.
 
-The Sass 3.2 release introduces four new major features and a number of
+The Sass 3.2 release introduces several new major features and a number of
 lesser features that we will describe in this post. The full list of
 changes can be read in the [CHANGELOG][changelog].
 
