@@ -76,6 +76,7 @@ li { line-height: 1.5; }
 #sidebar .section ul { list-style: disc; }
 
 .blog .section .article { clear: left; }
+.blog .section .article pre { background-color: #eeeeee; border: 1px solid #777777; padding: 0.5em 0.25em; }
 .blog .section .article p { font-size: 110%; line-height: 150%; color: #333333; padding-bottom: 15px; }
 .blog .section .article img { border: none; }
 .blog .section .article img.left { display: inline; float: left; margin-right: 15px; margin-bottom: 15px; }
