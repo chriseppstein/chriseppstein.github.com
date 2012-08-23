@@ -65,29 +65,25 @@ placeholder selector itself will not be output. You can even have
 multiple placeholders in a selector, all of which much be extended to
 produce output.
 
-```scss
-%clearfix {
-  overflow: none;
-  *zoom: 1;
-}
+    %clearfix {
+      overflow: none;
+      *zoom: 1;
+    }
 
-aside, footer {
-  @extend %clearfix;
-}
+    aside, footer {
+      @extend %clearfix;
+    }
 
-#grid-container {
-  @extend %clearfix;
-}
-```
+    #grid-container {
+      @extend %clearfix;
+    }
 
 Produces:
 
-```css
-aside, footer, #grid-container {
-  overflow: none;
-  *zoom: 1;
-}
-```
+    aside, footer, #grid-container {
+      overflow: none;
+      *zoom: 1;
+    }
 
 You might ask how a placeholder is different from a mixin with no
 arguments -- at first blush they appear very similar. But, of course,
@@ -98,30 +94,26 @@ around the cascade. Another key difference is that placeholders can be
 used in any part of a selector, they aren't required to be used as the
 root selector. For instance:
 
-```scss
-#sidebar %link {
-  text-decoration: underline;
-}
-p %link {
-  color: blue;
-}
+    #sidebar %link {
+      text-decoration: underline;
+    }
+    p %link {
+      color: blue;
+    }
 
-a         { @extend %link; }
-span.link { @extend %link; }
-button    { @extend %link; }
-```
+    a         { @extend %link; }
+    span.link { @extend %link; }
+    button    { @extend %link; }
 
 Produces:
 
-```css
-#sidebar a, #sidebar span.link, #sidebar button {
-  text-decoration: underline;
-}
+    #sidebar a, #sidebar span.link, #sidebar button {
+      text-decoration: underline;
+    }
 
-p a, p span.link, p button {
-  color: blue;
-}
-```
+    p a, p span.link, p button {
+      color: blue;
+    }
 
 But placeholders are not the only change in 3.2 regarding the behavior
 of `@extend`.
@@ -138,25 +130,23 @@ what selector component is being styled by appending a `!` to the end --
 allowing elements to be styled according to what they contain. In Sass,
 the subject is also what `@extend` applies to.
 
-```scss
-header %component {
-  margin-bottom: 0;
-}
-%component! ol {
-  padding-left: 20px;
-}
+    header %component {
+      margin-bottom: 0;
+    }
+    %component! ol {
+      padding-left: 20px;
+    }
 
-section! .widget { @extend %component; }
-```
+    section! .widget { @extend %component; }
 
-```css
-header section! .widget {
-  margin-bottom: 0; }
+Compiles to:
 
-section! .widget ol,
-section! ol .widget {
-  padding-left: 20px; }
-```
+    header section! .widget {
+      margin-bottom: 0; }
+
+    section! .widget ol,
+    section! ol .widget {
+      padding-left: 20px; }
 
 Note: This above how things *will* work once [this bug][subject_bug] is fixed.
 
@@ -190,13 +180,11 @@ So we have deprecated the ability for @extend inside a media query to
 extend a selector outside it. If you are doing this, you will get a
 deprecation message like:
 
-```
-DEPRECATION WARNING on line 23 of application.scss:
-  @extending an outer selector from within @media is deprecated.
-  You may only @extend selectors within the same directive.
-  This will be an error in Sass 3.3.
-  It can only work once @extend is supported natively in the browser.
-```
+    DEPRECATION WARNING on line 23 of application.scss:
+      @extending an outer selector from within @media is deprecated.
+      You may only @extend selectors within the same directive.
+      This will be an error in Sass 3.3.
+      It can only work once @extend is supported natively in the browser.
 
 There are a few ways you can adjust to this:
 
@@ -228,30 +216,26 @@ scope". This is a fancy way of saying that the structure of the code
 dictates what version of the mixin or function gets picked, not the
 current runtime definition. Consider the following code example:
 
-```scss
-@mixin foreground {
-  color: color();
-}
+    @mixin foreground {
+      color: color();
+    }
 
-@function color() { @return red; }
+    @function color() { @return red; }
 
-.not-nested {
-  @include foreground;
-}
-.nested {
-  @function color() { @return blue; }
-  @include foreground;
-}
-```
+    .not-nested {
+      @include foreground;
+    }
+    .nested {
+      @function color() { @return blue; }
+      @include foreground;
+    }
 
 You might think that because the `color()` function was redefined in the
 nested context that the output would be `.nested { color: blue; }` but
 instead we get:
 
-```css
-.not-nested { color: red; }
-.nested { color: red; }
-```
+    .not-nested { color: red; }
+    .nested { color: red; }
 
 This is because the foreground mixin will always call the version of the
 `color()` function that was defined in the same scope. What's more, if
@@ -278,27 +262,23 @@ a new ability for mixins to receive a block of content from the calling
 context and place it using the `@content` directive where the mixin
 deems it best within its own output.
 
-```scss
-@mixin ie6 {
-  * html & {
-    @content;
-  }
-}
+    @mixin ie6 {
+      * html & {
+        @content;
+      }
+    }
 
-#signin {
-  float: right;
-  @include ie6 {
-    display: none;
-  }
-}
-```
+    #signin {
+      float: right;
+      @include ie6 {
+        display: none;
+      }
+    }
 
 which compiles to:
 
-```css
-#signin { float: right; }
-* html #signin { display: none; }
-```
+    #signin { float: right; }
+    * html #signin { display: none; }
 
 But content blocks can do much more than this. For instance, the
 `@content` directive can be called repeatedly, which might seem silly at
@@ -326,16 +306,14 @@ If you are a `.sass` syntax user, you will still use `@content` to
 place the passed block, and to pass a block to an include you simply
 indent. So the example above becomes:
 
-```sass
-=ie6
-  * html &
-    @content
+    =ie6
+      * html &
+        @content
 
-#signin
-  float: right
-  +ie6
-    display: none
-```
+    #signin
+      float: right
+      +ie6
+        display: none
 
 As you see, mixin content blocks make it possible to author
 context-based abstractions whether that context be a selector,
@@ -350,14 +328,12 @@ The @media query components on the left and right sides of the `:` in a
 query condition (enclosed in parens) can now contain SassScript
 expressions. Example:
 
-```scss
-$min-width-type: min-device-width;
-$smart-phone-min: 320px;
+    $min-width-type: min-device-width;
+    $smart-phone-min: 320px;
 
-@media all and ($min-width-type: $smart-phone-min) {
-  #logo { background-image: url(/images/logo-small.png); }
-}
-```
+    @media all and ($min-width-type: $smart-phone-min) {
+      #logo { background-image: url(/images/logo-small.png); }
+    }
 
 ## Directive Interpolation
 
@@ -385,52 +361,44 @@ declarations and function calls.
 To receive several arguments as a list, simply add three dots trailing
 the argument which you would like to receive the remaining arguments:
 
-```scss
-@mixin background($backgrounds...) {
-  -hack-number-of-bgs: length($backgrounds);
-  background: $backgrounds;
-}
+    @mixin background($backgrounds...) {
+      -hack-number-of-bgs: length($backgrounds);
+      background: $backgrounds;
+    }
 
-#logo {
-  @include background(white,
-                      url(/images/logo.png),
-                      url(/images/watermark.png));
-}
-```
+    #logo {
+      @include background(white,
+                          url(/images/logo.png),
+                          url(/images/watermark.png));
+    }
 
 Becomes:
 
-```css
-#logo {
-  -hack-number-of-bgs: 3;
-  background: white, url(/images/logo.png), url(/images/watermark.png);
-}
-```
+    #logo {
+      -hack-number-of-bgs: 3;
+      background: white, url(/images/logo.png), url(/images/watermark.png);
+    }
 
 A declaration can only receive on variable argument list, but that
 variable arguments list can be mixed with other required and optional
 arguments, as long as the variable argument list comes last.
 
-```scss
-@mixin background($primary-bg, $additional-bgs...) {
-  background: $primary-bg;
-  background: join($primary-bg, $additional-bgs);
-}
+    @mixin background($primary-bg, $additional-bgs...) {
+      background: $primary-bg;
+      background: join($primary-bg, $additional-bgs);
+    }
 
-#logo {
-  @include background(url(/images/logo.png),
-                      url(/images/watermark.png));
-}
-```
+    #logo {
+      @include background(url(/images/logo.png),
+                          url(/images/watermark.png));
+    }
 
 Becomes:
 
-```css
-#logo {
-  background: url(/images/logo.png);
-  background: url(/images/logo.png), url(/images/watermark.png);
-}
-```
+    #logo {
+      background: url(/images/logo.png);
+      background: url(/images/logo.png), url(/images/watermark.png);
+    }
 
 ### Passing a list as arguments
 
@@ -439,26 +407,22 @@ values and then need to pass those into a mixin or function as
 arguments -- especially when that mixin is a simple wrapper around a CSS
 property. As such, Sass now allows you to pass a list as arguments:
 
-```scss
-@mixin colors($fg, $bg, $border) {
-  color: $fg;
-  background-color: $bg;
-  border-color: $border;
-}
+    @mixin colors($fg, $bg, $border) {
+      color: $fg;
+      background-color: $bg;
+      border-color: $border;
+    }
 
-$box-colors: black, yellow, blue;
-.box { @include colors($box-colors...); }
-```
+    $box-colors: black, yellow, blue;
+    .box { @include colors($box-colors...); }
 
 Becomes:
 
-```css
-.box {
-  color: black;
-  background-color: yellow;
-  border-color: blue;
-}
-```
+    .box {
+      color: black;
+      background-color: yellow;
+      border-color: blue;
+    }
 
 It's important to note that the list passed as arguments can be either a
 comma-delimited list or a space-delimited list.
@@ -469,37 +433,33 @@ Even though we don't yet support accessing keyword arguments from the
 variable argument list, they can still be passed through to another
 mixin or function transparently. For example:
 
-```scss
-@mixin wallpaper($image, $top: 0, $right: 0, $bottom: 0, $left: 0) {
-  background: $image;
-  position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-}
+    @mixin wallpaper($image, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+      background: $image;
+      position: absolute;
+      top: $top;
+      right: $right;
+      bottom: $bottom;
+      left: $left;
+    }
 
-@mixin logo($offsets...) {
-  @include wallpaper(url(/images/logo.png), $offsets...);
-}
+    @mixin logo($offsets...) {
+      @include wallpaper(url(/images/logo.png), $offsets...);
+    }
 
-#please-wait {
-  @include logo($top: 3em, $bottom: 3em);
-}
-```
+    #please-wait {
+      @include logo($top: 3em, $bottom: 3em);
+    }
 
 Becomes:
 
-```css
-#please-wait {
-  background: url(/images/logo.png);
-  position: absolute;
-  top: 3em;
-  right: 0;
-  bottom: 3em;
-  left: 0;
-}
-```
+    #please-wait {
+      background: url(/images/logo.png);
+      position: absolute;
+      top: 3em;
+      right: 0;
+      bottom: 3em;
+      left: 0;
+    }
 
 This facilitates a major use case of safely wrapping one mixin or
 function with another so that you can add other properties alongside it
@@ -539,23 +499,19 @@ defaults for optional arguments in mixins and function or when
 initializing a variable. Any null value is pruned from the output as is
 any property that has been assigned a null value.
 
-```scss
-$color: null;
-div {
-  width: 23px;
-  color: $color;
-  border: 2px solid $color;
-}
-```
+    $color: null;
+    div {
+      width: 23px;
+      color: $color;
+      border: 2px solid $color;
+    }
 
 Becomes:
 
-```css
-div {
-  width: 23px;
-  border: 2px solid;
-}
-```
+    div {
+      width: 23px;
+      border: 2px solid;
+    }
 
 ### Precision
 
@@ -571,9 +527,7 @@ points of precision in sass 3.1 and before.
 Ruby-based applications and Compass projects can set the precision in
 their configuration code like so:
 
-```ruby
-Sass::Script::Number.precision = 3
-```
+    Sass::Script::Number.precision = 3
 
 ## Looking forward
 
