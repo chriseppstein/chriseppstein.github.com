@@ -9,8 +9,6 @@ and makes it easier than ever to wrangle CSS."
 featured: true
 ---
 
-# Sass 3.2 makes authoring CSS3 as easy as it will be
-
 **TL;DR** In sass 3.2 there's a new kind of selector called a
 placeholder selector for use with `@extend`. Mixins and functions can
 now take any number of arguments and be defined in nested contexts. You
