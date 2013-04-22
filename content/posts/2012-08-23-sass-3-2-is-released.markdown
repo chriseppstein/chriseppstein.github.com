@@ -148,7 +148,7 @@ Compiles to:
     section! ol .widget {
       padding-left: 20px; }
 
-Note: This above how things *will* work once [this bug][subject_bug] is fixed.
+Note: This above is how things *will* work once [this bug][subject_bug] is fixed.
 
 ## Selector combinators and inheritance.
 
