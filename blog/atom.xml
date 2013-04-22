@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2012-08-23T03:20:16-07:00</updated>
+  <updated>2013-04-22T00:16:42-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Joining LinkedIn</title>
+    <link href="http://chriseppstein.github.com/blog/2013/04/22/joining-linkedin/" />
+    <updated>2013-04-21T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2013/04/22/joining-linkedin</id>
+    <content type="html">
+      After six years at Caring.com, I'm joining LinkedIn and pursuing my dream job of working on open source, front end architecture, and developer relations.
+    </content>
+  </entry>
   <entry>
     <title>Sass 3.2 makes authoring CSS3 as easy as it will be</title>
     <link href="http://chriseppstein.github.com/blog/2012/08/23/sass-3-2-is-released/" />
@@ -133,15 +142,6 @@
     <id>http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework</id>
     <content type="html">
       Building a personal CSS framework using Compass is super easy and provides huge productivity gains for CSS developers.
-    </content>
-  </entry>
-  <entry>
-    <title>Refactor My Stylesheets: The Negative Value Mixin</title>
-    <link href="http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin/" />
-    <updated>2010-07-14T17:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/07/15/refactor-my-stylesheets-the-negative-value-mixin</id>
-    <content type="html">
-      Sometimes a mixin adds negative value to your stylesheet.
     </content>
   </entry>
 </feed>
