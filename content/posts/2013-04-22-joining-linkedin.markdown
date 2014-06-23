@@ -8,7 +8,6 @@ category: blog
 intro: "After six years at Caring.com, I'm joining LinkedIn and
 pursuing my dream job of working on open source, front end architecture,
 and developer relations."
-featured: true
 ---
 
 On June 26th, 2008 I started porting the Blueprint CSS framework to a
