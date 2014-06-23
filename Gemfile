@@ -2,7 +2,6 @@ source "http://rubygems.org/"
 
 gem "nanoc"
 gem "compass"
-gem "mongrel"
 gem "rack"
 gem "mime-types", :require => "mime/types"
 gem "rdiscount"
