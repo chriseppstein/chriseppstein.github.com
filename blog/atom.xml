@@ -3,12 +3,21 @@
   <title>#chris-eppstein {position: unique;}</title>
   <link href="http://chriseppstein.github.com/atom.xml" rel="self" />
   <link href="http://chriseppstein.github.com/" />
-  <updated>2013-04-22T00:16:42-07:00</updated>
+  <updated>2014-06-23T15:21:54-07:00</updated>
   <id>http://chriseppstein.github.com/</id>
   <author>
     <name>Chris Eppstein</name>
     <email>chris[at]eppsteins[dawt]net</email>
   </author>
+  <entry>
+    <title>Balancing Complexity in Sass</title>
+    <link href="http://chriseppstein.github.com/blog/2014/06/23/balancing-complexity/" />
+    <updated>2014-06-22T17:00:00-07:00</updated>
+    <id>http://chriseppstein.github.com/blog/2014/06/23/balancing-complexity</id>
+    <content type="html">
+      When is a Sass file too complicated? How far should you go with Sass?
+    </content>
+  </entry>
   <entry>
     <title>Joining LinkedIn</title>
     <link href="http://chriseppstein.github.com/blog/2013/04/22/joining-linkedin/" />
@@ -133,15 +142,6 @@
     <id>http://chriseppstein.github.com/blog/2010/08/02/sass-extend-challenge</id>
     <content type="html">
       I challenge you to start using Sass's @extend directive. Find at least one place in your stylesheets where selector inheritance is appropriate and put it to use.
-    </content>
-  </entry>
-  <entry>
-    <title>Building a Personal CSS Framework with Compass</title>
-    <link href="http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework/" />
-    <updated>2010-07-31T17:00:00-07:00</updated>
-    <id>http://chriseppstein.github.com/blog/2010/08/01/building-a-personal-framework</id>
-    <content type="html">
-      Building a personal CSS framework using Compass is super easy and provides huge productivity gains for CSS developers.
     </content>
   </entry>
 </feed>
