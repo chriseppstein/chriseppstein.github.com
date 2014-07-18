@@ -12,8 +12,8 @@ and developer relations."
 
 On June 26th, 2008 I started porting the Blueprint CSS framework to a
 new-fangled stylesheet syntax called Sass. That work eventually became
-Compass and led to me joining the Sass core team along side [Nathan
-Weizenbaum][nex3]. In our precious free time, Nathan and I managed to
+Compass and led to me joining the Sass core team along side [Natalie
+Weizenbaum][nex3]. In our precious free time, Natalie and I managed to
 build a language and an ecosystem of which we are incredibly proud. Sass
 has changed the course of web development. It has inspired over a dozen CSS
 preprocessors, at least two of which have gone on to become incredibly
@@ -26,7 +26,7 @@ whether a preprocessor was a necessary tool for  their project. Now,
 they debate which one they will use.
 
 By all rights, Sass and Compass have accomplished great things. If
-Nathan or I decided to stop working on these projects, moving on to new
+Natalie or I decided to stop working on these projects, moving on to new
 things, no one would think less of us. In fact, over the past six
 months, I have been pondering this exact question. Both my job at
 Caring.com and needs of Sass & Compass have grown to a point where I can

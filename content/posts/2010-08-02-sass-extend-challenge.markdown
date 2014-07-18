@@ -26,7 +26,7 @@ This week, take a little time to read up on `@extend` if you haven't done so yet
 
 Here's some basic documentation on the `@extend` directive:
 
-* [The Feature Announcement](http://nex-3.com/posts/99-selector-inheritance-the-easy-way-introducing-extend) that Nathan and I put together initially.
+* [The Feature Announcement](http://nex-3.com/posts/99-selector-inheritance-the-easy-way-introducing-extend) that Natalie and I put together initially.
 * [Reference Documentation](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend) for a nuts and bolts description about how it works.
 * [Another Good Explaination](http://awardwinningfjords.com/2010/07/27/sass-extend-introduction.html) by Thomas Reynolds
 

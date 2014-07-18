@@ -5,7 +5,7 @@ description: "How we analyze and approve or reject new features for Sass."
 category: blogging
 featured: true
 intro: "How we analyze and approve or reject new features for Sass."
-byline: "By Chris Eppstein & Nathan Weizenbaum"
+byline: "By Chris Eppstein & Natalie Weizenbaum"
 ---
 Sass has a lot of language features that CSS does not provide. To
 the outside observer, the way new features come into existence
@@ -19,7 +19,7 @@ compilers, or any other source. However, most of the time we end up saying
 no.
 
 In this post, we hope to describe the thought process we go through to make
-those decisions. In future posts, Nathan and I will cover some
+those decisions. In future posts, Natalie and I will cover some
 often-requested features and why we've decided against them.
 
 ## Personas
@@ -198,13 +198,13 @@ about what features should exist and what features shouldn't. It allows for
 experimentation and learning.
 
 At the end of the day, someone has to make a decision about whether a proposed
-feature is in or out. In almost all cases, Nathan and I come to an agreement
+feature is in or out. In almost all cases, Natalie and I come to an agreement
 -- sometimes this takes minutes, sometimes it takes weeks or more. But open
 source software is generally governed by a [benevolent dictatorship][dictator]
-and for at least a couple years now that person has been Nathan. I've found
-him to be increasingly good at this role. He's eager to hear new ideas,
-and careful in his consideration. With a well crafted argument, it is very
-possible to change his (and my) mind.
+and for at least a couple years now that person has been Natalie. I've found
+her to be increasingly good at this role. She's eager to hear new ideas,
+and careful in her consideration. With a well crafted argument, it is very
+possible to change her (and my) mind.
 
 [dictator]: http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html
 [globbing-request]: http://github.com/nex3/haml/issues/issue/97

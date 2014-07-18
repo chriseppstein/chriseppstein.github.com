@@ -13,7 +13,7 @@ grunt work out of making sprites. If you don't know, please read up on it
 [here][lemonade]
 
 However, as easy as Lemonade is to use, it can be even easier, and this is
-the point of the integration. I have been working with Nathan to enhance
+the point of the integration. I have been working with Natalie to enhance
 Sass to make it possible for stylesheets to import from places other than
 a file on the disk. This general facility will make it possible to store
 stylesheets in the database, import files that do not follow our normal

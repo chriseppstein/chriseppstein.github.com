@@ -13,7 +13,7 @@ The short answer is: Yes. That, and some original Sass mixins. Oh and all the pa
 Sass is the Star
 ----------------
 
-Make no mistake, Sass is Awesome. I'm a fanboy. [Nathan Weizenbaum](http://nex-3.com) has been an awesome maintainer of Sass and doesn't get enough recognition for his work. I started using Sass just after it hit 2.0. Compass has pushed the limits of Sass and many of the language features of 2.2 were driven by Compass -- the two have co-evolved into a powerful platform.
+Make no mistake, Sass is Awesome. I'm a fanboy. [Natalie Weizenbaum](http://nex-3.com) has been an awesome maintainer of Sass and doesn't get enough recognition for her work. I started using Sass just after it hit 2.0. Compass has pushed the limits of Sass and many of the language features of 2.2 were driven by Compass -- the two have co-evolved into a powerful platform.
 
 Compass is a Stylesheet Distribution Framework
 ----------------------------------------------

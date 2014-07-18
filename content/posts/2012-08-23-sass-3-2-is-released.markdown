@@ -560,7 +560,7 @@ Here's some major features that we've agreed to ship in the future:
   helping avoid this issue for now, but a proper module and scoping
   system is needed to bring sanity here.
 
-* Output optimization - Nathan has been dying to work on an optimizer
+* Output optimization - Natalie has been dying to work on an optimizer
   for Sass ever since people started complaining about "Mixin bloat".
   `@extend` alleviated much of that need, but new use cases involving
   media queries have finally made this feature into a necessity.

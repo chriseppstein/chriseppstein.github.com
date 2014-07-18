@@ -26,11 +26,11 @@ Haml documents do two things to make you faster:
 Work-Arounds
 ------------
 
-When I asked [Nathan](http://nex-3.com/), the man behind both [Haml][haml] & [Sass][sass], if he would mind it if I wrote this post he responded:
+When I asked [Natalie](http://nex-3.com/), the woman behind both [Haml][haml] & [Sass][sass], if she would mind it if I wrote this post she responded:
 
 > No, it's true.
 
-Nathan's acknowledgment of Haml's weaknesses is one of its strengths. He has done a lot to sand down Haml's rough edges over the two years I've been following Haml's development. But first and foremost, **I think there is a misconception that Haml's indentation-based tags are the only way to create markup in a Haml document. This is not true.** Here are several ways you can embed inline content within a Haml document:
+Natalie's acknowledgment of Haml's weaknesses is one of its strengths. She has done a lot to sand down Haml's rough edges over the two years I've been following Haml's development. But first and foremost, **I think there is a misconception that Haml's indentation-based tags are the only way to create markup in a Haml document. This is not true.** Here are several ways you can embed inline content within a Haml document:
 
 ### &bull; Inline your HTML
 

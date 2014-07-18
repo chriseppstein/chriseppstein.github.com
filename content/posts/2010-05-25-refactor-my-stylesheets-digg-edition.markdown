@@ -28,7 +28,7 @@ There is a lot of duplication in CSS when you use semantic markup. It can be cha
 
 ### Step 3: Extract Base Class
 
-Since there was no functional base class existing in the site styles, I needed to create one. I decided to call it `.feedback` because all of the class names in use described a type of user feedback and this class was not in use already. Unfortunately, Sass does not yet have any notion of an abstract base class, so this cleanup will incur some cost of additional output of a style they don't want or need. I think the clarity of the code makes this trade-off worth while, but this is an opportunity for a new Sass feature and one that [Nathan](http://nex-3.com/) and I have discussed before. At this point, the stylesheet now looked like so:
+Since there was no functional base class existing in the site styles, I needed to create one. I decided to call it `.feedback` because all of the class names in use described a type of user feedback and this class was not in use already. Unfortunately, Sass does not yet have any notion of an abstract base class, so this cleanup will incur some cost of additional output of a style they don't want or need. I think the clarity of the code makes this trade-off worth while, but this is an opportunity for a new Sass feature and one that [Natalie](http://nex-3.com/) and I have discussed before. At this point, the stylesheet now looked like so:
 
 <script src="http://gist.github.com/412696.js?file=extract_base_class.css"></script>
 

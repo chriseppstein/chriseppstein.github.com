@@ -85,7 +85,7 @@ As much as I like the idea of class inheritance, because of these confusing edge
 UPDATE: `@extend` is in Sass 3
 ------------------------------
 
-Thanks to the fact that [Nathan](http://nex-3.com/) was able find a compiler-based solution to many of the things I had thought just wouldn't be possible, we have implemented `@extend` and [it is part of the Sass 3 release][extend-blog-post]. For example, here's the same code example using Sass 3 to compile it:
+Thanks to the fact that [Natalie](http://nex-3.com/) was able find a compiler-based solution to many of the things I had thought just wouldn't be possible, we have implemented `@extend` and [it is part of the Sass 3 release][extend-blog-post]. For example, here's the same code example using Sass 3 to compile it:
 
 <%= render "code/class_inheritance/compilation_win" %>
 
